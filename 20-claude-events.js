@@ -1,5 +1,6 @@
 // Reactions to Claude Code hook events (fed via ~/.buddy/events.jsonl).
 buddy.on("claude:SessionStart", () => {
+  if (state.busy) return;
   setMood("excited", "excited");
   if (chance(0.7)) sayLine("sessionStart", 3);
   buddy.after(4000, () => setMood("happy", "idle"));
@@ -9,6 +10,7 @@ buddy.on("claude:SessionStart", () => {
 // celebrates nonstop during an active session.
 let lastStopReact = 0;
 buddy.on("claude:Stop", () => {
+  if (state.busy) return;
   const now = Date.now();
   if (now - lastStopReact < 45000) return;
   lastStopReact = now;
@@ -25,14 +27,17 @@ buddy.on("claude:Stop", () => {
 });
 
 buddy.on("claude:UserPromptSubmit", () => {
+  if (state.busy) return;
   if (chance(0.15 * buddy.traits.get("chattiness"))) sayLine("promptJudge", 3);
 });
 
 buddy.on("claude:PreToolUse", (e) => {
+  if (state.busy) return;
   if (e.tool_name === "Bash" && chance(0.06)) sayLine("bashWarn", 3);
 });
 
 buddy.on("claude:Notification", () => {
+  if (state.busy) return;
   if (chance(0.5)) {
     buddy.play("excited");
     sayLine("needsInput", 5);

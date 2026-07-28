@@ -25,6 +25,7 @@ globalThis.sayFact = function (secs) {
 
 // References sneak into celebrations.
 buddy.on("claude:Stop", () => {
+  if (state.busy) return;
   if (chance(0.15 * buddy.traits.get("weirdness") + 0.05)) {
     buddy.after(2000, () => sayRef(5));
   }
@@ -32,6 +33,7 @@ buddy.on("claude:Stop", () => {
 
 // Facts when bored.
 buddy.every(180000, () => {
+  if (state.busy) return;
   if (buddy.isFrozen() || state.mood === "sleepy") return;
   if (!chance(0.25 * buddy.traits.get("chattiness"))) return;
   buddy.play("scheming");

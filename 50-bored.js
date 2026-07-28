@@ -1,9 +1,11 @@
 // Idle life: sleeping, clinging, chatter, and rare cursor mischief.
 buddy.on("idle", () => {
+  if (state.busy) return;
   setMood("sleepy", "sleep");
 });
 
 buddy.on("active", () => {
+  if (state.busy) return;
   setMood("happy", "idle");
   if (chance(0.4)) sayLine("wake", 3);
 });
