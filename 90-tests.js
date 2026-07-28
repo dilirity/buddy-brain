@@ -47,11 +47,17 @@ buddy.on("test:nudge", () => {
 let testStealing = false;
 buddy.on("test:heist", () => {
   testStealing = true;
-  const c = buddy.cursor.pos();
   buddy.play("walk");
-  buddy.moveTo(c.x - 40, c.y - 100, 300);
+  sayLine("chaseStart", 2);
+  buddy.chase(350);
 });
-buddy.on("arrived", () => {
+buddy.on("gaveUp", () => {
+  if (!testStealing) return;
+  testStealing = false;
+  sayLine("gaveUp", 4);
+  buddy.play("idle");
+});
+buddy.on("caught", () => {
   if (!testStealing) return;
   testStealing = false;
   if (!buddy.cursor.grab(4)) {

@@ -32,15 +32,22 @@ buddy.every(120000, () => {
       buddy.after(2000, () => buddy.play("idle"));
     }
   } else {
-    // The heist: sneak up on the cursor, grab it, run away with it.
+    // The heist: chase the live cursor, grab it, run away with it.
     stealing = true;
-    const c = buddy.cursor.pos();
     buddy.play("walk");
-    buddy.moveTo(c.x - 40, c.y - 100, 260);
+    if (chance(0.6)) sayLine("chaseStart", 2);
+    buddy.chase(280);
   }
 });
 
-buddy.on("arrived", () => {
+buddy.on("gaveUp", () => {
+  if (!stealing) return;
+  stealing = false;
+  sayLine("gaveUp", 4);
+  buddy.play("idle");
+});
+
+buddy.on("caught", () => {
   if (!stealing) return;
   stealing = false;
   if (!buddy.cursor.grab(4)) return;
