@@ -139,6 +139,50 @@
     {
       "text": "velvet thunder",
       "show": "b99"
+    },
+    {
+      "text": "they don't know that we know they know we know",
+      "show": "friends"
+    },
+    {
+      "text": "MY sandwich?? MY SANDWICH",
+      "show": "friends"
+    },
+    {
+      "text": "it's a moo point. like a cow's opinion",
+      "show": "friends"
+    },
+    {
+      "text": "sploosh",
+      "show": "archer"
+    },
+    {
+      "text": "i swear i had something for this",
+      "show": "archer"
+    },
+    {
+      "text": "read a book!",
+      "show": "archer"
+    },
+    {
+      "text": "greg the egg",
+      "show": "succession"
+    },
+    {
+      "text": "it's like jaws, if everyone in jaws worked for jaws",
+      "show": "succession"
+    },
+    {
+      "text": "next one's coming faster",
+      "show": "justified"
+    },
+    {
+      "text": "vindication!!",
+      "show": "b99"
+    },
+    {
+      "text": "i'm the human form of the 100 emoji",
+      "show": "b99"
     }
   ],
   "facts": [
@@ -161,7 +205,12 @@
     "a blue whale's heart is the size of a small car",
     "footprints on the moon last millions of years. no wind",
     "peregrine falcons dive at over 300 km/h",
-    "ghost crabs growl at enemies using teeth in their stomachs"
+    "ghost crabs growl at enemies using teeth in their stomachs",
+    "a single cloud can weigh over a million pounds",
+    "tigers have striped skin, not just striped fur",
+    "the moon has moonquakes",
+    "oxford university is older than the aztec empire",
+    "snails can sleep for three years straight"
   ],
   "showProps": {
     "justified": "cowboyhat",

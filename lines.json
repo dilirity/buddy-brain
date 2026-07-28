@@ -62,7 +62,10 @@
     "i counted your pixels today. all of them",
     "i know where all your windows are now. all of them",
     "being translucent is exhausting",
-    "sometimes i go behind the windows just to feel something"
+    "sometimes i go behind the windows just to feel something",
+    "im keeping score of your apps. no i wont say why",
+    "every window tells a story. yours mostly say woocommerce",
+    "i rate your app choices. silently. constantly."
   ],
   "hideStart": [
     "bet you cant find me",
@@ -210,6 +213,26 @@
       ]
     }
   },
+  "criticOpen": [
+    "ATTENTION. the daily app awards are now in session",
+    "gather round. the results are in",
+    "i have been watching your every click. every one.",
+    "award ceremony time. no press questions",
+    "the academy (me) has voted"
+  ],
+  "criticVerdict": [
+    "todays most used app: {app}. {n} visits. incredible dedication",
+    "the award goes to... {app}!! {n} switches. i counted",
+    "{app} wins today with {n}. the other apps should be embarrassed",
+    "winner: {app}. {n} appearances. i see everything, pete",
+    "{app}. again. {n} times. we should talk about this"
+  ],
+  "criticDethroned": [
+    "{app} has fallen from grace. tragic",
+    "rip {app}. yesterdays champion, todays nobody",
+    "{app} got dethroned. brutal industry",
+    "and {app} thought it had a dynasty going. no."
+  ],
   "evolveProgress": [
     "still evolving. growing new neurons",
     "brains are complicated ok",

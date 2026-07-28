@@ -16,5 +16,6 @@
   { "id": "hideWindow", "title": "Hide behind a window" },
   { "id": "hideGhost", "title": "Hide as a ghost" },
   { "id": "boo", "title": "Ghost ambush (BOO)" },
+  { "id": "critic", "title": "Daily app awards" },
   { "id": "walk", "title": "Walk somewhere" }
 ]
