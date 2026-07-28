@@ -1,7 +1,7 @@
 // TV/movie references and random facts, from quips.json.
 // The nightly mutator is expected to keep expanding that file.
 // References carry a show tag; buddy dons a matching prop from sprites.json.
-const SHOW_PROPS = { justified: "cowboyhat", succession: "tie", archer: "martini", friends: "mug" };
+const SHOW_PROPS = { justified: "cowboyhat", succession: "tie", archer: "martini", friends: "mug", b99: "badge" };
 
 globalThis.sayRef = function (secs) {
   const q = buddy.data("quips.json");
@@ -41,5 +41,6 @@ buddy.every(180000, () => {
 
 // Poke it enough times, get a reference.
 buddy.on("poked", () => {
+  if (state.busy) return;
   if (chance(0.25)) sayRef(4);
 });

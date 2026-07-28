@@ -94,6 +94,22 @@
       "................",
       "................"
     ],
+    "badge": [
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "..KYYK..........",
+      ".KYYYYK.........",
+      "..KYYK..........",
+      "................",
+      "................"
+    ],
     "mug": [
       "................",
       "................",
@@ -396,6 +412,43 @@
           "KGGYZGGGGGGZYGGK",
           "KGGGGGGGGGGGGGGK",
           "KGRGGGKKKKGGGRGK",
+          "KGGGGGGGGGGGGGGK",
+          ".KGGGGGGGGGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "..KGDGDGGDGDGK..",
+          "..KK.KK..KK.KK.."
+        ]
+      ]
+    },
+    "hide": {
+      "fps": 2,
+      "frames": [
+        [
+          "...KK......KK...",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGGWWGGGGGGWWGGK",
+          "KGGPWGGGGGGPWGGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGGGGKKKGGGRGK",
+          "KGGGGGGGGGGGGGGK",
+          ".KGGGGGGGGGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "..KGDGDGGDGDGK..",
+          "..KK.KK..KK.KK.."
+        ],
+        [
+          "...KK......KK...",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGGWWGGGGGGWWGGK",
+          "KGGWPGGGGGGWPGGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGGGGKKKGGGRGK",
           "KGGGGGGGGGGGGGGK",
           ".KGGGGGGGGGGGGK.",
           ".KGGGGGGGGGGGGK.",

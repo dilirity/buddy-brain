@@ -16,7 +16,16 @@
     { "text": "he's a criminal, raylan. it's what he does", "show": "justified" },
     { "text": "i dug coal with him", "show": "justified" },
     { "text": "it's a full moon somewhere", "show": "justified" },
-    { "text": "that's what she said. wait, wrong show", "show": null }
+    { "text": "that's what she said. wait, wrong show", "show": null },
+    { "text": "nine-nine!", "show": "b99" },
+    { "text": "cool cool cool cool cool no doubt no doubt", "show": "b99" },
+    { "text": "bingpot!", "show": "b99" },
+    { "text": "terry loves yogurt", "show": "b99" },
+    { "text": "the oolong slayer strikes again", "show": "b99" },
+    { "text": "how you doin'", "show": "friends" },
+    { "text": "it's tactical. tactleneck.", "show": "archer" },
+    { "text": "if it is to be said, so it be, so it is", "show": "succession" },
+    { "text": "you make me pull, i'll put you down", "show": "justified" }
   ],
   "facts": [
     "octopuses have three hearts and blue blood",
@@ -28,6 +37,11 @@
     "sharks existed before trees",
     "a day on venus is longer than its year",
     "sea otters hold hands while sleeping so they don't drift apart",
-    "the first computer bug was an actual moth in 1947"
+    "the first computer bug was an actual moth in 1947",
+    "a jiffy is a real unit of time: about 1/100th of a second",
+    "cows have best friends and get stressed when separated",
+    "scotland's national animal is the unicorn",
+    "there are more possible chess games than atoms in the universe",
+    "hot water can freeze faster than cold. nobody fully knows why"
   ]
 }

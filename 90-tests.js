@@ -89,6 +89,8 @@ buddy.on("test:clingy", () => {
   ]);
 });
 
+buddy.on("test:hideSeek", () => playHideSeek());
+
 buddy.on("test:grudge", () => {
   buddy.emit("configChanged", { trait: "mischief", from: 0.6, to: 0.4 });
 });
