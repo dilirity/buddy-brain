@@ -13,5 +13,8 @@
   { "id": "grudge", "title": "Trait-change sass" },
   { "id": "clingy", "title": "Clingy visit (heart)" },
   { "id": "hideSeek", "title": "Hide and seek" },
+  { "id": "hideWindow", "title": "Hide behind a window" },
+  { "id": "hideGhost", "title": "Hide as a ghost" },
+  { "id": "boo", "title": "Ghost ambush (BOO)" },
   { "id": "walk", "title": "Walk somewhere" }
 ]

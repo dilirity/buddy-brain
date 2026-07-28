@@ -59,7 +59,10 @@
     "pixel life is good",
     "have you hydrated",
     "do you think the cursor likes me",
-    "i counted your pixels today. all of them"
+    "i counted your pixels today. all of them",
+    "i know where all your windows are now. all of them",
+    "being translucent is exhausting",
+    "sometimes i go behind the windows just to feel something"
   ],
   "hideStart": [
     "bet you cant find me",
@@ -67,17 +70,46 @@
     "hide and seek. GO",
     "vanishing in 3... 2..."
   ],
+  "hideGhostStart": [
+    "going ghost",
+    "you cant poke what you cant see",
+    "15 percent buddy. 100 percent hidden",
+    "becoming a rumor"
+  ],
+  "hideWindowStart": [
+    "im going BEHIND things now",
+    "your windows are my forest",
+    "physics cant stop me anymore",
+    "descending into the window realm"
+  ],
+  "boo": [
+    "BOO!!",
+    "BOO. did your soul leave",
+    "surprise!! its me",
+    "BEHOLD. me.",
+    "boo. i have been here the WHOLE time"
+  ],
+  "booAfter": [
+    "hehehe you jumped",
+    "i felt your heartbeat spike from here",
+    "10 out of 10 sneak",
+    "the ghost life chose me"
+  ],
   "hideFound": [
     "FOUND ME!! you win",
     "took you long enough",
     "aw. i thought that was a good spot",
-    "ok fine. you get ONE point"
+    "ok fine. you get ONE point",
+    "you found the ghost!! respect",
+    "howd you see me. i was BEHIND things"
   ],
   "hideTimeout": [
     "you never even looked for me",
     "i win. by default. still counts",
     "worlds best hider, right here",
-    "i could have been gone FOREVER"
+    "i could have been gone FOREVER",
+    "i phased through reality and you didnt even notice",
+    "a whole minute. i live between the windows now"
   ],
   "clingyArrive": [
     "hi. im here now",

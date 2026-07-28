@@ -45,6 +45,8 @@ globalThis.sayLine = (key, secs, prop) => {
 //   prop: "name"                      worn via the spoken line, or bare
 //   moveTo: {x, y, speed}             walk somewhere
 //   chase: speed                      pursue the live cursor
+//   layer: "behind" | "front"         drop under / restore over app windows
+//   opacity: 0.15..1                  ghost mode (shell auto-restores to 1)
 //   ms: 800                           how long the step lasts (default 800)
 //   until: "event" | ["e1","e2"]      instead of ms, wait for an event
 //   until: {event: [steps...]}        branch: run that path, then finish
@@ -68,6 +70,8 @@ globalThis.runAct = function (steps, done) {
     i++;
     if (i >= steps.length) return finish();
     const s = steps[i];
+    if (s.layer) buddy.layer(s.layer);
+    if (s.opacity != null) buddy.opacity(s.opacity);
     if (s.anim) buddy.play(s.anim);
     if (s.line) sayLine(s.line, s.secs, s.prop);
     else if (s.say) buddy.say(s.say, s.secs || 4, s.prop || null);

@@ -457,6 +457,43 @@
         ]
       ]
     },
+    "boo": {
+      "fps": 6,
+      "frames": [
+        [
+          "...KK......KK...",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGWWWGGGGGGWWWGK",
+          "KGWPWGGGGGGWPWGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGGKKKKKKGGRGK",
+          "KGGGGKTTTTKGGGGK",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "..KGDGDGGDGDGK..",
+          "..KK.KK..KK.KK.."
+        ],
+        [
+          "..YKK......KK.Y.",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGWWWGGGGGGWWWGK",
+          "KGWPWGGGGGGWPWGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGGKKKKKKGGRGK",
+          "KGGGGKTTTTKGGGGK",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "..KGDGDGGDGDGK..",
+          "..KK........KK.."
+        ]
+      ]
+    },
     "scheming": {
       "fps": 2,
       "frames": [

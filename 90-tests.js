@@ -90,6 +90,9 @@ buddy.on("test:clingy", () => {
 });
 
 buddy.on("test:hideSeek", () => playHideSeek());
+buddy.on("test:hideWindow", () => playHideSeek("window"));
+buddy.on("test:hideGhost", () => playHideSeek("ghost"));
+buddy.on("test:boo", () => playBoo());
 
 buddy.on("test:grudge", () => {
   buddy.emit("configChanged", { trait: "mischief", from: 0.6, to: 0.4 });

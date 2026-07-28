@@ -103,6 +103,42 @@
     {
       "text": "you make me pull, i'll put you down",
       "show": "justified"
+    },
+    {
+      "text": "joey doesn't share food!",
+      "show": "friends"
+    },
+    {
+      "text": "unagi",
+      "show": "friends"
+    },
+    {
+      "text": "mawp. mawp.",
+      "show": "archer"
+    },
+    {
+      "text": "can't or won't?",
+      "show": "archer"
+    },
+    {
+      "text": "all bangers, all the time",
+      "show": "succession"
+    },
+    {
+      "text": "fire in the hole",
+      "show": "justified"
+    },
+    {
+      "text": "noice. toit.",
+      "show": "b99"
+    },
+    {
+      "text": "hot damn!",
+      "show": "b99"
+    },
+    {
+      "text": "velvet thunder",
+      "show": "b99"
     }
   ],
   "facts": [
@@ -120,7 +156,12 @@
     "cows have best friends and get stressed when separated",
     "scotland's national animal is the unicorn",
     "there are more possible chess games than atoms in the universe",
-    "hot water can freeze faster than cold. nobody fully knows why"
+    "hot water can freeze faster than cold. nobody fully knows why",
+    "butterflies taste with their feet",
+    "a blue whale's heart is the size of a small car",
+    "footprints on the moon last millions of years. no wind",
+    "peregrine falcons dive at over 300 km/h",
+    "ghost crabs growl at enemies using teeth in their stomachs"
   ],
   "showProps": {
     "justified": "cowboyhat",
