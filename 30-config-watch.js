@@ -35,6 +35,6 @@ buddy.on("configChanged", (e) => {
 // Fires after any brain hot-reload, including the nightly mutator's surgery.
 buddy.on("brainChanged", () => {
   if (chance(0.7)) {
-    buddy.say(pick(["...did my brain just change", "i feel different today", "new me. who dis"]), 5);
+    buddy.say(pickFresh(["...did my brain just change", "i feel different today", "new me. who dis"]), 5);
   }
 });

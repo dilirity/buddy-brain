@@ -3,7 +3,7 @@
 function quip(kind) {
   const q = buddy.data("quips.json");
   if (!q || !q[kind] || !q[kind].length) return null;
-  return pick(q[kind]);
+  return pickFresh(q[kind]);
 }
 
 // References sneak into celebrations.
