@@ -25,10 +25,23 @@ globalThis.setMood = function (mood, anim) {
   if (anim) buddy.play(anim);
 };
 
+// Dialogue pools live in lines.json so the nightly mutator can add lines
+// without touching code.
+globalThis.lines = (key) => {
+  const l = buddy.data("lines.json");
+  const pool = l && l[key];
+  return pool && pool.length ? pickFresh(pool) : null;
+};
+
+globalThis.sayLine = (key, secs) => {
+  const t = lines(key);
+  if (t) buddy.say(t, secs || 4);
+};
+
 buddy.on("brainDamaged", (e) => {
   buddy.say("ow. part of my brain did not load. check buddy.log", 6);
 });
 
 buddy.on("unfrozen", () => {
-  buddy.say(pickFresh(["im awake!! what did i miss", "that nap was not voluntary", "back online"]), 4);
+  sayLine("unfrozen", 4);
 });

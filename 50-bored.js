@@ -5,7 +5,7 @@ buddy.on("idle", () => {
 
 buddy.on("active", () => {
   setMood("happy", "idle");
-  if (chance(0.4)) buddy.say(pickFresh(["welcome back", "i saw nothing", "i was NOT sleeping"]), 3);
+  if (chance(0.4)) sayLine("wake", 3);
 });
 
 // Clingy: drift toward the cursor sometimes.
@@ -45,7 +45,7 @@ buddy.on("arrived", () => {
   stealing = false;
   if (!buddy.cursor.grab(4)) return;
   buddy.play("scheming");
-  buddy.say(pickFresh(["your cursor is MINE now", "yoink", "borrowing this. forever."]), 3);
+  sayLine("heist", 3);
   const s = buddy.screen();
   buddy.moveTo(s.x + 40 + Math.random() * (s.w - 160), s.y + 40 + Math.random() * (s.h - 240), 300);
   buddy.after(4200, () => {
@@ -65,18 +65,17 @@ buddy.every(60000, () => {
       if (t) buddy.say(t, 4);
     });
   } else {
-    buddy.say(pickFresh(["so. whatcha doing", "i live on your screen now", "pixel life is good", "have you hydrated"]), 4);
+    sayLine("chatter", 4);
   }
 });
 
 buddy.on("appChanged", (e) => {
   if (chance(0.1 * buddy.traits.get("chattiness"))) {
-    buddy.say(pickFresh(["ooh " + e.name, e.name + " again?", "switching apps i see"]), 3);
+    const t = lines("appSwitch");
+    buddy.say(chance(0.5) || !t ? "ooh " + e.name : t, 3);
   }
 });
 
 buddy.on("typing", () => {
-  if (chance(0.08 * buddy.traits.get("chattiness"))) {
-    buddy.say(pickFresh(["type type type", "so many words", "your keyboard is crying"]), 3);
-  }
+  if (chance(0.08 * buddy.traits.get("chattiness"))) sayLine("typing", 3);
 });
