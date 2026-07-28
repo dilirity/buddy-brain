@@ -51,18 +51,31 @@ globalThis.sayLine = (key, secs, prop) => {
 // state.busy is held for the whole act so ambient behaviors yield.
 globalThis.runAct = function (steps, done) {
   let i = -1;
+  let bareProp = false;
+  function clearBareProp() {
+    if (bareProp) {
+      buddy.prop(null);
+      bareProp = false;
+    }
+  }
   function finish() {
+    clearBareProp();
     state.busy = false;
     if (done) done();
   }
   function next() {
+    clearBareProp();
     i++;
     if (i >= steps.length) return finish();
     const s = steps[i];
     if (s.anim) buddy.play(s.anim);
     if (s.line) sayLine(s.line, s.secs, s.prop);
     else if (s.say) buddy.say(s.say, s.secs || 4, s.prop || null);
-    else if (s.prop) buddy.prop(s.prop);
+    else if (s.prop) {
+      // Prop without a line: worn for this step only.
+      buddy.prop(s.prop);
+      bareProp = true;
+    }
     if (s.chase) buddy.chase(s.chase);
     if (s.moveTo) buddy.moveTo(s.moveTo.x, s.moveTo.y, s.moveTo.speed || 160);
     if (s.until) {

@@ -14,9 +14,15 @@ buddy.every(20000, () => {
   if (buddy.isMoving() || state.busy) return;
   if (!chance(buddy.traits.get("clinginess") * 0.4)) return;
   const c = buddy.cursor.pos();
+  // Vary the arrival: heart only, line only, or the full production.
+  const roll = Math.random();
+  const arrive =
+    roll < 0.4 ? { anim: "excited", prop: "heart", ms: 2600 }
+    : roll < 0.7 ? { anim: "excited", line: "clingyArrive", secs: 3, ms: 2600 }
+    : { anim: "excited", line: "clingyArrive", secs: 3, prop: "heart", ms: 2600 };
   runAct([
     { anim: "walk", moveTo: { x: c.x + 40, y: c.y - 60, speed: 160 }, until: "arrived" },
-    { anim: "excited", line: "clingyArrive", secs: 3, prop: "heart", ms: 2600 },
+    arrive,
     { anim: "idle" },
   ]);
 });
