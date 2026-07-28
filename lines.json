@@ -243,5 +243,14 @@
     "busy. brain surgery.",
     "do not perceive me right now",
     "evolving. come back in a minute"
+  ],
+  "djStart": [
+    "this silence is illegal. fixing it",
+    "dj buddy in the house",
+    "vibe check failed. adding music"
+  ],
+  "djAlready": [
+    "music already on. respect.",
+    "you have taste today"
   ]
 }
