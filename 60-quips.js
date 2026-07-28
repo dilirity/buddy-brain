@@ -10,12 +10,8 @@ globalThis.sayRef = function (secs) {
   const t = pickFresh(texts);
   const entry = q.references.find((r) => (typeof r === "string" ? r : r.text) === t);
   const show = entry && typeof entry === "object" ? entry.show : null;
-  const dur = secs || 5;
-  if (show && SHOW_PROPS[show]) {
-    buddy.prop(SHOW_PROPS[show]);
-    buddy.after(dur * 1000 + 1500, () => buddy.prop(null));
-  }
-  buddy.say(t, dur);
+  // Prop rides along with the line - the shell strips it when the bubble goes.
+  buddy.say(t, secs || 5, show ? SHOW_PROPS[show] : null);
   return true;
 };
 
@@ -23,10 +19,7 @@ globalThis.sayRef = function (secs) {
 globalThis.sayFact = function (secs) {
   const q = buddy.data("quips.json");
   if (!q || !q.facts || !q.facts.length) return false;
-  const dur = secs || 7;
-  buddy.prop("glasses");
-  buddy.say(pickFresh(q.facts), dur);
-  buddy.after(dur * 1000 + 1500, () => buddy.prop(null));
+  buddy.say(pickFresh(q.facts), secs || 7, "glasses");
   return true;
 };
 
