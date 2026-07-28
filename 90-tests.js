@@ -14,15 +14,13 @@ buddy.on("test:wake", () => { setMood("happy", "idle"); sayLine("wake", 3); });
 buddy.on("test:sleep", () => setMood("sleepy", "sleep"));
 
 buddy.on("test:fact", () => {
-  const q = buddy.data("quips.json");
   buddy.play("scheming");
-  if (q && q.facts && q.facts.length) buddy.say("fact: " + pickFresh(q.facts), 7);
+  sayFact(7);
   buddy.after(4000, () => buddy.play("idle"));
 });
 
 buddy.on("test:reference", () => {
-  const q = buddy.data("quips.json");
-  if (q && q.references && q.references.length) buddy.say(pickFresh(q.references), 5);
+  sayRef(5);
 });
 
 buddy.on("test:thinkLine", () => {
@@ -47,19 +45,29 @@ buddy.on("test:nudge", () => {
 let testStealing = false;
 buddy.on("test:heist", () => {
   testStealing = true;
-  buddy.play("walk");
+  state.busy = true;
+  buddy.play("scheming");
   sayLine("chaseStart", 2);
-  buddy.chase(350);
+  buddy.after(900, () => {
+    if (!testStealing) return;
+    buddy.play("walk");
+    buddy.chase(350);
+  });
+  buddy.after(15000, () => {
+    if (testStealing) { testStealing = false; state.busy = false; }
+  });
 });
 buddy.on("gaveUp", () => {
   if (!testStealing) return;
   testStealing = false;
+  state.busy = false;
   sayLine("gaveUp", 4);
   buddy.play("idle");
 });
 buddy.on("caught", () => {
   if (!testStealing) return;
   testStealing = false;
+  state.busy = false;
   if (!buddy.cursor.grab(4)) {
     buddy.say("grab denied - budget spent or no accessibility permission", 5);
     buddy.play("idle");

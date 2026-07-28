@@ -1,6 +1,8 @@
 // Random wandering, frequency and speed scaled by energy.
 buddy.every(9000, () => {
   if (buddy.isHeld() || buddy.isFrozen() || state.mood === "sleepy") return;
+  // Never hijack an in-progress walk or heist.
+  if (buddy.isMoving() || state.busy) return;
   const energy = buddy.traits.get("energy");
   if (!chance(energy * 0.45)) return;
   const s = buddy.screen();

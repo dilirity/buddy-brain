@@ -11,6 +11,7 @@ buddy.on("active", () => {
 // Clingy: drift toward the cursor sometimes.
 buddy.every(20000, () => {
   if (buddy.isHeld() || buddy.isFrozen() || state.mood === "sleepy") return;
+  if (buddy.isMoving() || state.busy) return;
   if (!chance(buddy.traits.get("clinginess") * 0.4)) return;
   const c = buddy.cursor.pos();
   buddy.play("walk");
@@ -32,17 +33,27 @@ buddy.every(120000, () => {
       buddy.after(2000, () => buddy.play("idle"));
     }
   } else {
-    // The heist: chase the live cursor, grab it, run away with it.
+    // The heist, staged: prepare (scheme, announce), then lunge at the live cursor.
     stealing = true;
-    buddy.play("walk");
+    state.busy = true;
+    buddy.play("scheming");
     if (chance(0.6)) sayLine("chaseStart", 2);
-    buddy.chase(280);
+    buddy.after(900, () => {
+      if (!stealing) return;
+      buddy.play("walk");
+      buddy.chase(280);
+    });
+    // Safety: never leave busy stuck if the chase gets cancelled mid-flight.
+    buddy.after(15000, () => {
+      if (stealing) { stealing = false; state.busy = false; }
+    });
   }
 });
 
 buddy.on("gaveUp", () => {
   if (!stealing) return;
   stealing = false;
+  state.busy = false;
   sayLine("gaveUp", 4);
   buddy.play("idle");
 });
@@ -50,6 +61,7 @@ buddy.on("gaveUp", () => {
 buddy.on("caught", () => {
   if (!stealing) return;
   stealing = false;
+  state.busy = false;
   if (!buddy.cursor.grab(4)) return;
   buddy.play("scheming");
   sayLine("heist", 3);
