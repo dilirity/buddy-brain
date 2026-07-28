@@ -1,7 +1,12 @@
 // TV/movie references and random facts, from quips.json.
 // The nightly mutator is expected to keep expanding that file.
 // References carry a show tag; buddy dons a matching prop from sprites.json.
-const SHOW_PROPS = { justified: "cowboyhat", succession: "tie", archer: "martini", friends: "mug", b99: "badge" };
+// The show -> prop mapping lives in quips.json ("showProps") so adding a show
+// is pure data: quotes + prop pixels + one mapping entry.
+function showProps() {
+  const q = buddy.data("quips.json");
+  return (q && q.showProps) || {};
+}
 
 globalThis.sayRef = function (secs) {
   const q = buddy.data("quips.json");
@@ -11,7 +16,7 @@ globalThis.sayRef = function (secs) {
   const entry = q.references.find((r) => (typeof r === "string" ? r : r.text) === t);
   const show = entry && typeof entry === "object" ? entry.show : null;
   // Prop rides along with the line - the shell strips it when the bubble goes.
-  buddy.say(t, secs || 5, show ? SHOW_PROPS[show] : null);
+  buddy.say(t, secs || 5, show ? showProps()[show] : null);
   return true;
 };
 
