@@ -80,6 +80,15 @@ buddy.on("caught", () => {
   buddy.after(4500, () => buddy.play("idle"));
 });
 
+buddy.on("test:clingy", () => {
+  const c = buddy.cursor.pos();
+  runAct([
+    { anim: "walk", moveTo: { x: c.x + 40, y: c.y - 60, speed: 220 }, until: "arrived" },
+    { anim: "excited", line: "clingyArrive", secs: 3, prop: "heart", ms: 2600 },
+    { anim: "idle" },
+  ]);
+});
+
 buddy.on("test:grudge", () => {
   buddy.emit("configChanged", { trait: "mischief", from: 0.6, to: 0.4 });
 });

@@ -11,5 +11,6 @@
   { "id": "sleep", "title": "Fall asleep" },
   { "id": "wake", "title": "Wake up" },
   { "id": "grudge", "title": "Trait-change sass" },
+  { "id": "clingy", "title": "Clingy visit (heart)" },
   { "id": "walk", "title": "Walk somewhere" }
 ]

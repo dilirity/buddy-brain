@@ -8,14 +8,17 @@ buddy.on("active", () => {
   if (chance(0.4)) sayLine("wake", 3);
 });
 
-// Clingy: drift toward the cursor sometimes.
+// Clingy: staged visit - walk over, deliver a heart, settle down.
 buddy.every(20000, () => {
   if (buddy.isHeld() || buddy.isFrozen() || state.mood === "sleepy") return;
   if (buddy.isMoving() || state.busy) return;
   if (!chance(buddy.traits.get("clinginess") * 0.4)) return;
   const c = buddy.cursor.pos();
-  buddy.play("walk");
-  buddy.moveTo(c.x + 40, c.y - 60, 160);
+  runAct([
+    { anim: "walk", moveTo: { x: c.x + 40, y: c.y - 60, speed: 160 }, until: "arrived" },
+    { anim: "excited", line: "clingyArrive", secs: 3, prop: "heart", ms: 2600 },
+    { anim: "idle" },
+  ]);
 });
 
 // Mischief: cursor nudges and full heists. Native invariants rate-limit both.

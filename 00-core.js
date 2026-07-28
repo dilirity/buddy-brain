@@ -33,9 +33,60 @@ globalThis.lines = (key) => {
   return pool && pool.length ? pickFresh(pool) : null;
 };
 
-globalThis.sayLine = (key, secs) => {
+globalThis.sayLine = (key, secs, prop) => {
   const t = lines(key);
-  if (t) buddy.say(t, secs || 4);
+  if (t) buddy.say(t, secs || 4, prop || null);
+};
+
+// Stage sequencer: every multi-step act should run through this instead of
+// hand-rolled timer chains. Steps run in order; each step may have:
+//   anim: "name"                      play an animation
+//   line: "poolKey" / say: "text"     speak (secs, prop ride along)
+//   prop: "name"                      worn via the spoken line, or bare
+//   moveTo: {x, y, speed}             walk somewhere
+//   chase: speed                      pursue the live cursor
+//   ms: 800                           how long the step lasts (default 800)
+//   until: "event" | ["e1","e2"]      instead of ms, wait for an event
+//   until: {event: [steps...]}        branch: run that path, then finish
+// state.busy is held for the whole act so ambient behaviors yield.
+globalThis.runAct = function (steps, done) {
+  let i = -1;
+  function finish() {
+    state.busy = false;
+    if (done) done();
+  }
+  function next() {
+    i++;
+    if (i >= steps.length) return finish();
+    const s = steps[i];
+    if (s.anim) buddy.play(s.anim);
+    if (s.line) sayLine(s.line, s.secs, s.prop);
+    else if (s.say) buddy.say(s.say, s.secs || 4, s.prop || null);
+    else if (s.prop) buddy.prop(s.prop);
+    if (s.chase) buddy.chase(s.chase);
+    if (s.moveTo) buddy.moveTo(s.moveTo.x, s.moveTo.y, s.moveTo.speed || 160);
+    if (s.until) {
+      let fired = false;
+      const branch = !Array.isArray(s.until) && typeof s.until === "object";
+      const events = branch ? Object.keys(s.until) : [].concat(s.until);
+      events.forEach((ev) => buddy.once(ev, () => {
+        if (fired) return;
+        fired = true;
+        if (branch) runAct(s.until[ev], done);
+        else next();
+      }));
+      // Stuck-safety: events can get swallowed (drag, freeze, reload).
+      buddy.after(s.timeout || 12000, () => {
+        if (fired) return;
+        fired = true;
+        finish();
+      });
+    } else {
+      buddy.after(s.ms || 800, next);
+    }
+  }
+  state.busy = true;
+  next();
 };
 
 buddy.on("brainDamaged", (e) => {

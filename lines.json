@@ -10,6 +10,7 @@
   "wake": ["welcome back", "i saw nothing", "i was NOT sleeping"],
   "unfrozen": ["im awake!! what did i miss", "that nap was not voluntary", "back online"],
   "chatter": ["so. whatcha doing", "i live on your screen now", "pixel life is good", "have you hydrated"],
+  "clingyArrive": ["hi. im here now", "just checking on you", "dont mind me. i live here", "you looked lonely"],
   "typing": ["type type type", "so many words", "your keyboard is crying"],
   "appSwitch": ["switching apps i see", "ooh a new window", "focus, pete"],
   "heist": ["your cursor is MINE now", "yoink", "borrowing this. forever."],
