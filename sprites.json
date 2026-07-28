@@ -367,6 +367,43 @@
         ]
       ]
     },
+    "evolve": {
+      "fps": 5,
+      "frames": [
+        [
+          ".Y.KK......KK.Z.",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGGYZGGGGGGZYGGK",
+          "KGGZYGGGGGGYZGGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGGGKKKKGGGRGK",
+          "KGGGGGGGGGGGGGGK",
+          ".KGGGGGGGGGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "..KGDGDGGDGDGK..",
+          "..KK.KK..KK.KK.."
+        ],
+        [
+          ".Z.KK......KK.Y.",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGGZYGGGGGGYZGGK",
+          "KGGYZGGGGGGZYGGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGGGKKKKGGGRGK",
+          "KGGGGGGGGGGGGGGK",
+          ".KGGGGGGGGGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "..KGDGDGGDGDGK..",
+          "..KK.KK..KK.KK.."
+        ]
+      ]
+    },
     "scheming": {
       "fps": 2,
       "frames": [

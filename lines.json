@@ -17,6 +17,9 @@
   "chaseStart": ["im coming for it", "the heist is ON", "gimme gimme gimme"],
   "gaveUp": ["too fast. i didnt want it anyway", "fine. KEEP your precious cursor", "cardio is dumb"],
   "brainChanged": ["...did my brain just change", "i feel different today", "new me. who dis"],
+  "evolveStart": ["something is happening to me", "i feel... updates coming", "brain surgery. do not perceive me", "evolving. this tickles"],
+  "evolveChanged": ["i am NEW. check whats new in my menu", "fresh brain, who dis", "i contain new tricks now"],
+  "evolveSame": ["hm. nothing changed. i remain iconic", "evolution said no thanks", "already perfect, apparently"],
   "config": {
     "mischief": {
       "down": ["lowering my mischief? coward.", "fine. i will be GOOD. allegedly."],
