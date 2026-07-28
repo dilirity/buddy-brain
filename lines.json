@@ -215,5 +215,10 @@
     "brains are complicated ok",
     "mutation in progress. do not turn me off",
     "i can feel my quips multiplying"
+  ],
+  "evolveBusy": [
+    "busy. brain surgery.",
+    "do not perceive me right now",
+    "evolving. come back in a minute"
   ]
 }
