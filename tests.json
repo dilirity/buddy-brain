@@ -78,5 +78,9 @@
   {
     "id": "dj",
     "title": "DJ: play music"
+  },
+  {
+    "id": "djStop",
+    "title": "DJ: stop the music"
   }
 ]
