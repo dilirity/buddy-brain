@@ -82,6 +82,7 @@ globalThis.runAct = function (steps, done) {
       bareProp = true;
     }
     if (s.chase) buddy.chase(s.chase);
+    if (s.approach) buddy.approach(s.approach.speed || 200, s.approach.dx || 0, s.approach.dy || 0);
     if (s.moveTo) buddy.moveTo(s.moveTo.x, s.moveTo.y, s.moveTo.speed || 160);
     if (s.until) {
       let fired = false;

@@ -12,7 +12,7 @@ globalThis.playBoo = function () {
     : { anim: "boo", opacity: 1, line: "boo", secs: 2, prop: "heart", ms: 2000 };
   runAct([
     { anim: "scheming", opacity: 0.15, ms: 800 },
-    { anim: "walk", moveTo: { x: x, y: y, speed: 300 }, until: "arrived" },
+    { anim: "walk", approach: { speed: 300, dx: x - c.x, dy: y - c.y }, until: "arrived" },
     { anim: "hide", ms: 600 + Math.random() * 1500 },
     pop,
     chance(0.5) ? { anim: "excited", line: "booAfter", secs: 3, ms: 2400 } : { ms: 300 },
