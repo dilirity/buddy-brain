@@ -12,6 +12,7 @@ buddy.on("active", () => {
 
 // Clingy: staged visit - walk over, deliver a heart, settle down.
 buddy.every(20000, () => {
+  if (!can("cursor")) return;
   if (buddy.isHeld() || buddy.isFrozen() || state.mood === "sleepy") return;
   if (buddy.isMoving() || state.busy) return;
   if (!chance(buddy.traits.get("clinginess") * 0.4)) return;
@@ -36,6 +37,7 @@ buddy.every(20000, () => {
 let stealing = false;
 
 buddy.every(120000, () => {
+  if (!can("cursor")) return;
   if (buddy.isHeld() || buddy.isFrozen() || state.mood === "sleepy") return;
   if (buddy.isMoving() || state.busy) return;
   if (!chance(buddy.traits.get("mischief") * 0.25)) return;
@@ -103,22 +105,10 @@ buddy.every(60000, () => {
   }
 });
 
-// App-specific wordplay: a quip pool per known app (lines.json appQuips,
-// matched by substring), a think()-improvised pun for strangers, generic last.
 buddy.on("appChanged", (e) => {
-  if (state.busy) return;
-  if (!chance(0.12 * buddy.traits.get("chattiness"))) return;
-  const name = (e.name || "").toLowerCase();
-  const quips = (buddy.data("lines.json") || {}).appQuips || {};
-  const key = Object.keys(quips).find((k) => name.includes(k));
-  if (key) {
-    buddy.say(pickFresh(quips[key]), 3);
-  } else if (chance(0.5 * buddy.traits.get("weirdness"))) {
-    buddy.think("One short witty pun about the mac app named " + e.name + ", playing on its name or what it does.", (t) => {
-      if (t) buddy.say(t, 4);
-    });
-  } else {
-    sayLine("appSwitch", 3);
+  if (chance(0.1 * buddy.traits.get("chattiness"))) {
+    const t = lines("appSwitch");
+    buddy.say(chance(0.5) || !t ? "ooh " + e.name : t, 3);
   }
 });
 
