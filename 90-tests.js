@@ -91,6 +91,7 @@ buddy.on("test:clingy", () => {
   ]);
 });
 
+buddy.on("test:portal", () => playPortal());
 buddy.on("test:hideSeek", () => playHideSeek());
 buddy.on("test:hideWindow", () => playHideSeek("window"));
 buddy.on("test:hideGhost", () => playHideSeek("ghost"));

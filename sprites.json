@@ -11,7 +11,10 @@
     "Z": "#9ad7ff",
     "B": "#8b5a2b",
     "N": "#5c3a1e",
-    "T": "#7a1f2b"
+    "T": "#7a1f2b",
+    "O": "#ff9a3c",
+    "U": "#3f8cff",
+    "E": "#c9c9d4"
   },
   "props": {
     "glasses": [
@@ -108,6 +111,22 @@
       ".KYYYYK.........",
       "..KYYK..........",
       "................",
+      "................"
+    ],
+    "companioncube": [
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      "................",
+      ".KKKKKK.........",
+      ".KEEEEK.........",
+      ".KERREK.........",
+      ".KEEEEK.........",
+      ".KKKKKK.........",
       "................"
     ],
     "mug": [
@@ -491,6 +510,146 @@
           ".KGGGGGGGGGGGGK.",
           "..KGDGDGGDGDGK..",
           "..KK........KK.."
+        ]
+      ]
+    },
+    "portalin": {
+      "fps": 8,
+      "loop": false,
+      "frames": [
+        [
+          "...KK......KK...",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGGWWGGGGGGWWGGK",
+          "KGGWPGGGGGGWPGGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGGGKKKKGGGRGK",
+          "KGGGGGGGGGGGGGGK",
+          ".KGGGGGGGGGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "..KGDGDGGDGDGK..",
+          ".OOOOOOOOOOOOOO."
+        ],
+        [
+          "................",
+          "................",
+          "................",
+          "...KK......KK...",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGGWWGGGGGGWWGGK",
+          "KGGWPGGGGGGWPGGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGGGKKKKGGGRGK",
+          "OOOOOOOOOOOOOOOO",
+          ".OOOOOOOOOOOOOO."
+        ],
+        [
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "...KK......KK...",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "OOOOOOOOOOOOOOOO",
+          ".OOOOOOOOOOOOOO."
+        ],
+        [
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "..OOOOOOOOOOOO..",
+          "...OOOOOOOOOO..."
+        ]
+      ]
+    },
+    "portalout": {
+      "fps": 8,
+      "loop": false,
+      "frames": [
+        [
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "..UUUUUUUUUUUU..",
+          "...UUUUUUUUUU..."
+        ],
+        [
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "...KK......KK...",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "UUUUUUUUUUUUUUUU",
+          ".UUUUUUUUUUUUUU."
+        ],
+        [
+          "................",
+          "................",
+          "................",
+          "...KK......KK...",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGGWWGGGGGGWWGGK",
+          "KGGWPGGGGGGWPGGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGGGKKKKGGGRGK",
+          "UUUUUUUUUUUUUUUU",
+          ".UUUUUUUUUUUUUU."
+        ],
+        [
+          "...KK......KK...",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGGYYGGGGGGYYGGK",
+          "KGGYYGGGGGGYYGGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGKKKKKKKKGRGK",
+          "KGGGGKKKKKKGGGGK",
+          ".KGGGGGGGGGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "..KGDGDGGDGDGK..",
+          ".UUUUUUUUUUUUUU."
         ]
       ]
     },

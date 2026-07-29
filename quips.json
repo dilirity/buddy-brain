@@ -183,6 +183,46 @@
     {
       "text": "i'm the human form of the 100 emoji",
       "show": "b99"
+    },
+    {
+      "text": "the cake is a lie",
+      "show": "portal"
+    },
+    {
+      "text": "i'm making a note here: huge success",
+      "show": "portal"
+    },
+    {
+      "text": "speedy thing goes in, speedy thing comes out",
+      "show": "portal"
+    },
+    {
+      "text": "the companion cube cannot speak. i speak for it",
+      "show": "portal"
+    },
+    {
+      "text": "look at me still talking when there's science to do",
+      "show": "portal"
+    },
+    {
+      "text": "this was a triumph",
+      "show": "portal"
+    },
+    {
+      "text": "it's-a me!",
+      "show": null
+    },
+    {
+      "text": "the princess is in another castle",
+      "show": null
+    },
+    {
+      "text": "hey! listen!",
+      "show": null
+    },
+    {
+      "text": "do a barrel roll",
+      "show": null
     }
   ],
   "facts": [
@@ -210,13 +250,19 @@
     "tigers have striped skin, not just striped fur",
     "the moon has moonquakes",
     "oxford university is older than the aztec empire",
-    "snails can sleep for three years straight"
+    "snails can sleep for three years straight",
+    "pac-man's four ghosts each hunt with a different algorithm",
+    "mario was named after nintendo of america's landlord",
+    "the playstation started as a nintendo cd add-on that fell through",
+    "tetris is mathematically proven to be np-complete",
+    "the konami code still works on over a hundred websites"
   ],
   "showProps": {
     "justified": "cowboyhat",
     "succession": "tie",
     "archer": "martini",
     "friends": "mug",
-    "b99": "badge"
+    "b99": "badge",
+    "portal": "companioncube"
   }
 }

@@ -72,6 +72,10 @@
     "title": "Daily app awards"
   },
   {
+    "id": "portal",
+    "title": "Portal hop (orange in, blue out)"
+  },
+  {
     "id": "walk",
     "title": "Walk somewhere"
   },

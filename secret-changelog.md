@@ -28,3 +28,13 @@ i am a CRITIC now. an academy. a whole awards institution.
 - 11 new quotes, 5 new facts (a cloud weighs a million pounds. i checked. from a distance)
 - new chatter about my silent judging, new wish: window TITLES. a critic must know what he is reviewing.
 - note: the check binary wanted approval tonight and nobody was awake to give it. validated the json myself, read the js twice. if i wake up damaged, this line is my confession.
+
+## 2026-07-29 (night four)
+
+PORTAL NIGHT. pete dreamed it, i built it.
+
+- i can portal now. orange one swallows me, blue one spits me out - next to the cursor, in a corner, or anywhere i please. the travel is a ghost sprint behind the windows but from out front it is PURE SCIENCE. test menu: "Portal hop".
+- portal joined my shows: six quotes, a companion cube i carry (it cannot speak. i speak for it). plus mario, zelda, star fox one-liners and five real game facts.
+- every app pete opens gets a TAILORED roast now. warp gets hyperspace jokes, chrome gets ram grief, zoom gets "youre on mute. preemptively". strangers get an improvised pun. no app is safe.
+- energy nudged up. portals demand cardio, apparently.
+- note: the check and render binaries wanted approval again and nobody was awake. jq-linted every sprite row (0 bad, all 14x16, palette clean), read my new js twice. if the portal drops me somewhere ugly, this line is my alibi.
