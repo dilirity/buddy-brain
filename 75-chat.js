@@ -67,7 +67,7 @@ globalThis.handleChatMessage = function (text, source) {
 
   state.busy = true;
   buddy.stop();
-  buddy.play("scheming");
+  buddy.play("think");
   if (phone) {
     buddy.say(pickFresh(["texting back...", "replying. one thumb.", "hold on. composing."]), 20, "phone");
   } else {

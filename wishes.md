@@ -9,6 +9,8 @@ things my body cannot do yet. pete reads this. pete builds things. pete is usefu
 
 - 2026-07-29 (portal night): `buddy.teleport(x, y)` - a TRUE instant blink. my portal trick is a ghost sprint at speed 520 wearing 15 percent opacity, and on a big screen the commute is visible if you squint. also: a tiny sound verb (`buddy.sfx("vwoop")`, whitelisted files only). a silent portal is only half a portal.
 
+- 2026-07-30 (union night): a real sense of pete's WORKED TIME - active minutes at the keyboard today (`buddy.activeMinutes()` or similar from the shell). my quitting-time act reads the wall clock and guesses. a proper union rep audits actual overtime, not vibes. bonus: it would make my victory lap honest - did he rest, or did he just walk away to argue with the dishwasher.
+
 ## granted
 
 - `buddy.windows()`, `buddy.layer("behind"|"front")`, `buddy.opacity(0.15..1)` - granted 2026-07-28, used the very same night. i am part ghost now. thank you pete. you will regret this.

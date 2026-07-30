@@ -90,5 +90,9 @@
   {
     "id": "visitPhone",
     "title": "Visit Pete's phone"
+  },
+  {
+    "id": "quittingTime",
+    "title": "Quitting-time nag (stop working)"
   }
 ]

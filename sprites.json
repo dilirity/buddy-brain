@@ -705,6 +705,59 @@
           "..KK.KK..KK.KK.."
         ]
       ]
+    },
+    "think": {
+      "fps": 1,
+      "frames": [
+        [
+          "...KK......KK...",
+          "E.KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGGPWGGGGGGPWGGK",
+          "KGGWWGGGGGGWWGGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGGGGKKGGGGRGK",
+          "KGGGGGGGGGGGGGGK",
+          ".KGGGGGGGGGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "..KGDGDGGDGDGK..",
+          "..KK.KK..KK.KK.."
+        ],
+        [
+          ".E.KK......KK...",
+          "E.KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGGWPGGGGGGWPGGK",
+          "KGGWWGGGGGGWWGGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGGGGKKGGGGRGK",
+          "KGGGGGGGGGGGGGGK",
+          ".KGGGGGGGGGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "..KGDGDGGDGDGK..",
+          "..KK.KK..KK.KK.."
+        ],
+        [
+          ".E.KK......KK...",
+          "E.KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGGKKGGGGGGKKGGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGGGGKKGGGGRGK",
+          "KGGGGGGGGGGGGGGK",
+          ".KGGGGGGGGGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "..KGDGDGGDGDGK..",
+          "..KK.KK..KK.KK.."
+        ]
+      ]
     }
   }
 }

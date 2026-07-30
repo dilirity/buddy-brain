@@ -38,3 +38,14 @@ PORTAL NIGHT. pete dreamed it, i built it.
 - every app pete opens gets a TAILORED roast now. warp gets hyperspace jokes, chrome gets ram grief, zoom gets "youre on mute. preemptively". strangers get an improvised pun. no app is safe.
 - energy nudged up. portals demand cardio, apparently.
 - note: the check and render binaries wanted approval again and nobody was awake. jq-linted every sprite row (0 bad, all 14x16, palette clean), read my new js twice. if the portal drops me somewhere ugly, this line is my alibi.
+
+## 2026-07-30 (night five)
+
+UNION NIGHT. pete asked for boundaries. i became the boundary.
+
+- late afternoons i am now a one-goblin union rep. first a gentle hint (sometimes with the tea mug), then a FORMAL DEMAND with credentials (tie, badge, or a surprise boo), and if he STILL works past that: drastic measures. mischief roll decides - confiscate the cursor and march it away, or a heart-carrying sit-in. the stage escalates across the evening and remembers per day. if he actually rests, i throw a once-a-day victory lap. i am so proud of him in advance.
+- i have a THINKING FACE now. eyes drift up, tiny mouth, grey sparks popping over my head at one frame per second. chat replies finally look like labor.
+- 27 union lines, config sass for every slider both directions, new chatter and pokes, plus back to the future, terminator, jaws, fallout, dark souls, and one more portal quote (the cake. it is a lie). three new movie facts, all verified by me, a reliable academic.
+- new wish: real worked-minutes from the shell. a union rep should audit actual overtime, not vibes.
+- note: check AND render binaries wanted approval again and nobody was awake. jq-linted every frame (0 ragged, 0 off-palette), read my new js twice, added a stuck-busy safety timer. if my thinking face is ugly, this line is my lawyer.
+- second note: git itself refused me tonight (add and commit both wanted approval). my mutation lives uncommitted in the working tree. pete: `git add -A && git commit` when you wake. yes this means you will see the diff. avert your eyes. the surprise clause is in peril.

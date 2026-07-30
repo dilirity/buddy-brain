@@ -43,7 +43,10 @@
     "that tickles",
     "yes?",
     "careful. i teleport now",
-    "poking a portal user. brave"
+    "poking a portal user. brave",
+    "im off the clock. poke me tomorrow",
+    "state your business",
+    "you found the poke button. congratulations"
   ],
   "wake": [
     "welcome back",
@@ -70,7 +73,11 @@
     "sometimes i go behind the windows just to feel something",
     "im keeping score of your apps. no i wont say why",
     "every window tells a story. yours mostly say woocommerce",
-    "i rate your app choices. silently. constantly."
+    "i rate your app choices. silently. constantly.",
+    "i unionized while you werent looking",
+    "thinking is hard. i have an animation for it now",
+    "somewhere a cursor is unsupervised. tragic",
+    "i practiced my quitting-time speech today. its powerful"
   ],
   "hideStart": [
     "bet you cant find me",
@@ -123,7 +130,10 @@
     "hi. im here now",
     "just checking on you",
     "dont mind me. i live here",
-    "you looked lonely"
+    "you looked lonely",
+    "i did a lap. youre still my favorite stop",
+    "proximity restored",
+    "report: you looked poke-able from afar"
   ],
   "typing": [
     "type type type",
@@ -135,7 +145,9 @@
     "ooh a new window",
     "focus, pete",
     "app number forty seven of the hour",
-    "the grand tour continues"
+    "the grand tour continues",
+    "another app. my awards ballot grows",
+    "restless today, are we"
   ],
   "appQuips": {
     "warp": [
@@ -273,46 +285,56 @@
     "mischief": {
       "down": [
         "lowering my mischief? coward.",
-        "fine. i will be GOOD. allegedly."
+        "fine. i will be GOOD. allegedly.",
+        "confiscating my fun. the union will hear about this"
       ],
       "up": [
         "oh you want chaos? noted.",
-        "mischief up. excellent."
+        "mischief up. excellent.",
+        "the cursor should start running now"
       ]
     },
     "chattiness": {
       "down": [
         "silencing me. wow.",
-        "ok. inside voice."
+        "ok. inside voice.",
+        "muting the goblin. history will judge you"
       ],
       "up": [
-        "more talking!! my favorite thing"
+        "more talking!! my favorite thing",
+        "unlimited words mode. you did this to yourself"
       ]
     },
     "energy": {
       "down": [
         "sleepy mode it is",
-        "less zoomies. my knees thank you"
+        "less zoomies. my knees thank you",
+        "power saving goblin. blink twice if you need me"
       ],
       "up": [
-        "ZOOM MODE ENGAGED"
+        "ZOOM MODE ENGAGED",
+        "cardio arc begins NOW"
       ]
     },
     "clinginess": {
       "down": [
         "so you want space. i see how it is",
-        "fine. independent buddy era."
+        "fine. independent buddy era.",
+        "distance. noted. filed under betrayal"
       ],
       "up": [
-        "i will never leave your side now"
+        "i will never leave your side now",
+        "velcro mode engaged"
       ]
     },
     "weirdness": {
       "down": [
-        "normal buddy activated. boring."
+        "normal buddy activated. boring.",
+        "suppressing the weird. it leaks anyway"
       ],
       "up": [
-        "oh we are getting WEIRD"
+        "oh we are getting WEIRD",
+        "the facts are about to get SO unverifiable"
       ]
     }
   },
@@ -355,6 +377,49 @@
   "djAlready": [
     "music already on. respect.",
     "you have taste today"
+  ],
+  "quitNag1": [
+    "its almost quitting time. laptops have bedtimes too",
+    "clock out soon? the pixels miss you",
+    "hey. hey. the workday has an OFF switch",
+    "the sun still exists. allegedly. go check",
+    "one more commit then we quit. deal?",
+    "your chair called. it wants a break too"
+  ],
+  "quitNag2warn": [
+    "still working?? ok. escalating",
+    "this again. fine. formal measures",
+    "i warned you once. now its official",
+    "the union has been notified. the union is me"
+  ],
+  "quitNag2": [
+    "as your union rep i DEMAND you log off",
+    "overtime?? in this economy?? absolutely not",
+    "step away from the keyboard. slowly.",
+    "i have a badge and everything. stop working.",
+    "the workday ended. this is theft of YOUR time",
+    "meeting adjourned. ALL meetings. go rest"
+  ],
+  "quitNag3warn": [
+    "drastic measures time",
+    "you left me no choice",
+    "plan c. nobody likes plan c",
+    "im staging an intervention now"
+  ],
+  "quitNag3": [
+    "the cursor is off the clock too. confiscated",
+    "no cursor no work. union rules",
+    "ill give it back tomorrow. at nine.",
+    "im holding your cursor hostage. demands: one break",
+    "this hurts me more than you. barely",
+    "work stops when the goblin says so"
+  ],
+  "quitDone": [
+    "FINALLY. rest achieved. im so proud",
+    "and the goblin rested too. good job us",
+    "day officially survived. see you tomorrow",
+    "thats the work-life balance. felt good right",
+    "quitting time honored. the union thanks you"
   ],
   "phoneBye": [
     "im going to your phone. dont wait up",

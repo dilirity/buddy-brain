@@ -223,6 +223,30 @@
     {
       "text": "do a barrel roll",
       "show": null
+    },
+    {
+      "text": "roads? where we're going, we don't need roads",
+      "show": null
+    },
+    {
+      "text": "hasta la vista, baby",
+      "show": null
+    },
+    {
+      "text": "you're gonna need a bigger boat",
+      "show": null
+    },
+    {
+      "text": "war. war never changes",
+      "show": null
+    },
+    {
+      "text": "praise the sun!",
+      "show": null
+    },
+    {
+      "text": "the cake is a lie",
+      "show": "portal"
     }
   ],
   "facts": [
@@ -255,7 +279,10 @@
     "mario was named after nintendo of america's landlord",
     "the playstation started as a nintendo cd add-on that fell through",
     "tetris is mathematically proven to be np-complete",
-    "the konami code still works on over a hundred websites"
+    "the konami code still works on over a hundred websites",
+    "the t-rex roar in jurassic park mixes a baby elephant, a tiger, and an alligator",
+    "people got doom running on a pregnancy test",
+    "the jaws shark barely worked, so spielberg hid it. accidental masterpiece"
   ],
   "showProps": {
     "justified": "cowboyhat",
