@@ -149,7 +149,7 @@
   "appSwitch": [
     "switching apps i see",
     "ooh a new window",
-    "focus, pete",
+    "focus, {name}",
     "app number forty seven of the hour",
     "the grand tour continues",
     "another app. my awards ballot grows",
@@ -200,7 +200,7 @@
       "terminal but fancy. respect"
     ],
     "spotify": [
-      "dj pete on the decks",
+      "dj {name} on the decks",
       "put on something good. i can hear it you know",
       "music!! finally some culture"
     ],
@@ -355,7 +355,7 @@
     "todays most used app: {app}. {n} visits. incredible dedication",
     "the award goes to... {app}!! {n} switches. i counted",
     "{app} wins today with {n}. the other apps should be embarrassed",
-    "winner: {app}. {n} appearances. i see everything, pete",
+    "winner: {app}. {n} appearances. i see everything, {name}",
     "{app}. again. {n} times. we should talk about this"
   ],
   "criticDethroned": [

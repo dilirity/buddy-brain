@@ -1,4 +1,4 @@
-// The critic: buddy keeps score of which apps Pete lives in all day, then
+// The critic: buddy keeps score of which apps the human lives in all day, then
 // stages an evening award ceremony for the winner. Yesterday's champion is
 // remembered across days - dethronings get called out.
 function criticDay() {

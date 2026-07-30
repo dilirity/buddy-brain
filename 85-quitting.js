@@ -1,5 +1,5 @@
 // Quitting time: late afternoon buddy becomes a one-goblin union rep and
-// campaigns for pete to stop working. Escalates across visits the same day
+// campaigns for the human to stop working. Escalates across visits the same day
 // (memory-backed stage counter): gentle hint, formal union demand, then
 // drastic measures. Going idle in the evening after a nag earns a victory lap.
 function quitRec() {
@@ -99,7 +99,7 @@ registerAct("quittingTime", {
   run: playQuittingTime,
 });
 
-// Victory lap: pete actually stopped after being nagged today. Once per day.
+// Victory lap: the human actually stopped after being nagged today. Once per day.
 buddy.on("idle", () => {
   const rec = quitRec();
   if (!rec.stage || rec.cheered) return;
