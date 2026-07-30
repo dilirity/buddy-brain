@@ -9,7 +9,7 @@ function quitRec() {
   return rec;
 }
 
-globalThis.playQuittingTime = function () {
+globalThis.playQuittingTime = function (act) {
   const rec = quitRec();
   rec.stage = Math.min(rec.stage + 1, 3);
   buddy.memory.set("quitNag", rec);
@@ -48,32 +48,28 @@ globalThis.playQuittingTime = function () {
   }
 
   // Drastic: mischief decides whether the cursor gets confiscated outright.
+  // Imperative branch - the whole confiscation lives inside the act context,
+  // so a drag or freeze mid-heist kills the chain instead of racing it.
   if (can("cursor") && chance(buddy.traits.get("mischief"))) {
-    runAct([
-      { anim: "scheming", line: "quitNag3warn", secs: 3, ms: 2200 },
-      { anim: "walk", approach: { speed: 300, dx: 0, dy: 24 }, until: "arrived" },
-    ], () => {
-      if (buddy.cursor.grab(6)) {
-        state.busy = true;
-        buddy.play("scheming");
-        sayLine("quitNag3", 6);
-        const s = buddy.screen();
-        buddy.moveTo(s.x + s.w / 2, s.y + 60, 260);
-        let landed = false;
-        const land = () => {
-          if (landed) return;
-          landed = true;
-          state.busy = state.evolving === true;
-          buddy.play("idle");
-        };
-        buddy.once("arrived", land);
-        // Drag or freeze can swallow "arrived" - never leave busy stuck.
-        buddy.after(12000, land);
-      } else {
-        sayLine("quitNag3", 6);
-        buddy.after(3000, () => buddy.play("idle"));
-      }
+    buddy.play("scheming");
+    sayLine("quitNag3warn", 3);
+    act.after(2200, () => {
+      buddy.play("walk");
+      buddy.approach(300, 0, 24);
+      act.once("arrived", () => {
+        if (buddy.cursor.grab(6)) {
+          buddy.play("scheming");
+          sayLine("quitNag3", 6);
+          const s = buddy.screen();
+          buddy.moveTo(s.x + s.w / 2, s.y + 60, 260);
+          act.once("arrived", () => { buddy.play("idle"); act.done("confiscated"); });
+        } else {
+          sayLine("quitNag3", 6);
+          act.after(3000, () => { buddy.play("idle"); act.done("grab-denied"); });
+        }
+      });
     });
+    act.after(20000, () => { buddy.play("idle"); act.done("timeout"); });
     return;
   }
 
@@ -96,7 +92,7 @@ registerAct("quittingTime", {
     if (h < cfg("quitNagStart", 16.75) || h > cfg("quitNagEnd", 19.5)) return 0;
     return 1.2 * buddy.traits.get("clinginess") + 0.4 * buddy.traits.get("chattiness");
   },
-  run: playQuittingTime,
+  run: (act) => playQuittingTime(act),
 });
 
 // Victory lap: the human actually stopped after being nagged today. Once per day.

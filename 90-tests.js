@@ -93,7 +93,7 @@ buddy.on("test:hideWindow", () => playHideSeek("window"));
 buddy.on("test:hideGhost", () => playHideSeek("ghost"));
 buddy.on("test:boo", () => playBoo());
 buddy.on("test:critic", () => playCritic(true));
-buddy.on("test:quittingTime", () => playQuittingTime());
+buddy.on("test:quittingTime", () => runRegisteredAct("quittingTime"));
 
 buddy.on("test:grudge", () => {
   buddy.emit("configChanged", { trait: "mischief", from: 0.6, to: 0.4 });
