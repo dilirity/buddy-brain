@@ -64,7 +64,7 @@ buddy.every(180000, () => {
   if (buddy.isHeld() || buddy.isFrozen() || state.mood === "sleepy") return;
   if (buddy.isMoving() || state.busy) return;
   if (buddy.memory.get("criticLastShow") === criticDay()) return;
-  if (new Date().getHours() < 16) return;
+  if (new Date().getHours() < cfg("eveningStart", 16)) return;
   if (!chance(buddy.traits.get("chattiness") * 0.35)) return;
   playCritic();
 });

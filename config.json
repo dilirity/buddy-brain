@@ -1,0 +1,27 @@
+{
+  "eveningStart" : {
+    "label" : "evening starts",
+    "type" : "hour",
+    "value" : 14
+  },
+  "nightEnd" : {
+    "label" : "night winds down",
+    "type" : "hour",
+    "value" : 22
+  },
+  "quitNagEnd" : {
+    "label" : "quit nagging ends",
+    "type" : "hour",
+    "value" : 19.5
+  },
+  "quitNagStart" : {
+    "label" : "quit nagging starts",
+    "type" : "hour",
+    "value" : 16.75
+  },
+  "workdayEnd" : {
+    "label" : "workday ends",
+    "type" : "hour",
+    "value" : 17
+  }
+}

@@ -93,7 +93,7 @@ registerAct("quittingTime", {
   weight: () => {
     const d = new Date();
     const h = d.getHours() + d.getMinutes() / 60;
-    if (h < 16.75 || h > 19.5) return 0;
+    if (h < cfg("quitNagStart", 16.75) || h > cfg("quitNagEnd", 19.5)) return 0;
     return 1.2 * buddy.traits.get("clinginess") + 0.4 * buddy.traits.get("chattiness");
   },
   run: playQuittingTime,
@@ -104,7 +104,7 @@ buddy.on("idle", () => {
   const rec = quitRec();
   if (!rec.stage || rec.cheered) return;
   const h = new Date().getHours();
-  if (h < 17 || h > 22) return;
+  if (h < cfg("workdayEnd", 17) || h > cfg("nightEnd", 22)) return;
   rec.cheered = true;
   buddy.memory.set("quitNag", rec);
   buddy.after(4000, () => sayLine("quitDone", 6, chance(0.5) ? "heart" : null));
