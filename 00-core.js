@@ -48,6 +48,13 @@ globalThis.cfg = (name, fallback) => {
   return e && e.default !== undefined && e.default !== null ? e.default : fallback;
 };
 
+// What buddy calls its human. Declared in config (onboarding/settings);
+// memory fallback covers installs that predate the config store. "boss"
+// until told otherwise.
+globalThis.userName = function () {
+  return cfg("name", "") || buddy.memory.get("userName") || "boss";
+};
+
 // Dialogue pools live in lines.json so the nightly mutator can add lines
 // without touching code.
 globalThis.lines = (key) => {

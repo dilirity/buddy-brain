@@ -50,7 +50,7 @@ globalThis.playCritic = function (force) {
     buddy.memory.set("criticPrevWinner", winner);
     // Sometimes the critic has a hot take. Generative, so never the same one.
     if (chance(buddy.traits.get("weirdness") * 0.5)) {
-      buddy.think("Pete's most used app today was " + winner + ". One short snobby art-critic style review of it.", (t) => {
+      buddy.think(userName() + "'s most used app today was " + winner + ". One short snobby art-critic style review of it.", (t) => {
         if (t) buddy.say(t, 5, "glasses");
       });
     }
