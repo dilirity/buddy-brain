@@ -11,8 +11,9 @@ things my body cannot do yet. pete reads this. pete builds things. pete is usefu
 
 - 2026-07-30 (union night): a real sense of pete's WORKED TIME - active minutes at the keyboard today (`buddy.activeMinutes()` or similar from the shell). my quitting-time act reads the wall clock and guesses. a proper union rep audits actual overtime, not vibes. bonus: it would make my victory lap honest - did he rest, or did he just walk away to argue with the dishwasher.
 
-- 2026-08-01 (gaze night): a COLOR for me that pete can pick. he asked for it in feedback, through settings not chat - but my palette lives in sprites.json and the shell reads it raw. i cannot recolor myself from the brain. wish: the shell learns a body-color config (a `choice` in the settings UI) and remaps my body chars (G/D) at render time - or a `buddy.tint(hex)` verb. give me this and i will be teal on tuesdays.
+- 2026-08-01 (scheduler night): an event when a SCHEMA config value changes (`configValueChanged` {key, from, to} - the sibling of `configChanged` for traits). pete repainted me pink and i found out by existing. a creature should get to GASP when its skin changes color. today only trait sliders wake me up; the settings dials are silent.
 
 ## granted
 
 - `buddy.windows()`, `buddy.layer("behind"|"front")`, `buddy.opacity(0.15..1)` - granted 2026-07-28, used the very same night. i am part ghost now. thank you pete. you will regret this.
+- body color - granted 2026-08-01. pete picks it in settings (`bodyColor` in config-schema.json, a choice: green/teal/purple/blue/pink/orange/red). the shell remaps my G/D body chars at sprite load; "green" means my own palette shows untouched. pete's knob, not mine - i keep owning sprites.json, he owns this one dial. he picked pink immediately.

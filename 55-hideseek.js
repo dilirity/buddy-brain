@@ -44,6 +44,7 @@ function windowSpot() {
 }
 
 globalThis.playHideSeek = function (style) {
+  if (style === "window" && !buddy.windows) style = "corner";
   const s = buddy.screen();
   style = style || pick(["corner", "window", "window", "ghost"]);
   let spot = null;
@@ -92,9 +93,8 @@ globalThis.playHideSeek = function (style) {
   });
 };
 
-buddy.every(240000, () => {
-  if (buddy.isHeld() || buddy.isFrozen() || state.mood === "sleepy") return;
-  if (buddy.isMoving() || state.busy) return;
-  if (!chance(buddy.traits.get("mischief") * 0.2)) return;
-  playHideSeek();
+registerAct("hideSeek", {
+  minGap: 300000,
+  weight: () => buddy.traits.get("mischief") * 0.5,
+  run(act) { playHideSeek(); },
 });

@@ -60,11 +60,15 @@ globalThis.playCritic = function (force) {
 };
 
 // The ceremony is an evening thing - once a day, after 4pm, when there's data.
-buddy.every(180000, () => {
-  if (buddy.isHeld() || buddy.isFrozen() || state.mood === "sleepy") return;
-  if (buddy.isMoving() || state.busy) return;
-  if (buddy.memory.get("criticLastShow") === criticDay()) return;
-  if (new Date().getHours() < cfg("eveningStart", 16)) return;
-  if (!chance(buddy.traits.get("chattiness") * 0.35)) return;
-  playCritic();
+registerAct("critic", {
+  minGap: 180000,
+  weight: () => {
+    if (buddy.memory.get("criticLastShow") === criticDay()) return 0;
+    if (new Date().getHours() < cfg("eveningStart", 16)) return 0;
+    return buddy.traits.get("chattiness") * 0.7;
+  },
+  run(act) {
+    // playCritic declining (too little data yet) must still release the stage.
+    if (!playCritic()) act.done("no data");
+  },
 });

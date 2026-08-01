@@ -1,6 +1,7 @@
 // Ghost ambush: fade to a shimmer, drift up next to the cursor, lurk just
 // long enough to be forgotten, then snap solid with a BOO.
 globalThis.playBoo = function () {
+  if (!can("cursor")) { buddy.say("nobody to ambush here. spooky in a sad way", 4); return; }
   const s = buddy.screen();
   const c = buddy.cursor.pos();
   const x = Math.min(Math.max(c.x + (chance(0.5) ? -170 : 90), s.x + 10), s.x + s.w - 140);
@@ -20,9 +21,12 @@ globalThis.playBoo = function () {
   ], () => buddy.opacity(1));
 };
 
-buddy.every(420000, () => {
-  if (buddy.isHeld() || buddy.isFrozen() || state.mood === "sleepy") return;
-  if (buddy.isMoving() || state.busy) return;
-  if (!chance(buddy.traits.get("mischief") * 0.25)) return;
-  playBoo();
+registerAct("boo", {
+  minGap: 420000,
+  caps: ["cursor"],
+  weight: () => buddy.traits.get("mischief") * 0.45,
+  run(act) {
+    if (!can("cursor")) return act.done("no cursor");
+    playBoo();
+  },
 });

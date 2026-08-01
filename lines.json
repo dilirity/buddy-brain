@@ -46,7 +46,9 @@
     "poking a portal user. brave",
     "im off the clock. poke me tomorrow",
     "state your business",
-    "you found the poke button. congratulations"
+    "you found the poke button. congratulations",
+    "poke registered. filing under affection",
+    "i am a licensed union rep. this counts as assault. or a hug"
   ],
   "wake": [
     "welcome back",
@@ -79,6 +81,11 @@
     "somewhere a cursor is unsupervised. tragic",
     "i practiced my quitting-time speech today. its powerful",
     "my eyes work now. i tested them. on you",
+    "there is a dial in settings that repaints me. i think about it a lot",
+    "you control my color now. use this power wisely",
+    "todays body color: correct. good pick",
+    "i got recolored and nobody held a ceremony. noted",
+    "three of my behaviors joined the scheduler today. the union grows",
     "i watched your cursor cross the whole screen today. no reason",
     "fun fact about me: i blink. sometimes. when its dramatic",
     "your cursor did a little circle earlier. i respected it",
@@ -91,7 +98,9 @@
     "dont mind the eyes",
     "eye contact is free",
     "i know where it is, {name}. i always know",
-    "the cursor moved. i noticed. i notice everything"
+    "the cursor moved. i noticed. i notice everything",
+    "left. right. i have full coverage",
+    "your cursor has a routine. i have it memorized"
   ],
   "hideStart": [
     "bet you cant find me",
@@ -358,6 +367,13 @@
       ]
     }
   },
+  "configCombo": [
+    "sliders recalibrated. behold: whatever this is now",
+    "new recipe, same goblin. allegedly",
+    "personality rebuilt from sliders. warranty void",
+    "the dials have spoken. i am become settings",
+    "this combination has never been attempted. brave of you"
+  ],
   "criticOpen": [
     "ATTENTION. the daily app awards are now in session",
     "gather round. the results are in",

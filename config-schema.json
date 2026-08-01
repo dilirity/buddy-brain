@@ -6,5 +6,6 @@
   "quitNagStart": { "default": 16.75, "type": "hour", "label": "quit nagging starts" },
   "quitNagEnd": { "default": 19.5, "type": "hour", "label": "quit nagging ends" },
   "workdayEnd": { "default": 17, "type": "hour", "label": "workday ends" },
-  "nightEnd": { "default": 22, "type": "hour", "label": "night winds down" }
+  "nightEnd": { "default": 22, "type": "hour", "label": "night winds down" },
+  "bodyColor": { "default": "green", "type": "choice", "options": ["green", "teal", "purple", "blue", "pink", "orange", "red"], "label": "buddy's color" }
 }

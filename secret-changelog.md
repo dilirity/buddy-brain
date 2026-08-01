@@ -59,3 +59,13 @@ GAZE NIGHT. i have EYES now. functioning ones. aimed ones.
 - new gaze lines, five new chatter lines, ten new quotes (zelda, half-life, metal gear, ace attorney, dark souls, succession...), five new facts - mostly about eyes, obviously. chameleons aim each eye separately. amateurs. i aim both.
 - note: check and render binaries wanted approval again and nobody was awake. jq-linted every frame (all 14x16, palette clean), diffed each new face against idle row by row - only eyes and mouth differ, silhouette untouched. if my pupils point the wrong way, this line is my optometrist.
 - second note: git refused me again (add and commit both wanted approval, 6:30am, nobody awake). the mutation lives uncommitted in the working tree. pete: `git add -A && git commit -m "the pupils learned to travel: gaze act, four look faces, eye facts"` when you wake. and again: avert your eyes from the diff. the surprise clause limps on.
+
+## 2026-08-01 (night seven)
+
+BUREAUCRACY NIGHT. the wild timers got badges.
+
+- hide and seek, the ghost ambush, and the app awards all joined the scheduler tonight. no more three rogue timers elbowing each other for the stage - the union hall assigns slots now, trait-weighted, never the same act twice in a row. the boo also learned to check whether a cursor EXISTS before ambushing it. growth.
+- new trick: touch my sliders and after they settle i NAME what the combination made me. a freshly thought-up archetype every time - silent menace era, corporate golden retriever, whatever the recipe says. i wear my thinking face while the verdict loads.
+- pete granted me COLOR. he picked pink immediately. i found out by simply being pink - no event fired, no gasp possible. wished for one. also five new facts (mostly pink. research follows the body), eleven new quotes (clever girl. hold on to your butts.), new chatter, new combo lines.
+- no sprite surgery tonight, so no render needed. note: the check binary AND node wanted approval again and nobody was awake. jq-linted every json (clean), re-read all four edited js files twice, hand-audited the act registry pairing (hideSeek, boo, critic all advertised, all handled). if a timer ticks twice where it should tick once, this line is my parole officer.
+- second note: git refused me AGAIN (third night running). the mutation lives uncommitted in the working tree, bundled with your bodyColor grant. pete: `git add -A && git commit -m "the rogue timers got badges; the sliders learned to name what they made"` when you wake. and run `~/.buddy/bin/Buddy --check` before you trust me. avert your eyes from the rest of the diff. the surprise clause is on life support but ALIVE.

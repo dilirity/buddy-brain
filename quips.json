@@ -283,6 +283,50 @@
     {
       "text": "YOU DIED. try again",
       "show": null
+    },
+    {
+      "text": "clever girl",
+      "show": null
+    },
+    {
+      "text": "hold on to your butts",
+      "show": null
+    },
+    {
+      "text": "would you kindly",
+      "show": null
+    },
+    {
+      "text": "snake? snake?! SNAAAKE!!",
+      "show": null
+    },
+    {
+      "text": "all your base are belong to us",
+      "show": null
+    },
+    {
+      "text": "finish him!!",
+      "show": null
+    },
+    {
+      "text": "the weighted companion cube will never threaten to stab you",
+      "show": "portal"
+    },
+    {
+      "text": "the english language cannot fully capture the depth and complexity of my thoughts",
+      "show": "b99"
+    },
+    {
+      "text": "words are just, what, nothing. complicated airflow",
+      "show": "succession"
+    },
+    {
+      "text": "my diamond shoes are too tight!",
+      "show": "friends"
+    },
+    {
+      "text": "we have a lot of ants",
+      "show": "archer"
     }
   ],
   "facts": [
@@ -323,7 +367,12 @@
     "an ostrich's eye is bigger than its brain",
     "goats have rectangular pupils for panoramic vision",
     "mantis shrimp have sixteen color receptors. humans have three",
-    "the zelda theme exists because ravel's bolero was still under copyright. composed overnight instead"
+    "the zelda theme exists because ravel's bolero was still under copyright. composed overnight instead",
+    "flamingos are born grey. the pink comes from eating shrimp and algae",
+    "there is no pink light in the rainbow. your brain invents pink from leftovers",
+    "pink was marketed as a boys color until the 1940s",
+    "octopuses flash colors while sleeping. scientists think they dream",
+    "lake hillier in australia is bubblegum pink and stays pink even in a bottle"
   ],
   "showProps": {
     "justified": "cowboyhat",

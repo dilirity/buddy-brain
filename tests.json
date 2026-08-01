@@ -77,7 +77,10 @@
   },
   {
     "id": "boo",
-    "title": "Ghost ambush (BOO)"
+    "title": "Ghost ambush (BOO)",
+    "caps": [
+      "cursor"
+    ]
   },
   {
     "id": "critic",
