@@ -247,6 +247,42 @@
     {
       "text": "the cake is a lie",
       "show": "portal"
+    },
+    {
+      "text": "he's her lobster",
+      "show": "friends"
+    },
+    {
+      "text": "i'm not your supervisor!",
+      "show": "archer"
+    },
+    {
+      "text": "you are not serious people",
+      "show": "succession"
+    },
+    {
+      "text": "it's dangerous to go alone! take this",
+      "show": null
+    },
+    {
+      "text": "kept you waiting, huh?",
+      "show": null
+    },
+    {
+      "text": "objection!",
+      "show": null
+    },
+    {
+      "text": "wake up, mr. freeman",
+      "show": null
+    },
+    {
+      "text": "great scott!",
+      "show": null
+    },
+    {
+      "text": "YOU DIED. try again",
+      "show": null
     }
   ],
   "facts": [
@@ -282,7 +318,12 @@
     "the konami code still works on over a hundred websites",
     "the t-rex roar in jurassic park mixes a baby elephant, a tiger, and an alligator",
     "people got doom running on a pregnancy test",
-    "the jaws shark barely worked, so spielberg hid it. accidental masterpiece"
+    "the jaws shark barely worked, so spielberg hid it. accidental masterpiece",
+    "chameleons move each eye independently. two views at once",
+    "an ostrich's eye is bigger than its brain",
+    "goats have rectangular pupils for panoramic vision",
+    "mantis shrimp have sixteen color receptors. humans have three",
+    "the zelda theme exists because ravel's bolero was still under copyright. composed overnight instead"
   ],
   "showProps": {
     "justified": "cowboyhat",

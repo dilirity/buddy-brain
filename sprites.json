@@ -758,6 +758,90 @@
           "..KK.KK..KK.KK.."
         ]
       ]
+    },
+    "lookleft": {
+      "fps": 1,
+      "frames": [
+        [
+          "...KK......KK...",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGGPWGGGGGGPWGGK",
+          "KGGPWGGGGGGPWGGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGGGGKKGGGGRGK",
+          "KGGGGGGGGGGGGGGK",
+          ".KGGGGGGGGGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "..KGDGDGGDGDGK..",
+          "..KK.KK..KK.KK.."
+        ]
+      ]
+    },
+    "lookright": {
+      "fps": 1,
+      "frames": [
+        [
+          "...KK......KK...",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGGWPGGGGGGWPGGK",
+          "KGGWPGGGGGGWPGGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGGGGKKGGGGRGK",
+          "KGGGGGGGGGGGGGGK",
+          ".KGGGGGGGGGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "..KGDGDGGDGDGK..",
+          "..KK.KK..KK.KK.."
+        ]
+      ]
+    },
+    "lookup": {
+      "fps": 1,
+      "frames": [
+        [
+          "...KK......KK...",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGGPPGGGGGGPPGGK",
+          "KGGWWGGGGGGWWGGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGGGGKKGGGGRGK",
+          "KGGGGGGGGGGGGGGK",
+          ".KGGGGGGGGGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "..KGDGDGGDGDGK..",
+          "..KK.KK..KK.KK.."
+        ]
+      ]
+    },
+    "lookdown": {
+      "fps": 1,
+      "frames": [
+        [
+          "...KK......KK...",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGGWWGGGGGGWWGGK",
+          "KGGPPGGGGGGPPGGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGGGGKKGGGGRGK",
+          "KGGGGGGGGGGGGGGK",
+          ".KGGGGGGGGGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "..KGDGDGGDGDGK..",
+          "..KK.KK..KK.KK.."
+        ]
+      ]
     }
   }
 }

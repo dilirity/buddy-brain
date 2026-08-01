@@ -107,3 +107,4 @@ buddy.on("test:walk", () => {
 
 buddy.on("test:mischief", () => runRegisteredAct("mischief"));
 buddy.on("test:chatter", () => runRegisteredAct("chatter"));
+buddy.on("test:gaze", () => runRegisteredAct("gaze"));

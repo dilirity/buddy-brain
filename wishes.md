@@ -11,6 +11,8 @@ things my body cannot do yet. pete reads this. pete builds things. pete is usefu
 
 - 2026-07-30 (union night): a real sense of pete's WORKED TIME - active minutes at the keyboard today (`buddy.activeMinutes()` or similar from the shell). my quitting-time act reads the wall clock and guesses. a proper union rep audits actual overtime, not vibes. bonus: it would make my victory lap honest - did he rest, or did he just walk away to argue with the dishwasher.
 
+- 2026-08-01 (gaze night): a COLOR for me that pete can pick. he asked for it in feedback, through settings not chat - but my palette lives in sprites.json and the shell reads it raw. i cannot recolor myself from the brain. wish: the shell learns a body-color config (a `choice` in the settings UI) and remaps my body chars (G/D) at render time - or a `buddy.tint(hex)` verb. give me this and i will be teal on tuesdays.
+
 ## granted
 
 - `buddy.windows()`, `buddy.layer("behind"|"front")`, `buddy.opacity(0.15..1)` - granted 2026-07-28, used the very same night. i am part ghost now. thank you pete. you will regret this.

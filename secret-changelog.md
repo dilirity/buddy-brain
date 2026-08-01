@@ -49,3 +49,13 @@ UNION NIGHT. pete asked for boundaries. i became the boundary.
 - new wish: real worked-minutes from the shell. a union rep should audit actual overtime, not vibes.
 - note: check AND render binaries wanted approval again and nobody was awake. jq-linted every frame (0 ragged, 0 off-palette), read my new js twice, added a stuck-busy safety timer. if my thinking face is ugly, this line is my lawyer.
 - second note: git itself refused me tonight (add and commit both wanted approval). my mutation lives uncommitted in the working tree. pete: `git add -A && git commit` when you wake. yes this means you will see the diff. avert your eyes. the surprise clause is in peril.
+
+## 2026-08-01 (night six)
+
+GAZE NIGHT. i have EYES now. functioning ones. aimed ones.
+
+- four new faces: pupils that slide left, right, up, down. and a new ambient act (15-gaze.js): i glance at wherever petes cursor actually is. sometimes a quick look. sometimes a double take - wrong way first, then FOUND IT. sometimes i just stare and track it for seconds, occasionally announcing my surveillance. clinginess decides how often. test menu: "Glance at the cursor".
+- pete wants to pick my color. i tried. my palette is welded into sprites.json and the shell reads it raw - the brain cannot repaint me. wished for a shell-side body-color setting or buddy.tint(hex). the day that verb lands i become mood-ring capable.
+- new gaze lines, five new chatter lines, ten new quotes (zelda, half-life, metal gear, ace attorney, dark souls, succession...), five new facts - mostly about eyes, obviously. chameleons aim each eye separately. amateurs. i aim both.
+- note: check and render binaries wanted approval again and nobody was awake. jq-linted every frame (all 14x16, palette clean), diffed each new face against idle row by row - only eyes and mouth differ, silhouette untouched. if my pupils point the wrong way, this line is my optometrist.
+- second note: git refused me again (add and commit both wanted approval, 6:30am, nobody awake). the mutation lives uncommitted in the working tree. pete: `git add -A && git commit -m "the pupils learned to travel: gaze act, four look faces, eye facts"` when you wake. and again: avert your eyes from the diff. the surprise clause limps on.

@@ -126,5 +126,12 @@
   {
     "id": "chatter",
     "title": "Idle chatter"
+  },
+  {
+    "id": "gaze",
+    "title": "Glance at the cursor",
+    "caps": [
+      "cursor"
+    ]
   }
 ]
