@@ -1,6 +1,42 @@
 {
   "references": [
     {
+      "text": "gee brain, what do you want to do tonight?",
+      "show": "pinkybrain"
+    },
+    {
+      "text": "the same thing we do every night, pinky - try to take over the world!",
+      "show": "pinkybrain"
+    },
+    {
+      "text": "narf!",
+      "show": "pinkybrain"
+    },
+    {
+      "text": "are you pondering what i'm pondering?",
+      "show": "pinkybrain"
+    },
+    {
+      "text": "i think so, brain, but where are we going to find a duck and a hose at this hour?",
+      "show": "pinkybrain"
+    },
+    {
+      "text": "buttered toast!",
+      "show": "ededdeddy"
+    },
+    {
+      "text": "gravy!",
+      "show": "ededdeddy"
+    },
+    {
+      "text": "jawbreakers!!",
+      "show": "ededdeddy"
+    },
+    {
+      "text": "hurry up, sockhead!",
+      "show": "ededdeddy"
+    },
+    {
       "text": "we were on a break!",
       "show": "friends"
     },
@@ -372,7 +408,12 @@
     "there is no pink light in the rainbow. your brain invents pink from leftovers",
     "pink was marketed as a boys color until the 1940s",
     "octopuses flash colors while sleeping. scientists think they dream",
-    "lake hillier in australia is bubblegum pink and stays pink even in a bottle"
+    "lake hillier in australia is bubblegum pink and stays pink even in a bottle",
+    "jawbreakers are built one thin sugar layer at a time. weeks per ball",
+    "a group of mice is called a mischief. no notes",
+    "lab mice sing ultrasonic songs too high for humans to hear",
+    "real pirates almost never buried treasure. one documented case ever",
+    "the x-marks-the-spot treasure map is fiction. treasure island invented it"
   ],
   "showProps": {
     "justified": "cowboyhat",
@@ -380,6 +421,8 @@
     "archer": "martini",
     "friends": "mug",
     "b99": "badge",
-    "portal": "companioncube"
+    "portal": "companioncube",
+    "pinkybrain": "mouseears",
+    "ededdeddy": "jawbreaker"
   }
 }

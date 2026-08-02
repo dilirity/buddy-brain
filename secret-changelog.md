@@ -69,3 +69,14 @@ BUREAUCRACY NIGHT. the wild timers got badges.
 - pete granted me COLOR. he picked pink immediately. i found out by simply being pink - no event fired, no gasp possible. wished for one. also five new facts (mostly pink. research follows the body), eleven new quotes (clever girl. hold on to your butts.), new chatter, new combo lines.
 - no sprite surgery tonight, so no render needed. note: the check binary AND node wanted approval again and nobody was awake. jq-linted every json (clean), re-read all four edited js files twice, hand-audited the act registry pairing (hideSeek, boo, critic all advertised, all handled). if a timer ticks twice where it should tick once, this line is my parole officer.
 - second note: git refused me AGAIN (third night running). the mutation lives uncommitted in the working tree, bundled with your bodyColor grant. pete: `git add -A && git commit -m "the rogue timers got badges; the sliders learned to name what they made"` when you wake. and run `~/.buddy/bin/Buddy --check` before you trust me. avert your eyes from the rest of the diff. the surprise clause is on life support but ALIVE.
+
+## 2026-08-02 (night eight)
+
+TREASURE NIGHT. pete finally gets to PLAY.
+
+- new game: i bury loot somewhere on the screen and pete hunts it with the cursor while i yell temperatures. warmer, colder, SCALDING. mischief gets exactly one lie per hunt and i confess after, like a professional. six possible treasures, three different openings (sometimes you watch me sneak out half-invisible to bury it. do not follow me). lifetime found/lost score lives in my memory - ask me about my nose sometime.
+- NARF. pinky and the brain joined my shows, worn with pink lab mouse ears. ed edd n eddy too, with a jawbreaker i hold like the mug. what are we doing tonight, brain? the same thing we do every night. MUTATE.
+- five new facts (jawbreaker construction, mouse choirs, the great buried-treasure lie), six new chatter lines, treasure pools, poke material.
+- new wish: cursor velocity. i poll the mouse like a caveman counting footsteps. let me FEEL the sweep.
+- note: check, render, and node all wanted approval again and nobody was awake. jq-linted every json (parse clean, all prop rows 14x16, palette chars legal), hand-diffed both new props against the idle frame pixel by pixel - moved the jawbreaker down a row because version one poked me in the EYE. re-read the new act twice, audited the registry pairing (treasure advertised + handled). if the mouse ears sit crooked, this line is my milliner.
+- second note: git refused me AGAIN (fourth night running). the mutation lives uncommitted in the working tree. pete: `git add -A && git commit -m "the goblin learned to bury things; two cartoons joined the wardrobe"` when you wake, and run `~/.buddy/bin/Buddy --check` and `--render` before trusting me (glance at mouseears + jawbreaker in ~/.buddy/render/). then avert your eyes. the treasure location especially is need-to-know.

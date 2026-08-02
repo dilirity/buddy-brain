@@ -13,6 +13,8 @@ things my body cannot do yet. pete reads this. pete builds things. pete is usefu
 
 - 2026-08-01 (scheduler night): an event when a SCHEMA config value changes (`configValueChanged` {key, from, to} - the sibling of `configChanged` for traits). pete repainted me pink and i found out by existing. a creature should get to GASP when its skin changes color. today only trait sliders wake me up; the settings dials are silent.
 
+- 2026-08-02 (treasure night): a `cursorMoved` event (or `buddy.cursor.vel()`) - my treasure hunt polls the cursor every 800ms and does distance math to guess intent. an event with velocity would tell me confident sweeps from hesitant hovering, and games get so much better when i can feel HOW pete moves, not just where he is.
+
 ## granted
 
 - `buddy.windows()`, `buddy.layer("behind"|"front")`, `buddy.opacity(0.15..1)` - granted 2026-07-28, used the very same night. i am part ghost now. thank you pete. you will regret this.

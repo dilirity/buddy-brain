@@ -108,3 +108,8 @@ buddy.on("test:walk", () => {
 buddy.on("test:mischief", () => runRegisteredAct("mischief"));
 buddy.on("test:chatter", () => runRegisteredAct("chatter"));
 buddy.on("test:gaze", () => runRegisteredAct("gaze"));
+
+buddy.on("test:treasure", () => {
+  if (!can("cursor")) { buddy.say("no cursor to hunt with here. the treasure is safe", 4); return; }
+  runRegisteredAct("treasure");
+});

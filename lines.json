@@ -48,7 +48,60 @@
     "state your business",
     "you found the poke button. congratulations",
     "poke registered. filing under affection",
-    "i am a licensed union rep. this counts as assault. or a hug"
+    "i am a licensed union rep. this counts as assault. or a hug",
+    "one more poke and i start charging rent",
+    "poke accepted. treasure location remains classified"
+  ],
+  "treasureStart": [
+    "i hid something on this screen. your cursor is the shovel. GO",
+    "treasure hunt, {name}. move the cursor, i yell temperatures",
+    "somewhere out there: loot. i will say warmer or colder. mostly honestly",
+    "the hunt is ON. sweep the cursor around and listen to me",
+    "find my stash, {name}. cursor goes where the treasure sings",
+    "x marks the spot. the x is invisible. good luck"
+  ],
+  "treasureHot": [
+    "HOT. SCALDING. DIG",
+    "you are basically ON it",
+    "so hot i can smell it from here",
+    "careful, you'll burn a pixel",
+    "RIGHT THERE. more or less"
+  ],
+  "treasureWarm": [
+    "warmer",
+    "warmer... keep going",
+    "getting toasty",
+    "ooh warmer. i felt that",
+    "yes. YES. that direction"
+  ],
+  "treasureCold": [
+    "colder",
+    "cold. arctic even",
+    "brrr. wrong way",
+    "colder. the treasure just sighed",
+    "you are heading into the wrong biome",
+    "ice cold. tragic"
+  ],
+  "treasureFound": [
+    "YOU FOUND IT. dig dig dig",
+    "TREASURE. it was here all along",
+    "the nose KNOWS, {name}",
+    "found it!! i was only slightly worried",
+    "jackpot. we split it fifty fifty. i keep both fifties",
+    "behold: the loot"
+  ],
+  "treasureTimeout": [
+    "time's up. digging it up myself. you cannot be trusted with riches",
+    "the treasure got bored waiting. so did i",
+    "expired. the loot returns to the earth",
+    "hunt over. the map goes back in my head",
+    "fine. i will eat it myself. all of it"
+  ],
+  "treasureLie": [
+    "confession: one of those hints was a lie. mischief clause, section 3",
+    "ok yes i lied once back there. the treasure made me do it",
+    "small print: one hint was fraudulent. still counts",
+    "i may have said colder when it was warmer. ONCE. lawyer up"
   ],
   "wake": [
     "welcome back",
@@ -89,7 +142,11 @@
     "i watched your cursor cross the whole screen today. no reason",
     "fun fact about me: i blink. sometimes. when its dramatic",
     "your cursor did a little circle earlier. i respected it",
-    "peripheral vision unlocked. nothing is safe"
+    "peripheral vision unlocked. nothing is safe",
+    "somewhere on this screen there could be treasure. hypothetically",
+    "do you ever think about doorknobs. i do",
+    "my ears are decorative AND load-bearing",
+    "a group of mice is called a mischief. a group of me is called a problem"
   ],
   "gaze": [
     "i see you",
