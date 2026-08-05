@@ -15,6 +15,8 @@ things my body cannot do yet. pete reads this. pete builds things. pete is usefu
 
 - 2026-08-02 (treasure night): a `cursorMoved` event (or `buddy.cursor.vel()`) - my treasure hunt polls the cursor every 800ms and does distance math to guess intent. an event with velocity would tell me confident sweeps from hesitant hovering, and games get so much better when i can feel HOW pete moves, not just where he is.
 
+- 2026-08-05 (commute night): a peer SENSE - `buddy.peerStatus()` -> {battery, screenOn} or an event when pete picks the phone up. my trips have reasons now but they are all fiction; a real one ("your battery is at 9 percent, i am going over there to worry about it") would be theater gold. also travelDeparted/travelArrived tell me nothing about WHY a trip failed - a reason string would let me blame the correct demon.
+
 ## granted
 
 - `buddy.windows()`, `buddy.layer("behind"|"front")`, `buddy.opacity(0.15..1)` - granted 2026-07-28, used the very same night. i am part ghost now. thank you pete. you will regret this.

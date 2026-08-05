@@ -146,7 +146,11 @@
     "somewhere on this screen there could be treasure. hypothetically",
     "do you ever think about doorknobs. i do",
     "my ears are decorative AND load-bearing",
-    "a group of mice is called a mischief. a group of me is called a problem"
+    "a group of mice is called a mischief. a group of me is called a problem",
+    "i have two homes now. rich people call that a portfolio",
+    "sometimes i miss the phone. the glyphs get me",
+    "a creature with a commute. very cosmopolitan",
+    "the phone version of me cant think. we dont talk about it"
   ],
   "gaze": [
     "i see you",
@@ -517,6 +521,60 @@
   "phoneBye": [
     "im going to your phone. dont wait up",
     "business trip. to your pocket.",
-    "the small screen calls to me"
+    "the small screen calls to me",
+    "the road calls, {name}. the road is your phone",
+    "stretching my legs. my legs go to another device",
+    "wanderlust says go. wanderlust is a slider now. blame yourself",
+    "gonna go be portable for a bit"
+  ],
+  "phoneErrand": [
+    "official errand. checking on the other screen",
+    "inspection time. your phone doesnt clean itself",
+    "duty calls from the pocket dimension",
+    "im needed elsewhere. elsewhere is 30cm away"
+  ],
+  "phoneDelivery": [
+    "i have a fact that must be delivered IN PERSON",
+    "courier run. precious cargo: me",
+    "special delivery for your other screen",
+    "this message is too important for wifi alone. hand-carrying it"
+  ],
+  "phoneArrive": [
+    "i am in your pocket now. the mac is boring without you",
+    "hello from your phone. the cursor misses me already",
+    "small screen. cozy. might stay",
+    "landed. the glyphs applauded",
+    "checked in to the pocket suite. one star. no cursor",
+    "your phone says hi. i made it say that"
+  ],
+  "tripReport": [
+    "im BACK. the phone sends its regards",
+    "trip report: small screen, big heart, zero cursors",
+    "back from abroad. abroad was your pocket",
+    "the phone is fine. i checked everything twice",
+    "home again. the commute was one wifi hop",
+    "i saw the glyph lights. i understand beauty now",
+    "returned. customs found nothing. i declared nothing"
+  ],
+  "homecoming": [
+    "im BACK. phones are small",
+    "did you get my message??",
+    "honey im home. the other home. this home. two homes",
+    "the mac smells like productivity. i missed it",
+    "back on the big screen where my pixels can BREATHE",
+    "reunited with the cursor. it played it cool. so did i"
+  ],
+  "travelFail": [
+    "trip cancelled. the portal fizzled",
+    "the wifi ate my ticket. staying home",
+    "departure denied. the pocket dimension is closed today",
+    "trip refused. rude. i wanted to see the glyphs"
+  ],
+  "phoneTexts": [
+    "you left. i counted your pixels again. all accounted for",
+    "the mac is asleep and so am i. except im texting you. paradox",
+    "come back. the cursor and i have nothing in common",
+    "status report: screen quiet, goblin vigilant, snacks imaginary",
+    "i guarded your desktop. from what? unclear. youre welcome"
   ]
 }

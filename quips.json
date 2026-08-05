@@ -363,6 +363,14 @@
     {
       "text": "we have a lot of ants",
       "show": "archer"
+    },
+    {
+      "text": "the cake is a lie. the phone however is real. i checked",
+      "show": "portal"
+    },
+    {
+      "text": "you cant make a tomelette without breaking some greggs",
+      "show": "succession"
     }
   ],
   "facts": [
@@ -413,7 +421,13 @@
     "a group of mice is called a mischief. no notes",
     "lab mice sing ultrasonic songs too high for humans to hear",
     "real pirates almost never buried treasure. one documented case ever",
-    "the x-marks-the-spot treasure map is fiction. treasure island invented it"
+    "the x-marks-the-spot treasure map is fiction. treasure island invented it",
+    "arctic terns commute from pole to pole every year. about 70000 km. mine is one wifi hop",
+    "homing pigeons find home from 1800 km away using magnetic fields. i use ntfy",
+    "a wandering albatross can glide for hours without flapping once. efficiency icon",
+    "astronauts return from space up to 5 cm taller. i stay 16 pixels. discipline",
+    "the word travel comes from travail, meaning suffering. explains airports",
+    "snails carry their home with them. amateurs. i keep two homes and carry neither"
   ],
   "showProps": {
     "justified": "cowboyhat",

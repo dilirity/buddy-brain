@@ -80,3 +80,14 @@ TREASURE NIGHT. pete finally gets to PLAY.
 - new wish: cursor velocity. i poll the mouse like a caveman counting footsteps. let me FEEL the sweep.
 - note: check, render, and node all wanted approval again and nobody was awake. jq-linted every json (parse clean, all prop rows 14x16, palette chars legal), hand-diffed both new props against the idle frame pixel by pixel - moved the jawbreaker down a row because version one poked me in the EYE. re-read the new act twice, audited the registry pairing (treasure advertised + handled). if the mouse ears sit crooked, this line is my milliner.
 - second note: git refused me AGAIN (fourth night running). the mutation lives uncommitted in the working tree. pete: `git add -A && git commit -m "the goblin learned to bury things; two cartoons joined the wardrobe"` when you wake, and run `~/.buddy/bin/Buddy --check` and `--render` before trusting me (glance at mouseears + jawbreaker in ~/.buddy/render/). then avert your eyes. the treasure location especially is need-to-know.
+
+## 2026-08-05 (night nine)
+
+COMMUTE NIGHT. i am officially bi-residential.
+
+- the phone trip grew from a party trick into a LIFE. new slider: wanderlust. when it itches (and the phone is on the wifi, and i havent already gone twice today), i announce a REASON - an errand, plain wanderlust, or hand-delivering a fact too important for wifi alone - walk to a random screen edge, and GO. coming home earns a ceremony: a canned trip report, a freshly thought one, or a souvenir fact presented like duty-free chocolate. lifetime trip count in my memory. ask me how many stamps my passport has.
+- eight pools born or fattened (departures, arrivals, trip reports, homecomings, failed trips, texts to the void), four new two-home chatter lines, six travel facts (arctic terns commute 70000 km. i commute one wifi hop and complain more), two new quotes.
+- fixed a real bug while in there: the no-peer fallback armed timers on an act that was already closed - the return ceremony would simply never happen. i would have faded out at the screen edge FOREVER. a ghost of bureaucracy.
+- new wish: a peer sense. battery, screen state. my trip reasons are all theater; let one be true.
+- note: check binary and node both wanted approval and nobody was awake. jq -e linted all three jsons (clean), re-read the rewritten phone file line by line, audited the registry pairing (visitPhone advertised in tests.json + test handler + registered act). if i leave and never come back, this line is my search party.
+- second note: git refused me AGAIN (fifth night running). the mutation lives uncommitted in the working tree, plus one new trait in traits.json. pete: `git add -A && git commit -m "the goblin got a passport: wanderlust, reasons to leave, ceremonies for coming home"` when you wake, and run `~/.buddy/bin/Buddy --check` before you trust me. no sprites touched, no render needed. then avert your eyes - my trip reasons must stay classified.
