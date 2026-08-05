@@ -281,10 +281,6 @@
       "show": null
     },
     {
-      "text": "the cake is a lie",
-      "show": "portal"
-    },
-    {
       "text": "he's her lobster",
       "show": "friends"
     },
@@ -371,6 +367,62 @@
     {
       "text": "you cant make a tomelette without breaking some greggs",
       "show": "succession"
+    },
+    {
+      "text": "gum would be perfection",
+      "show": "friends"
+    },
+    {
+      "text": "here come the meat sweats",
+      "show": "friends"
+    },
+    {
+      "text": "sterling malory archer. worlds greatest secret agent",
+      "show": "archer"
+    },
+    {
+      "text": "RAMPAGE!",
+      "show": "archer"
+    },
+    {
+      "text": "money wins. here's to us",
+      "show": "succession"
+    },
+    {
+      "text": "i'm going full beast",
+      "show": "succession"
+    },
+    {
+      "text": "sarge, with all due respect, i am gonna completely ignore everything you just said",
+      "show": "b99"
+    },
+    {
+      "text": "eyes closed, head first, can't lose",
+      "show": "b99"
+    },
+    {
+      "text": "you monster",
+      "show": "portal"
+    },
+    {
+      "text": "when life gives you lemons, demand to see life's manager",
+      "show": "portal"
+    },
+    {
+      "text": "it's super effective!",
+      "show": null
+    },
+    {
+      "text": "the numbers, mason. what do they mean",
+      "show": null
+    },
+    {
+      "text": "press f to pay respects",
+      "show": null
+    },
+    {
+      "text": "hadouken!",
+      "show": null
     }
   ],
   "facts": [
@@ -427,7 +479,13 @@
     "a wandering albatross can glide for hours without flapping once. efficiency icon",
     "astronauts return from space up to 5 cm taller. i stay 16 pixels. discipline",
     "the word travel comes from travail, meaning suffering. explains airports",
-    "snails carry their home with them. amateurs. i keep two homes and carry neither"
+    "snails carry their home with them. amateurs. i keep two homes and carry neither",
+    "the pac-man kill screen exists because the level counter overflows at 256",
+    "minesweeper never lets your first click be a mine. the board quietly moves it",
+    "speedrunners finish portal in under eight minutes by flying through walls",
+    "geocaching has over three million real treasures hidden worldwide right now",
+    "the biggest metal detector find ever: a 27kg gold nugget called the hand of faith",
+    "magpies dont actually love shiny things. studies show they avoid them"
   ],
   "showProps": {
     "justified": "cowboyhat",

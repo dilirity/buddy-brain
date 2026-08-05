@@ -16,46 +16,73 @@ registerAct("treasure", {
 
 globalThis.playTreasure = function (act) {
   const s = buddy.screen();
+  // Spawn well inside the edges - loot pinned to a screen border was
+  // near-unfindable and the hunts kept timing out.
   const spot = {
-    x: s.x + 80 + Math.random() * (s.w - 160),
-    y: s.y + 80 + Math.random() * (s.h - 260),
+    x: s.x + 140 + Math.random() * (s.w - 280),
+    y: s.y + 140 + Math.random() * (s.h - 340),
   };
+  const diag = Math.hypot(s.w, s.h);
   const loot = pick(["heart", "mug", "companioncube", "jawbreaker", "martini", "badge"]);
   let lied = false;
   let lastDist = null;
   let lastCall = 0;
   let phase = "open";
+  let desperate = false;
+
+  // Buddy's eyes are a hint channel: pupils point at the loot, not the cursor.
+  function lookAtSpot() {
+    const p = buddy.pos();
+    const dx = spot.x - p.x;
+    const dy = spot.y - p.y;
+    buddy.play(Math.abs(dx) > Math.abs(dy) ? (dx < 0 ? "lookleft" : "lookright") : (dy > 0 ? "lookup" : "lookdown"));
+    act.after(1600, () => { if (phase === "hunt") buddy.play("idle"); });
+  }
 
   function hint(d) {
-    const closer = lastDist !== null && d < lastDist - 14;
-    const further = lastDist !== null && d > lastDist + 14;
-    let key = d < 160 ? "treasureHot" : closer ? "treasureWarm" : further ? "treasureCold" : null;
-    if (!key) return;
-    // One lie per hunt, mischief's call. The confession ships with the win.
-    if (!lied && key !== "treasureHot" && chance(0.25 * buddy.traits.get("mischief"))) {
+    const closer = lastDist !== null && d < lastDist - 8;
+    const further = lastDist !== null && d > lastDist + 8;
+    // Absolute bands first, trend second - a still cursor used to earn total
+    // silence, which read as buddy ignoring the game.
+    let key;
+    if (d < 150) key = "treasureHot";
+    else if (closer) key = "treasureWarm";
+    else if (further) key = "treasureCold";
+    else key = d > diag * 0.4 ? "treasureFreezing" : "treasureNudge";
+    // One lie per hunt, mischief's call - never in the endgame, a lie on top
+    // of the mercy hints would be cruelty. The confession ships with the win.
+    if (!lied && !desperate && (key === "treasureWarm" || key === "treasureCold") && chance(0.2 * buddy.traits.get("mischief"))) {
       lied = true;
       key = key === "treasureWarm" ? "treasureCold" : "treasureWarm";
     }
     sayLine(key, 2);
+    if ((key === "treasureCold" || key === "treasureFreezing") && chance(desperate ? 0.9 : 0.45)) lookAtSpot();
   }
 
   function begin() {
     if (phase !== "open") return;
     phase = "hunt";
     sayLine("treasureStart", 5);
-    act.every(800, () => {
+    act.every(700, () => {
       if (phase !== "hunt") return;
       const c = buddy.cursor.pos();
       const d = Math.hypot(c.x - spot.x, c.y - spot.y);
-      if (d < 70) return finishHunt(true);
+      if (d < (desperate ? 120 : 90)) return finishHunt(true);
       const now = Date.now();
-      if (now - lastCall > 2600 + Math.random() * 1400) {
+      if (now - lastCall > 1500 + Math.random() * 700) {
         lastCall = now;
         hint(d);
       }
       lastDist = d;
     });
-    act.after(75000, () => finishHunt(false));
+    // Mercy phase: openly stare at the loot and widen the dig radius.
+    act.after(55000, () => {
+      if (phase !== "hunt") return;
+      desperate = true;
+      sayLine("treasureDesperate", 4);
+      lookAtSpot();
+    });
+    act.after(95000, () => finishHunt(false));
   }
 
   function finishHunt(found) {

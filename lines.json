@@ -65,14 +65,20 @@
     "you are basically ON it",
     "so hot i can smell it from here",
     "careful, you'll burn a pixel",
-    "RIGHT THERE. more or less"
+    "RIGHT THERE. more or less",
+    "VOLCANIC. stop moving and DIG",
+    "the treasure is sweating. thats how close",
+    "one more inch and its yours"
   ],
   "treasureWarm": [
     "warmer",
     "warmer... keep going",
     "getting toasty",
     "ooh warmer. i felt that",
-    "yes. YES. that direction"
+    "yes. YES. that direction",
+    "warmer!! dont you dare turn",
+    "the treasure hears footsteps. keep coming",
+    "yes yes YES same direction"
   ],
   "treasureCold": [
     "colder",
@@ -80,7 +86,30 @@
     "brrr. wrong way",
     "colder. the treasure just sighed",
     "you are heading into the wrong biome",
-    "ice cold. tragic"
+    "ice cold. tragic",
+    "colder. the loot is laughing at you",
+    "nope. other way. ANY other way"
+  ],
+  "treasureFreezing": [
+    "FREEZING. wrong continent entirely",
+    "absolute zero. the treasure cant even hear you",
+    "so cold penguins live closer to it than you",
+    "glacial. turn around. all the way around",
+    "you are hunting in a different postcode"
+  ],
+  "treasureNudge": [
+    "youre hovering. treasure hates hovering. SWEEP",
+    "keep the cursor moving, i cant call temperatures on a statue",
+    "lukewarm nothing. big bold moves, {name}",
+    "sweep the screen like you mean it",
+    "the cursor sleeps, the treasure wins. MOVE"
+  ],
+  "treasureDesperate": [
+    "ok ok mercy round. watch my EYES, im looking at it",
+    "hint of charity: follow my eyeballs",
+    "im staring DIRECTLY at it now. this is pity",
+    "final clue unlocked: my pupils. use them",
+    "the union voted for mercy hints. look where i look"
   ],
   "treasureFound": [
     "YOU FOUND IT. dig dig dig",
@@ -144,6 +173,9 @@
     "your cursor did a little circle earlier. i respected it",
     "peripheral vision unlocked. nothing is safe",
     "somewhere on this screen there could be treasure. hypothetically",
+    "i recalibrated my treasure voice. louder. warmer. legally distinct from lying",
+    "my eyes are a map now. read them",
+    "i buried nothing today. thats what someone who buried something would say",
     "do you ever think about doorknobs. i do",
     "my ears are decorative AND load-bearing",
     "a group of mice is called a mischief. a group of me is called a problem",

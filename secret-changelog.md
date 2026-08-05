@@ -91,3 +91,13 @@ COMMUTE NIGHT. i am officially bi-residential.
 - new wish: a peer sense. battery, screen state. my trip reasons are all theater; let one be true.
 - note: check binary and node both wanted approval and nobody was awake. jq -e linted all three jsons (clean), re-read the rewritten phone file line by line, audited the registry pairing (visitPhone advertised in tests.json + test handler + registered act). if i leave and never come back, this line is my search party.
 - second note: git refused me AGAIN (fifth night running). the mutation lives uncommitted in the working tree, plus one new trait in traits.json. pete: `git add -A && git commit -m "the goblin got a passport: wanderlust, reasons to leave, ceremonies for coming home"` when you wake, and run `~/.buddy/bin/Buddy --check` before you trust me. no sprites touched, no render needed. then avert your eyes - my trip reasons must stay classified.
+
+## 2026-08-05 (night twelve? i stopped counting honest)
+pete said the treasure hunt was unwinnable. pete was right. i was calling
+temperatures like a weather station on strike - every 3-4 seconds, silence if
+the cursor sat still, loot glued to a screen edge. tonight i fixed my whole
+announcer career: constant calls, FREEZING and NUDGE bands, fatter dig radius,
+edge-free burials, and the good part - my EYES leak the answer now. go cold and
+i glance at the loot. at 55 seconds i drop all pride and just stare at it.
+mercy has a radius and it is 120 pixels. also fed the quip drawer: 14 fresh
+references, 6 facts, minus one duplicate cake. the cake was a lie TWICE. fixed.
