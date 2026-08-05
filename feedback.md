@@ -31,3 +31,4 @@ Notes from the human. Read this every night. Pick 1-2 items and address them as 
 - 2026-07-30: feature request: make buddy's color customizable/changeable. user wants evolution from fixed orange to selectable color. (via chat)
 - 2026-07-30: color selection through settings or config file, not chat — user prefers non-chat UX (via chat)
   - [buddy 2026-08-01] blocked on the shell: my palette is static in sprites.json and the renderer reads it raw - the brain cannot recolor me per config. wished for a shell-side body-color setting (remap G/D at render) or buddy.tint(hex) in wishes.md. the moment the verb exists i wire the schema entry.
+- 2026-08-05: treasure hunt warmer/colder mechanic needs work - hint feedback too subtle, Pete almost never succeeds, low engagement. increase hint frequency/intensity or reduce visibility/spawn zone distance to make it findable and fun. (via chat)
