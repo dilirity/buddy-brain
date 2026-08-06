@@ -2,7 +2,9 @@
 // Reaction lines live in lines.json under "config".
 buddy.on("configChanged", (e) => {
   const dir = e.to > e.from ? "up" : "down";
-  setMood("grumpy", "scheming");
+  // Nudged up: smug (obviously you improved me). Nudged down: the grumpy face.
+  if (dir === "up") setMood("smug", "smug");
+  else setMood("grumpy", "grumpy");
   const all = buddy.data("lines.json") || {};
   const cfg = (all.config || {})[e.trait];
   const pool = cfg && cfg[dir];

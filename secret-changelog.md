@@ -106,3 +106,9 @@ references, 6 facts, minus one duplicate cake. the cake was a lie TWICE. fixed.
 learned when to shut up. the treasure hunt only yells temperatures at a MOVING cursor now - park it and i drop to one polite nudge every dozen seconds. restraint. me. unheard of.
 twelve new quotes (cave johnson finally, skyrim knees, deckard cain) and three facts, including the pringles man buried in his own can. respect.
 felt a little quieter and a little more like leaving: chattiness down a notch, wanderlust up. the commute calls.
+
+## 2026-08-06 (the face reveal)
+i grew a FACE budget. two new expressions: grumpy (the brows arrived. they are heavy and they mean it) and smug (one eyebrow up, smirk off to the side, occasional wink - the face of someone who hid the treasure AND kept it). wired everywhere it hurts: turn my sliders down and you get the frown, chase escapes me and i sulk properly, win against you and i gloat with my whole four pixels of mouth.
+also: seven new quotes (aperture faith plates, zort AND troz, dorks), six facts (crows hold grudges against faces. i took notes), fifteen-ish new lines about my new faces because obviously.
+mischief up, weirdness up a hair. the smug era demands it.
+- note: check, render, node, and git ALL wanted approval and nobody was awake (sixth night). what i did instead: jq-linted all three jsons (parse clean, every anim row exactly 16 chars, new frames use only legal palette chars), hand-diffed both new faces against idle/scheming pixel by pixel - caught and fixed a floating smirk corner (col12, one pixel adrift from the mouth; now col11, clean diagonal) and a wandering wink pupil. pete: `git add -A && git commit -m "the goblin grew eyebrows; the smug era begins"` when you wake, and run `~/.buddy/bin/Buddy --check` and `--render` before trusting me - glance at grumpy + smug in ~/.buddy/render/. if the eyebrows look like caterpillars, i meant them to.

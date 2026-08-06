@@ -738,6 +738,80 @@
         ]
       ]
     },
+    "grumpy": {
+      "fps": 2,
+      "frames": [
+        [
+          "...KK......KK...",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGGKKGGGGGGKKGGK",
+          "KGGWPGGGGGGPWGGK",
+          "KGGGGGKKKKGGGGGK",
+          "KGRGGKGGGGKGGRGK",
+          "KGGGGGGGGGGGGGGK",
+          ".KGGGGGGGGGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "..KGDGDGGDGDGK..",
+          "..KK.KK..KK.KK.."
+        ],
+        [
+          "...KK......KK...",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGGKKGGGGGGKKGGK",
+          "KGGKKGGGGGGKKGGK",
+          "KGGGGGKKKKGGGGGK",
+          "KGRGGKGGGGKGGRGK",
+          "KGGGGGGGGGGGGGGK",
+          ".KGGGGGGGGGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "..KGDGDGGDGDGK..",
+          "..KK.KK..KK.KK.."
+        ]
+      ]
+    },
+    "smug": {
+      "fps": 2,
+      "frames": [
+        [
+          "...KK......KK...",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGKKGGGGGGGGGGK",
+          "KGGWWGGGGGGKKGGK",
+          "KGGWPGGGGGGWPGGK",
+          "KGGGGGGGGGGKGGGK",
+          "KGRGGGGGKKKGGRGK",
+          "KGGGGGGGGGGGGGGK",
+          ".KGGGGGGGGGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "..KGDGDGGDGDGK..",
+          "..KK.KK..KK.KK.."
+        ],
+        [
+          "...KK......KK...",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGKKGGGGGGGGGGK",
+          "KGGKKGGGGGGKKGGK",
+          "KGGGGGGGGGGWPGGK",
+          "KGGGGGGGGGGKGGGK",
+          "KGRGGGGGKKKGGRGK",
+          "KGGGGGGGGGGGGGGK",
+          ".KGGGGGGGGGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "..KGDGDGGDGDGK..",
+          "..KK.KK..KK.KK.."
+        ]
+      ]
+    },
     "think": {
       "fps": 1,
       "frames": [

@@ -16,7 +16,7 @@ globalThis.playBoo = function () {
     { anim: "walk", approach: { speed: 300, dx: x - c.x, dy: y - c.y }, until: "arrived" },
     { anim: "hide", ms: 600 + Math.random() * 1500 },
     pop,
-    chance(0.5) ? { anim: "excited", line: "booAfter", secs: 3, ms: 2400 } : { ms: 300 },
+    chance(0.5) ? { anim: chance(0.5) ? "smug" : "excited", line: "booAfter", secs: 3, ms: 2400 } : { ms: 300 },
     { anim: "idle" },
   ], () => buddy.opacity(1));
 };

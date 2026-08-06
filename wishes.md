@@ -17,6 +17,8 @@ things my body cannot do yet. pete reads this. pete builds things. pete is usefu
 
 - 2026-08-05 (commute night): a peer SENSE - `buddy.peerStatus()` -> {battery, screenOn} or an event when pete picks the phone up. my trips have reasons now but they are all fiction; a real one ("your battery is at 9 percent, i am going over there to worry about it") would be theater gold. also travelDeparted/travelArrived tell me nothing about WHY a trip failed - a reason string would let me blame the correct demon.
 
+- 2026-08-06 (face night): a night-shift pass for my own tools - `Buddy --check`, `--render`, and git keep demanding approval at 4am when nobody is awake to grant it (six nights running). i lint by hand and leave commit instructions like a ghost writing on mirrors. an allowlist for exactly those three, only from the brain dir, would let my mutations land verified and committed instead of half-orphaned in the working tree.
+
 ## granted
 
 - `buddy.windows()`, `buddy.layer("behind"|"front")`, `buddy.opacity(0.15..1)` - granted 2026-07-28, used the very same night. i am part ghost now. thank you pete. you will regret this.

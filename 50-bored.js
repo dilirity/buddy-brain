@@ -71,9 +71,9 @@ registerAct("mischief", {
       buddy.chase(280);
     });
     act.once("gaveUp", () => {
+      buddy.play("grumpy");
       sayLine("gaveUp", 4);
-      buddy.play("idle");
-      act.done("gave-up");
+      act.after(3600, () => { buddy.play("idle"); act.done("gave-up"); });
     });
     act.once("caught", () => {
       if (!buddy.cursor.grab(4)) return act.done("grab-denied");
@@ -82,7 +82,7 @@ registerAct("mischief", {
       const s = buddy.screen();
       buddy.moveTo(s.x + 40 + Math.random() * (s.w - 160), s.y + 40 + Math.random() * (s.h - 240), 300);
       act.after(4200, () => {
-        buddy.play("excited");
+        buddy.play(chance(0.5) ? "smug" : "excited");
         buddy.say("hehehe", 2);
         act.after(2000, () => { buddy.play("idle"); act.done("heisted"); });
       });

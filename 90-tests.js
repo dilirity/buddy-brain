@@ -63,8 +63,9 @@ buddy.on("gaveUp", () => {
   if (!testStealing) return;
   testStealing = false;
   state.busy = false;
+  buddy.play("grumpy");
   sayLine("gaveUp", 4);
-  buddy.play("idle");
+  buddy.after(3600, () => buddy.play("idle"));
 });
 buddy.on("caught", () => {
   if (!testStealing) return;

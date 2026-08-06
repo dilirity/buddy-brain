@@ -113,7 +113,7 @@ globalThis.playTreasure = function (act) {
           act.after(1800, () => { buddy.play("idle"); act.done("found"); });
         });
       } else {
-        buddy.play("scheming");
+        buddy.play("smug");
         sayLine("treasureTimeout", 5);
         act.after(4200, () => { buddy.play("idle"); act.done("timeout"); });
       }

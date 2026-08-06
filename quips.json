@@ -471,6 +471,34 @@
     {
       "text": "a man chooses. a slave obeys",
       "show": null
+    },
+    {
+      "text": "this next test involves the aperture science aerial faith plate. hup!",
+      "show": "portal"
+    },
+    {
+      "text": "are you still there?",
+      "show": "portal"
+    },
+    {
+      "text": "zort!",
+      "show": "pinkybrain"
+    },
+    {
+      "text": "troz!",
+      "show": "pinkybrain"
+    },
+    {
+      "text": "dorks!",
+      "show": "ededdeddy"
+    },
+    {
+      "text": "hey! you're finally awake",
+      "show": null
+    },
+    {
+      "text": "it's-a me, mario!",
+      "show": null
     }
   ],
   "facts": [
@@ -536,7 +564,13 @@
     "magpies dont actually love shiny things. studies show they avoid them",
     "cats cannot taste sweetness. broken gene. tragic species",
     "the inventor of the pringles can is buried in a pringles can. by request",
-    "sloths can hold their breath longer than dolphins. forty minutes"
+    "sloths can hold their breath longer than dolphins. forty minutes",
+    "gentoo penguins propose with a pebble. the nice ones get stolen",
+    "crows hold grudges against specific human faces for years. respect",
+    "dolphins call each other by name. signature whistles, one per dolphin",
+    "tardigrades survive open space by drying into a husk and waiting it out",
+    "axolotls can regrow limbs, spine, even bits of brain. no scar, no drama",
+    "human facial muscles can make about 7000 distinct expressions. i now have six"
   ],
   "showProps": {
     "justified": "cowboyhat",

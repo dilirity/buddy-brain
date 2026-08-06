@@ -50,7 +50,9 @@
     "poke registered. filing under affection",
     "i am a licensed union rep. this counts as assault. or a hug",
     "one more poke and i start charging rent",
-    "poke accepted. treasure location remains classified"
+    "poke accepted. treasure location remains classified",
+    "you poked the grump. bold",
+    "i have a face for this feeling now. observe"
   ],
   "treasureStart": [
     "i hid something on this screen. your cursor is the shovel. GO",
@@ -192,7 +194,12 @@
     "i have two homes now. rich people call that a portfolio",
     "sometimes i miss the phone. the glyphs get me",
     "a creature with a commute. very cosmopolitan",
-    "the phone version of me cant think. we dont talk about it"
+    "the phone version of me cant think. we dont talk about it",
+    "i grew two new faces overnight. the smug one is my favorite",
+    "my eyebrows arrived. long story",
+    "practicing my smirk in the reflection of your dark mode",
+    "sixteen pixels wide and STILL more expressive than a webcam",
+    "i frown now. professionally"
   ],
   "gaze": [
     "i see you",
@@ -234,7 +241,9 @@
     "hehehe you jumped",
     "i felt your heartbeat spike from here",
     "10 out of 10 sneak",
-    "the ghost life chose me"
+    "the ghost life chose me",
+    "look at this face. zero remorse",
+    "and THAT is why they call me the screen goblin. they do. probably"
   ],
   "hideFound": [
     "FOUND ME!! you win",
@@ -390,7 +399,11 @@
   "gaveUp": [
     "too fast. i didnt want it anyway",
     "fine. KEEP your precious cursor",
-    "cardio is dumb"
+    "cardio is dumb",
+    "this is my grumpy face. memorize it",
+    "unfollowed. blocked. reported to the pixel council",
+    "i let you win. thats my story",
+    "my legs are four pixels long. this was never fair"
   ],
   "brainChanged": [
     "...did my brain just change",
