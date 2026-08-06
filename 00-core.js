@@ -98,6 +98,10 @@ globalThis.sayLine = (key, secs, prop) => {
 globalThis._activeAct = null;
 
 globalThis.beginAct = function (name, spec) {
+  // A new act preempts any act still live - otherwise the old one's timers
+  // keep painting over the new act (test-menu/chat starts used to double-book
+  // the stage: leftover gaze repaints jittered over the rival glare).
+  if (_activeAct && _activeAct.live) interruptAct("preempt");
   const ctx = {
     name: name,
     live: true,

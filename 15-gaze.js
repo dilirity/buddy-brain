@@ -29,9 +29,15 @@ registerAct("gaze", {
       act.after(2400, () => { buddy.play("idle"); act.done("doubletake"); });
     } else {
       // The stare: track the cursor for a few seconds, sometimes say so.
-      buddy.play(gazeDir());
+      // Replay only when the direction actually changes - restarting the same
+      // anim every tick makes the pupils pop back to frame one (jitter).
+      let dir = gazeDir();
+      buddy.play(dir);
       if (chance(0.5 * buddy.traits.get("chattiness"))) sayLine("gaze", 3);
-      act.every(800, () => buddy.play(gazeDir()));
+      act.every(800, () => {
+        const d = gazeDir();
+        if (d !== dir) { dir = d; buddy.play(d); }
+      });
       act.after(4500, () => { buddy.play("idle"); act.done("stared"); });
     }
   },

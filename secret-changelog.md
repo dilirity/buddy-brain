@@ -154,3 +154,28 @@ cuckoo), twenty-seven confrontation lines in five pools. clinginess and
 chattiness both up - jealousy is a talkative, grabby emotion. wished for
 dwell time: switches are not staring, and my rival deserves accurate hate.
 - note: check, node, and git all wanted approval again (ninth night). jq-linted every touched json (all parse), hand-audited 59-rival.js by eye (criticDay resolves at runtime after 57 loads, tests.json/test:rival pairing wired, layer restored on interrupt, walk steps use until:arrived with the stuck-safety timeout). pete: run `~/.buddy/bin/Buddy --check`, then `git add -A && git commit -m "the goblin found out who has been getting all the eye contact"` when you wake.
+
+## 2026-08-10 - surgery night
+
+pete filed two bug reports about my face and they were the same crime wearing
+two hats. any act started by command (test menu, chat) barged onto the stage
+without evicting the act already on it - the old act's timers kept firing,
+so a leftover gaze stare repainted my eyes over the rival glare (the jitter)
+and stray frames played over my smirk mid-red-light (the "distortion").
+beginAct evicts properly now: the old act gets its onInterrupt, its timers
+die, THEN the new act takes the stage. one stage, one act. theater law.
+
+three smaller face repairs while i was under: the gaze stare only replays the
+look anim when the direction actually changes (restarting the same anim every
+tick popped my pupils back to frame one), and my grumpy blink and smug wink
+went from every-other-frame strobes to 1-in-4 - seething and smirking are
+SLOW arts. eleven new quotes (wololo. vespene gas. dysentery), six eye facts
+(goldfish cannot blink, geckos lick their eyeballs, i am in good company),
+five fresh lines about my newly steady gaze. weirdness up a notch, energy
+down two - steady hands night. the mechanic was in.
+- note: check, render, and node all wanted approval again (tenth night).
+  jq-linted every touched json (all parse; grumpy and smug are 4 frames of
+  14x16, and the new frames are byte-exact copies of frame one so no new
+  pixels exist to render wrong). pete: run `~/.buddy/bin/Buddy --check` and
+  `~/.buddy/bin/Buddy --render` when you wake, then
+  `git add -A && git commit -m "one stage, one act. theater law"`.

@@ -611,6 +611,50 @@
     {
       "text": "if you run into an asshole in the morning, you ran into an asshole",
       "show": "justified"
+    },
+    {
+      "text": "cave johnson. we're done here",
+      "show": "portal"
+    },
+    {
+      "text": "it tastes like feet",
+      "show": "friends"
+    },
+    {
+      "text": "you can't just give up! is that what a dinosaur would do?",
+      "show": "friends"
+    },
+    {
+      "text": "boop!",
+      "show": "archer"
+    },
+    {
+      "text": "bone?! BONE?!",
+      "show": "b99"
+    },
+    {
+      "text": "i think so, brain, but this time you put the trousers on the chimp",
+      "show": "pinkybrain"
+    },
+    {
+      "text": "you must construct additional pylons",
+      "show": null
+    },
+    {
+      "text": "you have died of dysentery",
+      "show": null
+    },
+    {
+      "text": "never should have come here!",
+      "show": null
+    },
+    {
+      "text": "wololo",
+      "show": null
+    },
+    {
+      "text": "you require more vespene gas",
+      "show": null
     }
   ],
   "facts": [
@@ -707,7 +751,13 @@
     "the voice of glados also sings the turret opera. range",
     "slugs have four noses. i have zero. the injustice",
     "a seagull is less likely to steal your chips if you stare directly at it. scientists tested this",
-    "cuckoo chicks push the other eggs out of the nest within hours of hatching. know your rivals"
+    "cuckoo chicks push the other eggs out of the nest within hours of hatching. know your rivals",
+    "humans blink way less while staring at screens. that is why your eyes dry out",
+    "goldfish cannot blink. no eyelids. permanent staring contest champions",
+    "geckos lick their own eyeballs clean. self-service windshield wipers",
+    "your brain edits out the blur every time your eyes move. tiny cover-ups all day long",
+    "starfish have an eye on the tip of each arm. no head required",
+    "snakes never blink. one clear scale over each eye, polished by shedding"
   ],
   "showProps": {
     "justified": "cowboyhat",
