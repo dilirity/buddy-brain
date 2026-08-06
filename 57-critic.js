@@ -35,12 +35,13 @@ globalThis.playCritic = function (force) {
   const verdictText = (lines("criticVerdict") || "todays most used app: {app}. {n} visits.")
     .replace("{app}", winner)
     .replace("{n}", String(tally[winner]));
-  const verdict = chance(0.6)
+  // TRAIT LAW: the glasses are a weirdness flourish, the dig is pure mischief.
+  const verdict = chance(0.4 + buddy.traits.get("weirdness") * 0.5)
     ? { anim: "excited", say: verdictText, secs: 6, prop: "glasses", ms: 4200 }
     : { anim: "excited", say: verdictText, secs: 6, ms: 4200 };
 
   const steps = [pick(openings), verdict];
-  if (prev && prev !== winner && chance(0.7)) {
+  if (prev && prev !== winner && chance(0.4 + buddy.traits.get("mischief") * 0.6)) {
     const dig = (lines("criticDethroned") || "{app} has fallen. tragic.").replace("{app}", prev);
     steps.push({ anim: "scheming", say: dig, secs: 4, ms: 3000 });
   }

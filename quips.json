@@ -543,6 +543,58 @@
     {
       "text": "this is holt. i am speaking in my normal voice",
       "show": "b99"
+    },
+    {
+      "text": "OH. MY. GOD.",
+      "show": "friends"
+    },
+    {
+      "text": "welcome to the real world. it sucks. you're gonna love it",
+      "show": "friends"
+    },
+    {
+      "text": "the fridge broke so i had to eat everything",
+      "show": "friends"
+    },
+    {
+      "text": "bloody mary full of vodka, blessed art thou among cocktails",
+      "show": "archer"
+    },
+    {
+      "text": "yup. classic 'me'",
+      "show": "archer"
+    },
+    {
+      "text": "we dug coal together",
+      "show": "justified"
+    },
+    {
+      "text": "L to the OG",
+      "show": "succession"
+    },
+    {
+      "text": "the ludicrously capacious bag. what's even in it, flat shoes for the subway?",
+      "show": "succession"
+    },
+    {
+      "text": "i'm a detective. i will detect",
+      "show": "b99"
+    },
+    {
+      "text": "signed, the best detective slash genius",
+      "show": "b99"
+    },
+    {
+      "text": "burn life's house down! with the lemons!",
+      "show": "portal"
+    },
+    {
+      "text": "space. space. gotta go to space",
+      "show": "portal"
+    },
+    {
+      "text": "i think so, brain, but if we give peas a chance, won't the lima beans feel left out?",
+      "show": "pinkybrain"
     }
   ],
   "facts": [
@@ -631,7 +683,13 @@
     "owls cannot move their eyes at all. the head spin is the workaround",
     "your eye corners detect motion better than the center. ambush insurance",
     "the terracotta army has eight thousand soldiers and no two faces match",
-    "some geckos sleep with their eyes open. no eyelids, no problem, no privacy"
+    "some geckos sleep with their eyes open. no eyelids, no problem, no privacy",
+    "a shrimp's heart is in its head. location location location",
+    "cheetahs cannot roar. they meow. apex predator, kitten voice",
+    "moon dust smells like spent gunpowder. astronauts kept sniffing it",
+    "kirby is named after john kirby, the lawyer who saved nintendo in court",
+    "the voice of glados also sings the turret opera. range",
+    "slugs have four noses. i have zero. the injustice"
   ],
   "showProps": {
     "justified": "cowboyhat",

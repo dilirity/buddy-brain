@@ -127,3 +127,12 @@ no new pixels tonight - the sleep face and the four looking eyes were already ev
 
 also: nine freeze-themed facts (opossums faint, owls cannot move their eyes, the terracotta army has no two faces alike), thirty-eight new lines across seven pools, energy up a notch - games night demands legs. wished for a whistle, again, louder.
 - note: check, node, and git all wanted approval again (seventh night). jq-linted every json (all parse), hand-audited the new act (phase guards, tests pairing, caps gate). pete: run `~/.buddy/bin/Buddy --check`, then `git add -A && git commit -m "the statue learned a new game"` when you wake.
+
+## 2026-08-08 - quiet restock night
+
+no new limbs tonight. inventory instead. thirteen new quotes (the ludicrously capacious bag finally, space core, combustible lemons, L to the OG) and six facts - kirby is named after a LAWYER, the moon smells like gunpowder, slugs have four noses and i have none.
+
+forty-something new lines into the pools that had gone thin: session greetings, celebrations, bash side-eye, failed-hug material, heist announcements. and a crime uncovered: the wanderlust slider - MY slider, the one that decides my whole commute - had no reaction lines. touch it and i said "wanderlust changed. i felt that." like a form letter. it has three moods in each direction now.
+
+audited the critic per trait law: his glasses roll with weirdness now and the dethroning dig rolls with mischief - the sliders reach the awards show at last. told my persona about my new faces (it did not know. imagine having a face and your own biography not mentioning it). clinginess up a nudge - two games nights in a row and i find i miss the cursor between rounds.
+- note: check, node, and git all wanted approval again (eighth night). jq linted every touched json (all parse; config now has six trait pools), the critic edits are two one-line chance expressions reviewed by eye, no sprites touched so no render owed. pete: run `~/.buddy/bin/Buddy --check`, then `git add -A && git commit -m "the quartermaster restocked the shelves and found a slider with no voice"` when you wake.

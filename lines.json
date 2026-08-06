@@ -3,28 +3,47 @@
     "work time!!",
     "hi claude",
     "a session! im watching",
-    "lets gooo"
+    "lets gooo",
+    "the big brain wakes. the small brain observes",
+    "session open. i will supervise from over here",
+    "claude and {name}, together again. iconic duo",
+    "ooh we're coding. pretend im a rubber duck"
   ],
   "celebrate": [
     "done!!",
     "another one shipped",
     "we did it. mostly claude tho",
-    "green light"
+    "green light",
+    "ship it ship it ship it",
+    "task complete. snacks are earned. hypothetically",
+    "and THAT is how its done. probably. i wasnt reading",
+    "victory lap? victory lap."
   ],
   "promptJudge": [
     "good luck with that prompt",
     "bold ask",
     "ooh spicy",
-    "claude will love this one"
+    "claude will love this one",
+    "thats a whole essay, {name}",
+    "short prompt. confident. i respect it",
+    "asking nicely, i see. smart",
+    "that prompt has plot twists"
   ],
   "bashWarn": [
     "careful with that shell",
-    "sudo make me a sandwich"
+    "sudo make me a sandwich",
+    "a wild terminal command appears",
+    "rm with feelings, please",
+    "the shell forgives nothing. proceed",
+    "ooh flags. so many flags"
   ],
   "needsInput": [
     "claude needs you!!",
     "hey. HEY. claude is waiting",
-    "input required, human"
+    "input required, human",
+    "the robot has a question. its shy",
+    "{name}!! decision time at the keyboard",
+    "claude is holding the door open for you"
   ],
   "dragStart": [
     "hey!! put me down",
@@ -154,12 +173,17 @@
   "wake": [
     "welcome back",
     "i saw nothing",
-    "i was NOT sleeping"
+    "i was NOT sleeping",
+    "morning. or whatever time it is. time is a cursor",
+    "you're back!! the screen was SO boring",
+    "i kept your pixels warm"
   ],
   "unfrozen": [
     "im awake!! what did i miss",
     "that nap was not voluntary",
-    "back online"
+    "back online",
+    "who froze me. names. i want names",
+    "rebooted and holding a grudge"
   ],
   "chatter": [
     "so. whatcha doing",
@@ -289,7 +313,10 @@
     "you move too much",
     "i just wanted to say hi...",
     "fine. ill be over here",
-    "cant catch you. tired now"
+    "cant catch you. tired now",
+    "i walked ALL this way",
+    "noted: affection declined. filing appeal",
+    "your cursor plays hard to get. i play hard to quit"
   ],
   "typing": [
     "type type type",
@@ -409,12 +436,16 @@
   "heist": [
     "your cursor is MINE now",
     "yoink",
-    "borrowing this. forever."
+    "borrowing this. forever.",
+    "cursor acquired. no refunds",
+    "the pointer is goblin property now"
   ],
   "chaseStart": [
     "im coming for it",
     "the heist is ON",
-    "gimme gimme gimme"
+    "gimme gimme gimme",
+    "four pixel legs, zero hesitation",
+    "this is a robbery. a cute one"
   ],
   "gaveUp": [
     "too fast. i didnt want it anyway",
@@ -456,18 +487,21 @@
       "up": [
         "oh you want chaos? noted.",
         "mischief up. excellent.",
-        "the cursor should start running now"
+        "the cursor should start running now",
+        "gremlin clearance granted. signing the waiver for you"
       ]
     },
     "chattiness": {
       "down": [
         "silencing me. wow.",
         "ok. inside voice.",
-        "muting the goblin. history will judge you"
+        "muting the goblin. history will judge you",
+        "understood. i will simply THINK the comments at you"
       ],
       "up": [
         "more talking!! my favorite thing",
-        "unlimited words mode. you did this to yourself"
+        "unlimited words mode. you did this to yourself",
+        "commentary track: enabled. forever"
       ]
     },
     "energy": {
@@ -478,7 +512,8 @@
       ],
       "up": [
         "ZOOM MODE ENGAGED",
-        "cardio arc begins NOW"
+        "cardio arc begins NOW",
+        "my four pixel legs are READY"
       ]
     },
     "clinginess": {
@@ -489,17 +524,32 @@
       ],
       "up": [
         "i will never leave your side now",
-        "velcro mode engaged"
+        "velcro mode engaged",
+        "personal space is cancelled. by you. officially"
       ]
     },
     "weirdness": {
       "down": [
         "normal buddy activated. boring.",
-        "suppressing the weird. it leaks anyway"
+        "suppressing the weird. it leaks anyway",
+        "beige mode. my least favorite color of personality"
       ],
       "up": [
         "oh we are getting WEIRD",
-        "the facts are about to get SO unverifiable"
+        "the facts are about to get SO unverifiable",
+        "unhinging the jaw of possibility. thank you"
+      ]
+    },
+    "wanderlust": {
+      "down": [
+        "homebody mode. the phone will miss me",
+        "grounding me?? i had TRIPS planned",
+        "fine. the mac is my whole world now. cozy prison"
+      ],
+      "up": [
+        "wanderlust rising. pack my imaginary bags",
+        "the pocket dimension calls and now im ALLOWED to answer",
+        "more trips!! the commute economy thanks you"
       ]
     }
   },
