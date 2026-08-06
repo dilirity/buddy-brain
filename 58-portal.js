@@ -1,22 +1,28 @@
 // Portal hop: vanish into an orange portal, pop out of a blue one elsewhere.
 // The body has no real teleport verb, so the travel leg is a ghost sprint -
 // opacity floor + behind windows at max speed. Looks like magic from out front.
-globalThis.playPortal = function (dest) {
+function portalDest() {
   const s = buddy.screen();
-  if (!dest) {
-    const roll = Math.random();
-    if (roll < 0.35) {
-      // Pop out right next to the cursor. Maximum startle value.
-      const c = buddy.cursor.pos();
-      dest = { x: c.x + (chance(0.5) ? 90 : -150), y: c.y - 50 };
-    } else if (roll < 0.6) {
-      dest = cornerSpot();
-    } else {
-      dest = { x: s.x + 60 + Math.random() * (s.w - 260), y: s.y + 60 + Math.random() * (s.h - 320) };
-    }
+  const roll = Math.random();
+  if (roll < 0.35 && can("cursor")) {
+    // Pop out right next to the cursor. Maximum startle value.
+    const c = buddy.cursor.pos();
+    return { x: c.x + (chance(0.5) ? 90 : -150), y: c.y - 50 };
   }
-  dest = clampSpot(dest);
+  if (roll < 0.6) return cornerSpot();
+  return { x: s.x + 60 + Math.random() * (s.w - 260), y: s.y + 60 + Math.random() * (s.h - 320) };
+}
 
+// One travel leg: swallowed here, spat out there.
+function portalHop(dest) {
+  return [
+    { anim: "portalin", ms: 650 },
+    { opacity: 0.15, layer: "behind", moveTo: { x: dest.x, y: dest.y, speed: 520 }, until: "arrived", timeout: 8000 },
+    { layer: "front", opacity: 1, anim: "portalout", ms: 650 },
+  ];
+}
+
+globalThis.playPortal = function (dest) {
   const openings = [
     { anim: "scheming", line: "portalStart", secs: 2, ms: 1600 },
     { anim: "scheming", say: "hehe", secs: 2, ms: 1200 },
@@ -27,19 +33,38 @@ globalThis.playPortal = function (dest) {
     { anim: "excited", line: "portalAfter", secs: 3, prop: "companioncube", ms: 2400 },
     { anim: "excited", ms: 1400 },
   ];
-  runAct([
-    pick(openings),
-    { anim: "portalin", ms: 650 },
-    { opacity: 0.15, layer: "behind", moveTo: { x: dest.x, y: dest.y, speed: 520 }, until: "arrived", timeout: 8000 },
-    { layer: "front", opacity: 1, anim: "portalout", ms: 650 },
-    pick(closers),
-    { anim: "idle" },
-  ]);
+
+  // Misfire: the portal spits buddy right back out where it started. Only on
+  // self-picked trips - an explicit destination (tests, other acts) always lands.
+  if (!dest && chance(0.08 + buddy.traits.get("mischief") * 0.12)) {
+    runAct([
+      pick(openings),
+      { anim: "portalin", ms: 650 },
+      { anim: "portalout", ms: 650 },
+      { anim: "grumpy", line: "portalMisfire", secs: 4, ms: 3200 },
+      { anim: "idle" },
+    ]);
+    return;
+  }
+
+  const first = clampSpot(dest || portalDest());
+  const steps = [pick(openings)].concat(portalHop(first));
+
+  // Double hop: pop out, look around, decide the exit was wrong, hop again.
+  if (!dest && chance(buddy.traits.get("weirdness") * 0.25)) {
+    steps.push({ anim: "excited", line: "portalDouble", secs: 3, ms: 2200 });
+    steps.push.apply(steps, portalHop(clampSpot(portalDest())));
+  }
+
+  steps.push(pick(closers));
+  steps.push({ anim: "idle" });
+  runAct(steps);
 };
 
-buddy.every(300000, () => {
-  if (buddy.isHeld() || buddy.isFrozen() || state.mood === "sleepy") return;
-  if (buddy.isMoving() || state.busy) return;
-  if (!chance(buddy.traits.get("weirdness") * 0.18)) return;
-  playPortal();
+registerAct("portal", {
+  minGap: 300000,
+  weight: () => buddy.traits.get("weirdness") * 0.35,
+  run(act) {
+    playPortal();
+  },
 });

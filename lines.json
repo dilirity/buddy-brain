@@ -465,7 +465,11 @@
     "this spot is used up. NEXT",
     "initiating science",
     "dont blink",
-    "the enrichment center requires me elsewhere"
+    "the enrichment center requires me elsewhere",
+    "commencing spatial crimes",
+    "{name}, observe. and be amazed",
+    "the floor here stopped being interesting",
+    "brb. and also already there"
   ],
   "portalAfter": [
     "still alive!!",
@@ -473,7 +477,26 @@
     "teleportation is EASY actually",
     "i saw the space between windows. do not ask",
     "physics is a suggestion",
-    "vwoop"
+    "vwoop",
+    "nailed the landing. ten out of ten",
+    "the commute between here and here is instant",
+    "do not try this at home. this is MY home",
+    "somewhere a physicist just felt a chill"
+  ],
+  "portalMisfire": [
+    "the portal gun jammed. we speak of this to no one",
+    "same spot. that was. intentional",
+    "the exit portal declined my application",
+    "science has SETBACKS, {name}",
+    "round trip to nowhere. zero stars",
+    "the universe said no. rude"
+  ],
+  "portalDouble": [
+    "wrong exit. AGAIN",
+    "no no. this spot is worse",
+    "hold on, connecting flight",
+    "the portal has opinions about where i live",
+    "one more hop. for science"
   ],
   "heist": [
     "your cursor is MINE now",

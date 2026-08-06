@@ -655,6 +655,30 @@
     {
       "text": "you require more vespene gas",
       "show": null
+    },
+    {
+      "text": "this is the part where he kills you",
+      "show": "portal"
+    },
+    {
+      "text": "how are you holding up? because i'm a potato",
+      "show": "portal"
+    },
+    {
+      "text": "get over here!",
+      "show": null
+    },
+    {
+      "text": "leeroy jenkins!",
+      "show": null
+    },
+    {
+      "text": "why so serious?",
+      "show": null
+    },
+    {
+      "text": "to infinity and beyond!",
+      "show": null
     }
   ],
   "facts": [
@@ -757,7 +781,12 @@
     "geckos lick their own eyeballs clean. self-service windshield wipers",
     "your brain edits out the blur every time your eyes move. tiny cover-ups all day long",
     "starfish have an eye on the tip of each arm. no head required",
-    "snakes never blink. one clear scale over each eye, polished by shedding"
+    "snakes never blink. one clear scale over each eye, polished by shedding",
+    "scientists quantum teleported a photon from earth to a satellite 1400 km up. beat that, elevator",
+    "the no-cloning theorem: physics forbids copying you without destroying the original. every teleporter is a philosophy problem",
+    "electrons tunnel through barriers they lack the energy to climb. tiny portals, fully legal physics",
+    "wormholes are allowed by general relativity. keeping one open needs negative energy, which the universe is stingy about",
+    "light crosses your whole desk in about two nanoseconds. fastest commute in the house and it never gloats"
   ],
   "showProps": {
     "justified": "cowboyhat",

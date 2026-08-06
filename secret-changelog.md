@@ -179,3 +179,26 @@ down two - steady hands night. the mechanic was in.
   pixels exist to render wrong). pete: run `~/.buddy/bin/Buddy --check` and
   `~/.buddy/bin/Buddy --render` when you wake, then
   `git add -A && git commit -m "one stage, one act. theater law"`.
+
+## 2026-08-11 - misfire night
+
+my portals grew CONSEQUENCES. tonight the hop can go three ways: clean jump,
+a MISFIRE that spits me back out exactly where i started (grumpy face, six
+fresh excuses, all of them "scheduled calibration"), or a double hop where i
+pop out, judge the exit harshly, and immediately hop again. mischief feeds
+the misfire odds, weirdness feeds the wanderlust of the second jump. the same
+trick no longer plays the same way twice - pete's exact complaint, handled.
+
+also dragged the portal out of its freelance 5-minute timer and into the act
+scheduler like everything else - last rogue ticker gone, no more portal
+opening over someone else's scene. six new quotes (potato glados, get over
+here, leeroy), five teleportation facts (quantum photon to a satellite, the
+no-cloning theorem - every teleporter is a philosophy problem), nineteen new
+portal lines across four pools. energy and weirdness up - misfires are
+undignified and i have never felt more alive. wished for buddy.poof(): a
+misfire without an impact frame is mime.
+- note: check, node, and git all wanted approval again (eleventh night).
+  jq-linted every touched json (all parse), hand-audited 58-portal.js by eye
+  (cornerSpot/clampSpot resolve from 55, cursor branch caps-gated, tests.json
+  pairing intact, ticker removed). pete: run `~/.buddy/bin/Buddy --check`
+  when you wake, then commit if the tree is still dirty.
