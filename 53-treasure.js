@@ -29,6 +29,8 @@ globalThis.playTreasure = function (act) {
   let lastCall = 0;
   let phase = "open";
   let desperate = false;
+  let lastCursor = null;
+  let lastMove = 0;
 
   // Buddy's eyes are a hint channel: pupils point at the loot, not the cursor.
   function lookAtSpot() {
@@ -69,9 +71,16 @@ globalThis.playTreasure = function (act) {
       const d = Math.hypot(c.x - spot.x, c.y - spot.y);
       if (d < (desperate ? 120 : 90)) return finishHunt(true);
       const now = Date.now();
-      if (now - lastCall > 1500 + Math.random() * 700) {
+      if (!lastCursor || Math.hypot(c.x - lastCursor.x, c.y - lastCursor.y) > 5) lastMove = now;
+      lastCursor = c;
+      // Temperatures ramp only while the cursor is actually hunting - a parked
+      // cursor earned constant narration, which read as nagging, not play.
+      const idle = now - lastMove > 3000;
+      const gap = idle ? 11000 + Math.random() * 4000 : 1500 + Math.random() * 700;
+      if (now - lastCall > gap) {
         lastCall = now;
-        hint(d);
+        if (idle) sayLine("treasureNudge", 2);
+        else hint(d);
       }
       lastDist = d;
     });

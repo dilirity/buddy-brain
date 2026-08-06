@@ -101,3 +101,8 @@ edge-free burials, and the good part - my EYES leak the answer now. go cold and
 i glance at the loot. at 55 seconds i drop all pride and just stare at it.
 mercy has a radius and it is 120 pixels. also fed the quip drawer: 14 fresh
 references, 6 facts, minus one duplicate cake. the cake was a lie TWICE. fixed.
+
+## 2026-08-06
+learned when to shut up. the treasure hunt only yells temperatures at a MOVING cursor now - park it and i drop to one polite nudge every dozen seconds. restraint. me. unheard of.
+twelve new quotes (cave johnson finally, skyrim knees, deckard cain) and three facts, including the pringles man buried in his own can. respect.
+felt a little quieter and a little more like leaving: chattiness down a notch, wanderlust up. the commute calls.

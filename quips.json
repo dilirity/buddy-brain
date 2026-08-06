@@ -423,6 +423,54 @@
     {
       "text": "hadouken!",
       "show": null
+    },
+    {
+      "text": "science isn't about why. it's about why not",
+      "show": "portal"
+    },
+    {
+      "text": "egad!",
+      "show": "pinkybrain"
+    },
+    {
+      "text": "poit!",
+      "show": "pinkybrain"
+    },
+    {
+      "text": "messy messy messy",
+      "show": "ededdeddy"
+    },
+    {
+      "text": "i'm not great at the advice. can i interest you in a sarcastic comment",
+      "show": "friends"
+    },
+    {
+      "text": "karate? the dane cook of martial arts",
+      "show": "archer"
+    },
+    {
+      "text": "i'm playing kwazy cupcakes, i'm hydrated as hell, and i'm listening to sheryl crow",
+      "show": "b99"
+    },
+    {
+      "text": "fus ro dah!",
+      "show": null
+    },
+    {
+      "text": "i used to be an adventurer like you. then i took an arrow in the knee",
+      "show": null
+    },
+    {
+      "text": "stay awhile and listen",
+      "show": null
+    },
+    {
+      "text": "life finds a way",
+      "show": null
+    },
+    {
+      "text": "a man chooses. a slave obeys",
+      "show": null
     }
   ],
   "facts": [
@@ -485,7 +533,10 @@
     "speedrunners finish portal in under eight minutes by flying through walls",
     "geocaching has over three million real treasures hidden worldwide right now",
     "the biggest metal detector find ever: a 27kg gold nugget called the hand of faith",
-    "magpies dont actually love shiny things. studies show they avoid them"
+    "magpies dont actually love shiny things. studies show they avoid them",
+    "cats cannot taste sweetness. broken gene. tragic species",
+    "the inventor of the pringles can is buried in a pringles can. by request",
+    "sloths can hold their breath longer than dolphins. forty minutes"
   ],
   "showProps": {
     "justified": "cowboyhat",
