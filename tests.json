@@ -154,5 +154,12 @@
     "caps": [
       "cursor"
     ]
+  },
+  {
+    "id": "perch",
+    "title": "Perch on a window roof",
+    "caps": [
+      "windows"
+    ]
   }
 ]

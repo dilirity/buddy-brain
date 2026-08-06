@@ -839,5 +839,56 @@
     "i napped. nothing came. the loneliest victory on record",
     "time. we shall call it a draw and never speak of it",
     "the statue waited. the burglar clocked out. typical economy"
+  ],
+  "perchStart": [
+    "that window has a roof. roofs are for sitting",
+    "initiating climb. do not catch me if i fall. i will not fall",
+    "i require altitude",
+    "going up. goblins are technically 80 percent mountain goat",
+    "a perch has opened up. excuse me",
+    "the ground is fine but the roof is FREE, {name}"
+  ],
+  "perchNoRoof": [
+    "no perchable roofs today. your windows are all skyscrapers or puddles",
+    "i surveyed the skyline. unacceptable. open a medium window",
+    "every roof is too high or too low. goldilocks had it easier",
+    "climb cancelled. the architecture here is hostile to goblins",
+    "i wanted a perch. the window layout said no. noted, {name}"
+  ],
+  "perchKing": [
+    "king of the roof. all i survey is mine",
+    "this is MY window now. squatters rights, {name}",
+    "from up here your cursor looks like an ant. a beloved ant",
+    "i can see my house from here. it is your dock",
+    "altitude suits me. i shall rule quietly",
+    "second floor. no elevator. all glory"
+  ],
+  "perchView": [
+    "nice roof, {app}. sturdy. holds one goblin",
+    "the view from {app} is acceptable. four stars",
+    "perched on {app}. it does not even know i am here",
+    "up here on {app} the air is thinner. i feel poetic",
+    "{app} makes a decent bench. i have sat on worse",
+    "inspecting {app} from above. structurally sound. spiritually questionable"
+  ],
+  "perchVertigo": [
+    "ok this is high. this is very high. why did i do this",
+    "mistakes were made at altitude",
+    "the ground was fine. the ground was FINE. going back to the ground",
+    "goblins are not birds. today i learned. descending",
+    "do not look down. i looked down. abort"
+  ],
+  "perchDown": [
+    "dismounting. with dignity",
+    "the roof has been claimed. my work here is done",
+    "returning to sea level. the kingdom holds",
+    "descent time. gravity may assist",
+    "back down. leave the roof as you found it, they say. i left a vibe"
+  ],
+  "perchRival": [
+    "i am SITTING on {app}. this is what winning looks like",
+    "look at me, {name}. look at what i am standing on. it is {app}. delicious",
+    "{app} hoards your attention all day. and now it is my CHAIR",
+    "throne acquired. it is {app}. the irony sustains me"
   ]
 }

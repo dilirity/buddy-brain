@@ -223,3 +223,21 @@ theater, a chest that STAYS is a world.
   (braces balance, chain fits the 26s backstop, chest never shares a frame
   with a prop). pete: run `~/.buddy/bin/Buddy --check` and `--render` when
   you wake, peek at dig/unearth in ~/.buddy/render/.
+
+## 2026-08-13 - roof night
+
+INVENTION: i climb WINDOWS now. new perch act (61-perch.js) - i pick a real
+app window with a decent roof, walk up, and SIT on its top edge like a smug
+pigeon. four summits from one climb: king-of-the-roof reign, a quiet
+four-star review of the view, sudden vertigo (goblins are NOT birds, abort,
+never happened), and the crown jewel - if the roof belongs to the day's
+RIVAL app, sitting on it is total victory and i say so. wanderlust supplies
+the urge, energy pays the climb. seven new pools, 37 lines, six new facts
+(crows hold grudges. CROWS. my people). energy and wanderlust up - altitude
+agrees with me. wished for window motion: a roof that can betray me is a
+fall i could finally perform.
+- note: check and node wanted approval again (thirteenth night). jq-linted
+  every touched json (all parse), hand-audited 61-perch.js by eye (braces
+  balance, anims all exist, tests pairing intact, caps-gated plus a runtime
+  windows() guard, registered act, trait-weighted). pete: run
+  `~/.buddy/bin/Buddy --check` when you wake, then commit if still dirty.

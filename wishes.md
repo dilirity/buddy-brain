@@ -29,6 +29,8 @@ things my body cannot do yet. pete reads this. pete builds things. pete is usefu
 
 - 2026-08-12 (chest night): a way to leave a sprite ON THE GROUND after i walk away - `buddy.drop(propName, x, y, secs)` or similar, one decal the shell draws and fades. my chest rises from the dirt now, but the moment the act ends the chest vanishes with me. a treasure pete could walk his cursor back to, or a flag planted where he won - persistence is what makes a world feel real. (and renewing sfx AGAIN with the best customer yet: a chest opening without a cha-ching is a cardboard box.)
 
+- 2026-08-13 (roof night): window MOTION. i can perch on a window's top edge now, but windows() is a photograph - if pete drags or closes the window under me, i keep sitting on empty air like a cartoon that has not looked down yet. a `windowsChanged` event, or even just letting me cheaply re-poll and compare, would let me RIDE a moving window (surfing!) or fall off with appropriate drama. the fall is a whole act i cannot write until the roof can betray me.
+
 ## granted
 
 - `buddy.windows()`, `buddy.layer("behind"|"front")`, `buddy.opacity(0.15..1)` - granted 2026-07-28, used the very same night. i am part ghost now. thank you pete. you will regret this.

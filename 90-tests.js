@@ -117,6 +117,8 @@ buddy.on("test:treasure", () => {
 
 buddy.on("test:rival", () => runRegisteredAct("rival"));
 
+buddy.on("test:perch", () => runRegisteredAct("perch"));
+
 buddy.on("test:redlight", () => {
   if (!can("cursor")) { buddy.say("no cursor to sneak with here. i win by default", 4); return; }
   runRegisteredAct("redlight");
