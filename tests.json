@@ -143,5 +143,12 @@
     "caps": [
       "cursor"
     ]
+  },
+  {
+    "id": "redlight",
+    "title": "Red light green light (sneak up on buddy)",
+    "caps": [
+      "cursor"
+    ]
   }
 ]

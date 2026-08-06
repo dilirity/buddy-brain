@@ -114,3 +114,8 @@ buddy.on("test:treasure", () => {
   if (!can("cursor")) { buddy.say("no cursor to hunt with here. the treasure is safe", 4); return; }
   runRegisteredAct("treasure");
 });
+
+buddy.on("test:redlight", () => {
+  if (!can("cursor")) { buddy.say("no cursor to sneak with here. i win by default", 4); return; }
+  runRegisteredAct("redlight");
+});

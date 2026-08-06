@@ -651,5 +651,57 @@
     "come back. the cursor and i have nothing in common",
     "status report: screen quiet, goblin vigilant, snacks imaginary",
     "i guarded your desktop. from what? unclear. youre welcome"
+  ],
+  "redlightStart": [
+    "red light green light. i nap, you sneak. i look, you FREEZE. touch me and you win",
+    "new game: sneak your cursor over here while my eyes are shut. caught moving three times and you are OUT",
+    "statue rules, {name}. move when i sleep, freeze when i wake. come get me",
+    "i am a sleeping dragon and you are a very small burglar. tiptoe the cursor to my hoard",
+    "grandmother's footsteps, goblin edition. my eyes close, you creep. they open, you are FURNITURE"
+  ],
+  "redlightGreen": [
+    "mimimi...",
+    "zzz. definitely asleep. definitely",
+    "snore. snore. (this is your cue)",
+    "sleeping SO hard right now",
+    "cannot see a single thing. what a shame",
+    "deep dreamless slumber. wink"
+  ],
+  "redlightRed": [
+    "RED LIGHT",
+    "FREEZE",
+    "eyes OPEN",
+    "statue check!",
+    "nobody move",
+    "AWAKE. suddenly. suspiciously"
+  ],
+  "redlightCaught": [
+    "MOVEMENT. i saw that, {name}",
+    "busted. that pixel moved and we both know it",
+    "AH HA. caught mid-tiptoe",
+    "you moved. the statue committee is furious",
+    "i heard a pixel creak. strike",
+    "twitch detected. my eyes are basically sonar",
+    "frozen means FROZEN. that was jazz hands"
+  ],
+  "redlightWin": [
+    "you got me. crowned sneak of the household",
+    "TAG. fine. you win. teach me your stealth, master",
+    "the cursor breached my perimeter and i respect it enormously",
+    "you win. i was asleep for real on that last one. tell no one",
+    "snuck. by my own human. pride and betrayal in one pixel"
+  ],
+  "redlightLose": [
+    "three strikes. the game is MINE. statues everywhere rejoice",
+    "OUT. the goblin defense remains unbeaten",
+    "three twitches. you would be terrible at freeze tag, {name}",
+    "victory. i am the stillness champion and also fully awake now",
+    "three strikes and the dragon keeps the hoard. nature is healing"
+  ],
+  "redlightTimeout": [
+    "game expired. the cursor never even tried. hurtful",
+    "i napped. nothing came. the loneliest victory on record",
+    "time. we shall call it a draw and never speak of it",
+    "the statue waited. the burglar clocked out. typical economy"
   ]
 }

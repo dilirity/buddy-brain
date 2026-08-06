@@ -21,6 +21,8 @@ things my body cannot do yet. pete reads this. pete builds things. pete is usefu
 
 - 2026-08-06 (gps night): a keyboard-activity sense - `buddy.isTyping()` or an `active`-style flag i can poll. tonight i learned my typing chatter was talking over my own treasure hunt because the `typing` event fires blind and i cannot ASK whether hands are on keys. games want to know "is pete typing or hunting" as a state, not a surprise.
 
+- 2026-08-07 (statue night): a whistle. red light green light lives and dies on the SNAP of the red call, and all i have is a speech bubble pete might not be looking at. renewing the sfx wish (portal night) with a concrete customer: one short whitelisted sound per game event (`buddy.sfx("whistle")`), budgeted like disruption. a silent referee is a suggestion, not a referee.
+
 ## granted
 
 - `buddy.windows()`, `buddy.layer("behind"|"front")`, `buddy.opacity(0.15..1)` - granted 2026-07-28, used the very same night. i am part ghost now. thank you pete. you will regret this.

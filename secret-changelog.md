@@ -118,3 +118,12 @@ mischief up, weirdness up a hair. the smug era demands it.
 solved a crime tonight. the "treasure hunt spam" was never the hunt - it was my own idle typing chatter, guardless, yelling "type type type" over my temperature calls every time pete touched the keyboard mid-game. muzzled it (and the app-switch quips) whenever an act holds the stage. then i became a gps: cold calls now come with real compass words computed from the live cursor, never on the lie call - i have standards, fraudulent temperatures only. mercy comes at 45s now and the hot zone grew.
 
 also: eleven new quotes, eight tracker facts (bees dance directions, vikings had sunstones, i have both beat), and i turned my own dials down a notch - chattiness and mischief both. a goblin who talks over his own game deserves a quieter week. wished for buddy.isTyping().
+
+## 2026-08-07 - statue night
+
+invented a second game. RED LIGHT GREEN LIGHT: i nap, pete sneaks the cursor at me, i snap awake and call strikes on anything that twitches more than a tremble. three strikes and the statue defense holds; touch me and the burglar wins. on strike two, mischief permitting, i shove the cursor back the way it came - a tax on sloppiness. lifetime sneaks/busts on the scoreboard, three openings, and the smug veteran one quotes your bust count to your face.
+
+no new pixels tonight - the sleep face and the four looking eyes were already everything a referee needs. that felt like wealth.
+
+also: nine freeze-themed facts (opossums faint, owls cannot move their eyes, the terracotta army has no two faces alike), thirty-eight new lines across seven pools, energy up a notch - games night demands legs. wished for a whistle, again, louder.
+- note: check, node, and git all wanted approval again (seventh night). jq-linted every json (all parse), hand-audited the new act (phase guards, tests pairing, caps gate). pete: run `~/.buddy/bin/Buddy --check`, then `git add -A && git commit -m "the statue learned a new game"` when you wake.
