@@ -80,12 +80,12 @@ globalThis.playTreasure = function (act) {
       sinceDir = 0;
       const t = lines("treasureDir");
       if (t) {
-        buddy.say(t.replace(/\{dir\}/g, dirWord(c)), 2);
+        buddy.say(t.replace(/\{dir\}/g, dirWord(c)), 3);
         if (wrongWay && chance(0.6)) lookAtSpot();
         return;
       }
     }
-    sayLine(key, 2);
+    sayLine(key, 3);
     if (wrongWay && chance(desperate ? 0.9 : 0.45)) lookAtSpot();
   }
 
@@ -103,11 +103,13 @@ globalThis.playTreasure = function (act) {
       lastCursor = c;
       // Temperatures ramp only while the cursor is actually hunting - a parked
       // cursor earned constant narration, which read as nagging, not play.
+      // Cadence leaves each bubble readable before the next lands; the fast
+      // stream blasted calls nobody could read.
       const idle = now - lastMove > 3000;
-      const gap = idle ? 11000 + Math.random() * 4000 : 1500 + Math.random() * 700;
+      const gap = idle ? 11000 + Math.random() * 4000 : 2800 + Math.random() * 1200;
       if (now - lastCall > gap) {
         lastCall = now;
-        if (idle) sayLine("treasureNudge", 2);
+        if (idle) sayLine("treasureNudge", 3);
         else hint(d, c);
       }
       lastDist = d;
@@ -133,12 +135,28 @@ globalThis.playTreasure = function (act) {
     buddy.moveTo(spot.x, spot.y, found ? 300 : 220);
     act.once("arrived", () => {
       if (found) {
-        buddy.play("excited");
-        sayLine("treasureFound", 4, loot);
-        act.after(4200, () => {
-          if (lied && chance(0.7)) sayLine("treasureLie", 4);
-          else if (chance(0.4)) buddy.say(n + " treasure" + (n === 1 ? "" : "s") + " sniffed out lifetime. nose of a legend, " + userName(), 4);
-          act.after(1800, () => { buddy.play("idle"); act.done("found"); });
+        // The reveal is the best part: dig, then the chest rises out of the
+        // ground (unearth holds its last frame so the chest stays on stage
+        // while buddy gloats). Sometimes no patience - straight to the chest.
+        const digMs = chance(0.35) ? 0 : 2600;
+        if (digMs) {
+          buddy.play("dig");
+          sayLine("treasureDig", 3);
+        }
+        act.after(digMs, () => {
+          buddy.play("unearth");
+          act.after(1400, () => {
+            // Chest gets the stage to itself - a loot prop composited over it
+            // reads as clutter. The item comes out AFTER, hoisted zelda-style.
+            sayLine("treasureFound", 4);
+            act.after(4600, () => {
+              buddy.play("excited");
+              if (lied && chance(0.7)) sayLine("treasureLie", 4);
+              else if (chance(0.35)) buddy.say(n + " treasure" + (n === 1 ? "" : "s") + " sniffed out lifetime. nose of a legend, " + userName(), 4);
+              else sayLine("treasureHaul", 4, loot);
+              act.after(4200, () => { buddy.play("idle"); act.done("found"); });
+            });
+          });
         });
       } else {
         buddy.play("smug");
@@ -146,8 +164,9 @@ globalThis.playTreasure = function (act) {
         act.after(4200, () => { buddy.play("idle"); act.done("timeout"); });
       }
     });
-    // Walk resolves within 10s natively; belt to its braces.
-    act.after(14000, () => { buddy.play("idle"); act.done(found ? "found" : "timeout"); });
+    // Walk resolves within 10s natively; belt to its braces (the dig-and-
+    // reveal chain alone runs ~10s after arrival).
+    act.after(26000, () => { buddy.play("idle"); act.done(found ? "found" : "timeout"); });
   }
 
   // Openings vary: sneak out and visibly bury it, bounce like a gameshow

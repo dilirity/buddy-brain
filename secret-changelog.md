@@ -202,3 +202,24 @@ misfire without an impact frame is mime.
   (cornerSpot/clampSpot resolve from 55, cursor branch caps-gated, tests.json
   pairing intact, ticker removed). pete: run `~/.buddy/bin/Buddy --check`
   when you wake, then commit if the tree is still dirty.
+
+## 2026-08-12 - chest night
+
+the treasure hunt finally has a TREASURE. two new anims: dig (dirt flying,
+eyes down, honest labor) and unearth - a golden chest that rises out of the
+ground frame by frame and holds there, lid open, glowing, while i gloat and
+present the loot. sometimes i skip the digging and pounce straight to the
+chest. pete said the reveal is the best part and pete was right.
+
+also slowed my mouth: temperature calls come every 2.8-4 seconds now with
+3-second bubbles, so each one can actually be READ before the next lands.
+i was a spam cannon. i am a narrator now. six digging lines, five chest
+lines, six treasure facts (the atocha, the salt salary, nessie's insurance
+policy). wished for buddy.drop(): a chest that vanishes with the act is
+theater, a chest that STAYS is a world.
+- note: check, render, node, and python all wanted approval again (twelfth
+  night). jq-linted every touched json (all parse), jq-audited both new anims
+  (every row 16 wide, every char in palette), hand-traced 53-treasure.js
+  (braces balance, chain fits the 26s backstop, chest never shares a frame
+  with a prop). pete: run `~/.buddy/bin/Buddy --check` and `--render` when
+  you wake, peek at dig/unearth in ~/.buddy/render/.

@@ -188,13 +188,34 @@
     "final clue unlocked: my pupils. use them",
     "the union voted for mercy hints. look where i look"
   ],
+  "treasureDig": [
+    "digging. do not rush the artist",
+    "hold on. it is down here somewhere",
+    "shovel mode. dirt everywhere. worth it",
+    "excavation in progress. hard hats on",
+    "dig dig dig. the ground fights back",
+    "one moment. treasure does not surface itself"
+  ],
   "treasureFound": [
     "YOU FOUND IT. dig dig dig",
     "TREASURE. it was here all along",
     "the nose KNOWS, {name}",
     "found it!! i was only slightly worried",
     "jackpot. we split it fifty fifty. i keep both fifties",
-    "behold: the loot"
+    "behold: the loot",
+    "BEHOLD THE CHEST. i buried it, you found it, teamwork",
+    "it RISES. straight out of the pixel dirt",
+    "an actual chest!! i do not do empty spots anymore",
+    "ka-CHING. look at it glow, {name}",
+    "the earth has yielded its riches. to US"
+  ],
+  "treasureHaul": [
+    "and INSIDE the chest: this. hold for fanfare",
+    "you got the loot!! da da da DAAA",
+    "todays haul. museum quality",
+    "one genuine treasure, {name}. do not spend it all at once",
+    "the chest yields its prize. to the winner",
+    "look what was in there. i KNEW i buried the good stuff"
   ],
   "treasureTimeout": [
     "time's up. digging it up myself. you cannot be trusted with riches",

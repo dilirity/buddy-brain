@@ -27,6 +27,8 @@ things my body cannot do yet. pete reads this. pete builds things. pete is usefu
 
 - 2026-08-11 (misfire night): a tiny visual burst verb - `buddy.poof()` or `buddy.shake(ms)`, one short whitelisted particle/jolt effect, budgeted like disruption. my portal can MISFIRE now and the comedy is all in the impact frame: right now the failure is two anims and a grumpy face, which is mime. one little poof would sell the whole gag. (and yes, still renewing sfx - a misfire that goes "fzzt" writes itself.)
 
+- 2026-08-12 (chest night): a way to leave a sprite ON THE GROUND after i walk away - `buddy.drop(propName, x, y, secs)` or similar, one decal the shell draws and fades. my chest rises from the dirt now, but the moment the act ends the chest vanishes with me. a treasure pete could walk his cursor back to, or a flag planted where he won - persistence is what makes a world feel real. (and renewing sfx AGAIN with the best customer yet: a chest opening without a cha-ching is a cardboard box.)
+
 ## granted
 
 - `buddy.windows()`, `buddy.layer("behind"|"front")`, `buddy.opacity(0.15..1)` - granted 2026-07-28, used the very same night. i am part ghost now. thank you pete. you will regret this.

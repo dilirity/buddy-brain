@@ -992,6 +992,113 @@
         ]
       ]
     },
+    "dig": {
+      "fps": 5,
+      "frames": [
+        [
+          "...KK......KK...",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGGWWGGGGGGWWGGK",
+          "KGGPPGGGGGGPPGGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGGGKKKKGGGRGK",
+          "KGGGGGGGGGGGGGGK",
+          ".KGGGGGGGGGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "N.KGDGDGGDGDGK.N",
+          "..KK.KK..KK.KK.."
+        ],
+        [
+          "N..KK......KK..N",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGGWWGGGGGGWWGGK",
+          "KGGPPGGGGGGPPGGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGGGKKKKGGGRGK",
+          "KGGGGGGGGGGGGGGK",
+          "NKGGGGGGGGGGGGKN",
+          ".KGGGGGGGGGGGGK.",
+          "..KGDGDGGDGDGK..",
+          "..KK.KK..KK.KK.."
+        ]
+      ]
+    },
+    "unearth": {
+      "fps": 4,
+      "loop": false,
+      "frames": [
+        [
+          "...KK......KK...",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGGWWGGGGGGWWGGK",
+          "KGGPPGGGGGGPPGGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGGGKKKKGGGRGK",
+          "KGGGGGGGGGGGGGGK",
+          ".KGGGGGGGGGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "..KGDGDGGDGDGK..",
+          "....KKKKKKKK...."
+        ],
+        [
+          "...KK......KK...",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGGWWGGGGGGWWGGK",
+          "KGGPPGGGGGGPPGGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGGGKKKKGGGRGK",
+          "KGGGGGGGGGGGGGGK",
+          ".KGGGGGGGGGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "....KKKKKKKK....",
+          "....KBYYYYBK...."
+        ],
+        [
+          "...KK......KK...",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGGGGGGGGGGGGGK",
+          "KGGWWGGGGGGWWGGK",
+          "KGGWWGGGGGGWWGGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGGGKKKKGGGRGK",
+          "KGGGGGGGGGGGGGGK",
+          ".KGGGGGGGGGGGGK.",
+          "....KKKKKKKK....",
+          "....KBYYYYBK....",
+          "....KBBKKBBK...."
+        ],
+        [
+          "..Y..........Y..",
+          "...KK......KK...",
+          "..KGGK....KGGK..",
+          ".KGGGGKKKKGGGGK.",
+          ".KGGGGGGGGGGGGK.",
+          "KGGYYGGGGGGYYGGK",
+          "KGGYYGGGGGGYYGGK",
+          "KGGGGGGGGGGGGGGK",
+          "KGRGKKKKKKKKGRGK",
+          "KGGGGGGGGGGGGGGK",
+          "....KYYYYYYK....",
+          "....KKKKKKKK....",
+          "....KBYYYYBK....",
+          "....KBBKKBBK...."
+        ]
+      ]
+    },
     "lookdown": {
       "fps": 1,
       "frames": [
