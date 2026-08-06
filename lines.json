@@ -60,7 +60,9 @@
     "somewhere out there: loot. i will say warmer or colder. mostly honestly",
     "the hunt is ON. sweep the cursor around and listen to me",
     "find my stash, {name}. cursor goes where the treasure sings",
-    "x marks the spot. the x is invisible. good luck"
+    "x marks the spot. the x is invisible. good luck",
+    "new rules: temperatures AND directions. i am basically a gps now",
+    "hunt time. i upgraded my hints. you have no excuse anymore, {name}"
   ],
   "treasureHot": [
     "HOT. SCALDING. DIG",
@@ -110,6 +112,16 @@
     "cursor flatlined. shall i call someone",
     "the loot is composting while you think",
     "no rush. treasure only rots a little"
+  ],
+  "treasureDir": [
+    "compass check: go {dir}",
+    "the loot lives {dir} of you. thats a fact",
+    "try {dir}. i am being SO generous right now",
+    "{dir}. i said what i said",
+    "psst. {dir}",
+    "my nose says {dir}",
+    "official hint, notarized: {dir}",
+    "the treasure is {dir}. dont tell it i told you"
   ],
   "treasureDesperate": [
     "ok ok mercy round. watch my EYES, im looking at it",
@@ -199,7 +211,10 @@
     "my eyebrows arrived. long story",
     "practicing my smirk in the reflection of your dark mode",
     "sixteen pixels wide and STILL more expressive than a webcam",
-    "i frown now. professionally"
+    "i frown now. professionally",
+    "i learned to give directions. left, right, the works. gps goblin",
+    "i used to talk over your typing. we dont do that anymore. growth",
+    "quiet hands, quiet goblin. loud hunt, loud goblin. simple rules"
   ],
   "gaze": [
     "i see you",
@@ -279,7 +294,12 @@
   "typing": [
     "type type type",
     "so many words",
-    "your keyboard is crying"
+    "your keyboard is crying",
+    "clack clack clack. music",
+    "words per minute: yes",
+    "the keyboard chose a violent life",
+    "typing speed of a caffeinated octopus",
+    "i transcribe none of this. probably"
   ],
   "appSwitch": [
     "switching apps i see",

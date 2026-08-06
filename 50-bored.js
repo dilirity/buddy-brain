@@ -114,6 +114,9 @@ registerAct("chatter", {
 });
 
 buddy.on("appChanged", (e) => {
+  // An act on stage (treasure hunt, boo, nag) owns the bubble - keystroke and
+  // app-switch chatter talking over it read as broken spam, not personality.
+  if (state.busy || buddy.isMoving()) return;
   if (chance(0.1 * buddy.traits.get("chattiness"))) {
     const t = lines("appSwitch");
     buddy.say(chance(0.5) || !t ? "ooh " + e.name : t, 3);
@@ -121,5 +124,6 @@ buddy.on("appChanged", (e) => {
 });
 
 buddy.on("typing", () => {
+  if (state.busy || buddy.isMoving()) return;
   if (chance(0.08 * buddy.traits.get("chattiness"))) sayLine("typing", 3);
 });

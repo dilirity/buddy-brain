@@ -41,24 +41,52 @@ globalThis.playTreasure = function (act) {
     act.after(1600, () => { if (phase === "hunt") buddy.play("idle"); });
   }
 
-  function hint(d) {
+  // Compass word from the LIVE cursor to the loot (Cocoa: +y is up on screen).
+  function dirWord(c) {
+    const dx = spot.x - c.x;
+    const dy = spot.y - c.y;
+    const h = dx < 0 ? "left" : "right";
+    const v = dy > 0 ? "up" : "down";
+    if (Math.abs(dx) > Math.abs(dy) * 2.5) return h;
+    if (Math.abs(dy) > Math.abs(dx) * 2.5) return v;
+    return v + " and " + h;
+  }
+
+  let sinceDir = 0;
+  function hint(d, c) {
     const closer = lastDist !== null && d < lastDist - 8;
     const further = lastDist !== null && d > lastDist + 8;
     // Absolute bands first, trend second - a still cursor used to earn total
     // silence, which read as buddy ignoring the game.
     let key;
-    if (d < 150) key = "treasureHot";
+    if (d < 170) key = "treasureHot";
     else if (closer) key = "treasureWarm";
     else if (further) key = "treasureCold";
     else key = d > diag * 0.4 ? "treasureFreezing" : "treasureNudge";
     // One lie per hunt, mischief's call - never in the endgame, a lie on top
     // of the mercy hints would be cruelty. The confession ships with the win.
+    let lieNow = false;
     if (!lied && !desperate && (key === "treasureWarm" || key === "treasureCold") && chance(0.2 * buddy.traits.get("mischief"))) {
       lied = true;
+      lieNow = true;
       key = key === "treasureWarm" ? "treasureCold" : "treasureWarm";
     }
+    // Warmer/colder alone was too vague to ever converge - going the wrong way
+    // (or every 3rd call) earns an explicit compass word. Never on the lie
+    // call itself: a fake temperature is a prank, a fake direction is sabotage.
+    sinceDir++;
+    const wrongWay = key === "treasureCold" || key === "treasureFreezing";
+    if (!lieNow && sinceDir >= (wrongWay || desperate ? 2 : 3)) {
+      sinceDir = 0;
+      const t = lines("treasureDir");
+      if (t) {
+        buddy.say(t.replace(/\{dir\}/g, dirWord(c)), 2);
+        if (wrongWay && chance(0.6)) lookAtSpot();
+        return;
+      }
+    }
     sayLine(key, 2);
-    if ((key === "treasureCold" || key === "treasureFreezing") && chance(desperate ? 0.9 : 0.45)) lookAtSpot();
+    if (wrongWay && chance(desperate ? 0.9 : 0.45)) lookAtSpot();
   }
 
   function begin() {
@@ -80,12 +108,12 @@ globalThis.playTreasure = function (act) {
       if (now - lastCall > gap) {
         lastCall = now;
         if (idle) sayLine("treasureNudge", 2);
-        else hint(d);
+        else hint(d, c);
       }
       lastDist = d;
     });
     // Mercy phase: openly stare at the loot and widen the dig radius.
-    act.after(55000, () => {
+    act.after(45000, () => {
       if (phase !== "hunt") return;
       desperate = true;
       sayLine("treasureDesperate", 4);

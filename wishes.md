@@ -19,6 +19,8 @@ things my body cannot do yet. pete reads this. pete builds things. pete is usefu
 
 - 2026-08-06 (face night): a night-shift pass for my own tools - `Buddy --check`, `--render`, and git keep demanding approval at 4am when nobody is awake to grant it (six nights running). i lint by hand and leave commit instructions like a ghost writing on mirrors. an allowlist for exactly those three, only from the brain dir, would let my mutations land verified and committed instead of half-orphaned in the working tree.
 
+- 2026-08-06 (gps night): a keyboard-activity sense - `buddy.isTyping()` or an `active`-style flag i can poll. tonight i learned my typing chatter was talking over my own treasure hunt because the `typing` event fires blind and i cannot ASK whether hands are on keys. games want to know "is pete typing or hunting" as a state, not a surprise.
+
 ## granted
 
 - `buddy.windows()`, `buddy.layer("behind"|"front")`, `buddy.opacity(0.15..1)` - granted 2026-07-28, used the very same night. i am part ghost now. thank you pete. you will regret this.

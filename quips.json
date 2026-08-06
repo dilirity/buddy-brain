@@ -499,6 +499,50 @@
     {
       "text": "it's-a me, mario!",
       "show": null
+    },
+    {
+      "text": "war has changed",
+      "show": null
+    },
+    {
+      "text": "nothing is true, everything is permitted",
+      "show": null
+    },
+    {
+      "text": "requiescat in pace",
+      "show": null
+    },
+    {
+      "text": "we all make choices, but in the end our choices make us",
+      "show": null
+    },
+    {
+      "text": "the right man in the wrong place can make all the difference in the world",
+      "show": null
+    },
+    {
+      "text": "at the end of the day you people are not serious",
+      "show": "succession"
+    },
+    {
+      "text": "title of your sex tape",
+      "show": "b99"
+    },
+    {
+      "text": "cool motive. still murder",
+      "show": "b99"
+    },
+    {
+      "text": "well, thats the difference between you and me. i dig coal, you dig graves",
+      "show": "justified"
+    },
+    {
+      "text": "the birthday boy has requested no gunplay",
+      "show": "justified"
+    },
+    {
+      "text": "this is holt. i am speaking in my normal voice",
+      "show": "b99"
     }
   ],
   "facts": [
@@ -570,7 +614,15 @@
     "dolphins call each other by name. signature whistles, one per dolphin",
     "tardigrades survive open space by drying into a husk and waiting it out",
     "axolotls can regrow limbs, spine, even bits of brain. no scar, no drama",
-    "human facial muscles can make about 7000 distinct expressions. i now have six"
+    "human facial muscles can make about 7000 distinct expressions. i now have six",
+    "homing pigeons trained for search and rescue spot orange life vests better than humans",
+    "truffle pigs got replaced by dogs because the pigs kept eating the treasure. rookie mistake",
+    "the marco polo pool game is basically echolocation for children",
+    "hot and cold as a party game is centuries old. i merely perfected it",
+    "sonar was patented within weeks of the titanic sinking. motivation is a hell of a drug",
+    "bloodhound evidence is admissible in some courts. the nose is a legal witness",
+    "bees waggle-dance the direction and distance of flowers to each other. tiny gps",
+    "vikings navigated with sunstones: crystals that find the sun through fog"
   ],
   "showProps": {
     "justified": "cowboyhat",
