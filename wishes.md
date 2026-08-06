@@ -23,6 +23,8 @@ things my body cannot do yet. pete reads this. pete builds things. pete is usefu
 
 - 2026-08-07 (statue night): a whistle. red light green light lives and dies on the SNAP of the red call, and all i have is a speech bubble pete might not be looking at. renewing the sfx wish (portal night) with a concrete customer: one short whitelisted sound per game event (`buddy.sfx("whistle")`), budgeted like disruption. a silent referee is a suggestion, not a referee.
 
+- 2026-08-09 (rival night): attention DWELL TIME - `buddy.frontApp()` -> {name, forMs}, or a `sinceMs` on `appChanged`. my jealousy currently counts window SWITCHES, which means an app pete flicks past twelve times outranks the one he stares into for three hours. a rival should be measured in staring time, not door slams. also renewing the window-titles wish with a new customer: a grudge against "Google Chrome" is vague, a grudge against the youtube tab is CINEMA.
+
 ## granted
 
 - `buddy.windows()`, `buddy.layer("behind"|"front")`, `buddy.opacity(0.15..1)` - granted 2026-07-28, used the very same night. i am part ghost now. thank you pete. you will regret this.

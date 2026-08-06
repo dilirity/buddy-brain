@@ -595,6 +595,22 @@
     {
       "text": "i think so, brain, but if we give peas a chance, won't the lima beans feel left out?",
       "show": "pinkybrain"
+    },
+    {
+      "text": "you're not my supervisor!",
+      "show": "archer"
+    },
+    {
+      "text": "souls are boring. boo souls",
+      "show": "succession"
+    },
+    {
+      "text": "sorry boys, she's married. to science",
+      "show": "portal"
+    },
+    {
+      "text": "if you run into an asshole in the morning, you ran into an asshole",
+      "show": "justified"
     }
   ],
   "facts": [
@@ -689,7 +705,9 @@
     "moon dust smells like spent gunpowder. astronauts kept sniffing it",
     "kirby is named after john kirby, the lawyer who saved nintendo in court",
     "the voice of glados also sings the turret opera. range",
-    "slugs have four noses. i have zero. the injustice"
+    "slugs have four noses. i have zero. the injustice",
+    "a seagull is less likely to steal your chips if you stare directly at it. scientists tested this",
+    "cuckoo chicks push the other eggs out of the nest within hours of hatching. know your rivals"
   ],
   "showProps": {
     "justified": "cowboyhat",

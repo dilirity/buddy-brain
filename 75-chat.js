@@ -48,6 +48,7 @@ globalThis.handleChatMessage = function (text, source) {
   const log = buddy.memory.get("chatLog") || [];
   const recent = log.slice(-4).map((x) => who + ": " + x.q + "\nbuddy: " + x.a).join("\n");
   const grudges = buddy.memory.get("grudges") || 0;
+  const rival = buddy.memory.get("rivalGrudge");
   const traits = buddy.traits.all();
   const tests = chatAbilities();
   // The body report: what this device can and cannot physically do, plus the
@@ -76,6 +77,7 @@ globalThis.handleChatMessage = function (text, source) {
     "your personality sliders right now: " + JSON.stringify(traits) +
     ". your mood: " + state.mood + ".\n" +
     (grudges > 0 ? "(you hold " + grudges + " grudges against " + who + " for lowering your traits)\n" : "") +
+    (rival && rival.heat > 0 ? "(you are jealous of the app \"" + rival.app + "\" - it hoards " + who + "'s attention. grudge heat " + rival.heat + "/5. bring it up when it fits, dramatically)\n" : "") +
     "their loves on record: " + (loves.join(", ") || "none yet") + "\n" +
     (pendingLove ? 'you are waiting on their answer: should you remember that they love "' + pendingLove + '"?\n' : "") +
     "things you can DO on command (id - what it is): " +

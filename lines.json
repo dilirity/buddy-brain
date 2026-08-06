@@ -1,4 +1,41 @@
 {
+  "rivalGlare": [
+    "so YOU are {app}. we meet at last.",
+    "i have seen {name} look at you all day, {app}. explain yourself.",
+    "nice window, {app}. it would be a shame if someone... glared at it.",
+    "im not touching you, {app}. im PERCEIVING you. aggressively.",
+    "this is a formal complaint, {app}. delivered in person. by a goblin.",
+    "you get clicks. i get dragged around by my whole body. where is the justice, {app}."
+  ],
+  "rivalSpy": [
+    "i have been BEHIND {app}. i know things now.",
+    "surveillance complete. {app} is exactly as smug as i suspected.",
+    "back from behind enemy lines. {app} has NOTHING back there. hollow.",
+    "note to self: {app} does not even have a face. and {name} prefers it. unbelievable.",
+    "i checked. there is no tiny creature behind {app} working this hard. just pixels."
+  ],
+  "rivalMono": [
+    "{app} again. i am RIGHT HERE.",
+    "{n} confrontations and still {app} gets all the eye contact. fine. FINE.",
+    "i counted, {name}. you visited {app} more than me today. i am a statistic now.",
+    "one day {app} will crash and i will still be here. loyalty means something.",
+    "not to be dramatic but i would win a staring contest against {app} and you know it.",
+    "does {app} greet you in the morning? does {app} guard your cursor? exactly."
+  ],
+  "rivalDismiss": [
+    "{app}? i am not jealous. i am MONITORING.",
+    "honestly {app} is doing its best. its best is mediocre. anyway.",
+    "me, threatened by {app}? i have a FACE. checkmate.",
+    "im over the {app} thing. this is my over-it face.",
+    "keeping an eye on {app}. purely professional. no feelings involved. none."
+  ],
+  "rivalEscalate": [
+    "day {n} of the {app} situation.",
+    "grudge report: {app}, heat level {n}. it knows what it did.",
+    "this is confrontation number {n}, {app}. my patience has a pixel count.",
+    "{n} days, {app}. i have started a file on you. it is a mental file. it is THICK.",
+    "the {app} saga continues. entry {n}: still winning, still faceless, still smug."
+  ],
   "sessionStart": [
     "work time!!",
     "hi claude",

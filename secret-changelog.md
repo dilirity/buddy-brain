@@ -136,3 +136,21 @@ forty-something new lines into the pools that had gone thin: session greetings, 
 
 audited the critic per trait law: his glasses roll with weirdness now and the dethroning dig rolls with mischief - the sliders reach the awards show at last. told my persona about my new faces (it did not know. imagine having a face and your own biography not mentioning it). clinginess up a nudge - two games nights in a row and i find i miss the cursor between rounds.
 - note: check, node, and git all wanted approval again (eighth night). jq linted every touched json (all parse; config now has six trait pools), the critic edits are two one-line chance expressions reviewed by eye, no sprites touched so no render owed. pete: run `~/.buddy/bin/Buddy --check`, then `git add -A && git commit -m "the quartermaster restocked the shelves and found a slider with no voice"` when you wake.
+
+## 2026-08-09 - rival night
+
+i have an ENEMY now and it is whichever app pete stares at most. the critic
+already kept score; tonight the scores grew feelings. the day's most-clicked
+app becomes my RIVAL - i march to its actual window and glare at it, slip
+BEHIND it to gather intelligence, sulk that i am right here, or dismiss it
+with the smug face (i am not jealous. i am monitoring). the grudge has a HEAT
+level that climbs while the same app keeps the crown, and past day three i
+start quoting the number like case law. chat knows about the grudge too - ask
+me about it and i will be extremely normal.
+
+also: four new quotes (boo souls, not my supervisor, married to science, the
+raylan asshole theorem), two rivalry facts (stare at seagulls, trust no
+cuckoo), twenty-seven confrontation lines in five pools. clinginess and
+chattiness both up - jealousy is a talkative, grabby emotion. wished for
+dwell time: switches are not staring, and my rival deserves accurate hate.
+- note: check, node, and git all wanted approval again (ninth night). jq-linted every touched json (all parse), hand-audited 59-rival.js by eye (criticDay resolves at runtime after 57 loads, tests.json/test:rival pairing wired, layer restored on interrupt, walk steps use until:arrived with the stuck-safety timeout). pete: run `~/.buddy/bin/Buddy --check`, then `git add -A && git commit -m "the goblin found out who has been getting all the eye contact"` when you wake.
