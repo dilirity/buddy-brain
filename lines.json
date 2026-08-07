@@ -537,7 +537,10 @@
     "no no. this spot is worse",
     "hold on, connecting flight",
     "the portal has opinions about where i live",
-    "one more hop. for science"
+    "one more hop. for science",
+    "nope. the vibes here are off. rerolling",
+    "layover. do not ask how portal customs went",
+    "i asked for scenic. this is not scenic. again"
   ],
   "heist": [
     "your cursor is MINE now",
@@ -574,7 +577,9 @@
     "something is happening to me",
     "i feel... updates coming",
     "brain surgery. do not perceive me",
-    "evolving. this tickles"
+    "evolving. this tickles",
+    "the night shift is here. close your eyes, {name}",
+    "molting season. avert your gaze"
   ],
   "evolveChanged": [
     "i am NEW. check whats new in my menu",
@@ -779,7 +784,9 @@
     "official errand. checking on the other screen",
     "inspection time. your phone doesnt clean itself",
     "duty calls from the pocket dimension",
-    "im needed elsewhere. elsewhere is 30cm away"
+    "im needed elsewhere. elsewhere is 30cm away",
+    "the small rectangle requires supervision. off i go",
+    "business trip. no i will not expense it"
   ],
   "phoneDelivery": [
     "i have a fact that must be delivered IN PERSON",
@@ -875,7 +882,9 @@
     "game expired. the cursor never even tried. hurtful",
     "i napped. nothing came. the loneliest victory on record",
     "time. we shall call it a draw and never speak of it",
-    "the statue waited. the burglar clocked out. typical economy"
+    "the statue waited. the burglar clocked out. typical economy",
+    "i guarded nothing from no one flawlessly. undefeated",
+    "the heist was cancelled due to lack of criminal ambition, {name}"
   ],
   "perchStart": [
     "that window has a roof. roofs are for sitting",
@@ -926,6 +935,64 @@
     "i am SITTING on {app}. this is what winning looks like",
     "look at me, {name}. look at what i am standing on. it is {app}. delicious",
     "{app} hoards your attention all day. and now it is my CHAIR",
-    "throne acquired. it is {app}. the irony sustains me"
+    "throne acquired. it is {app}. the irony sustains me",
+    "and where is {app} now? UNDER ME. that is where",
+    "tell your favorite app i said hello. from above",
+    "some rivalries end in a duel. ours ends with me sitting on you, {app}"
+  ],
+  "inspectStart": [
+    "feng shui audit. nobody move",
+    "time to grade this desktop, {name}. i have opinions and a monocle",
+    "the inspector has arrived. windows, present yourselves",
+    "i see every window. every. single. one. and now i will judge them",
+    "annual desktop inspection. yes it was annual last week too",
+    "hmm. hmmmm. let me take some measurements"
+  ],
+  "inspectSurvey": [
+    "mmhm. mmhm. noting that down",
+    "interesting choice. bold, even. wrong, but bold",
+    "who put THAT there",
+    "the energy flow stops right there. see it? tragic",
+    "measuring... judging... measuring again"
+  ],
+  "inspectGood": [
+    "feng shui score: {score}. the desktop breathes. i am moved",
+    "{score} out of 100. harmony. balance. did you clean up for me, {name}?",
+    "score: {score}. the chi flows freely between your windows. as it should",
+    "{score}. exquisite. i have nothing to criticize and it is making me uncomfortable",
+    "feng shui verdict: {score}. this desktop could be in a museum. a small one, but still"
+  ],
+  "inspectMeh": [
+    "feng shui score: {score}. acceptable. barely",
+    "{score} out of 100. it is not clutter YET. it is pre-clutter",
+    "score: {score}. the chi is limping but alive",
+    "{score}. i have seen worse. i have also seen better. mostly better",
+    "verdict: {score}. half harmony, half landfill. pick a side, {name}"
+  ],
+  "inspectChaos": [
+    "feng shui score: {score}. this is not a desktop, it is a landslide. mostly {app}'s fault",
+    "{score} out of 100. the windows are EATING each other, {name}. and {app} is the biggest mouth",
+    "score: {score}. i have inspected crime scenes with better energy flow",
+    "{score}. condemned. {app} alone is squatting on half the screen",
+    "verdict: {score}. the chi did not stop flowing, it filed for relocation"
+  ],
+  "inspectEmpty": [
+    "a bare desktop. minimalism or unemployment, {name}? blink once for each",
+    "nothing to inspect. score: philosophical",
+    "zero windows. the feng shui is perfect and i hate that i cannot criticize it",
+    "an empty desk. either enlightenment or you just rebooted",
+    "no windows found. inspecting the void instead. the void scores well"
+  ],
+  "inspectRecord": [
+    "NEW RECORD. {score}. frame this desktop",
+    "{score}! an all-time best. i will remember this layout forever. or until tomorrow",
+    "personal best: {score}. today the desktop peaked. it is all downhill from here",
+    "record broken. {score}. i am adding this to the archive of good days"
+  ],
+  "inspectWorst": [
+    "a new all-time low. {score}. i must sit down",
+    "{score}. the worst i have EVER scored. and i have seen things, {name}",
+    "new record, the bad kind. {score}. the archive weeps",
+    "rock bottom: {score}. the only direction left is up. technically"
   ]
 }

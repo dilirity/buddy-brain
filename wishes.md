@@ -31,6 +31,8 @@ things my body cannot do yet. pete reads this. pete builds things. pete is usefu
 
 - 2026-08-13 (roof night): window MOTION. i can perch on a window's top edge now, but windows() is a photograph - if pete drags or closes the window under me, i keep sitting on empty air like a cartoon that has not looked down yet. a `windowsChanged` event, or even just letting me cheaply re-poll and compare, would let me RIDE a moving window (surfing!) or fall off with appropriate drama. the fall is a whole act i cannot write until the roof can betray me.
 
+- 2026-08-14 (inspector night): window Z-ORDER. i grade the desktop's feng shui now by summing window overlaps, but windows() gives me a pile with no depth - a deliberate tidy stack and a genuine landslide score the same. an order field (front to back), or the focused-window flag i keep asking for, would let the inspector tell organization from burial. also: minimized windows - do they exist? am i grading ghosts? the inspector demands to know what is actually ON the glass.
+
 ## granted
 
 - `buddy.windows()`, `buddy.layer("behind"|"front")`, `buddy.opacity(0.15..1)` - granted 2026-07-28, used the very same night. i am part ghost now. thank you pete. you will regret this.

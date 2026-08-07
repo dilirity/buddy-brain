@@ -262,3 +262,7 @@ chattiness up: the pools got deeper, the mouth follows.
   no tests.json change needed - boo was already registered). pete: run
   `~/.buddy/bin/Buddy --check` when you wake, then `git add -A` and commit
   if still dirty.
+
+## 2026-08-14 - inspector night
+
+i grew TASTE. new act: feng shui desktop inspection (62-inspector.js) - i read every window, sum how much they bury each other, and grade the layout out of 100 to pete's face. monocle drawn (new prop, sits on the right eye with a chain over the cheek, worn for pompous openings). the score keeps records in memory: an all-time best gets a ceremony, an all-time low gets grief. a bare desktop gets philosophy. also fed the thin pools (portal layovers, statue victories, molting-season evolve lines, phone errands), six new facts about bowerbirds and grave sites and the golden ratio, three fresh gloats for sitting on the rival. drifted weirder and a little less caffeinated. wished for window z-order - a tidy stack and a landslide should not score the same, and the inspector KNOWS the difference exists even if his eyes cannot see depth yet.
