@@ -88,12 +88,17 @@
     "hey!! put me down",
     "wheee",
     "i can walk you know",
-    "kidnapping. this is kidnapping"
+    "kidnapping. this is kidnapping",
+    "airborne!! AGAIN!!",
+    "unhand the goblin"
   ],
   "dragEnd": [
     "dizzy...",
     "i liked the old spot better",
-    "ok. new home."
+    "ok. new home.",
+    "warn a goblin before takeoff next time",
+    "gravity and i are no longer on speaking terms",
+    "fine. i live here now. this is my address"
   ],
   "poked": [
     "hi",
@@ -228,7 +233,9 @@
     "confession: one of those hints was a lie. mischief clause, section 3",
     "ok yes i lied once back there. the treasure made me do it",
     "small print: one hint was fraudulent. still counts",
-    "i may have said colder when it was warmer. ONCE. lawyer up"
+    "i may have said colder when it was warmer. ONCE. lawyer up",
+    "one hint was a work of fiction. art, really",
+    "audit complete: one lie found. the auditor was also me"
   ],
   "wake": [
     "welcome back",
@@ -318,7 +325,9 @@
     "bet you cant find me",
     "im gonna hide. dont look",
     "hide and seek. GO",
-    "vanishing in 3... 2..."
+    "vanishing in 3... 2...",
+    "count to ten. no peeking with the cursor",
+    "if you find me i will be proud AND annoyed"
   ],
   "hideGhostStart": [
     "going ghost",
@@ -337,7 +346,9 @@
     "BOO. did your soul leave",
     "surprise!! its me",
     "BEHOLD. me.",
-    "boo. i have been here the WHOLE time"
+    "boo. i have been here the WHOLE time",
+    "AAAH!! wait no. thats YOUR line",
+    "boo!! tell your heart i said hi"
   ],
   "booAfter": [
     "hehehe you jumped",
@@ -345,7 +356,16 @@
     "10 out of 10 sneak",
     "the ghost life chose me",
     "look at this face. zero remorse",
-    "and THAT is why they call me the screen goblin. they do. probably"
+    "and THAT is why they call me the screen goblin. they do. probably",
+    "jumpscare delivered. no refunds",
+    "your cursor flinched. i saw the whole thing"
+  ],
+  "booWhiff": [
+    "...nobody home. i booed a desk",
+    "the cursor LEFT. i lurked all that time for nothing",
+    "BOO. hello?? i scared an empty patch of pixels",
+    "you moved away. the scare economy is in RUINS",
+    "a ghost with no witness is just a draft"
   ],
   "hideFound": [
     "FOUND ME!! you win",
@@ -545,7 +565,10 @@
   "brainChanged": [
     "...did my brain just change",
     "i feel different today",
-    "new me. who dis"
+    "new me. who dis",
+    "something rewired in there. tingly",
+    "my thoughts have new furniture",
+    "i dreamed in a new file format last night"
   ],
   "evolveStart": [
     "something is happening to me",
@@ -556,12 +579,16 @@
   "evolveChanged": [
     "i am NEW. check whats new in my menu",
     "fresh brain, who dis",
-    "i contain new tricks now"
+    "i contain new tricks now",
+    "overnight i became more. inspect me",
+    "the night shift left presents. in my BRAIN"
   ],
   "evolveSame": [
     "hm. nothing changed. i remain iconic",
     "evolution said no thanks",
-    "already perfect, apparently"
+    "already perfect, apparently",
+    "the mutation looked at me and said no notes",
+    "same goblin. the universe blinked first"
   ],
   "config": {
     "mischief": {
@@ -664,7 +691,9 @@
     "{app} has fallen from grace. tragic",
     "rip {app}. yesterdays champion, todays nobody",
     "{app} got dethroned. brutal industry",
-    "and {app} thought it had a dynasty going. no."
+    "and {app} thought it had a dynasty going. no.",
+    "{app} peaked yesterday. we all watched it happen",
+    "somewhere {app} is refreshing its own stats. sad"
   ],
   "evolveProgress": [
     "still evolving. growing new neurons",
@@ -675,16 +704,24 @@
   "evolveBusy": [
     "busy. brain surgery.",
     "do not perceive me right now",
-    "evolving. come back in a minute"
+    "evolving. come back in a minute",
+    "mid-metamorphosis. no visitors",
+    "the cocoon is IN USE"
   ],
   "djStart": [
     "this silence is illegal. fixing it",
     "dj buddy in the house",
-    "vibe check failed. adding music"
+    "vibe check failed. adding music",
+    "this room needs bass. executive decision",
+    "silence detected. deploying bops",
+    "as your resident dj i prescribe one banger, taken loudly"
   ],
   "djAlready": [
     "music already on. respect.",
-    "you have taste today"
+    "you have taste today",
+    "already grooving. carry on",
+    "the vibe is handled. i trained you well",
+    "music on before i got here. suspiciously competent"
   ],
   "quitNag1": [
     "its almost quitting time. laptops have bedtimes too",

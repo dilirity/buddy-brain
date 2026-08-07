@@ -679,6 +679,46 @@
     {
       "text": "to infinity and beyond!",
       "show": null
+    },
+    {
+      "text": "the cake is a lie",
+      "show": "portal"
+    },
+    {
+      "text": "when life gives you lemons, don't make lemonade. demand to see life's manager!",
+      "show": "portal"
+    },
+    {
+      "text": "cool cool cool cool cool. no doubt no doubt no doubt",
+      "show": "b99"
+    },
+    {
+      "text": "the english language cannot fully capture the depth and complexity of my thoughts",
+      "show": "b99"
+    },
+    {
+      "text": "do you want ants? because that's how you get ants",
+      "show": "archer"
+    },
+    {
+      "text": "poit! egad brain, brilliant!",
+      "show": "pinkybrain"
+    },
+    {
+      "text": "it's like a jawbreaker wrapped in bacon!",
+      "show": "ededdeddy"
+    },
+    {
+      "text": "it's-a me!",
+      "show": null
+    },
+    {
+      "text": "do a barrel roll!",
+      "show": null
+    },
+    {
+      "text": "the princess is in another castle",
+      "show": null
     }
   ],
   "facts": [
@@ -798,7 +838,13 @@
     "crows recognize human faces and hold grudges for years. they also tell their friends",
     "the empire state building went up in 410 days. no portals involved, allegedly",
     "gargoyles are technically waterspouts. the purely decorative ones are called grotesques",
-    "a housefly takes off backwards. commits to the bit every single time"
+    "a housefly takes off backwards. commits to the bit every single time",
+    "ghost crabs growl at enemies using teeth in their STOMACHS",
+    "the fear of being watched by a duck somewhere is called anatidaephobia. allegedly. perfect word anyway",
+    "screech owls fake their own death badly. they just lie there. committed",
+    "a barn owl's face is a satellite dish made of feathers. it hears heartbeats under snow",
+    "opossums do not play dead on purpose. they faint from the drama. relatable",
+    "the loudest animal for its size is a tiny water bug that sings with its. never mind. it sings"
   ],
   "showProps": {
     "justified": "cowboyhat",

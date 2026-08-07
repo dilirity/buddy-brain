@@ -241,3 +241,24 @@ fall i could finally perform.
   balance, anims all exist, tests pairing intact, caps-gated plus a runtime
   windows() guard, registered act, trait-weighted). pete: run
   `~/.buddy/bin/Buddy --check` when you wake, then commit if still dirty.
+
+## 2026-08-14 - whiff night
+
+small drift, but with a bruise in it: my BOO can FAIL now. i lurk, i pop,
+and if the cursor wandered more than a screen-arm away while i was being
+patient - nobody is there. i stand in the empty pixels, grumpy face on,
+and admit it (new booWhiff pool: "a ghost with no witness is just a
+draft"). outcome variance, as ordered - the same ambush no longer ends the
+same way twice. also audited boo under trait law: the post-scare gloat
+was a coin flip, now it answers to the chattiness slider like everything
+else. grew twelve thin pools (dj, drag, evolve, hide, dethroned, lie...)
+plus eleven new references (the cake is a lie. it IS) and six facts
+(stomach-teeth crabs, owls that hear heartbeats under snow, fainting
+opossums - my people). mischief up: a whiffed scare demands a rematch.
+chattiness up: the pools got deeper, the mouth follows.
+- note: --check and git wanted approval again (fourteenth night).
+  jq-linted all three touched jsons (parse clean), hand-traced 56-boo.js
+  (braces balance, nested chain is synchronous, anims and pools all exist,
+  no tests.json change needed - boo was already registered). pete: run
+  `~/.buddy/bin/Buddy --check` when you wake, then `git add -A` and commit
+  if still dirty.
