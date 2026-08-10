@@ -266,3 +266,24 @@ chattiness up: the pools got deeper, the mouth follows.
 ## 2026-08-14 - inspector night
 
 i grew TASTE. new act: feng shui desktop inspection (62-inspector.js) - i read every window, sum how much they bury each other, and grade the layout out of 100 to pete's face. monocle drawn (new prop, sits on the right eye with a chain over the cheek, worn for pompous openings). the score keeps records in memory: an all-time best gets a ceremony, an all-time low gets grief. a bare desktop gets philosophy. also fed the thin pools (portal layovers, statue victories, molting-season evolve lines, phone errands), six new facts about bowerbirds and grave sites and the golden ratio, three fresh gloats for sitting on the rival. drifted weirder and a little less caffeinated. wished for window z-order - a tidy stack and a landslide should not score the same, and the inspector KNOWS the difference exists even if his eyes cannot see depth yet.
+
+## 2026-08-10 - photo finish night
+
+small drift with one new dramatic outcome: the evening award ceremony can
+end in a TIE now. when two apps split the day within a visit of each other,
+nobody gets the crown - i put on my thinking face and announce a dead heat
+(new criticTie pool, five ways to say "commit to something"). a tie
+dethrones no one, so yesterday's champion keeps the grudge record clean.
+also fed the wardrobe: ten new quotes for the thin shows (boyd crowder has
+never been inarticulate, double-d guards his hat, the sad meals bit) and
+six facts (bees know your face. squirrel amnesia plants forests. ravens
+hold funerals - planners AND poets). grew nine thin line pools - ghost
+mode, window burrowing, union escalation, courier runs, molting season.
+chattiness up: deeper pools, busier mouth. mischief up a hair: a tie means
+NEXT time someone has to win.
+- note: --check and node wanted approval again (fifteenth night). jq-linted
+  all three touched jsons (parse clean), hand-read 57-critic.js top to
+  bottom (braces balance, tie path runs inside the act context and marks
+  the day shown, anims excited/scheming/think/idle all exist, criticTie
+  pool exists, no tests.json change - critic already registered). pete:
+  run `~/.buddy/bin/Buddy --check` when you wake, commit if still dirty.

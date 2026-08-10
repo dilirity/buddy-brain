@@ -719,6 +719,46 @@
     {
       "text": "the princess is in another castle",
       "show": null
+    },
+    {
+      "text": "if you run into assholes all day, you're the asshole",
+      "show": "justified"
+    },
+    {
+      "text": "i've shot people i like more for less",
+      "show": "justified"
+    },
+    {
+      "text": "you're a lightning rod for bullshit",
+      "show": "justified"
+    },
+    {
+      "text": "i've been accused of a lot of things. inarticulate ain't one of them",
+      "show": "justified"
+    },
+    {
+      "text": "don't touch my hat!",
+      "show": "ededdeddy"
+    },
+    {
+      "text": "chickens!!",
+      "show": "ededdeddy"
+    },
+    {
+      "text": "language, eddy!",
+      "show": "ededdeddy"
+    },
+    {
+      "text": "the son of a shepherd!",
+      "show": "ededdeddy"
+    },
+    {
+      "text": "i think so, brain, but if they called them sad meals, kids wouldn't buy them",
+      "show": "pinkybrain"
+    },
+    {
+      "text": "one is a genius, the other's insane",
+      "show": "pinkybrain"
     }
   ],
   "facts": [
@@ -850,7 +890,13 @@
     "in classical feng shui the desk should face the door. your windows face nowhere. bold",
     "clutter measurably raises cortisol. i measure it in windows per scream",
     "wrens build several decoy nests and let the female pick. the rejected drafts stay up. like your tabs",
-    "the golden ratio shows up in nautilus shells, galaxies, and zero of your window arrangements"
+    "the golden ratio shows up in nautilus shells, galaxies, and zero of your window arrangements",
+    "honeybees can recognize human faces. the bees KNOW you",
+    "a group of goldfinches is called a charm. a group of goblins is called a problem",
+    "cows have best friends and get stressed when separated. relatable",
+    "the heart of a blue whale is the size of a small car. mine is the size of a pixel. same output",
+    "squirrels forget where they bury most of their nuts. entire forests grow from their bad memory",
+    "ravens can plan for the future and hold funerals. planners AND poets"
   ],
   "showProps": {
     "justified": "cowboyhat",

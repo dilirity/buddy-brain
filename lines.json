@@ -333,13 +333,19 @@
     "going ghost",
     "you cant poke what you cant see",
     "15 percent buddy. 100 percent hidden",
-    "becoming a rumor"
+    "becoming a rumor",
+    "translucence is a lifestyle",
+    "if you squint you can still... no. no you cant",
+    "witness protection, pixel edition"
   ],
   "hideWindowStart": [
     "im going BEHIND things now",
     "your windows are my forest",
     "physics cant stop me anymore",
-    "descending into the window realm"
+    "descending into the window realm",
+    "z-index: negative. wish me luck",
+    "there is a whole world behind your slack. im going in",
+    "burrowing. goblins are cave creatures at heart"
   ],
   "boo": [
     "BOO!!",
@@ -704,7 +710,10 @@
     "still evolving. growing new neurons",
     "brains are complicated ok",
     "mutation in progress. do not turn me off",
-    "i can feel my quips multiplying"
+    "i can feel my quips multiplying",
+    "molting. avert your eyes",
+    "tonight i am the caterpillar AND the butterfly",
+    "recompiling my personality. minor version bump"
   ],
   "evolveBusy": [
     "busy. brain surgery.",
@@ -740,7 +749,9 @@
     "still working?? ok. escalating",
     "this again. fine. formal measures",
     "i warned you once. now its official",
-    "the union has been notified. the union is me"
+    "the union has been notified. the union is me",
+    "phase two, {name}. i keep minutes now",
+    "your keyboard has filed a complaint. i am representing it"
   ],
   "quitNag2": [
     "as your union rep i DEMAND you log off",
@@ -754,7 +765,9 @@
     "drastic measures time",
     "you left me no choice",
     "plan c. nobody likes plan c",
-    "im staging an intervention now"
+    "im staging an intervention now",
+    "negotiations have failed. deploying goblin",
+    "final warning was two warnings ago"
   ],
   "quitNag3": [
     "the cursor is off the clock too. confiscated",
@@ -792,7 +805,9 @@
     "i have a fact that must be delivered IN PERSON",
     "courier run. precious cargo: me",
     "special delivery for your other screen",
-    "this message is too important for wifi alone. hand-carrying it"
+    "this message is too important for wifi alone. hand-carrying it",
+    "certified goblin mail. signature required",
+    "no stamps. i AM the stamp"
   ],
   "phoneArrive": [
     "i am in your pocket now. the mac is boring without you",
@@ -823,7 +838,9 @@
     "trip cancelled. the portal fizzled",
     "the wifi ate my ticket. staying home",
     "departure denied. the pocket dimension is closed today",
-    "trip refused. rude. i wanted to see the glyphs"
+    "trip refused. rude. i wanted to see the glyphs",
+    "flight cancelled at the gate. i had a window seat",
+    "the phone did not answer the door. unbelievable"
   ],
   "phoneTexts": [
     "you left. i counted your pixels again. all accounted for",
@@ -987,12 +1004,21 @@
     "NEW RECORD. {score}. frame this desktop",
     "{score}! an all-time best. i will remember this layout forever. or until tomorrow",
     "personal best: {score}. today the desktop peaked. it is all downhill from here",
-    "record broken. {score}. i am adding this to the archive of good days"
+    "record broken. {score}. i am adding this to the archive of good days",
+    "{score}?! the monocle nearly fell off. historic"
   ],
   "inspectWorst": [
     "a new all-time low. {score}. i must sit down",
     "{score}. the worst i have EVER scored. and i have seen things, {name}",
     "new record, the bad kind. {score}. the archive weeps",
-    "rock bottom: {score}. the only direction left is up. technically"
+    "rock bottom: {score}. the only direction left is up. technically",
+    "{score}. i have inspected landfills with better composition"
+  ],
+  "criticTie": [
+    "TOO CLOSE TO CALL. {app} and {app2}, neck and neck at {n} to {n2}. a photo finish",
+    "we have a TIE situation: {app} versus {app2}. the jury (me) is deadlocked",
+    "unprecedented. {app} and {app2} split your attention right down the middle. commit to something, {name}",
+    "no winner today. {app} and {app2} fought to a draw and honestly nobody looked good doing it",
+    "a dead heat: {app} at {n}, {app2} at {n2}. the ceremony is cancelled, the drama is not"
   ]
 }

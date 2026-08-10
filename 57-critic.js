@@ -20,10 +20,33 @@ globalThis.playCritic = function (force) {
   const total = names.reduce((n, k) => n + tally[k], 0);
   // A ceremony over 4 data points is sad for everyone involved.
   if (!force && (names.length < 2 || total < 12)) return false;
-  const winner = names.sort((a, b) => tally[b] - tally[a])[0];
+  const ranked = names.sort((a, b) => tally[b] - tally[a]);
+  const winner = ranked[0];
   if (!winner) {
     if (force) buddy.say("no scores yet. go click on some apps", 4);
     return false;
+  }
+  const runnerUp = ranked[1];
+  // A dead heat gets its own ceremony - no crown, pure drama. No prev-winner
+  // update either: a tie does not dethrone anyone.
+  if (runnerUp && tally[winner] - tally[runnerUp] <= 1 && tally[runnerUp] >= 4) {
+    const tieText = (lines("criticTie") || "a tie: {app} and {app2}")
+      .replace(/\{app2\}/g, runnerUp)
+      .replace(/\{app\}/g, winner)
+      .replace(/\{n2\}/g, String(tally[runnerUp]))
+      .replace(/\{n\}/g, String(tally[winner]));
+    runAct([
+      pick([
+        { anim: "excited", line: "criticOpen", secs: 4, ms: 3000 },
+        { anim: "scheming", say: "i have been keeping score all day. and, uh. hm.", secs: 3, ms: 2600 },
+      ]),
+      chance(0.4 + buddy.traits.get("weirdness") * 0.5)
+        ? { anim: "think", say: tieText, secs: 6, prop: "glasses", ms: 4500 }
+        : { anim: "think", say: tieText, secs: 6, ms: 4500 },
+      { anim: "idle" },
+    ]);
+    buddy.memory.set("criticLastShow", criticDay());
+    return true;
   }
   const prev = buddy.memory.get("criticPrevWinner");
 
