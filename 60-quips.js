@@ -47,8 +47,9 @@ registerAct("fact", {
   },
 });
 
-// Poke it enough times, get a reference.
+// Poke it enough times, get a reference. Weirdness decides whether a poke
+// shakes a quote loose.
 buddy.on("poked", () => {
   if (state.busy) return;
-  if (chance(0.25)) sayRef(4);
+  if (chance(0.4 * buddy.traits.get("weirdness"))) sayRef(4);
 });

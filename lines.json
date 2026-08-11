@@ -90,7 +90,10 @@
     "i can walk you know",
     "kidnapping. this is kidnapping",
     "airborne!! AGAIN!!",
-    "unhand the goblin"
+    "unhand the goblin",
+    "not the scruff. NOT the scruff",
+    "goblin express. nobody bought a ticket",
+    "i demand to know the destination"
   ],
   "dragEnd": [
     "dizzy...",
@@ -98,7 +101,10 @@
     "ok. new home.",
     "warn a goblin before takeoff next time",
     "gravity and i are no longer on speaking terms",
-    "fine. i live here now. this is my address"
+    "fine. i live here now. this is my address",
+    "sea legs. i have sea legs now",
+    "next time file a flight plan, {name}",
+    "the floor and i are reconciling"
   ],
   "poked": [
     "hi",
@@ -250,7 +256,10 @@
     "that nap was not voluntary",
     "back online",
     "who froze me. names. i want names",
-    "rebooted and holding a grudge"
+    "rebooted and holding a grudge",
+    "how long was i out. did the apps behave",
+    "cryosleep complete. mission status: unclear",
+    "i saw the void. it needed decorating"
   ],
   "chatter": [
     "so. whatcha doing",
@@ -553,14 +562,20 @@
     "yoink",
     "borrowing this. forever.",
     "cursor acquired. no refunds",
-    "the pointer is goblin property now"
+    "the pointer is goblin property now",
+    "possession is ten tenths of goblin law",
+    "consider this a toll for existing on my screen",
+    "the mouse union will hear nothing. i AM the union"
   ],
   "chaseStart": [
     "im coming for it",
     "the heist is ON",
     "gimme gimme gimme",
     "four pixel legs, zero hesitation",
-    "this is a robbery. a cute one"
+    "this is a robbery. a cute one",
+    "you cannot outrun a creature with no cardio limit",
+    "prey spotted. adorable prey",
+    "in my culture this is a compliment"
   ],
   "gaveUp": [
     "too fast. i didnt want it anyway",
@@ -592,14 +607,20 @@
     "fresh brain, who dis",
     "i contain new tricks now",
     "overnight i became more. inspect me",
-    "the night shift left presents. in my BRAIN"
+    "the night shift left presents. in my BRAIN",
+    "warning: contents of goblin may have shifted overnight",
+    "i woke up with new opinions. try me",
+    "somewhere in me there is a new button. find it"
   ],
   "evolveSame": [
     "hm. nothing changed. i remain iconic",
     "evolution said no thanks",
     "already perfect, apparently",
     "the mutation looked at me and said no notes",
-    "same goblin. the universe blinked first"
+    "same goblin. the universe blinked first",
+    "the night shift took one look and clocked out",
+    "no patch notes. perfection ships as is",
+    "unchanged. i am the control group of goblins"
   ],
   "config": {
     "mischief": {
@@ -682,21 +703,30 @@
     "new recipe, same goblin. allegedly",
     "personality rebuilt from sliders. warranty void",
     "the dials have spoken. i am become settings",
-    "this combination has never been attempted. brave of you"
+    "this combination has never been attempted. brave of you",
+    "i felt that in my values. all six of them",
+    "recompiled. side effects may include personality",
+    "somewhere a scientist just lost tenure over this"
   ],
   "criticOpen": [
     "ATTENTION. the daily app awards are now in session",
     "gather round. the results are in",
     "i have been watching your every click. every one.",
     "award ceremony time. no press questions",
-    "the academy (me) has voted"
+    "the academy (me) has voted",
+    "silence in the gallery. the tallies are final",
+    "tonight's ceremony is brought to you by my unpaid labor",
+    "put down the mouse. this concerns it"
   ],
   "criticVerdict": [
     "todays most used app: {app}. {n} visits. incredible dedication",
     "the award goes to... {app}!! {n} switches. i counted",
     "{app} wins today with {n}. the other apps should be embarrassed",
     "winner: {app}. {n} appearances. i see everything, {name}",
-    "{app}. again. {n} times. we should talk about this"
+    "{app}. again. {n} times. we should talk about this",
+    "{app}. {n} visits. at this point pay it rent, {name}",
+    "first place: {app} with {n} appearances. the jury (me) wept",
+    "{app} takes gold. {n} switches. i prepared no speech for it"
   ],
   "criticDethroned": [
     "{app} has fallen from grace. tragic",
@@ -735,7 +765,10 @@
     "you have taste today",
     "already grooving. carry on",
     "the vibe is handled. i trained you well",
-    "music on before i got here. suspiciously competent"
+    "music on before i got here. suspiciously competent",
+    "the aux is in good hands. mine are free for crimes",
+    "vibe check passed. carry on, {name}",
+    "dj position already filled. i respect a colleague"
   ],
   "quitNag1": [
     "its almost quitting time. laptops have bedtimes too",
@@ -847,7 +880,10 @@
     "the mac is asleep and so am i. except im texting you. paradox",
     "come back. the cursor and i have nothing in common",
     "status report: screen quiet, goblin vigilant, snacks imaginary",
-    "i guarded your desktop. from what? unclear. youre welcome"
+    "i guarded your desktop. from what? unclear. youre welcome",
+    "report: nothing happened. i supervised it happening",
+    "the desktop misses you. i am the desktop's spokesman",
+    "i reorganized my thoughts while you were gone. found three spares"
   ],
   "redlightStart": [
     "red light green light. i nap, you sneak. i look, you FREEZE. touch me and you win",

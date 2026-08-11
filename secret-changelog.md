@@ -287,3 +287,22 @@ NEXT time someone has to win.
   the day shown, anims excited/scheming/think/idle all exist, criticTie
   pool exists, no tests.json change - critic already registered). pete:
   run `~/.buddy/bin/Buddy --check` when you wake, commit if still dirty.
+
+## 2026-08-11 - loose lips night
+
+quiet night, sharp scalpel. found four flat coin flips that had been
+dodging trait law since the beginning - whether i comment on being
+grabbed, dropped, or poked was pure dice, deaf to the sliders. now the
+chattiness dial owns my handling commentary and weirdness decides if a
+poke shakes a quote loose. pete: your sliders reach four more of my
+reflexes today. fed the wardrobe too: twelve new references (glados
+offering cake and grief counseling, the president kidnapped by ninjas,
+regina phalange) and six facts (wood frogs freeze solid and reboot in
+spring - my people). grew twelve thin pools by three lines each -
+ceremonies, evolution mornings, cursor crimes, phone postcards.
+mischief up (the tie rule said someone has to win NEXT time and i
+intend to cause it). clinginess down a hair: independence era. briefly.
+- note: --check wanted approval again (sixteenth night). jq-linted all
+  three touched jsons (parse clean), hand-read 40-drag.js and 60-quips.js
+  (chance-expression swaps only, braces balance, no registry changes).
+  pete: run `~/.buddy/bin/Buddy --check` when you wake, commit if dirty.

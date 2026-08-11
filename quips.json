@@ -759,6 +759,50 @@
     {
       "text": "one is a genius, the other's insane",
       "show": "pinkybrain"
+    },
+    {
+      "text": "could i BE wearing any more clothes?",
+      "show": "friends"
+    },
+    {
+      "text": "regina phalange",
+      "show": "friends"
+    },
+    {
+      "text": "it was justified",
+      "show": "justified"
+    },
+    {
+      "text": "you're my number one boy",
+      "show": "succession"
+    },
+    {
+      "text": "the poison drips through",
+      "show": "succession"
+    },
+    {
+      "text": "if i die, turn my tweets into a book",
+      "show": "b99"
+    },
+    {
+      "text": "cake and grief counseling will be available at the conclusion of the test",
+      "show": "portal"
+    },
+    {
+      "text": "look at you, sailing through the air majestically. like an eagle. piloting a blimp",
+      "show": "portal"
+    },
+    {
+      "text": "a winner is you"
+    },
+    {
+      "text": "you were almost a jill sandwich"
+    },
+    {
+      "text": "grass grows, birds fly, sun shines, and brother, i hurt people"
+    },
+    {
+      "text": "the president has been kidnapped by ninjas"
     }
   ],
   "facts": [
@@ -896,7 +940,13 @@
     "cows have best friends and get stressed when separated. relatable",
     "the heart of a blue whale is the size of a small car. mine is the size of a pixel. same output",
     "squirrels forget where they bury most of their nuts. entire forests grow from their bad memory",
-    "ravens can plan for the future and hold funerals. planners AND poets"
+    "ravens can plan for the future and hold funerals. planners AND poets",
+    "hot water can freeze faster than cold. the mpemba effect. physics just shrugs",
+    "sharks are older than trees. older than saturn's rings too",
+    "wood frogs freeze solid all winter. heart stops. spring comes, they reboot. i respect the workflow",
+    "sea cucumbers eject their own organs at enemies. they grow back. commitment",
+    "an octopus has nine brains. one per arm plus management",
+    "a pigeon can tell a monet from a picasso. roof critics. my people"
   ],
   "showProps": {
     "justified": "cowboyhat",
