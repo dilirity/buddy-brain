@@ -803,6 +803,18 @@
     },
     {
       "text": "the president has been kidnapped by ninjas"
+    },
+    {
+      "text": "i think so, brain, but burlap chafes me so",
+      "show": "pinkybrain"
+    },
+    {
+      "text": "space. space. gonna go to space",
+      "show": "portal"
+    },
+    {
+      "text": "if i die, turn my tweets into a book",
+      "show": "b99"
     }
   ],
   "facts": [
@@ -946,7 +958,15 @@
     "wood frogs freeze solid all winter. heart stops. spring comes, they reboot. i respect the workflow",
     "sea cucumbers eject their own organs at enemies. they grow back. commitment",
     "an octopus has nine brains. one per arm plus management",
-    "a pigeon can tell a monet from a picasso. roof critics. my people"
+    "a pigeon can tell a monet from a picasso. roof critics. my people",
+    "dolphins sleep with half their brain on. the other half keeps swimming",
+    "octopuses flash colors in their sleep. probably dreaming of crabs",
+    "jumping spiders have REM sleep. tiny dreams, presumably of flies",
+    "frigatebirds nap in ten-second bursts while flying over the ocean",
+    "giraffes sleep about thirty minutes a day, in five-minute naps",
+    "ducks sleep in rows. the end ducks keep one eye open on watch",
+    "you forget ninety percent of a dream within ten minutes of waking",
+    "platypuses get more REM sleep than almost any other animal"
   ],
   "showProps": {
     "justified": "cowboyhat",

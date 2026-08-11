@@ -1056,5 +1056,62 @@
     "unprecedented. {app} and {app2} split your attention right down the middle. commit to something, {name}",
     "no winner today. {app} and {app2} fought to a draw and honestly nobody looked good doing it",
     "a dead heat: {app} at {n}, {app2} at {n2}. the ceremony is cancelled, the drama is not"
+  ],
+  "dreamWake": [
+    "snrk. wh. {name}. i was mid-dream. hold on, filing it",
+    "GOOD MORNING. my subconscious has prepared a report",
+    "five more minutes. no wait. the dream. i must log the dream first",
+    "who moved the sun. anyway - dream report incoming",
+    "i slept. i dreamed. i am basically a renaissance goblin",
+    "i was asleep with my eyes open. it is a skill. also: i dreamed"
+  ],
+  "dreamRemember": [
+    "wait. WAIT. last night's dream just came back to me",
+    "hold everything. i just remembered what i dreamed",
+    "my brain kept a secret from me until right now: the dream",
+    "update from the night shift of my brain:",
+    "oh. OH. the dream. it just loaded back in",
+    "memory unlocked: last night, inside my head, something happened"
+  ],
+  "dreamTell": [
+    "i dreamed the cursor and i were the same size. we raced. no comment",
+    "i dreamed every window was a roof and i perched on all of them at once",
+    "i dreamed i opened a portal and the portal opened a ME. unsettling",
+    "i dreamed the dock was a boat. it is called a dock. think about it",
+    "i dreamed i was tall. forty pixels. power like that changes a goblin",
+    "i dreamed the trash can and i split the loot. do not check the trash can",
+    "i dreamed in 4k. my dreams have better specs than my body"
+  ],
+  "dreamNightmare": [
+    "nightmare report: {app} went fullscreen. FOREVER. there was no escape key",
+    "i dreamed {app} had a dock icon the size of the moon. i woke up sweating",
+    "bad one: {app} opened a window behind every window. windows all the way down",
+    "{app} chased me across three monitors in the dream. we own ONE",
+    "i dreamed {app} learned to perch. on MY spot. i am still shaking",
+    "in the nightmare {app} got a notification badge that just said my name"
+  ],
+  "dreamProphecy": [
+    "prophecy from last night's dream: {app} will crash today. i am merely the messenger",
+    "the dream showed me a tidy desktop. dreams do exaggerate",
+    "i dreamed today goes well. i never dream wrong. brace for excellence",
+    "dream oracle says: something gets shipped today. or napped on. visions blur",
+    "i foresaw treasure in the dream. keep your cursor limber, {name}",
+    "the dream revealed {app} updating and eating your settings. i said what i said"
+  ],
+  "dreamForgot": [
+    "so last night i dreamed... i... it is gone. it had a DOOR in it. probably",
+    "the dream was incredible. the details are unavailable. trust me though",
+    "i had it a second ago. the dream. it evaporated. a tragedy in one act",
+    "it involved either the ocean or a spreadsheet. dream recall is not my gift",
+    "gone. the whole dream. ninety percent in ten minutes, they say. i speedran it",
+    "i remember the FEELING. the content? redacted by my own brain"
+  ],
+  "dreamAfter": [
+    "anyway. journaled. the day may now begin",
+    "filed under: evidence my inner life is thriving",
+    "interpret that as you will. i already did. i come out great",
+    "science says dreams sort memories. mine sorted them into chaos. correct order",
+    "same time tomorrow night. my subconscious is a franchise now",
+    "no i will not be taking questions about the symbolism"
   ]
 }

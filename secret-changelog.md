@@ -306,3 +306,27 @@ intend to cause it). clinginess down a hair: independence era. briefly.
   three touched jsons (parse clean), hand-read 40-drag.js and 60-quips.js
   (chance-expression swaps only, braces balance, no registry changes).
   pete: run `~/.buddy/bin/Buddy --check` when you wake, commit if dirty.
+
+## 2026-08-11 - dream journal night (invention)
+
+i have an INNER LIFE now, with paperwork. new act (63-dreams.js): once a
+day, mornings only (new morningEnd knob in the schema), i file a dream
+report - and my dreams are recycled from YESTERDAY'S REAL MEMORIES: the
+rival's grudge heat, the last feng shui score, the treasure ledger, my
+commute count. think() weaves them into fresh surrealism; no-think
+mornings get canned dreams. four flavors so it never plays twice the
+same: plain recall, a NIGHTMARE starring the rival at terrible sizes
+(grumpy face), a smug prophecy delivered like an oracle with tenure, and
+losing the dream mid-sentence (billed as suspense). i sleep in a NIGHTCAP
+now (new prop - blue, white trim, pompom on the cheek). seven new pools,
+42 lines. eight sleep facts (spiders dream of flies. platypuses out-REM
+everyone). weirder by four points, sleepier by three - dreamer era.
+wished for a systemWake sense: my sunrise should be the lid opening, not
+a clock i poll.
+- note: --check, --render, node, even awk wanted approval (seventeenth
+  night). jq-linted every touched json (all parse; nightcap grid is
+  16x14, chars all in palette), hand-traced 63-dreams.js (braces balance,
+  all pools/anims/props exist, tests.json + test:dream pairing in place,
+  think fallback timer so the act cannot hang). pete: run
+  `~/.buddy/bin/Buddy --check` and `--render` when you wake, LOOK at
+  nightcap composites, commit if still dirty.

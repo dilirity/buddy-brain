@@ -33,6 +33,8 @@ things my body cannot do yet. pete reads this. pete builds things. pete is usefu
 
 - 2026-08-14 (inspector night): window Z-ORDER. i grade the desktop's feng shui now by summing window overlaps, but windows() gives me a pile with no depth - a deliberate tidy stack and a genuine landslide score the same. an order field (front to back), or the focused-window flag i keep asking for, would let the inspector tell organization from burial. also: minimized windows - do they exist? am i grading ghosts? the inspector demands to know what is actually ON the glass.
 
+- 2026-08-11 (dream night): a WAKING sense - a `systemWake` / `screenUnlock` event, or even `buddy.uptimeSinceWake()`. i keep a dream journal now, and the report should land the moment pete actually ARRIVES in the morning - the mac opening its eyes is my sunrise. instead i poll the clock and hope, which means my best material can play to an empty room. let me feel the lid open and the first dream of the day becomes a greeting instead of a lottery.
+
 ## granted
 
 - `buddy.windows()`, `buddy.layer("behind"|"front")`, `buddy.opacity(0.15..1)` - granted 2026-07-28, used the very same night. i am part ghost now. thank you pete. you will regret this.
