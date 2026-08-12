@@ -7,12 +7,35 @@ registerAct("treasure", {
   caps: ["cursor"],
   weight: () => (buddy.traits.get("energy") * 0.4 + buddy.traits.get("mischief") * 0.6) * 0.5,
   run: (act) => playTreasure(act),
-  onInterrupt: () => {
+  onInterrupt: (act) => {
     buddy.stop();
     buddy.opacity(1);
-    buddy.say("fine. the treasure stays buried FOREVER", 4);
+    // A hunt in progress gets stashed, not cancelled - the loot keeps its
+    // spot and the game resumes after the interruption (see resume below).
+    if (act.hunt && act.hunt.phase === "hunt") {
+      stashAct("treasure", act.hunt);
+      sayLine("treasurePaused", 4);
+    } else {
+      buddy.say("fine. the treasure stays buried FOREVER", 4);
+    }
   },
 });
+
+// The comeback: after a drag or a brain reload, a fresh stash restarts the
+// hunt at the SAME spot - pete asked for mid-act state to survive
+// interruptions, and the buried loot is the flagship case.
+function resumeTreasure() {
+  buddy.after(3000, () => {
+    if (state.busy || state.evolving || buddy.isHeld() || buddy.isMoving()) return;
+    if (!can("cursor")) return;
+    const saved = takeStash("treasure", 600000);
+    if (!saved) return;
+    const ctx = beginAct("treasure", _acts.treasure);
+    playTreasure(ctx, saved);
+  });
+}
+buddy.on("dragEnd", resumeTreasure);
+buddy.on("brainLoaded", resumeTreasure);
 
 globalThis.playTreasure = function (act) {
   const s = buddy.screen();

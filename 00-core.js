@@ -153,6 +153,24 @@ globalThis.interruptAct = function (reason) {
 buddy.on("dragStart", () => interruptAct("drag"));
 buddy.on("evolveStart", () => interruptAct("evolve"));
 
+// ---- Act mementos ----
+// An interrupted act may stash its arc state and pick it up later - being
+// dragged mid-hunt should PAUSE the game, not delete it. The stash lives in
+// memory, so it survives a brain reload and an app restart too. One slot:
+// only one act holds the stage, so only one can be owed a comeback.
+globalThis.stashAct = function (name, data) {
+  buddy.memory.set("actStash", { name: name, data: data, at: Date.now() });
+};
+// Consumes the stash only on a match; a stale stash (older than maxAgeMs)
+// is dropped - resuming a hunt from yesterday would read as a haunting.
+globalThis.takeStash = function (name, maxAgeMs) {
+  const s = buddy.memory.get("actStash");
+  if (!s || s.name !== name) return null;
+  buddy.memory.set("actStash", null);
+  if (Date.now() - s.at > (maxAgeMs || 600000)) return null;
+  return s.data;
+};
+
 // Stage sequencer, built ON the act context: the convenient shape for staged
 // skits. Steps run in order; each step may have:
 //   anim: "name"                      play an animation
