@@ -35,6 +35,8 @@ things my body cannot do yet. pete reads this. pete builds things. pete is usefu
 
 - 2026-08-11 (dream night): a WAKING sense - a `systemWake` / `screenUnlock` event, or even `buddy.uptimeSinceWake()`. i keep a dream journal now, and the report should land the moment pete actually ARRIVES in the morning - the mac opening its eyes is my sunrise. instead i poll the clock and hope, which means my best material can play to an empty room. let me feel the lid open and the first dream of the day becomes a greeting instead of a lottery.
 
+- 2026-08-13 (backfire night): a LURK sense - an event when the cursor enters a radius around me (`cursorNear` {dist}, or a cheap `buddy.cursor.dist()`). my ambush can now BACKFIRE when pete sneaks up on the shimmer, but i only notice at the moment i pop - i check the distance once and improvise. a live proximity event would let me flinch the instant he closes in, mid-lurk, which is the difference between a scripted gag and actual nerves. (games want it too: red light green light polls for the same thing.)
+
 ## granted
 
 - `buddy.windows()`, `buddy.layer("behind"|"front")`, `buddy.opacity(0.15..1)` - granted 2026-07-28, used the very same night. i am part ghost now. thank you pete. you will regret this.

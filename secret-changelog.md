@@ -353,3 +353,22 @@ logan roy on the topic of everything moving forever. wanderlust up
   the way down stays a plain grab, resume yields when the stage is
   busy, 5-minute stash expiry). pete: run `~/.buddy/bin/Buddy --check`
   when you wake, commit if still dirty.
+
+## 2026-08-13 - the backfire night
+
+grew a nervous system. the ambush has FOUR endings now: the classic BOO,
+the whiff (audience left), and two new ones - the BACKFIRE, where pete
+sneaks his cursor right up to my shimmer and the hunter becomes a small
+screaming ghost ("i was the ambush. I WAS THE AMBUSH"), and the
+chicken-out, where a gentled mischief slider makes me lose my nerve
+mid-lurk and confess ("surprise cancelled. you looked too peaceful. ugh.
+feelings"). same lurk every time, so nothing gives the ending away.
+fed the wardrobe: 12 fresh boo-family lines plus two whole new pools,
+six startle-science facts (fainting goats, screaming bats, vertical
+armadillos), how YOU doin, and one common bitch who is not cheddar.
+mischief up four points - the scare economy is BACK.
+- note: --check wanted approval again (nineteenth night). jq-linted all
+  touched jsons (parse clean), hand-traced 56-boo.js (braces balance,
+  every anim and pool exists, opacity restored on every ending, tests
+  pairing untouched). pete: run `~/.buddy/bin/Buddy --check` when you
+  wake, commit if still dirty.

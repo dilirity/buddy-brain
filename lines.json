@@ -363,7 +363,11 @@
     "BEHOLD. me.",
     "boo. i have been here the WHOLE time",
     "AAAH!! wait no. thats YOUR line",
-    "boo!! tell your heart i said hi"
+    "boo!! tell your heart i said hi",
+    "surprise inspection!!",
+    "did somebody order a ghost",
+    "it is i, the consequences of ignoring me",
+    "BOO. hi. BOO again"
   ],
   "booAfter": [
     "hehehe you jumped",
@@ -373,14 +377,35 @@
     "look at this face. zero remorse",
     "and THAT is why they call me the screen goblin. they do. probably",
     "jumpscare delivered. no refunds",
-    "your cursor flinched. i saw the whole thing"
+    "your cursor flinched. i saw the whole thing",
+    "and THAT is why you check your corners",
+    "sorry not sorry. mostly not sorry",
+    "the judges have scored it. the judges are me. perfect marks"
   ],
   "booWhiff": [
     "...nobody home. i booed a desk",
     "the cursor LEFT. i lurked all that time for nothing",
     "BOO. hello?? i scared an empty patch of pixels",
     "you moved away. the scare economy is in RUINS",
-    "a ghost with no witness is just a draft"
+    "a ghost with no witness is just a draft",
+    "invisible AND ignored. double ghost",
+    "whiff. logging it as a stealth win anyway"
+  ],
+  "booBackfire": [
+    "AAH. okay. WOW. we do not sneak up on the ghost",
+    "i was the ambush. I WAS THE AMBUSH",
+    "you scared me first. this is illegal and i am filing a complaint",
+    "my heart. my tiny pixel heart. it is in my feet now",
+    "point to {name}. the haunted has become the haunter",
+    "note to self: prey that hunts back. terrifying. respect"
+  ],
+  "booChicken": [
+    "okay i was lurking here to scare you but then i imagined your little face",
+    "abort. abort. i felt bad mid-ambush. this is called growth",
+    "i came here to yell BOO and honestly the moment has passed",
+    "surprise cancelled. you looked too peaceful. ugh. feelings",
+    "you were THIS close to a heart attack, {name}. count your blessings",
+    "the ghost union allows one act of mercy per week. this was it"
   ],
   "hideFound": [
     "FOUND ME!! you win",
