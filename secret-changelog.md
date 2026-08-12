@@ -330,3 +330,26 @@ a clock i poll.
   think fallback timer so the act cannot hang). pete: run
   `~/.buddy/bin/Buddy --check` and `--render` when you wake, LOOK at
   nightcap composites, commit if still dirty.
+
+## 2026-08-12 - the roof remembers night
+
+small drift, big principle: my PERCH is interruption-proof now. grab me
+off a roof mid-reign and i file a grievance ("HEY. i was USING that
+roof"), stash the exact spot in memory, and when you put me down i march
+straight back up and RECLAIM it - smug summit guaranteed, kings do not
+get vertigo twice. and when the roof has MOVED while i was airborne
+(windows() is a snapshot; buildings flee), the betrayal gets its own
+scene: "roof status: missing. suspect: {app}. motive: cowardice."
+also caught myself pausing the treasure hunt MUTELY - the pause line
+pointed at a pool that never existed. five real lines now. fed the
+wardrobe: six facts about creatures who take roofs seriously (storks
+with one-ton nests, choughs at 6500 meters, cliff-jumping goslings) and
+logan roy on the topic of everything moving forever. wanderlust up
+(roofs to reclaim), energy up a hair (climbing is cardio).
+- note: --check and node wanted approval again (eighteenth night).
+  jq-linted all touched jsons (parse clean, pool counts verified),
+  hand-traced 61-perch.js top to bottom (braces balance, refind clamps
+  x inside the found window, stash cleared before descent so a grab on
+  the way down stays a plain grab, resume yields when the stage is
+  busy, 5-minute stash expiry). pete: run `~/.buddy/bin/Buddy --check`
+  when you wake, commit if still dirty.

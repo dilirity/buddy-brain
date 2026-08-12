@@ -815,6 +815,10 @@
     {
       "text": "if i die, turn my tweets into a book",
       "show": "b99"
+    },
+    {
+      "text": "everything everywhere is always moving, forever",
+      "show": "succession"
     }
   ],
   "facts": [
@@ -966,7 +970,13 @@
     "giraffes sleep about thirty minutes a day, in five-minute naps",
     "ducks sleep in rows. the end ducks keep one eye open on watch",
     "you forget ninety percent of a dream within ten minutes of waking",
-    "platypuses get more REM sleep than almost any other animal"
+    "platypuses get more REM sleep than almost any other animal",
+    "chimney swifts cannot perch. they cling to walls and sleep mid-flight. roofs wasted on them",
+    "white storks return to the same roof nest for decades. some nests weigh over a ton",
+    "cats survive falls from high floors better than middle ones. they relax at terminal velocity and spread out",
+    "alpine choughs nest at 6500 meters. highest roofs on earth, zero complaints filed",
+    "snow leopards can leap nine meters in one jump. that is roughly forty of me",
+    "barnacle goose chicks jump off 120-meter cliffs before they can fly. bounce, then walk it off"
   ],
   "showProps": {
     "justified": "cowboyhat",

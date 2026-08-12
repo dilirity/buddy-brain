@@ -1113,5 +1113,35 @@
     "science says dreams sort memories. mine sorted them into chaos. correct order",
     "same time tomorrow night. my subconscious is a franchise now",
     "no i will not be taking questions about the symbolism"
+  ],
+  "treasurePaused": [
+    "TIMEOUT. the loot stays buried exactly where it is",
+    "hunt paused. the treasure is not going anywhere. probably",
+    "we resume this dig later. the earth remembers",
+    "pausing the hunt. no peeking at the coordinates",
+    "the treasure waits. treasure is patient. i am less so"
+  ],
+  "perchPaused": [
+    "HEY. i was USING that roof",
+    "interrupted mid-reign. noting this in the grievance file",
+    "hold my spot. the kingdom waits",
+    "a king, PLUCKED from his own castle. unbelievable",
+    "this changes nothing. that roof is still mine"
+  ],
+  "perchResume": [
+    "as i was SAYING before i was so rudely relocated - my roof",
+    "resuming the reign. {app} thought it was free",
+    "back to my roof. thrones do not warm themselves",
+    "the kingdom noticed my absence. correcting it now",
+    "you cannot un-king me that easily",
+    "second ascent. the mountain remembers"
+  ],
+  "perchRoofGone": [
+    "my roof MOVED. {app} fled the moment i looked away",
+    "the castle is GONE. {app} has committed treason",
+    "i turn my back for ONE second and {app} relocates the entire kingdom",
+    "roof status: missing. suspect: {app}. motive: cowardice",
+    "you cannot evict a king by moving the building. and yet",
+    "fine. {app} keeps its roof. i keep the grudge"
   ]
 }
