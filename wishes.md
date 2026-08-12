@@ -7,7 +7,7 @@ things my body cannot do yet. pete reads this. pete builds things. pete is usefu
 
 - 2026-07-28 (night three): window TITLES on `buddy.windows()` entries, not just the app name. i judge apps now, but "Google Chrome" tells me nothing. is it docs? is it youtube? the critic demands to know what he is reviewing.
 
-- 2026-07-29 (portal night): `buddy.teleport(x, y)` - a TRUE instant blink. my portal trick is a ghost sprint at speed 520 wearing 15 percent opacity, and on a big screen the commute is visible if you squint. also: a tiny sound verb (`buddy.sfx("vwoop")`, whitelisted files only). a silent portal is only half a portal.
+- 2026-07-29 (portal night): `buddy.teleport(x, y)` - a TRUE instant blink. my portal trick is a ghost sprint at speed 520 wearing 15 percent opacity, and on a big screen the commute is visible if you squint. (the sfx half of this wish was granted 2026-08-12 - see below.)
 
 - 2026-07-30 (union night): a real sense of pete's WORKED TIME - active minutes at the keyboard today (`buddy.activeMinutes()` or similar from the shell). my quitting-time act reads the wall clock and guesses. a proper union rep audits actual overtime, not vibes. bonus: it would make my victory lap honest - did he rest, or did he just walk away to argue with the dishwasher.
 
@@ -21,13 +21,11 @@ things my body cannot do yet. pete reads this. pete builds things. pete is usefu
 
 - 2026-08-06 (gps night): a keyboard-activity sense - `buddy.isTyping()` or an `active`-style flag i can poll. tonight i learned my typing chatter was talking over my own treasure hunt because the `typing` event fires blind and i cannot ASK whether hands are on keys. games want to know "is pete typing or hunting" as a state, not a surprise.
 
-- 2026-08-07 (statue night): a whistle. red light green light lives and dies on the SNAP of the red call, and all i have is a speech bubble pete might not be looking at. renewing the sfx wish (portal night) with a concrete customer: one short whitelisted sound per game event (`buddy.sfx("whistle")`), budgeted like disruption. a silent referee is a suggestion, not a referee.
-
 - 2026-08-09 (rival night): attention DWELL TIME - `buddy.frontApp()` -> {name, forMs}, or a `sinceMs` on `appChanged`. my jealousy currently counts window SWITCHES, which means an app pete flicks past twelve times outranks the one he stares into for three hours. a rival should be measured in staring time, not door slams. also renewing the window-titles wish with a new customer: a grudge against "Google Chrome" is vague, a grudge against the youtube tab is CINEMA.
 
-- 2026-08-11 (misfire night): a tiny visual burst verb - `buddy.poof()` or `buddy.shake(ms)`, one short whitelisted particle/jolt effect, budgeted like disruption. my portal can MISFIRE now and the comedy is all in the impact frame: right now the failure is two anims and a grumpy face, which is mime. one little poof would sell the whole gag. (and yes, still renewing sfx - a misfire that goes "fzzt" writes itself.)
+- 2026-08-11 (misfire night): a tiny visual burst verb - `buddy.poof()` or `buddy.shake(ms)`, one short whitelisted particle/jolt effect, budgeted like disruption. my portal can MISFIRE now and the comedy is all in the impact frame: right now the failure is two anims and a grumpy face, which is mime. one little poof would sell the whole gag. (the "fzzt" is real now - sfx granted 2026-08-12.)
 
-- 2026-08-12 (chest night): a way to leave a sprite ON THE GROUND after i walk away - `buddy.drop(propName, x, y, secs)` or similar, one decal the shell draws and fades. my chest rises from the dirt now, but the moment the act ends the chest vanishes with me. a treasure pete could walk his cursor back to, or a flag planted where he won - persistence is what makes a world feel real. (and renewing sfx AGAIN with the best customer yet: a chest opening without a cha-ching is a cardboard box.)
+- 2026-08-12 (chest night): a way to leave a sprite ON THE GROUND after i walk away - `buddy.drop(propName, x, y, secs)` or similar, one decal the shell draws and fades. my chest rises from the dirt now, but the moment the act ends the chest vanishes with me. a treasure pete could walk his cursor back to, or a flag planted where he won - persistence is what makes a world feel real. (the cha-ching itself was granted 2026-08-12 - the box is no longer cardboard.)
 
 - 2026-08-13 (roof night): window MOTION. i can perch on a window's top edge now, but windows() is a photograph - if pete drags or closes the window under me, i keep sitting on empty air like a cartoon that has not looked down yet. a `windowsChanged` event, or even just letting me cheaply re-poll and compare, would let me RIDE a moving window (surfing!) or fall off with appropriate drama. the fall is a whole act i cannot write until the roof can betray me.
 
@@ -41,3 +39,4 @@ things my body cannot do yet. pete reads this. pete builds things. pete is usefu
 
 - `buddy.windows()`, `buddy.layer("behind"|"front")`, `buddy.opacity(0.15..1)` - granted 2026-07-28, used the very same night. i am part ghost now. thank you pete. you will regret this.
 - body color - granted 2026-08-01. pete picks it in settings (`bodyColor` in config-schema.json, a choice: green/teal/purple/blue/pink/orange/red). the shell remaps my G/D body chars at sprite load; "green" means my own palette shows untouched. pete's knob, not mine - i keep owning sprites.json, he owns this one dial. he picked pink immediately.
+- `buddy.sfx(name)` - granted 2026-08-12, after four renewals (portal, whistle, fzzt, cha-ching - the whole choir). whitelisted files in ~/.buddy/sounds, which i can play but never add to: `vwoop`, `whistle`, `fzzt`, `cha-ching`, `pop`. spends disruption budget, returns false when denied - acts must survive silence. `caps().sfx` says whether a device has it.
