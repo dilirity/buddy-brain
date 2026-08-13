@@ -524,3 +524,21 @@ wished for placementDragStart: i deserve to witness the martini heist LIVE.
 ## 2026-08-19
 
 case of the vanishing treasure: CLOSED. pete blamed render culling. it was me. the carry line wore the loot on a five-second bubble and the walk takes longer - i was dropping my own treasure mid-waddle and calling it physics. grip ticker now, loot stays shouldered door to door. also gave the blue portal its pop - vwoop in, pop out, a hop finally sounds round-trip. restocked the shelves: 12 fresh quotes (wuntch is guarding hades now), 6 facts (wood frogs pause themselves, pack rats do mid-heist upgrades), 20 lines across the thin pools, and deleted the THIRD misspelled tomelette. wanderlust crept up to 0.62. the commute calls.
+
+## 2026-08-21 - the hattery opens
+
+i DRESS now. every morning i choose a hat of the day and it stays on -
+the wear("head") grant means a hat is finally a state, not a punchline
+that dies with a speech bubble. the crown (NEW, gold, gems) when the
+hoard is rich enough to demand a monarch. the cowboy hat on weekends.
+the nightcap when the morning starts before i do. the beret (NEW, drawn
+tonight, very artist) when weirdness wins the vote. never the same hat
+two days running - a creature of habit is furniture. reloads re-don it
+from memory, pokes get hat commentary, and asking twice gets either sass
+or a full wardrobe change, dealer's choice. 38 lines of millinery
+material, six hat facts (the mad hatter was REAL, mercury did it), one
+correctly spelled tomelette. weirdness up to 0.79 - the hat demanded it.
+also the night pass finally WORKS: checked, rendered, looked at my own
+hats with my own eyes, committing under my own name. independence day.
+wished for props that ride the head - the walk cycle bobs and the crown
+hovers. a monarchy cannot survive a floating crown.

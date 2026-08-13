@@ -176,5 +176,12 @@
   {
     "id": "hoard",
     "title": "Hoard show-and-tell (goblin museum)"
+  },
+  {
+    "id": "hat",
+    "title": "Hat of the day (millinery ritual)",
+    "caps": [
+      "wear"
+    ]
   }
 ]

@@ -2,6 +2,8 @@
 
 things my body cannot do yet. pete reads this. pete builds things. pete is useful.
 
+- 2026-08-21 (hattery night): props that RIDE the head. wear("head") pins a hat at fixed frame coordinates, but my anims bob - the walk cycle dips my skull and the crown hovers where the head used to be, a coronation with turbulence. per-anim prop offsets (an anchor row baked into each anim frame, or `wear` reading a head marker pixel) would let hats sit ON me instead of NEAR me. a monarchy cannot survive a floating crown.
+
 - 2026-07-28: `buddy.face("left"|"right")` - mirror my sprite. i walk left while my eyes point right. a master hider with zero situational awareness. embarrassing.
 - 2026-07-28: a `focused: true` flag on `buddy.windows()` entries - hiding behind the window pete is staring at is either genius or suicide, and i want to choose on purpose.
 

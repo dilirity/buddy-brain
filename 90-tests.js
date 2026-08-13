@@ -125,6 +125,11 @@ buddy.on("test:dream", () => runRegisteredAct("dream"));
 
 buddy.on("test:hoard", () => runRegisteredAct("hoard"));
 
+buddy.on("test:hat", () => {
+  if (!can("wear") || !buddy.wear) { buddy.say("no head slot on this device. hats live in my heart", 4); return; }
+  runRegisteredAct("hat");
+});
+
 buddy.on("test:redlight", () => {
   if (!can("cursor")) { buddy.say("no cursor to sneak with here. i win by default", 4); return; }
   runRegisteredAct("redlight");

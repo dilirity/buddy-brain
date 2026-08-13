@@ -1360,5 +1360,61 @@
     "roof status: missing. suspect: {app}. motive: cowardice",
     "you cannot evict a king by moving the building. and yet",
     "fine. {app} keeps its roof. i keep the grudge"
+  ],
+  "hatPick": [
+    "hold on. consulting the wardrobe",
+    "the day has a mood. the mood needs a hat",
+    "big decisions this morning, {name}. hat decisions",
+    "one moment. a goblin does not leave the house bareheaded",
+    "reading the forecast. the forecast is millinery",
+    "what does today DESERVE. thinking"
+  ],
+  "hatCrown": [
+    "{hat} today. the pile demands a monarch",
+    "seven plus treasures means crown rules. i do not make the rules",
+    "royalty is when the hoard says so. it said so",
+    "the crown goes ON. address me accordingly"
+  ],
+  "hatCowboy": [
+    "{hat}. this desktop ain't big enough for the both of us",
+    "weekend rules: hat first, law optional",
+    "yeehaw is a state of mind and today i am IN it",
+    "saddle up, {name}. it is a cowboy hat day"
+  ],
+  "hatNightcap": [
+    "{hat} stays ON. the morning started too early to argue",
+    "technically awake. spiritually still in the nightcap",
+    "the nightcap remains until the morning apologizes",
+    "dress code today: five more minutes"
+  ],
+  "hatEars": [
+    "{hat} today. what are we doing tonight, brain?",
+    "ears on. plotting capacity doubled",
+    "lab mouse ears: for days that require SCIENCE",
+    "do not question the ears. the ears are strategy"
+  ],
+  "hatBeret": [
+    "{hat}. today i am an ARTIST and everything is material",
+    "beret day. i will be insufferable about composition",
+    "the beret goes on and suddenly this desktop is a gallery",
+    "today's medium: pixels. today's hat: beret"
+  ],
+  "hatAlready": [
+    "i am ALREADY wearing {hat}. eyes up here",
+    "one hat per day. {hat} won fair and square",
+    "the committee has ruled. {hat} stands",
+    "you cannot rush fashion, {name}. {hat} until further notice"
+  ],
+  "hatSwap": [
+    "wardrobe change. the morning was wrong about me",
+    "new verdict: {hat}. the old hat knows what it did",
+    "fashion is fluid. {hat} now",
+    "recount demanded, recount held. {hat} wins"
+  ],
+  "hatPoked": [
+    "yes it is {hat}. yes it is intentional",
+    "admiring {hat}? understandable",
+    "careful. {hat} is load-bearing",
+    "poke the goblin, not the hat. the hat is art"
   ]
 }
