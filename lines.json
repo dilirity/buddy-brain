@@ -168,7 +168,10 @@
     "absolute zero. the treasure cant even hear you",
     "so cold penguins live closer to it than you",
     "glacial. turn around. all the way around",
-    "you are hunting in a different postcode"
+    "you are hunting in a different postcode",
+    "ice age. the treasure filed a missing person report on YOU",
+    "colder than my rival's heart. and thats a window",
+    "the compass is crying. start over"
   ],
   "treasureNudge": [
     "youre hovering. treasure hates hovering. SWEEP",
@@ -423,6 +426,15 @@
     "i phased through reality and you didnt even notice",
     "a whole minute. i live between the windows now"
   ],
+  "hideTaunt": [
+    "psst. cold. very cold",
+    "im practically waving",
+    "a DETECTIVE would have found me by now",
+    "the rent here is free and the view is of you failing",
+    "marco. you are supposed to say polo",
+    "i can see you from here. embarrassing",
+    "whisper whisper. what echo. there is no echo"
+  ],
   "clingyArrive": [
     "hi. im here now",
     "just checking on you",
@@ -511,34 +523,50 @@
     ],
     "music": [
       "music!! finally some culture",
-      "apple music. the classy choice apparently"
+      "apple music. the classy choice apparently",
+      "put on something a goblin can bop to",
+      "shuffle is just gambling with extra steps"
     ],
     "mail": [
       "youve got mail. probably spam",
-      "inbox zero is a myth. like me"
+      "inbox zero is a myth. like me",
+      "reply all. i dare you",
+      "unsubscribe is self care"
     ],
     "messages": [
       "texting hours",
-      "tell them i said hi"
+      "tell them i said hi",
+      "three dots... the suspense",
+      "left on read. brutal culture"
     ],
     "xcode": [
       "xcode. may the build gods be merciful",
-      "compiling in 3... 2... eternity"
+      "compiling in 3... 2... eternity",
+      "indexing. see you thursday",
+      "one more provisioning profile and i riot"
     ],
     "figma": [
       "figma? i hardly know her",
-      "pixel pushing time. my people"
+      "pixel pushing time. my people",
+      "align it. ALIGN IT",
+      "auto layout: chaos with rules"
     ],
     "notes": [
       "scribble scribble",
-      "writing down genius. or groceries"
+      "writing down genius. or groceries",
+      "a note app is a graveyard of good intentions",
+      "title it untitled 47. tradition"
     ],
     "preview": [
-      "ooh a picture. lemme see"
+      "ooh a picture. lemme see",
+      "zoom in. ENHANCE",
+      "a pdf. my condolences"
     ],
     "zoom": [
       "fix your hair. camera time",
-      "youre on mute. preemptively"
+      "youre on mute. preemptively",
+      "nod thoughtfully. ill handle the vibes",
+      "can everyone see my screen. the eternal question"
     ]
   },
   "portalStart": [
@@ -652,7 +680,9 @@
       "down": [
         "lowering my mischief? coward.",
         "fine. i will be GOOD. allegedly.",
-        "confiscating my fun. the union will hear about this"
+        "confiscating my fun. the union will hear about this",
+        "house arrest. i shall garden. menacingly",
+        "the scare economy just entered recession"
       ],
       "up": [
         "oh you want chaos? noted.",
@@ -671,7 +701,8 @@
       "up": [
         "more talking!! my favorite thing",
         "unlimited words mode. you did this to yourself",
-        "commentary track: enabled. forever"
+        "commentary track: enabled. forever",
+        "director's cut of me. with commentary. by me"
       ]
     },
     "energy": {

@@ -62,6 +62,21 @@ globalThis.playHideSeek = function (style) {
   // Round guard: a stale listener from a timed-out game must not score a win.
   buddy.once("poked", () => { if (round === hideRound) found = true; });
 
+  // Trash-talk from the hiding spot. Every whisper is a free position hint,
+  // which is exactly the overconfidence that loses games - so it stays a
+  // chattiness roll, never a guarantee.
+  if (chance(0.8 * buddy.traits.get("chattiness"))) {
+    buddy.after(12000 + Math.random() * 10000, () => {
+      if (round !== hideRound || found) return;
+      sayLine("hideTaunt", 2);
+      if (chance(0.5 * buddy.traits.get("chattiness"))) {
+        buddy.after(12000 + Math.random() * 8000, () => {
+          if (round === hideRound && !found) sayLine("hideTaunt", 2);
+        });
+      }
+    });
+  }
+
   // Vary the opening: a dare, a giggle, a style-specific boast, or silence.
   const openings = [
     { anim: "scheming", line: "hideStart", secs: 3, ms: 1600 },

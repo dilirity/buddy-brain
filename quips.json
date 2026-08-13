@@ -681,44 +681,12 @@
       "show": null
     },
     {
-      "text": "the cake is a lie",
-      "show": "portal"
-    },
-    {
-      "text": "when life gives you lemons, don't make lemonade. demand to see life's manager!",
-      "show": "portal"
-    },
-    {
-      "text": "cool cool cool cool cool. no doubt no doubt no doubt",
-      "show": "b99"
-    },
-    {
-      "text": "the english language cannot fully capture the depth and complexity of my thoughts",
-      "show": "b99"
-    },
-    {
-      "text": "do you want ants? because that's how you get ants",
-      "show": "archer"
-    },
-    {
       "text": "poit! egad brain, brilliant!",
       "show": "pinkybrain"
     },
     {
       "text": "it's like a jawbreaker wrapped in bacon!",
       "show": "ededdeddy"
-    },
-    {
-      "text": "it's-a me!",
-      "show": null
-    },
-    {
-      "text": "do a barrel roll!",
-      "show": null
-    },
-    {
-      "text": "the princess is in another castle",
-      "show": null
     },
     {
       "text": "if you run into assholes all day, you're the asshole",
@@ -809,24 +777,64 @@
       "show": "pinkybrain"
     },
     {
-      "text": "space. space. gonna go to space",
-      "show": "portal"
-    },
-    {
-      "text": "if i die, turn my tweets into a book",
-      "show": "b99"
-    },
-    {
       "text": "everything everywhere is always moving, forever",
       "show": "succession"
     },
     {
-      "text": "how YOU doin",
+      "text": "that is not cheddar. that is just some common bitch",
+      "show": "b99"
+    },
+    {
+      "text": "i've been to the mountaintop",
+      "show": "justified"
+    },
+    {
+      "text": "you'll never leave harlan alive",
+      "show": "justified"
+    },
+    {
+      "text": "buckle up, fucklehead",
+      "show": "succession"
+    },
+    {
+      "text": "holy shitsnacks!",
+      "show": "archer"
+    },
+    {
+      "text": "he's a transponster!",
       "show": "friends"
     },
     {
-      "text": "that is not cheddar. that is just some common bitch",
+      "text": "paper. snow. a ghost!",
+      "show": "friends"
+    },
+    {
+      "text": "chills. literal chills",
       "show": "b99"
+    },
+    {
+      "text": "your entire life has been a mathematical error",
+      "show": "portal"
+    },
+    {
+      "text": "well done. here come the test results: you are a horrible person",
+      "show": "portal"
+    },
+    {
+      "text": "i am error",
+      "show": null
+    },
+    {
+      "text": "a man of focus, commitment, sheer will",
+      "show": null
+    },
+    {
+      "text": "may the force be with you",
+      "show": null
+    },
+    {
+      "text": "the answer is 42. the question remains unclear",
+      "show": null
     }
   ],
   "facts": [
@@ -990,7 +998,13 @@
     "moths evolved ears for exactly one reason: bats kept screaming at them",
     "screams have an acoustic texture called roughness. your brain has a dedicated fast lane for them",
     "cats arch their backs to look bigger when spooked. i puff my pixels. same technology",
-    "a startled armadillo jumps a full meter straight up. vertically. like toast"
+    "a startled armadillo jumps a full meter straight up. vertically. like toast",
+    "octopuses collect coconut shells and hide inside them. portable bunkers",
+    "the mimic octopus impersonates fifteen other animals. identity theft as a lifestyle",
+    "stick insects hold still for hours to stay hidden. i lasted forty seconds once. personal best",
+    "snow leopards are so hard to spot they are called ghosts of the mountains. my people",
+    "whispering galleries curve sound along the wall. st paul's dome delivers secrets by architecture",
+    "elephants gossip in infrasound too low for humans to hear. constant secret channel"
   ],
   "showProps": {
     "justified": "cowboyhat",
