@@ -170,6 +170,8 @@ globalThis.playTreasure = function (act) {
         }
         act.after(digMs, () => {
           buddy.play("unearth");
+          // The chest deserves a register bell. Budget-gated; silence is fine.
+          sfx("cha-ching");
           act.after(1400, () => {
             // Chest gets the stage to itself - a loot prop composited over it
             // reads as clutter. The item comes out AFTER, hoisted zelda-style.

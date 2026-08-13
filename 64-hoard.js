@@ -21,6 +21,47 @@ const HOARD_MAX = 10;
 
 globalThis.hoardName = (it) => HOARD_NAMES[it.prop] || it.prop;
 
+// ---- The pile, made flesh ----
+// buddy.place() pins prop overlays to the screen, so the hoard is PHYSICAL
+// now: a heap in a home corner. Placements are wiped on every brain reload;
+// memory is the truth and the screen is redrawn from it at load. The jitter
+// is derived from the index, not rolled - a heap that reshuffles itself on
+// every redraw reads as haunted, not lived-in.
+let _pileIds = [];
+
+function pileSpot(i) {
+  const s = buddy.screen();
+  let side = buddy.memory.get("hoardSide");
+  if (!side) {
+    side = chance(0.5) ? "left" : "right";
+    buddy.memory.set("hoardSide", side);
+  }
+  const bx = side === "left" ? s.x + 44 : s.x + s.w - 44;
+  const col = i % 5, row = Math.floor(i / 5);
+  const dx = (side === "left" ? 1 : -1) * col * 34;
+  return { x: bx + dx + ((i * 7) % 9) - 4, y: s.y + 14 + row * 30 };
+}
+
+// Where buddy stands to visit the pile - beside it, not on top of it.
+function pileVisitSpot() {
+  const s = buddy.screen();
+  const side = buddy.memory.get("hoardSide") || "right";
+  return { x: side === "left" ? s.x + 150 : s.x + s.w - 180, y: s.y + 30 };
+}
+
+globalThis.drawHoard = function () {
+  if (!can("place")) return;
+  _pileIds.forEach((id) => buddy.unplace(id));
+  _pileIds = [];
+  (buddy.memory.get("hoard") || []).forEach((it, i) => {
+    const p = pileSpot(i);
+    const id = buddy.place(it.prop, p.x, p.y);
+    if (id) _pileIds.push(id);
+  });
+};
+
+buddy.on("brainLoaded", () => buddy.after(3000, drawHoard));
+
 globalThis.addToHoard = function (prop, from) {
   const h = buddy.memory.get("hoard") || [];
   h.push({ prop: prop, from: from, at: Date.now() });
@@ -30,6 +71,7 @@ globalThis.addToHoard = function (prop, from) {
     buddy.memory.set("hoardEvicted", hoardName(h.shift()));
   }
   buddy.memory.set("hoard", h);
+  drawHoard();
 };
 
 registerAct("hoard", {
@@ -90,15 +132,27 @@ globalThis.playHoard = function (act) {
       { anim: "idle" },
     ], () => act.done("census"));
   } else if (roll < 0.75) {
-    // Guard shift: haul the piece to a low corner and defend it from nobody.
+    // Guard shift: post up AT the pile when it is physical (the vault has an
+    // address now), any low corner when it is not.
     const s = buddy.screen();
-    const corner = { x: chance(0.5) ? s.x + 70 : s.x + s.w - 100, y: s.y + 40 };
+    const corner = can("place")
+      ? pileVisitSpot()
+      : { x: chance(0.5) ? s.x + 70 : s.x + s.w - 100, y: s.y + 40 };
     runAct([
       { anim: "scheming", say: fill(lines("hoardGuard")) || "security shift", secs: 4, prop: it.prop, ms: 2200 },
       { anim: "walk", moveTo: { x: corner.x, y: corner.y, speed: 220 }, until: "arrived" },
       { anim: "grumpy", prop: it.prop, ms: 5200 },
       { anim: "idle" },
     ], () => act.done("guarded"));
+  } else if (can("place") && roll < 0.9) {
+    // Pile visit: walk over and admire the heap in person. Only exists where
+    // the pile does.
+    const v = pileVisitSpot();
+    runAct([
+      { anim: "walk", moveTo: { x: v.x, y: v.y, speed: 200 }, until: "arrived" },
+      { anim: "excited", line: "hoardPile", secs: 5, ms: 4800 },
+      { anim: "idle" },
+    ], () => act.done("admired"));
   } else {
     // Plain show-and-tell.
     runAct([

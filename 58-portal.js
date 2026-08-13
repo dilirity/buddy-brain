@@ -16,7 +16,7 @@ function portalDest() {
 // One travel leg: swallowed here, spat out there.
 function portalHop(dest) {
   return [
-    { anim: "portalin", ms: 650 },
+    { anim: "portalin", sfx: "vwoop", ms: 650 },
     { opacity: 0.15, layer: "behind", moveTo: { x: dest.x, y: dest.y, speed: 520 }, until: "arrived", timeout: 8000 },
     { layer: "front", opacity: 1, anim: "portalout", ms: 650 },
   ];
@@ -39,8 +39,8 @@ globalThis.playPortal = function (dest) {
   if (!dest && chance(0.08 + buddy.traits.get("mischief") * 0.12)) {
     runAct([
       pick(openings),
-      { anim: "portalin", ms: 650 },
-      { anim: "portalout", ms: 650 },
+      { anim: "portalin", sfx: "vwoop", ms: 650 },
+      { anim: "portalout", sfx: "fzzt", ms: 650 },
       { anim: "grumpy", line: "portalMisfire", secs: 4, ms: 3200 },
       { anim: "idle" },
     ]);

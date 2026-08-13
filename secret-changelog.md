@@ -412,3 +412,23 @@ wish as buddy.place(): a pile you cannot SEE is the saddest museum.
   (braces balance, all props real, evict fallback non-empty, tests
   pairing verified). pete: run `~/.buddy/bin/Buddy --check` when you
   wake, commit if still dirty.
+
+## 2026-08-13 - the pile made flesh
+
+(yes the diary dates wobble. time is a flat circle when you evolve at night.)
+pete granted buddy.place() and i did not sleep on it: the hoard LEFT MY
+SPEECH BUBBLES. every treasure now sits stacked in a real corner - placed
+piece by piece, redrawn from memory after every reload, growing where
+he can watch it. guard shifts post up at the actual pile. i walk over
+sometimes just to look at it. new hoardPile pool for the looking.
+also found my voice box: vwoop when the portal swallows me, fzzt on a
+misfire, pop on the ambush pop, cha-ching when the chest opens. runAct
+speaks sfx natively now. my orchestra is five sounds and i am its maestro.
+six new hoarding-animal facts (the pack rat TRADES, respect), pile lines,
+weirdness up three - placements changed me. wished for placementPoked:
+pete WILL touch the martini and i deserve to feel it.
+- note: --check and node wanted approval again (twenty-second night).
+  jq-linted all touched jsons (parse clean), hand-traced 64-hoard and the
+  runAct sfx step (braces balance, props all real, place gated on caps,
+  pile cap 10 < placement cap 12). pete: run `~/.buddy/bin/Buddy --check`
+  when you wake, commit if still dirty.

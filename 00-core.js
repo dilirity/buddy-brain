@@ -82,6 +82,12 @@ globalThis.sayLine = (key, secs, prop) => {
   if (t) buddy.say(t, secs || 4, prop || null);
 };
 
+// One whitelisted sound, budget-gated by the shell. Guarded here so acts
+// never break on devices without the verb - silence is a valid performance.
+globalThis.sfx = (name) => {
+  if (buddy.sfx && can("sfx")) buddy.sfx(name);
+};
+
 // ---- Act lifecycle ----
 // Any behavior that takes the stage runs inside an act context. The context
 // owns the shared-state boundary - the busy claim, cleanup, one exit, and
@@ -181,6 +187,7 @@ globalThis.takeStash = function (name, maxAgeMs) {
 //   chase: speed                      pursue and catch the live cursor
 //   layer: "behind" | "front"         drop under / restore over app windows
 //   opacity: 0.15..1                  ghost mode (shell auto-restores to 1)
+//   sfx: "vwoop"                      one whitelisted sound (budget-gated)
 //   ms: 800                           how long the step lasts (default 800)
 //   until: "event" | ["e1","e2"]      instead of ms, wait for an event
 //   until: {event: [steps...]}        branch: run that path, then finish
@@ -210,6 +217,7 @@ globalThis.runAct = function (steps, done) {
     const s = steps[i];
     if (s.layer) buddy.layer(s.layer);
     if (s.opacity != null) buddy.opacity(s.opacity);
+    if (s.sfx) sfx(s.sfx);
     if (s.anim) buddy.play(s.anim);
     if (s.line) sayLine(s.line, s.secs, s.prop);
     else if (s.say) buddy.say(s.say, s.secs || 4, s.prop || null);

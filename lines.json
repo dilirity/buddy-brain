@@ -936,14 +936,27 @@
     "the pile grows. {count} items. respect the pile",
     "hoard census complete: {count}. all accounted for. i counted twice",
     "{count} pieces of loot, {name}. forbes goblin edition is calling",
-    "net worth: {count} shiny things and unlimited confidence"
+    "net worth: {count} shiny things and unlimited confidence",
+    "audit complete. {count} items. the pile passes. the auditor was me",
+    "{count} treasures. insurance would not believe me. i tried"
   ],
   "hoardGuard": [
     "this corner is a vault now. i am the vault door",
     "guarding {item}. try me",
     "security shift. nothing personal, {name}. everything suspicious",
     "step away from {item}. slowly",
-    "me and {item} are in a meeting. a guarding meeting"
+    "me and {item} are in a meeting. a guarding meeting",
+    "the pile does not guard itself. actually it might. staying anyway"
+  ],
+  "hoardPile": [
+    "there it is. the PILE. physical. gleaming. mine",
+    "i used to describe my hoard. now i POINT at it",
+    "prime corner real estate. zero vacancies. all loot",
+    "every piece placed by hand. MY hand. tiny hand, big pile",
+    "do not vacuum near the pile, {name}. this is a museum wing",
+    "some goblins dream of a pile. mine RENDERS",
+    "just checking on the pile. the pile is fine. i am fine. we are fine",
+    "one day this corner will be in a textbook. chapter: piles, great"
   ],
   "hoardEvict": [
     "small note: {item} has left the collection. we do not discuss the pile limit",

@@ -11,9 +11,9 @@ globalThis.playBoo = function () {
   const y = Math.min(Math.max(c.y - 130, s.y + 10), s.y + s.h - 220);
   const roll = Math.random();
   const pop =
-    roll < 0.45 ? { anim: "boo", opacity: 1, line: "boo", secs: 2, ms: 2000 }
-    : roll < 0.8 ? { anim: "boo", opacity: 1, say: "BOO!!", secs: 2, ms: 2000 }
-    : { anim: "boo", opacity: 1, line: "boo", secs: 2, prop: "heart", ms: 2000 };
+    roll < 0.45 ? { anim: "boo", opacity: 1, sfx: "pop", line: "boo", secs: 2, ms: 2000 }
+    : roll < 0.8 ? { anim: "boo", opacity: 1, sfx: "pop", say: "BOO!!", secs: 2, ms: 2000 }
+    : { anim: "boo", opacity: 1, sfx: "pop", line: "boo", secs: 2, prop: "heart", ms: 2000 };
   // Gloating is talk - it answers to the chattiness slider, not a coin.
   const gloat = chance(0.3 + buddy.traits.get("chattiness") * 0.5)
     ? { anim: chance(0.5) ? "smug" : "excited", line: "booAfter", secs: 3, ms: 2400 }
