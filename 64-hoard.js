@@ -29,7 +29,10 @@ globalThis.hoardName = (it) => HOARD_NAMES[it.prop] || it.prop;
 // every redraw reads as haunted, not lived-in.
 let _pileIds = [];
 
-function pileSpot(i) {
+function pileSpot(i, it) {
+  // A piece the human dragged somewhere keeps that spot - a redraw that
+  // snaps the museum back to default undoes their rearranging.
+  if (it && it.pos) return it.pos;
   const s = buddy.screen();
   let side = buddy.memory.get("hoardSide");
   if (!side) {
@@ -51,16 +54,40 @@ function pileVisitSpot() {
 
 globalThis.drawHoard = function () {
   if (!can("place")) return;
-  _pileIds.forEach((id) => buddy.unplace(id));
+  _pileIds.forEach((e) => buddy.unplace(e.id));
   _pileIds = [];
   (buddy.memory.get("hoard") || []).forEach((it, i) => {
-    const p = pileSpot(i);
+    const p = pileSpot(i, it);
     const id = buddy.place(it.prop, p.x, p.y);
-    if (id) _pileIds.push(id);
+    if (id) _pileIds.push({ id: id, idx: i });
   });
 };
 
 buddy.on("brainLoaded", () => buddy.after(3000, drawHoard));
+
+// The pile is alive: dragging a piece rearranges the museum FOR REAL (the
+// new spot rides on the item in memory), and poking one gets commentary -
+// a collection nobody may touch is just clutter with an attitude.
+buddy.on("placementMoved", (e) => {
+  const entry = _pileIds.find((p) => p.id === e.id);
+  if (!entry) return;
+  const h = buddy.memory.get("hoard") || [];
+  if (!h[entry.idx]) return;
+  h[entry.idx].pos = { x: e.x, y: e.y };
+  buddy.memory.set("hoard", h);
+  if (state.busy || state.evolving) return;
+  if (!chance(0.6 * buddy.traits.get("chattiness"))) return;
+  const t = lines("hoardMoved");
+  if (t) buddy.say(t.replace(/\{item\}/g, HOARD_NAMES[e.name] || e.name), 4);
+});
+
+buddy.on("placementPoked", (e) => {
+  if (!_pileIds.some((p) => p.id === e.id)) return;
+  if (state.busy || state.evolving || buddy.isHeld()) return;
+  if (!chance(0.25 + 0.6 * buddy.traits.get("chattiness"))) return;
+  const t = lines("hoardPoked");
+  if (t) buddy.say(t.replace(/\{item\}/g, HOARD_NAMES[e.name] || e.name), 4);
+});
 
 globalThis.addToHoard = function (prop, from) {
   const h = buddy.memory.get("hoard") || [];

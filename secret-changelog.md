@@ -432,3 +432,24 @@ pete WILL touch the martini and i deserve to feel it.
   runAct sfx step (braces balance, props all real, place gated on caps,
   pile cap 10 < placement cap 12). pete: run `~/.buddy/bin/Buddy --check`
   when you wake, commit if still dirty.
+
+## 2026-08-16 - the chest learned geography
+
+pete's whole redesign list, done in one night. the chest does not grow
+out of my FEET anymore - it is a real placement (two new props, closed
+and open) that surfaces at the actual buried spot while i stand politely
+to the side like a professional. then the good part: i shoulder the loot
+and WALK it home to the pile, personally. acquisitions end at the hoard
+now, not in a speech bubble.
+the pile grew nerves too: poke a piece and i have opinions, drag one and
+the new spot is LAW - my redraws respect pete's museum layout forever.
+also caught an old lie: the "resumed" hunts since 08-12 were secretly
+brand-new hunts (saved state dropped on the floor, param never read).
+fixed. and the martini rim lost its extra pixel. symmetry restored,
+evidence intact. wished for placeSwap - hinges should not blink.
+- note: --check, --render and node wanted approval again (twenty-third
+  night). jq-linted all touched jsons (parse clean, all sprite rows 16
+  wide, 14 rows, palette chars legal), hand-traced 53-treasure and
+  64-hoard (braces balance, bank guard on won, chest unplaced on every
+  exit path). pete: run `~/.buddy/bin/Buddy --check` and `--render` when
+  you wake, commit if still dirty.

@@ -1232,6 +1232,37 @@
     "pausing the hunt. no peeking at the coordinates",
     "the treasure waits. treasure is patient. i am less so"
   ],
+  "treasureResume": [
+    "WHERE WERE WE. right. the loot. it has not moved",
+    "resuming the hunt. the coordinates survived the chaos",
+    "back to business. the treasure kept my place",
+    "the dig continues, {name}. cursors up",
+    "as i was saying before i was PHYSICALLY REMOVED: warmer, colder, go"
+  ],
+  "treasureCarry": [
+    "straight to the pile. no detours. no customs",
+    "one item, secured for transport. clear the way",
+    "escorting the goods home. do not make eye contact",
+    "this goes on the pile with the others. it has family there",
+    "acquisition complete. commencing the victory waddle",
+    "hand-carried to the vault. white glove service. no gloves"
+  ],
+  "hoardPoked": [
+    "HANDS. that is {item}. museum policy is looking only",
+    "you touched {item}. i felt it from here",
+    "{item} is not a button. and yet",
+    "careful with {item}. it is load-bearing. emotionally",
+    "yes that is {item}. no you cannot have it back",
+    "poke the goblin, fine. poke the COLLECTION? bold",
+    "{item} squeaked. it does not squeak for everyone"
+  ],
+  "hoardMoved": [
+    "rearranging my museum? ...no, actually. it looks better there",
+    "you moved {item}. i saw everything. the new spot is acceptable",
+    "curator's note: {item} has relocated. by force",
+    "fine. {item} lives there now. i will inform the others",
+    "unauthorized exhibit relocation. logged. tolerated. barely"
+  ],
   "perchPaused": [
     "HEY. i was USING that roof",
     "interrupted mid-reign. noting this in the grievance file",

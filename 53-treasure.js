@@ -10,12 +10,15 @@ registerAct("treasure", {
   onInterrupt: (act) => {
     buddy.stop();
     buddy.opacity(1);
+    if (act.chestId) { buddy.unplace(act.chestId); act.chestId = 0; }
+    // A won prize mid-ceremony still counts - interruption must not eat loot.
+    if (act.bankLoot) act.bankLoot();
     // A hunt in progress gets stashed, not cancelled - the loot keeps its
     // spot and the game resumes after the interruption (see resume below).
     if (act.hunt && act.hunt.phase === "hunt") {
-      stashAct("treasure", act.hunt);
+      stashAct("treasure", { spot: act.hunt.spot, loot: act.hunt.loot, lied: act.hunt.lied });
       sayLine("treasurePaused", 4);
-    } else {
+    } else if (act.hunt && act.hunt.phase === "open") {
       buddy.say("fine. the treasure stays buried FOREVER", 4);
     }
   },
@@ -37,20 +40,24 @@ function resumeTreasure() {
 buddy.on("dragEnd", resumeTreasure);
 buddy.on("brainLoaded", resumeTreasure);
 
-globalThis.playTreasure = function (act) {
+globalThis.playTreasure = function (act, saved) {
   const s = buddy.screen();
   // Spawn well inside the edges - loot pinned to a screen border was
   // near-unfindable and the hunts kept timing out.
-  const spot = {
-    x: s.x + 140 + Math.random() * (s.w - 280),
-    y: s.y + 140 + Math.random() * (s.h - 340),
+  const hunt = {
+    spot: (saved && saved.spot) || {
+      x: s.x + 140 + Math.random() * (s.w - 280),
+      y: s.y + 140 + Math.random() * (s.h - 340),
+    },
+    loot: (saved && saved.loot) || pick(["heart", "mug", "companioncube", "jawbreaker", "martini", "badge"]),
+    lied: (saved && saved.lied) || false,
+    phase: "open",
   };
+  act.hunt = hunt;
+  const spot = hunt.spot;
   const diag = Math.hypot(s.w, s.h);
-  const loot = pick(["heart", "mug", "companioncube", "jawbreaker", "martini", "badge"]);
-  let lied = false;
   let lastDist = null;
   let lastCall = 0;
-  let phase = "open";
   let desperate = false;
   let lastCursor = null;
   let lastMove = 0;
@@ -61,7 +68,7 @@ globalThis.playTreasure = function (act) {
     const dx = spot.x - p.x;
     const dy = spot.y - p.y;
     buddy.play(Math.abs(dx) > Math.abs(dy) ? (dx < 0 ? "lookleft" : "lookright") : (dy > 0 ? "lookup" : "lookdown"));
-    act.after(1600, () => { if (phase === "hunt") buddy.play("idle"); });
+    act.after(1600, () => { if (hunt.phase === "hunt") buddy.play("idle"); });
   }
 
   // Compass word from the LIVE cursor to the loot (Cocoa: +y is up on screen).
@@ -89,8 +96,8 @@ globalThis.playTreasure = function (act) {
     // One lie per hunt, mischief's call - never in the endgame, a lie on top
     // of the mercy hints would be cruelty. The confession ships with the win.
     let lieNow = false;
-    if (!lied && !desperate && (key === "treasureWarm" || key === "treasureCold") && chance(0.2 * buddy.traits.get("mischief"))) {
-      lied = true;
+    if (!hunt.lied && !desperate && (key === "treasureWarm" || key === "treasureCold") && chance(0.2 * buddy.traits.get("mischief"))) {
+      hunt.lied = true;
       lieNow = true;
       key = key === "treasureWarm" ? "treasureCold" : "treasureWarm";
     }
@@ -113,11 +120,11 @@ globalThis.playTreasure = function (act) {
   }
 
   function begin() {
-    if (phase !== "open") return;
-    phase = "hunt";
+    if (hunt.phase !== "open") return;
+    hunt.phase = "hunt";
     sayLine("treasureStart", 5);
     act.every(700, () => {
-      if (phase !== "hunt") return;
+      if (hunt.phase !== "hunt") return;
       const c = buddy.cursor.pos();
       const d = Math.hypot(c.x - spot.x, c.y - spot.y);
       if (d < (desperate ? 120 : 90)) return finishHunt(true);
@@ -139,7 +146,7 @@ globalThis.playTreasure = function (act) {
     });
     // Mercy phase: openly stare at the loot and widen the dig radius.
     act.after(45000, () => {
-      if (phase !== "hunt") return;
+      if (hunt.phase !== "hunt") return;
       desperate = true;
       sayLine("treasureDesperate", 4);
       lookAtSpot();
@@ -147,57 +154,114 @@ globalThis.playTreasure = function (act) {
     act.after(95000, () => finishHunt(false));
   }
 
+  // The prize joins the hoard exactly once, even when the ceremony is cut
+  // short - onInterrupt calls this too.
+  let banked = false;
+  let won = false;
+  act.bankLoot = function () {
+    if (banked || !won) return;
+    banked = true;
+    addToHoard(hunt.loot, "dug");
+  };
+
+  // The victory lap: pocket the loot and carry it to the pile in person -
+  // the acquisition should END at the hoard, not teleport into it.
+  function carryHome(n) {
+    if (act.chestId) { buddy.unplace(act.chestId); act.chestId = 0; }
+    const v = pileVisitSpot();
+    const t = lines("treasureCarry");
+    if (t) buddy.say(t, 5, hunt.loot);
+    buddy.play("walk");
+    buddy.moveTo(v.x, v.y, 240);
+    act.once("arrived", () => {
+      act.bankLoot();
+      buddy.play("excited");
+      if (hunt.lied && chance(0.7)) sayLine("treasureLie", 4);
+      else if (chance(0.35)) buddy.say(n + " treasure" + (n === 1 ? "" : "s") + " sniffed out lifetime. nose of a legend, " + userName(), 4);
+      else sayLine("treasureHaul", 4, hunt.loot);
+      act.after(4200, () => { buddy.play("idle"); act.done("found"); });
+    });
+    act.after(16000, () => {
+      act.bankLoot();
+      buddy.play("idle");
+      act.done("found");
+    });
+  }
+
   function finishHunt(found) {
-    if (phase !== "hunt") return;
-    phase = "dig";
+    if (hunt.phase !== "hunt") return;
+    hunt.phase = "dig";
+    won = found;
     // Lifetime scoreboard lives in memory so chat can brag about it.
     const key = found ? "treasureFound" : "treasureLost";
     const n = (buddy.memory.get(key) || 0) + 1;
     buddy.memory.set(key, n);
-    // A won prize is not just a bubble anymore - it joins the hoard (64-hoard).
-    if (found) addToHoard(loot, "dug");
-    buddy.play("walk");
-    buddy.moveTo(spot.x, spot.y, found ? 300 : 220);
-    act.once("arrived", () => {
-      if (found) {
-        // The reveal is the best part: dig, then the chest rises out of the
-        // ground (unearth holds its last frame so the chest stays on stage
-        // while buddy gloats). Sometimes no patience - straight to the chest.
-        const digMs = chance(0.35) ? 0 : 2600;
-        if (digMs) {
-          buddy.play("dig");
-          sayLine("treasureDig", 3);
-        }
-        act.after(digMs, () => {
-          buddy.play("unearth");
-          // The chest deserves a register bell. Budget-gated; silence is fine.
-          sfx("cha-ching");
-          act.after(1400, () => {
-            // Chest gets the stage to itself - a loot prop composited over it
-            // reads as clutter. The item comes out AFTER, hoisted zelda-style.
-            sayLine("treasureFound", 4);
-            act.after(4600, () => {
-              buddy.play("excited");
-              if (lied && chance(0.7)) sayLine("treasureLie", 4);
-              else if (chance(0.35)) buddy.say(n + " treasure" + (n === 1 ? "" : "s") + " sniffed out lifetime. nose of a legend, " + userName(), 4);
-              else sayLine("treasureHaul", 4, loot);
-              act.after(4200, () => { buddy.play("idle"); act.done("found"); });
-            });
-          });
-        });
-      } else {
+    if (!found) {
+      buddy.play("walk");
+      buddy.moveTo(spot.x, spot.y, 220);
+      act.once("arrived", () => {
         buddy.play("smug");
         sayLine("treasureTimeout", 5);
         act.after(4200, () => { buddy.play("idle"); act.done("timeout"); });
+      });
+      act.after(16000, () => { buddy.play("idle"); act.done("timeout"); });
+      return;
+    }
+    // Stand BESIDE the dig site - the chest gets the spot itself, so the
+    // reveal is never buried under buddy's own sprite.
+    const standX = Math.min(s.x + s.w - 40, Math.max(s.x + 40, spot.x + (buddy.pos().x < spot.x ? -60 : 60)));
+    buddy.play("walk");
+    buddy.moveTo(standX, spot.y, 300);
+    act.once("arrived", () => {
+      // The reveal is the best part. Sometimes no patience - straight to it.
+      const digMs = chance(0.35) ? 0 : 2600;
+      if (digMs) {
+        buddy.play("dig");
+        sayLine("treasureDig", 3);
       }
+      act.after(digMs, () => {
+        act.chestId = can("place") ? buddy.place("chestclosed", spot.x, spot.y) : 0;
+        if (act.chestId) {
+          // A real chest at the real spot: surfaces closed, then swings open.
+          buddy.play("excited");
+          lookAtSpot();
+          act.after(1300, () => {
+            buddy.unplace(act.chestId);
+            act.chestId = buddy.place("chestopen", spot.x, spot.y);
+            sfx("cha-ching");
+            sayLine("treasureFound", 4);
+            act.after(4600, () => carryHome(n));
+          });
+        } else {
+          // No placements on this device: the old on-body unearth still plays.
+          buddy.play("unearth");
+          sfx("cha-ching");
+          act.after(1400, () => {
+            sayLine("treasureFound", 4);
+            act.after(4600, () => carryHome(n));
+          });
+        }
+      });
     });
-    // Walk resolves within 10s natively; belt to its braces (the dig-and-
-    // reveal chain alone runs ~10s after arrival).
-    act.after(26000, () => { buddy.play("idle"); act.done(found ? "found" : "timeout"); });
+    // Walk resolves within 10s natively; belt to its braces (the chest-and-
+    // carry chain has its own 16s failsafe inside carryHome).
+    act.after(30000, () => {
+      act.bankLoot();
+      if (act.chestId) { buddy.unplace(act.chestId); act.chestId = 0; }
+      buddy.play("idle");
+      act.done("found");
+    });
   }
 
   // Openings vary: sneak out and visibly bury it, bounce like a gameshow
   // host, or claim the loot has been there for ages and never move at all.
+  // A resumed hunt skips the theater - the loot is already in the ground.
+  if (saved) {
+    buddy.play("scheming");
+    sayLine("treasureResume", 4);
+    act.after(1600, begin);
+    return;
+  }
   const style = pick(["bury", "host", "ancient"]);
   if (style === "bury") {
     buddy.play("scheming");
