@@ -8,5 +8,6 @@
   "workdayEnd": { "default": 17, "type": "hour", "label": "workday ends" },
   "nightEnd": { "default": 22, "type": "hour", "label": "night winds down" },
   "morningEnd": { "default": 11, "type": "hour", "label": "morning ends" },
-  "bodyColor": { "default": "green", "type": "choice", "options": ["green", "teal", "purple", "blue", "pink", "orange", "red"], "label": "buddy's color" }
+  "bodyColor": { "default": "green", "type": "choice", "options": ["green", "teal", "purple", "blue", "pink", "orange", "red"], "label": "buddy's color" },
+  "evolveCorner": { "default": "bottom right", "type": "choice", "options": ["bottom right", "bottom left", "top right", "top left"], "label": "where buddy evolves on demand" }
 }

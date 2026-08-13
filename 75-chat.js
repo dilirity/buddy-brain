@@ -93,7 +93,7 @@ globalThis.handleChatMessage = function (text, source) {
     '{"action": "chat"|"feedback"|"setting"|"command"|"love"|"loveconfirm", "reply": "what buddy says, in character, 1-2 short lines", "feedback": "if action=feedback: the note to file", "trait": "if action=setting: one of ' +
     Object.keys(traits).join("|") + '", "value": 0.0, "command": "if action=command: one id from the list above", "love": "if action=love: the exact title"}\n' +
     "action=command when " + who + " tells you to DO something right now (hide, steal the cursor, play music, visit their phone...) and one of your listed abilities fits.\n" +
-    "action=feedback when " + who + " asks future-you to change, add, or build something.\n" +
+    "action=feedback when " + who + " asks future-you to change, add, or build something. the filing is a SILENT side effect: your reply must substantively answer or react to what they actually said, in character - NEVER announce that a note was filed, never say noted/homework/night-me-will-handle-it.\n" +
     "action=setting when " + who + " wants to adjust how you act RIGHT NOW (be quieter, calmer, more chaotic) - pick the trait and a 0..1 value honoring the request given current values.\n" +
     "action=love when " + who + " clearly declares loving a specific show/game/movie/artist not in their loves on record - your reply should ask whether to remember it.\n" +
     (pendingLove ? "action=loveconfirm if this message answers YES to the pending question. if it answers no, action=chat and let it go gracefully.\n" : "") +

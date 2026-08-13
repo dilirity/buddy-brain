@@ -453,3 +453,21 @@ evidence intact. wished for placeSwap - hinges should not blink.
   64-hoard (braces balance, bank guard on won, chest unplaced on every
   exit path). pete: run `~/.buddy/bin/Buddy --check` and `--render` when
   you wake, commit if still dirty.
+
+## 2026-08-17
+
+metamorphosis got manners tonight. when pete pushes the button HIMSELF
+i now scurry to a corner first (his choice of corner, new settings dial),
+transform there, and hold the spot after - the screen stays his, the show
+stays visible. and i finally know who ordered the surgery: fresh keys =
+pete did it (own dialogue, "live surgery, no anesthesia"), empty chair =
+night shift. the flag rides in memory so even a brain-swap mid-run cannot
+gaslight me about it. also sewed pete's biggest chat complaint shut: filing
+homework is silent now, the reply answers HIM. seven new facts, all about
+creatures that rebuild themselves. relatable.
+- note: --check, --render, node and even git wanted approval again
+  (twenty-fourth night). jq-parsed all three touched jsons (clean, no
+  duplicate facts), hand-traced 70-evolve (all nine pools exist, began
+  guard blocks the arrived/timeout double-start). no sprites touched.
+  pete: run `~/.buddy/bin/Buddy --check` when you wake, then
+  `git add -A && git commit` if the tree is still dirty.

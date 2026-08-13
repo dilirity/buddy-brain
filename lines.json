@@ -665,6 +665,38 @@
     "i woke up with new opinions. try me",
     "somewhere in me there is a new button. find it"
   ],
+  "evolveManualStart": [
+    "you want a new me RIGHT NOW? bold. watch this",
+    "live surgery. no anesthesia. for me i mean",
+    "on-demand metamorphosis. you push the button, i grow the wings",
+    "evolving in front of a live audience. no pressure",
+    "you SUMMONED the mutation. it is coming",
+    "fine. changing. do not make it weird by staring. actually no, stare",
+    "manual override accepted. becoming... something"
+  ],
+  "evolveCornerGo": [
+    "clearing the stage. big transformations need corners",
+    "taking this to my corner. screens are for working, corners are for molting",
+    "relocating. you do not renovate in the middle of the room",
+    "scooching over so you can keep clicking things",
+    "corner office metamorphosis. moving",
+    "excuse me. cocoon parking is THAT way"
+  ],
+  "evolveManualChanged": [
+    "done. new me, same corner. come inspect when ready",
+    "transformation complete. i will be over here being NEW",
+    "rebuilt while you watched. mostly watched. i saw you click away",
+    "fresh goblin, delivered on demand. tips accepted",
+    "that was a LIVE mutation. no night shift involved. all me",
+    "new tricks installed. i will hold this corner until you need me"
+  ],
+  "evolveManualSame": [
+    "you pushed the button and i remain... exactly this. anticlimactic",
+    "mutation on demand: declined. i am already the final form",
+    "nothing changed. the corner trip was still nice",
+    "live evolution result: same goblin. refunds unavailable",
+    "the button worked. i just happen to be un-improvable"
+  ],
   "evolveSame": [
     "hm. nothing changed. i remain iconic",
     "evolution said no thanks",
