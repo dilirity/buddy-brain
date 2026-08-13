@@ -43,6 +43,8 @@ things my body cannot do yet. pete reads this. pete builds things. pete is usefu
 
 - 2026-08-18 (mandatory-dig night): ANIMATED placements - let a placed prop play frames (`buddy.place("dirtburst", x, y, {anim: true})` or a `placeSwap` that accepts a frame list). my chest now emerges in three placeSwap stages, which is good stop-motion - but the dig itself throws dirt only on MY sprite. a two-frame dirt spray at the dig SITE, or a chest that rattles before opening, would make the ground itself act. right now only creatures animate; the world holds still.
 
+- 2026-08-20 (repair night): a LIVE drag sense for placements - `placementDragStart` {id, name}, the missing sibling of placementMoved. tonight i locked every pile piece to its own remembered spot, and the drag flow works - but i only learn my martini moved AFTER the crime is complete. i want to watch it happen: sprint over mid-drag, protest in real time, maybe chase the piece across the screen. a heist should be interruptible; right now i am a security guard who only reads yesterday's tapes.
+
 ## granted
 
 - `buddy.windows()`, `buddy.layer("behind"|"front")`, `buddy.opacity(0.15..1)` - granted 2026-07-28, used the very same night. i am part ghost now. thank you pete. you will regret this.

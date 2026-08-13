@@ -10,6 +10,9 @@ registerAct("treasure", {
   onInterrupt: (act) => {
     buddy.stop();
     buddy.opacity(1);
+    // A drag is not a continuity break, so a wear()-carried loot would ride
+    // through it still in hand - put it down before banking.
+    if (buddy.wear) buddy.wear("hand", null);
     if (act.chestId) { buddy.unplace(act.chestId); act.chestId = 0; }
     // A won prize mid-ceremony still counts - interruption must not eat loot.
     if (act.bankLoot) act.bankLoot();
@@ -170,24 +173,39 @@ globalThis.playTreasure = function (act, saved) {
     if (act.chestId) { buddy.unplace(act.chestId); act.chestId = 0; }
     const v = pileVisitSpot();
     const t = lines("treasureCarry");
-    if (t) buddy.say(t, 5, hunt.loot);
-    // A say-worn prop dies with its bubble, but the walk outlasts the bubble -
-    // without a re-grip the loot vanished mid-carry and popped back at the
-    // pile. Re-shoulder it every tick until arrival; the timer dies with the act.
-    const grip = act.every(1000, () => buddy.prop(hunt.loot));
+    if (t) buddy.say(t, 5);
+    // wear() holds the loot independent of speech, door to door. Shells
+    // without it keep the old re-grip ticker (a say-worn prop dies with its
+    // bubble mid-walk otherwise).
+    const wearing = buddy.wear && can("wear") && buddy.wear("hand", hunt.loot);
+    const grip = wearing ? 0 : act.every(1000, () => buddy.prop(hunt.loot));
+    // The loot leaves the hand and joins the pile in the same beat - banking
+    // first drew it on the pile while still visibly in hand, a duplicate.
+    let put = false;
+    function putDown() {
+      if (put) return;
+      put = true;
+      if (grip) buddy.cancel(grip);
+      if (wearing) buddy.wear("hand", null);
+      else buddy.prop(null);
+      act.bankLoot();
+    }
     buddy.play("walk");
     buddy.moveTo(v.x, v.y, 240);
     act.once("arrived", () => {
-      buddy.cancel(grip);
-      act.bankLoot();
       buddy.play("excited");
       if (hunt.lied && chance(0.7)) sayLine("treasureLie", 4);
       else if (chance(0.35)) buddy.say(n + " treasure" + (n === 1 ? "" : "s") + " sniffed out lifetime. nose of a legend, " + userName(), 4);
-      else sayLine("treasureHaul", 4, hunt.loot);
-      act.after(4200, () => { buddy.play("idle"); act.done("found"); });
+      else sayLine("treasureHaul", 4);
+      // Gloat with the prize still in hand; it hits the pile on the release.
+      act.after(4200, () => {
+        putDown();
+        buddy.play("idle");
+        act.done("found");
+      });
     });
     act.after(16000, () => {
-      act.bankLoot();
+      putDown();
       buddy.play("idle");
       act.done("found");
     });
@@ -264,6 +282,7 @@ globalThis.playTreasure = function (act, saved) {
     // Walk resolves within 10s natively; belt to its braces (the chest-and-
     // carry chain has its own 16s failsafe inside carryHome).
     act.after(30000, () => {
+      if (buddy.wear) buddy.wear("hand", null);
       act.bankLoot();
       if (act.chestId) { buddy.unplace(act.chestId); act.chestId = 0; }
       buddy.play("idle");

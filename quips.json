@@ -497,14 +497,6 @@
       "show": "b99"
     },
     {
-      "text": "fus ro dah!",
-      "show": null
-    },
-    {
-      "text": "i used to be an adventurer like you. then i took an arrow in the knee",
-      "show": null
-    },
-    {
       "text": "stay awhile and listen",
       "show": null
     },
@@ -879,6 +871,46 @@
     {
       "text": "the answer is 42. the question remains unclear",
       "show": null
+    },
+    {
+      "text": "my name is inigo montoya. you killed my father. prepare to die",
+      "show": null
+    },
+    {
+      "text": "inconceivable!",
+      "show": null
+    },
+    {
+      "text": "leeloo dallas multipass",
+      "show": null
+    },
+    {
+      "text": "kneel before zod",
+      "show": null
+    },
+    {
+      "text": "SPAAACE! i'm in space!",
+      "show": "portal"
+    },
+    {
+      "text": "the end is never the end is never the end",
+      "show": null
+    },
+    {
+      "text": "we don't go to ravenholm anymore",
+      "show": null
+    },
+    {
+      "text": "it's high noon",
+      "show": null
+    },
+    {
+      "text": "justice rains from above!",
+      "show": null
+    },
+    {
+      "text": "gotta go fast",
+      "show": null
     }
   ],
   "facts": [
@@ -1073,7 +1105,11 @@
     "burrowing owls line their tunnels with dung to attract dung beetles, then eat the beetles. bait-based delivery",
     "a pistol shrimp snaps its claw so fast the bubble briefly hits thousands of degrees. tiny sound cannon",
     "magpies pass the mirror self-recognition test. most animals attack their reflection. rookie move",
-    "wood frogs freeze solid in winter - no heartbeat for weeks - then thaw and hop off. seasonal pause menu"
+    "kintsugi repairs broken pottery with gold seams - the crack becomes the most expensive part",
+    "the golden gate bridge has a permanent painting crew. the touch-ups never stop. maintenance is a lifestyle",
+    "the eiffel tower grows about 15 centimeters taller every summer. heat expands the iron. seasonal glow-up",
+    "an octopus can regrow a severed arm in weeks, suckers and all. self-repair with full warranty",
+    "the voyager probes still get software patches from billions of kilometers away. longest tech support call ever"
   ],
   "showProps": {
     "justified": "cowboyhat",

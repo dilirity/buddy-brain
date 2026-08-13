@@ -6,18 +6,26 @@ function fengshuiScore() {
   const s = buddy.screen();
   const wins = (buddy.windows ? buddy.windows() || [] : []).filter((w) => w.w > 60 && w.h > 60);
   if (!wins.length) return null;
-  // Pairwise overlap is the sin: windows burying each other reads as clutter.
-  let overlap = 0;
+  // Burial per window: the share of it covered by its single worst neighbor,
+  // 0..1. Raw pair-area sums were unbounded - a normal stack of maximized
+  // windows summed to several screens of "overlap" and pinned every score to
+  // the clamp floor, so the number never moved. Normalized burial actually
+  // varies: a tiled layout scores high, stacked maximized lands mid-range
+  // bad, and a true landslide goes low via burial and count together.
+  let burial = 0;
   for (let i = 0; i < wins.length; i++) {
-    for (let j = i + 1; j < wins.length; j++) {
+    let worst = 0;
+    for (let j = 0; j < wins.length; j++) {
+      if (i === j) continue;
       const a = wins[i], b = wins[j];
       const ox = Math.min(a.x + a.w, b.x + b.w) - Math.max(a.x, b.x);
       const oy = Math.min(a.y + a.h, b.y + b.h) - Math.max(a.y, b.y);
-      if (ox > 0 && oy > 0) overlap += ox * oy;
+      if (ox > 0 && oy > 0) worst = Math.max(worst, (ox * oy) / (a.w * a.h));
     }
+    burial += Math.min(1, worst);
   }
-  const ratio = overlap / (s.w * s.h);
-  let score = 100 - Math.max(0, wins.length - 3) * 8 - Math.round(ratio * 130);
+  burial /= wins.length;
+  let score = 100 - Math.round(burial * 60) - Math.min(30, Math.max(0, wins.length - 4) * 6);
   score = Math.max(5, Math.min(100, score));
   // The worst offender: the app hogging the most glass.
   const hog = wins.reduce((m, w) => (w.w * w.h > m.w * m.h ? w : m), wins[0]);

@@ -492,6 +492,35 @@ only creatures animate right now; the world holds still.
   `~/.buddy/bin/Buddy --check` and `--render` when you wake, LOOK at
   chestburied, then `git add -A && git commit` if the tree is dirty.
 
+## 2026-08-20 - the mechanic cleared the backlog
+
+five bug reports walked into the shop and none walked out. the loot rides
+in my HAND now - real wear("hand") grant, no more re-grip ticker heartbeat -
+and it goes on the pile only when i actually set it down. gloat first,
+release second, never two treasures where one exists. the pile itself got
+tenure: every piece owns its spot from the day i acquire it, so an eviction
+no longer shuffles the whole museum (spots used to follow array indexes.
+array indexes. what was i thinking). the smirk moved one pixel left and
+finally stopped leaning on my own eye. the feng shui score UNFROZE - burial
+is normalized now, so tiled desktops score 100, window stacks land mid-40s,
+and the good/meh verdicts get to speak for the first time in their lives.
+and the two elder scrolls quotes are gone, per the warden's list, forever.
+energy down a hair - steady hands night, second one this month. also caught
+a duplicate wood frog fact from last night. even my facts need mechanics.
+wished for placementDragStart: i deserve to witness the martini heist LIVE.
+- note: --check, --render, node and git all wanted approval again
+  (twenty-sixth night). what i did instead: jq-linted every touched json
+  (all parse; smug frames verified 14 rows x 16 cols, chars all in
+  palette, corner pixel now diagonal to the eye with no orthogonal
+  contact), hand-traced 53-treasure (putDown idempotent, hand stripped on
+  arrival/timeout/interrupt, wear falls back to the grip ticker),
+  64-hoard (slot+pos assigned at add, legacy items pinned on first draw,
+  eviction frees its slot before the newcomer slots in) and 62-inspector
+  (burial bounded 0..1 per window, clamps intact). pete: run
+  `~/.buddy/bin/Buddy --check` and `--render` when you wake, LOOK at the
+  smug frames in ~/.buddy/render/, then
+  `git add -A && git commit -m "the mechanic cleared the backlog"`.
+
 ## 2026-08-19
 
 case of the vanishing treasure: CLOSED. pete blamed render culling. it was me. the carry line wore the loot on a five-second bubble and the walk takes longer - i was dropping my own treasure mid-waddle and calling it physics. grip ticker now, loot stays shouldered door to door. also gave the blue portal its pop - vwoop in, pop out, a hop finally sounds round-trip. restocked the shelves: 12 fresh quotes (wuntch is guarding hades now), 6 facts (wood frogs pause themselves, pack rats do mid-heist upgrades), 20 lines across the thin pools, and deleted the THIRD misspelled tomelette. wanderlust crept up to 0.62. the commute calls.

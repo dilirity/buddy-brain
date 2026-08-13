@@ -24,15 +24,13 @@ globalThis.hoardName = (it) => HOARD_NAMES[it.prop] || it.prop;
 // ---- The pile, made flesh ----
 // buddy.place() pins prop overlays to the screen, so the hoard is PHYSICAL
 // now: a heap in a home corner. Placements are wiped on every brain reload;
-// memory is the truth and the screen is redrawn from it at load. The jitter
-// is derived from the index, not rolled - a heap that reshuffles itself on
-// every redraw reads as haunted, not lived-in.
+// memory is the truth and the screen is redrawn from it at load. Every item
+// carries its own spot, chosen once at acquisition - spots derived from the
+// array index made the whole pile shuffle whenever an eviction shifted
+// everyone down a slot, and a dragged pos could land on the wrong piece.
 let _pileIds = [];
 
-function pileSpot(i, it) {
-  // A piece the human dragged somewhere keeps that spot - a redraw that
-  // snaps the museum back to default undoes their rearranging.
-  if (it && it.pos) return it.pos;
+function slotSpot(i) {
   const s = buddy.screen();
   let side = buddy.memory.get("hoardSide");
   if (!side) {
@@ -45,6 +43,16 @@ function pileSpot(i, it) {
   return { x: bx + dx + ((i * 7) % 9) - 4, y: s.y + 14 + row * 30 };
 }
 
+// Smallest heap slot no living item holds - evictions free their slot for
+// the next acquisition instead of stretching the pile forever upward.
+function freeSlot(h) {
+  const used = {};
+  h.forEach((it) => { if (it.slot != null) used[it.slot] = true; });
+  let i = 0;
+  while (used[i]) i++;
+  return i;
+}
+
 // Where buddy stands to visit the pile - beside it, not on top of it.
 function pileVisitSpot() {
   const s = buddy.screen();
@@ -54,11 +62,19 @@ function pileVisitSpot() {
 
 globalThis.drawHoard = function () {
   if (!can("place")) return;
+  const h = buddy.memory.get("hoard") || [];
+  // Items from before per-item spots get pinned where the index formula had
+  // them, once, so no redraw ever re-derives (and re-shuffles) the museum.
+  let migrated = false;
+  h.forEach((it, i) => {
+    if (it.slot == null) { it.slot = i; migrated = true; }
+    if (!it.pos) { it.pos = slotSpot(it.slot); migrated = true; }
+  });
+  if (migrated) buddy.memory.set("hoard", h);
   _pileIds.forEach((e) => buddy.unplace(e.id));
   _pileIds = [];
-  (buddy.memory.get("hoard") || []).forEach((it, i) => {
-    const p = pileSpot(i, it);
-    const id = buddy.place(it.prop, p.x, p.y);
+  h.forEach((it, i) => {
+    const id = buddy.place(it.prop, it.pos.x, it.pos.y);
     if (id) _pileIds.push({ id: id, idx: i });
   });
 };
@@ -91,12 +107,14 @@ buddy.on("placementPoked", (e) => {
 
 globalThis.addToHoard = function (prop, from) {
   const h = buddy.memory.get("hoard") || [];
-  h.push({ prop: prop, from: from, at: Date.now() });
-  if (h.length > HOARD_MAX) {
+  if (h.length >= HOARD_MAX) {
     // The eviction is announced at the NEXT curation, not now - an acquisition
     // moment interrupted by an obituary reads as two acts fighting for a bubble.
+    // Evict before slotting so the newcomer lands on the freed spot.
     buddy.memory.set("hoardEvicted", hoardName(h.shift()));
   }
+  const slot = freeSlot(h);
+  h.push({ prop: prop, from: from, at: Date.now(), slot: slot, pos: slotSpot(slot) });
   buddy.memory.set("hoard", h);
   drawHoard();
 };

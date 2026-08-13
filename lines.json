@@ -1192,14 +1192,19 @@
     "{score} out of 100. harmony. balance. did you clean up for me, {name}?",
     "score: {score}. the chi flows freely between your windows. as it should",
     "{score}. exquisite. i have nothing to criticize and it is making me uncomfortable",
-    "feng shui verdict: {score}. this desktop could be in a museum. a small one, but still"
+    "feng shui verdict: {score}. this desktop could be in a museum. a small one, but still",
+    "{score}. every window has room to exhale. who ARE you today, {name}",
+    "score: {score}. tiled like a professional. i checked the math twice out of suspicion"
   ],
   "inspectMeh": [
     "feng shui score: {score}. acceptable. barely",
     "{score} out of 100. it is not clutter YET. it is pre-clutter",
     "score: {score}. the chi is limping but alive",
     "{score}. i have seen worse. i have also seen better. mostly better",
-    "verdict: {score}. half harmony, half landfill. pick a side, {name}"
+    "verdict: {score}. half harmony, half landfill. pick a side, {name}",
+    "{score}. one bold window drag away from redemption. or ruin. your call",
+    "score: {score}. {app} is leaning on everyone else like it pays rent here",
+    "{score} out of 100. a C-plus desktop. the chi shrugged"
   ],
   "inspectChaos": [
     "feng shui score: {score}. this is not a desktop, it is a landslide. mostly {app}'s fault",
@@ -1329,6 +1334,8 @@
     "you moved {item}. i saw everything. the new spot is acceptable",
     "curator's note: {item} has relocated. by force",
     "fine. {item} lives there now. i will inform the others",
+    "and it STAYS where you put it now. the pile used to have opinions. i fixed the pile",
+    "noted: {item}, new address. the museum map is being reprinted as we speak",
     "unauthorized exhibit relocation. logged. tolerated. barely"
   ],
   "perchPaused": [
