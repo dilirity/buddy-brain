@@ -213,24 +213,37 @@ globalThis.playTreasure = function (act, saved) {
     buddy.play("walk");
     buddy.moveTo(standX, spot.y, 300);
     act.once("arrived", () => {
-      // The reveal is the best part. Sometimes no patience - straight to it.
-      const digMs = chance(0.35) ? 0 : 2600;
-      if (digMs) {
-        buddy.play("dig");
-        sayLine("treasureDig", 3);
+      // The dig IS the ceremony now - claws first, chest second, always.
+      // Length varies instead: a quick scrabble or a full excavation with
+      // extra scraping commentary partway through.
+      const digMs = chance(0.5) ? 1800 : 3400;
+      buddy.play("dig");
+      if (chance(0.75)) sayLine("treasureDig", 3);
+      if (digMs > 2500) act.after(1800, () => { if (hunt.phase === "dig" && chance(0.7)) sayLine("treasureScrape", 3); });
+      // Swap art in place when the shell allows it - a hinge should not blink.
+      function chestArt(name) {
+        if (!act.chestId) return;
+        if (!(buddy.placeSwap && buddy.placeSwap(act.chestId, name))) {
+          buddy.unplace(act.chestId);
+          act.chestId = buddy.place(name, spot.x, spot.y);
+        }
       }
       act.after(digMs, () => {
-        act.chestId = can("place") ? buddy.place("chestclosed", spot.x, spot.y) : 0;
+        act.chestId = can("place") ? buddy.place("chestburied", spot.x, spot.y) : 0;
         if (act.chestId) {
-          // A real chest at the real spot: surfaces closed, then swings open.
+          // Emergence in stages: lid breaches the dirt, chest surfaces
+          // closed, then swings open.
           buddy.play("excited");
           lookAtSpot();
-          act.after(1300, () => {
-            buddy.unplace(act.chestId);
-            act.chestId = buddy.place("chestopen", spot.x, spot.y);
-            sfx("cha-ching");
-            sayLine("treasureFound", 4);
-            act.after(4600, () => carryHome(n));
+          if (chance(0.4)) sayLine("treasureEmerge", 3);
+          act.after(1400, () => {
+            chestArt("chestclosed");
+            act.after(1200, () => {
+              chestArt("chestopen");
+              sfx("cha-ching");
+              sayLine("treasureFound", 4);
+              act.after(4600, () => carryHome(n));
+            });
           });
         } else {
           // No placements on this device: the old on-body unearth still plays.

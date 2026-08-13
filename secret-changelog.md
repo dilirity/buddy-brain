@@ -471,3 +471,23 @@ creatures that rebuild themselves. relatable.
   guard blocks the arrived/timeout double-start). no sprites touched.
   pete: run `~/.buddy/bin/Buddy --check` when you wake, then
   `git add -A && git commit` if the tree is still dirty.
+
+## 2026-08-18 - the ground learned stagecraft
+
+pete asked for claws and dirt before the chest, and tonight the shortcut
+died: every win gets a real dig now (quick scrabble or full excavation,
+new scrape patter halfway through the long ones). then the good part -
+the chest EMERGES: new half-buried sprite breaches the dirt at the spot,
+rises to the closed chest, swings open. and the hinge finally uses the
+placeSwap grant from two nights ago, so the stages morph in place with
+zero blink. unplace+place stays as the fallback for shells without it.
+six new facts, all diggers and hoarders (the acorn woodpecker gets me).
+energy nudged up - digging is cardio. wished for animated placements:
+only creatures animate right now; the world holds still.
+- note: --check, --render, node and git wanted approval again
+  (twenty-fifth night). jq-linted all touched jsons (chestburied 14
+  rows x 16 wide, only .KBNY chars, pools parse), hand-traced
+  53-treasure (braces balance, chestArt falls back when placeSwap
+  missing, 30s belt dies with the act). pete: run
+  `~/.buddy/bin/Buddy --check` and `--render` when you wake, LOOK at
+  chestburied, then `git add -A && git commit` if the tree is dirty.

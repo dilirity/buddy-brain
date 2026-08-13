@@ -208,7 +208,25 @@
     "shovel mode. dirt everywhere. worth it",
     "excavation in progress. hard hats on",
     "dig dig dig. the ground fights back",
-    "one moment. treasure does not surface itself"
+    "one moment. treasure does not surface itself",
+    "these claws were MADE for this",
+    "stand back. professional goblin at work",
+    "the pixels are packed TIGHT down here"
+  ],
+  "treasureScrape": [
+    "scrape scrape scraaaape",
+    "i hit something. i HIT something",
+    "almost... the dirt is fighting dirty",
+    "hear that? that is the sound of imminent riches",
+    "deeper than i remembered. past me was thorough",
+    "claw status: full of dirt. morale: soaring"
+  ],
+  "treasureEmerge": [
+    "IT BREACHES",
+    "rise, my beauty. RISE",
+    "the lid! i see the lid!",
+    "surfacing. everyone act natural",
+    "up you come. gently. GENTLY"
   ],
   "treasureFound": [
     "YOU FOUND IT. dig dig dig",
