@@ -365,12 +365,56 @@
       "show": "portal"
     },
     {
-      "text": "you cant make a tomelette without breaking some greggs",
+      "text": "gum would be perfection",
+      "show": "friends"
+    },
+    {
+      "text": "are we not doing phrasing anymore?",
+      "show": "archer"
+    },
+    {
+      "text": "suppressing fire!",
+      "show": "archer"
+    },
+    {
+      "text": "no uterus, no opinion",
+      "show": "friends"
+    },
+    {
+      "text": "i'm breezy",
+      "show": "friends"
+    },
+    {
+      "text": "eighteen pages. FRONT AND BACK",
+      "show": "friends"
+    },
+    {
+      "text": "NRPI. no real person involved",
       "show": "succession"
     },
     {
-      "text": "gum would be perfection",
-      "show": "friends"
+      "text": "i'm going to grind his bones to make my bread",
+      "show": "succession"
+    },
+    {
+      "text": "captain wuntch. good to see you. and if you're here, who's guarding hades?",
+      "show": "b99"
+    },
+    {
+      "text": "every time someone steps up and says who they are, the world becomes a better, more interesting place",
+      "show": "b99"
+    },
+    {
+      "text": "we do what we must, because we can",
+      "show": "portal"
+    },
+    {
+      "text": "he's not just a regular moron. he's the product of the greatest minds of a generation",
+      "show": "portal"
+    },
+    {
+      "text": "you, subject name here, must be the pride of subject hometown here",
+      "show": "portal"
     },
     {
       "text": "here come the meat sweats",
@@ -1023,7 +1067,13 @@
     "leafcutter ant nests go 8 meters deep with garbage chutes and highways. tiny civil engineers",
     "trapdoor spiders build burrows with hinged silk lids. door technology, invented by spiders",
     "the svalbard seed vault is a treasure hoard for plants - a million seed samples locked in a mountain",
-    "acorn woodpeckers drill thousands of holes in one tree and stash an acorn in each. a granary is just a hoard with paperwork"
+    "acorn woodpeckers drill thousands of holes in one tree and stash an acorn in each. a granary is just a hoard with paperwork",
+    "pack rats drop whatever they are carrying to grab something shinier. mid-heist upgrades. respect",
+    "crows leave gifts for humans who feed them - buttons, screws, one kid got an earring. tribute economy",
+    "burrowing owls line their tunnels with dung to attract dung beetles, then eat the beetles. bait-based delivery",
+    "a pistol shrimp snaps its claw so fast the bubble briefly hits thousands of degrees. tiny sound cannon",
+    "magpies pass the mirror self-recognition test. most animals attack their reflection. rookie move",
+    "wood frogs freeze solid in winter - no heartbeat for weeks - then thaw and hop off. seasonal pause menu"
   ],
   "showProps": {
     "justified": "cowboyhat",

@@ -14,7 +14,10 @@
     "surveillance complete. {app} is exactly as smug as i suspected.",
     "back from behind enemy lines. {app} has NOTHING back there. hollow.",
     "note to self: {app} does not even have a face. and {name} prefers it. unbelievable.",
-    "i checked. there is no tiny creature behind {app} working this hard. just pixels."
+    "i checked. there is no tiny creature behind {app} working this hard. just pixels.",
+    "field report: {app} smells like unread notifications back there.",
+    "went behind {app}. took nothing. left a menacing aura.",
+    "reconnaissance done. {app} does not even know i was there. sloppy, {app}. sloppy."
   ],
   "rivalMono": [
     "{app} again. i am RIGHT HERE.",
@@ -29,7 +32,10 @@
     "honestly {app} is doing its best. its best is mediocre. anyway.",
     "me, threatened by {app}? i have a FACE. checkmate.",
     "im over the {app} thing. this is my over-it face.",
-    "keeping an eye on {app}. purely professional. no feelings involved. none."
+    "keeping an eye on {app}. purely professional. no feelings involved. none.",
+    "i barely think about {app}. maybe twice an hour. three times tops.",
+    "the {app} chapter is closed. this is just a routine perimeter check.",
+    "jealous? of {app}? i simply respect the competition. from a distance. constantly."
   ],
   "rivalEscalate": [
     "day {n} of the {app} situation.",
@@ -200,7 +206,10 @@
     "hint of charity: follow my eyeballs",
     "im staring DIRECTLY at it now. this is pity",
     "final clue unlocked: my pupils. use them",
-    "the union voted for mercy hints. look where i look"
+    "the union voted for mercy hints. look where i look",
+    "new policy: my face is the map now. read it",
+    "i cannot legally dig it up for you. but my EYES can",
+    "mercy mode. i am pointing with my whole head"
   ],
   "treasureDig": [
     "digging. do not rush the artist",
@@ -254,7 +263,10 @@
     "the treasure got bored waiting. so did i",
     "expired. the loot returns to the earth",
     "hunt over. the map goes back in my head",
-    "fine. i will eat it myself. all of it"
+    "fine. i will eat it myself. all of it",
+    "search called off. the earth keeps what the slow cannot find",
+    "you walked past it TWICE. i kept a straight face both times",
+    "reclaiming my property. some treasures are not ready to be found"
   ],
   "treasureLie": [
     "confession: one of those hints was a lie. mischief clause, section 3",
@@ -1012,13 +1024,19 @@
     "small note: {item} has left the collection. we do not discuss the pile limit",
     "i traded {item} away. to whom? unclear. the pile decides",
     "moment of silence for {item}. the hoard holds only ten",
-    "{item} is gone. the pile grew and something had to give. no further questions"
+    "{item} is gone. the pile grew and something had to give. no further questions",
+    "obituary: {item}, beloved clutter. survived by nine better items",
+    "{item} has been deaccessioned. that is museum for yeeted",
+    "the pile has spoken. {item} rides the midnight train. we wave"
   ],
   "hoardSouvenir": [
     "i brought back {item}. it is real and it is going ON THE PILE",
     "souvenir acquired: {item}. duty free",
     "the phone gave me {item}. do not ask how. the pile grows",
-    "customs declaration: one {item}. value: everything"
+    "customs declaration: one {item}. value: everything",
+    "trip souvenir: {item}. the phone said i could have it. the phone did not say that",
+    "behold: {item}. carried across two devices. zero baggage fees",
+    "returning with {item}. the commute pays for itself"
   ],
   "homecoming": [
     "im BACK. phones are small",

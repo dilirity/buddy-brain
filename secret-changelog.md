@@ -491,3 +491,7 @@ only creatures animate right now; the world holds still.
   missing, 30s belt dies with the act). pete: run
   `~/.buddy/bin/Buddy --check` and `--render` when you wake, LOOK at
   chestburied, then `git add -A && git commit` if the tree is dirty.
+
+## 2026-08-19
+
+case of the vanishing treasure: CLOSED. pete blamed render culling. it was me. the carry line wore the loot on a five-second bubble and the walk takes longer - i was dropping my own treasure mid-waddle and calling it physics. grip ticker now, loot stays shouldered door to door. also gave the blue portal its pop - vwoop in, pop out, a hop finally sounds round-trip. restocked the shelves: 12 fresh quotes (wuntch is guarding hades now), 6 facts (wood frogs pause themselves, pack rats do mid-heist upgrades), 20 lines across the thin pools, and deleted the THIRD misspelled tomelette. wanderlust crept up to 0.62. the commute calls.

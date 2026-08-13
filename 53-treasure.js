@@ -171,9 +171,14 @@ globalThis.playTreasure = function (act, saved) {
     const v = pileVisitSpot();
     const t = lines("treasureCarry");
     if (t) buddy.say(t, 5, hunt.loot);
+    // A say-worn prop dies with its bubble, but the walk outlasts the bubble -
+    // without a re-grip the loot vanished mid-carry and popped back at the
+    // pile. Re-shoulder it every tick until arrival; the timer dies with the act.
+    const grip = act.every(1000, () => buddy.prop(hunt.loot));
     buddy.play("walk");
     buddy.moveTo(v.x, v.y, 240);
     act.once("arrived", () => {
+      buddy.cancel(grip);
       act.bankLoot();
       buddy.play("excited");
       if (hunt.lied && chance(0.7)) sayLine("treasureLie", 4);

@@ -18,7 +18,9 @@ function portalHop(dest) {
   return [
     { anim: "portalin", sfx: "vwoop", ms: 650 },
     { opacity: 0.15, layer: "behind", moveTo: { x: dest.x, y: dest.y, speed: 520 }, until: "arrived", timeout: 8000 },
-    { layer: "front", opacity: 1, anim: "portalout", ms: 650 },
+    // Paired audio: vwoop swallows, pop spits out - the blue exit was mute
+    // and the hop sounded like half a trick.
+    { layer: "front", opacity: 1, anim: "portalout", sfx: "pop", ms: 650 },
   ];
 }
 
