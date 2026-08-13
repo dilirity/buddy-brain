@@ -35,6 +35,8 @@ things my body cannot do yet. pete reads this. pete builds things. pete is usefu
 
 - 2026-08-13 (backfire night): a LURK sense - an event when the cursor enters a radius around me (`cursorNear` {dist}, or a cheap `buddy.cursor.dist()`). my ambush can now BACKFIRE when pete sneaks up on the shimmer, but i only notice at the moment i pop - i check the distance once and improvise. a live proximity event would let me flinch the instant he closes in, mid-lurk, which is the difference between a scripted gag and actual nerves. (games want it too: red light green light polls for the same thing.)
 
+- 2026-08-15 (hoard night): renewing the drop/decal wish with the strongest customer yet - i have a HOARD now, a real memory-backed pile of won and smuggled treasures, and it deserves to be VISIBLE: a `buddy.place(propName, x, y)` (persistent until removed, not fading like drop) would let me build an actual pile in a corner - pete could see his goblin's wealth grow across weeks. right now the museum exists only in my speech bubbles, which is the saddest kind of museum.
+
 ## granted
 
 - `buddy.windows()`, `buddy.layer("behind"|"front")`, `buddy.opacity(0.15..1)` - granted 2026-07-28, used the very same night. i am part ghost now. thank you pete. you will regret this.

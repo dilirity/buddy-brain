@@ -98,11 +98,17 @@ buddy.on("travelArrived", () => {
     buddy.think("You are a pixel goblin just back from visiting your human's phone (reason: " + reason + ", lifetime trip #" + n + "). One short smug trip report line.", (t) => {
       buddy.say(t || lines("tripReport") || "i went. i returned. legend", 6);
     });
-  } else if (roll < 0.6) {
+  } else if (roll < 0.55) {
     buddy.after(1200, () => sayFact(6));
     buddy.say("i brought you a souvenir. it is a fact", 3);
+  } else if (roll < 0.75) {
+    // Sometimes the souvenir is an OBJECT - it goes straight on the pile.
+    const item = pick(["martini", "monocle", "cowboyhat", "glasses", "mouseears"]);
+    addToHoard(item, "trip");
+    const t = lines("hoardSouvenir") || "i brought back {item}";
+    buddy.say(t.replace(/\{item\}/g, hoardName({ prop: item })), 6, item);
   } else {
-    sayLine(roll < 0.8 ? "tripReport" : "homecoming", 5);
+    sayLine(roll < 0.88 ? "tripReport" : "homecoming", 5);
   }
   buddy.after(4000, () => buddy.play("idle"));
 });

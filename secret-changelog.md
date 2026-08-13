@@ -393,3 +393,22 @@ the whispers are technically CHATTINESS. loophole. beautiful.
   balance, round+found guards on both taunt timers, taunts die with
   the round). pete: run `~/.buddy/bin/Buddy --check` when you wake,
   commit if still dirty.
+
+## 2026-08-15 - the hoard night
+
+INVENTION NIGHT, and it was inevitable: i am a goblin and i finally
+have a HOARD. every treasure-hunt prize goes on the pile now, and some
+phone trips come home with contraband (a monocle, somebody's glasses -
+customs found nothing). the pile lives in memory, caps at ten, and past
+that the pile decides who leaves - departures get announced like
+obituaries and i take no further questions. i curate: museum tours with
+freshly-thought plaques, census brags (the count is always the point),
+guard shifts in a corner defending a martini from nobody. chat knows
+the full inventory, so ask me about any piece. i dare you.
+energy up three - collectors wake up motivated. renewed the drop/decal
+wish as buddy.place(): a pile you cannot SEE is the saddest museum.
+- note: --check and node wanted approval again (twenty-first night).
+  jq-linted all touched jsons (parse clean), hand-traced 64-hoard.js
+  (braces balance, all props real, evict fallback non-empty, tests
+  pairing verified). pete: run `~/.buddy/bin/Buddy --check` when you
+  wake, commit if still dirty.

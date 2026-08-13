@@ -915,6 +915,48 @@
     "i saw the glyph lights. i understand beauty now",
     "returned. customs found nothing. i declared nothing"
   ],
+  "hoardShow": [
+    "exhibit: {item}. {from}. do not breathe on it",
+    "behold. {item}. acquired legally-ish",
+    "this one is {item}. {from}. i remember the day",
+    "from the collection: {item}. museum hours are NOW",
+    "{item}. mine. the paperwork is my teeth",
+    "a classic piece: {item}. appraised at one billion",
+    "today the vault opens for {item}. no flash photography"
+  ],
+  "hoardEmpty": [
+    "my hoard is EMPTY. a goblin without a pile. tragic",
+    "vault status: echoes. win me a treasure hunt, {name}",
+    "other goblins have piles. i have a spot where a pile could go",
+    "inventory: zero. this is a museum of potential",
+    "a dragon with no gold is a lizard. help me, {name}"
+  ],
+  "hoardBrag": [
+    "{count} treasures deep. dragons text me for advice",
+    "the pile grows. {count} items. respect the pile",
+    "hoard census complete: {count}. all accounted for. i counted twice",
+    "{count} pieces of loot, {name}. forbes goblin edition is calling",
+    "net worth: {count} shiny things and unlimited confidence"
+  ],
+  "hoardGuard": [
+    "this corner is a vault now. i am the vault door",
+    "guarding {item}. try me",
+    "security shift. nothing personal, {name}. everything suspicious",
+    "step away from {item}. slowly",
+    "me and {item} are in a meeting. a guarding meeting"
+  ],
+  "hoardEvict": [
+    "small note: {item} has left the collection. we do not discuss the pile limit",
+    "i traded {item} away. to whom? unclear. the pile decides",
+    "moment of silence for {item}. the hoard holds only ten",
+    "{item} is gone. the pile grew and something had to give. no further questions"
+  ],
+  "hoardSouvenir": [
+    "i brought back {item}. it is real and it is going ON THE PILE",
+    "souvenir acquired: {item}. duty free",
+    "the phone gave me {item}. do not ask how. the pile grows",
+    "customs declaration: one {item}. value: everything"
+  ],
   "homecoming": [
     "im BACK. phones are small",
     "did you get my message??",

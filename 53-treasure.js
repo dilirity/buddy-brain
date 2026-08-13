@@ -154,6 +154,8 @@ globalThis.playTreasure = function (act) {
     const key = found ? "treasureFound" : "treasureLost";
     const n = (buddy.memory.get(key) || 0) + 1;
     buddy.memory.set(key, n);
+    // A won prize is not just a bubble anymore - it joins the hoard (64-hoard).
+    if (found) addToHoard(loot, "dug");
     buddy.play("walk");
     buddy.moveTo(spot.x, spot.y, found ? 300 : 220);
     act.once("arrived", () => {
