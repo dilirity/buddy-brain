@@ -109,10 +109,31 @@ globalThis.playHat = function (act) {
   }
 };
 
-// Reloads strip the head slot; the hat is a day-long fact, so put it back.
-buddy.on("brainLoaded", () => buddy.after(2000, () => {
+function redonHat() {
   const worn = hatToday();
   if (worn && buddy.wear && can("wear")) buddy.wear("head", worn.prop);
+}
+
+// Reloads strip the head slot; the hat is a day-long fact, so put it back.
+buddy.on("brainLoaded", () => buddy.after(2000, redonHat));
+
+// Sleep costs the hat (the sleep pose drops the head slot), so the fiction
+// owns it: drifting off sometimes swaps the day hat for the nightcap, and
+// waking ALWAYS re-dons the day's choice - a nap is not a wardrobe change.
+buddy.on("idle", () => {
+  const worn = hatToday();
+  if (!worn || worn.prop === "nightcap" || !buddy.wear || !can("wear")) return;
+  if (chance(0.4 * buddy.traits.get("weirdness"))) buddy.after(1200, () => {
+    if (state.mood === "sleepy") buddy.wear("head", "nightcap");
+  });
+});
+
+buddy.on("active", () => buddy.after(600, () => {
+  redonHat();
+  if (hatToday() && chance(0.25 * buddy.traits.get("chattiness"))) {
+    const t = lines("hatWake");
+    if (t) buddy.say(hatFill(t, hatToday().prop), 3);
+  }
 }));
 
 // A hatted goblin poked is a goblin asked about the hat.

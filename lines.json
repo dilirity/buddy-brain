@@ -1118,6 +1118,23 @@
     "i guarded nothing from no one flawlessly. undefeated",
     "the heist was cancelled due to lack of criminal ambition, {name}"
   ],
+  "redlightSuspect": [
+    "did you MOVE. i am looking DIRECTLY at you",
+    "freeze. hold it right there",
+    "suspicious. extremely suspicious. do not even breathe",
+    "i saw that. prove me wrong by becoming furniture",
+    "hmm? HMM. statue inspection",
+    "movement detected. explain yourself by not moving",
+    "one twitch, {name}. that is all i need"
+  ],
+  "redlightAllow": [
+    "...i'll allow it",
+    "hmph. the wind, probably",
+    "fine. FINE. carry on",
+    "acquitted. this time",
+    "stone enough. proceed",
+    "false alarm. my eyes are TOO sharp, honestly"
+  ],
   "perchStart": [
     "that window has a roof. roofs are for sitting",
     "initiating climb. do not catch me if i fall. i will not fall",
@@ -1416,5 +1433,12 @@
     "admiring {hat}? understandable",
     "careful. {hat} is load-bearing",
     "poke the goblin, not the hat. the hat is art"
+  ],
+  "hatWake": [
+    "hat back on. the day resumes",
+    "where is my - ah. there it is. crisis over",
+    "a nap is not a wardrobe change. {hat} returns",
+    "reunited with {hat}. never let me sleep that long again",
+    "the head was cold. the head is fixed"
   ]
 }

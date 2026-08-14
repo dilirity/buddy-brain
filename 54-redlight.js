@@ -1,8 +1,10 @@
 // Red light green light: buddy naps (green - sneak the cursor closer) and
-// snaps awake (red - FREEZE). Movement during red is a strike, three strikes
-// and buddy wins; touching buddy wins the game for the human. Interactive,
-// so the body is imperative like the treasure hunt - runAct would close the
-// act mid-game.
+// snaps awake (red - FREEZE). Waking eyes take a real beat to focus, so the
+// first ~400ms of a red is never scored, and seeing movement is not an
+// instant bust: buddy locks eyes and demands a freeze (suspicion), and only
+// moving under that direct stare is a strike. Three strikes and buddy wins;
+// touching buddy wins for the human in ANY phase. Interactive, so the body
+// is imperative like the treasure hunt - runAct would close the act mid-game.
 registerAct("redlight", {
   minGap: 900000,
   caps: ["cursor"],
@@ -37,11 +39,29 @@ globalThis.playRedlight = function (act) {
   function red() {
     if (phase !== "green") return;
     phase = "red";
-    redAnchor = buddy.cursor.pos();
+    redAnchor = null;
     look();
     // The anim is the true signal; the call-out is flavor, not required.
     if (chance(0.7)) sayLine("redlightRed", 1);
+    // Reaction time: the anchor is taken only after the eyes focus, so a
+    // hand caught mid-motion at the snap-awake moment is not punished.
+    act.after(300 + Math.random() * 200, () => { if (phase === "red") redAnchor = buddy.cursor.pos(); });
     act.after(1400 + Math.random() * 1400, () => { if (phase === "red") green(); });
+  }
+
+  // Movement spotted: not a bust yet. Buddy glares, re-anchors, and gives a
+  // hold-still window - freezing through the stare earns an acquittal back
+  // to green; moving while directly watched is the real strike.
+  function suspect() {
+    phase = "suspect";
+    buddy.play("grumpy");
+    if (chance(0.75)) sayLine("redlightSuspect", 2);
+    redAnchor = buddy.cursor.pos();
+    act.after(1100 + Math.random() * 500, () => {
+      if (phase !== "suspect") return;
+      if (chance(0.6 * buddy.traits.get("chattiness"))) sayLine("redlightAllow", 2);
+      green();
+    });
   }
 
   function strike() {
@@ -82,11 +102,16 @@ globalThis.playRedlight = function (act) {
 
   function watch() {
     act.every(250, () => {
-      if (phase !== "green" && phase !== "red") return;
+      if (phase !== "green" && phase !== "red" && phase !== "suspect") return;
       const c = buddy.cursor.pos();
       const p = buddy.pos();
+      // Reaching the statue is a win even under the stare - being seen is
+      // never an auto-loss, touching buddy always belongs to the human.
       if (Math.hypot(c.x - p.x, c.y - p.y) < WIN) return finish("won");
-      if (phase === "red" && Math.hypot(c.x - redAnchor.x, c.y - redAnchor.y) > JITTER) strike();
+      if (!redAnchor) return;
+      const moved = Math.hypot(c.x - redAnchor.x, c.y - redAnchor.y) > JITTER;
+      if (phase === "red" && moved) suspect();
+      else if (phase === "suspect" && moved) strike();
     });
     act.after(90000, () => finish("timeout"));
     green();

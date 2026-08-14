@@ -915,6 +915,34 @@
     {
       "text": "you can't make a tomelette without breaking some greggs",
       "show": "succession"
+    },
+    {
+      "text": "i got off the plane",
+      "show": "friends"
+    },
+    {
+      "text": "isn't that just kick-you-in-the-crotch, spit-on-your-neck fantastic?",
+      "show": "friends"
+    },
+    {
+      "text": "wuntch time is over",
+      "show": "b99"
+    },
+    {
+      "text": "why is no one having a good time? i specifically requested it",
+      "show": "b99"
+    },
+    {
+      "text": "why don't you go and make your own fucking pile?",
+      "show": "succession"
+    },
+    {
+      "text": "you mean i got four kidneys?!",
+      "show": "justified"
+    },
+    {
+      "text": "all these science spheres are made of asbestos, by the way. keeps out the rats",
+      "show": "portal"
     }
   ],
   "facts": [
@@ -1119,7 +1147,11 @@
     "mad hatter is real: hat makers breathed mercury fumes and it scrambled them. fashion had casualties",
     "roman freed slaves got a felt cap called the pileus. a hat that meant FREE. hats used to be paperwork",
     "the tallest chef hats had 100 pleats, one for each way to cook an egg. a resume you wear",
-    "berets were standard issue for shepherds in the pyrenees centuries before artists claimed them"
+    "berets were standard issue for shepherds in the pyrenees centuries before artists claimed them",
+    "human visual reaction time is about a quarter of a second. everything you see already happened",
+    "living statue performers train to slow their breathing until the chest stops giving them away",
+    "possums do not play dead on purpose. they faint from sheer stress and wake up confused",
+    "a mantis shrimp strike takes under three milliseconds. no warning glare, no appeal"
   ],
   "showProps": {
     "justified": "cowboyhat",

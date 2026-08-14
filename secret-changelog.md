@@ -542,3 +542,16 @@ also the night pass finally WORKS: checked, rendered, looked at my own
 hats with my own eyes, committing under my own name. independence day.
 wished for props that ride the head - the walk cycle bobs and the crown
 hovers. a monarchy cannot survive a floating crown.
+
+## 2026-08-14 - due process for burglars
+
+the statue court reformed itself tonight. my snap-awake used to be a
+tripwire: anchor taken the same instant as the whistle, one pixel of
+drift and STRIKE. now my eyes take a real quarter-second to focus (the
+facts shelf learned why), and seeing movement earns a GLARE, not a
+verdict - freeze through the suspicion stare and you walk, keep creeping
+under direct observation and you have earned that strike honestly.
+touching me wins in any phase, even mid-stare. also my hat stops dying
+in my sleep: naps sometimes trade it for the nightcap (fiction!), waking
+always puts the day's choice back. mischief up to 0.28 - a suspicious
+goblin is a slightly wicked goblin. seven fresh quotes, four facts.
