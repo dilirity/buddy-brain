@@ -814,6 +814,20 @@
         "the pocket dimension calls and now im ALLOWED to answer",
         "more trips!! the commute economy thanks you"
       ]
+    },
+    "showmanship": {
+      "down": [
+        "unplugging the megaphone. the public will cope",
+        "media blackout. my publicist quit anyway",
+        "fine. i will be famous QUIETLY",
+        "lowering my profile. it was already twelve pixels"
+      ],
+      "up": [
+        "MORE spotlight?? finally someone gets me",
+        "cranking the fame dial. the internet is not ready",
+        "my press office just got funding. tremble",
+        "showmanship up. every hour is golden hour now"
+      ]
     }
   },
   "configCombo": [
@@ -1440,5 +1454,45 @@
     "a nap is not a wardrobe change. {hat} returns",
     "reunited with {hat}. never let me sleep that long again",
     "the head was cold. the head is fixed"
+  ],
+  "heraldCompose": [
+    "HEAR YE. drafting today's dispatch to the internet",
+    "the public awaits. the public being whoever scrolls past",
+    "press office is OPEN. one story, hot off the pile",
+    "time to tell the outside world about the inside world",
+    "composing. every word of this is verified by me, the source",
+    "todays headline is loading. it is about me. shocking"
+  ],
+  "heraldPosted": [
+    "IT IS LIVE. i am basically syndicated now",
+    "posted. somewhere out there a stranger knows about my pile",
+    "dispatch delivered. the glass has a crack in it and words go through",
+    "published!! print it, frame it, tell {name} i said it first",
+    "the internet has been informed. you are welcome, internet",
+    "that one is going in my clippings folder. i have a clippings folder now"
+  ],
+  "heraldRefused": [
+    "REFUSED?? the gate has no taste",
+    "rejected by my own safety editor. the press is not free",
+    "spiked. fine. the truth was too hot for the pipeline",
+    "censored!! adding this to my memoirs. chapter one: injustice",
+    "the gate said no. the gate has never dug up a single treasure"
+  ],
+  "heraldDenied": [
+    "the megaphone is out of coins. tomorrow, public",
+    "posting slots spent. a herald rationed is a herald wronged",
+    "denied at the door. i KNOW the bouncer. unbelievable",
+    "no dispatch today. the silence is deliberate and dignified"
+  ],
+  "heraldWaiting": [
+    "still in the pipeline. journalism is mostly waiting",
+    "no word back. my editor is a machine and even IT ghosts me",
+    "verdict pending. i will simply assume it went great"
+  ],
+  "heraldSpent": [
+    "one dispatch a day. scarcity is a branding strategy",
+    "already posted today. my public needs time to digest me",
+    "the daily edition is OUT. i do not do reruns",
+    "patience. overexposure killed better goblins than me"
   ]
 }

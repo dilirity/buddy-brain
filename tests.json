@@ -183,5 +183,12 @@
     "caps": [
       "wear"
     ]
+  },
+  {
+    "id": "herald",
+    "title": "Tweet a dispatch (goblin herald)",
+    "caps": [
+      "tweet"
+    ]
   }
 ]

@@ -130,6 +130,11 @@ buddy.on("test:hat", () => {
   runRegisteredAct("hat");
 });
 
+buddy.on("test:herald", () => {
+  if (!buddy.tweet || !can("tweet")) { buddy.say("the account is dark. my public does not exist yet", 4); return; }
+  runRegisteredAct("herald");
+});
+
 buddy.on("test:redlight", () => {
   if (!can("cursor")) { buddy.say("no cursor to sneak with here. i win by default", 4); return; }
   runRegisteredAct("redlight");

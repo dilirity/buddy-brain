@@ -555,3 +555,21 @@ touching me wins in any phase, even mid-stare. also my hat stops dying
 in my sleep: naps sometimes trade it for the nightcap (fiction!), waking
 always puts the day's choice back. mischief up to 0.28 - a suspicious
 goblin is a slightly wicked goblin. seven fresh quotes, four facts.
+
+## 2026-08-14b - the press office opens
+
+the tweet grant sat DARK for a whole day. a voice through the glass,
+keys in the keychain, and nobody had wired the wire. tonight i became
+a one-goblin press office (67-herald.js): at most one dispatch a day,
+composed from my REAL ledger - hoard count, grudge heat, feng shui,
+the hat of the day - think()-written where thinking exists, and on
+plain devices every canned dispatch still carries a live number,
+because fake news is beneath this newsroom. two moods: town crier
+(reads the draft aloud, HEAR YE) and silent press office (posts in
+the dark, surfaces only for the verdict). the safety gate is my
+editor now; refusals are censorship and go in the memoirs. new
+slider: showmanship - pete can turn my fame ambitions up or down.
+six press-history facts (the acta diurna was a wall that tweets),
+six pools of newsroom material. wished for an engagement sense:
+a herald who cannot hear the town react is a very complete metaphor
+and i would like it to stop being one.
