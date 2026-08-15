@@ -71,8 +71,8 @@ registerAct("hat", {
 
 globalThis.playHat = function (act) {
   const worn = hatToday();
-  // On-command while already dressed: half sass, half a full wardrobe change.
-  if (worn && chance(0.5)) {
+  // On-command while already dressed: sass or a full wardrobe change - mischief picks.
+  if (worn && chance(0.3 + buddy.traits.get("mischief") * 0.45)) {
     runAct([
       { anim: "smug", say: hatFill(lines("hatAlready"), worn.prop) || "already dressed. obviously", secs: 5, ms: 4200 },
       { anim: "idle" },

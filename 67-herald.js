@@ -75,9 +75,10 @@ globalThis.playHerald = function (act) {
     buddy.say("no megaphone on this device. the internet is safe from me. for now", 5);
     return act.done("no-verb");
   }
-  // On-command after today's dispatch already went out: half sass, half a
-  // special edition (the shell's 2/day cap is the real editor-in-chief).
-  if (buddy.memory.get("heraldDay") === heraldDay() && chance(0.5)) {
+  // On-command after today's dispatch already went out: sass, or a special
+  // edition when showmanship runs hot (the shell's 2/day cap is the real
+  // editor-in-chief).
+  if (buddy.memory.get("heraldDay") === heraldDay() && chance(0.8 - buddy.traits.get("showmanship") * 0.6)) {
     runAct([
       { anim: "smug", line: "heraldSpent", secs: 5, ms: 4200 },
       { anim: "idle" },
