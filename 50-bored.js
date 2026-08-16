@@ -9,7 +9,7 @@ buddy.on("idle", () => {
 buddy.on("active", () => {
   if (state.busy) return;
   setMood("happy", "idle");
-  if (chance(0.4)) sayLine("wake", 3);
+  if (chance(0.55 * buddy.traits.get("chattiness"))) sayLine("wake", 3);
 });
 
 // Clingy: visit the cursor, celebrate the cuddle or sulk the miss. New-style

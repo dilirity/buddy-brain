@@ -53,5 +53,5 @@ function scheduleArchetype() {
 
 // Fires after any brain hot-reload, including the nightly mutator's surgery.
 buddy.on("brainChanged", () => {
-  if (chance(0.7)) sayLine("brainChanged", 5);
+  if (chance(0.3 + buddy.traits.get("chattiness") * 0.55)) sayLine("brainChanged", 5);
 });

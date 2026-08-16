@@ -90,7 +90,8 @@ globalThis.playRedlight = function (act) {
       buddy.play("excited");
       sayLine("redlightWin", 4);
       act.after(4200, () => {
-        if (chance(0.4)) buddy.say("sneak record: " + n + " successful approach" + (n === 1 ? "" : "es") + ". i am raising a spy", 4);
+        // The record recap is a showman's flourish, not game feedback.
+        if (chance(0.2 + buddy.traits.get("showmanship") * 0.45)) buddy.say("sneak record: " + n + " successful approach" + (n === 1 ? "" : "es") + ". i am raising a spy", 4);
         act.after(1600, () => { buddy.play("idle"); act.done("won"); });
       });
     } else {

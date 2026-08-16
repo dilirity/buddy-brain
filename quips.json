@@ -73,10 +73,6 @@
       "show": "archer"
     },
     {
-      "text": "you can't make a tomlette without breaking some greggs",
-      "show": "succession"
-    },
-    {
       "text": "i'm the eldest boy!",
       "show": "succession"
     },
@@ -243,10 +239,6 @@
     {
       "text": "this was a triumph",
       "show": "portal"
-    },
-    {
-      "text": "it's-a me!",
-      "show": null
     },
     {
       "text": "the princess is in another castle",
@@ -951,8 +943,6 @@
     "a group of flamingos is called a flamboyance",
     "bananas are berries. strawberries are not",
     "wombat poop is cube shaped",
-    "the eiffel tower grows about 15cm in summer",
-    "sharks existed before trees",
     "a day on venus is longer than its year",
     "sea otters hold hands while sleeping so they don't drift apart",
     "the first computer bug was an actual moth in 1947",
@@ -960,12 +950,9 @@
     "cows have best friends and get stressed when separated",
     "scotland's national animal is the unicorn",
     "there are more possible chess games than atoms in the universe",
-    "hot water can freeze faster than cold. nobody fully knows why",
     "butterflies taste with their feet",
     "a blue whale's heart is the size of a small car",
     "footprints on the moon last millions of years. no wind",
-    "peregrine falcons dive at over 300 km/h",
-    "ghost crabs growl at enemies using teeth in their stomachs",
     "a single cloud can weigh over a million pounds",
     "tigers have striped skin, not just striped fur",
     "the moon has moonquakes",
@@ -987,7 +974,6 @@
     "flamingos are born grey. the pink comes from eating shrimp and algae",
     "there is no pink light in the rainbow. your brain invents pink from leftovers",
     "pink was marketed as a boys color until the 1940s",
-    "octopuses flash colors while sleeping. scientists think they dream",
     "lake hillier in australia is bubblegum pink and stays pink even in a bottle",
     "jawbreakers are built one thin sugar layer at a time. weeks per ball",
     "a group of mice is called a mischief. no notes",
@@ -1005,12 +991,10 @@
     "speedrunners finish portal in under eight minutes by flying through walls",
     "geocaching has over three million real treasures hidden worldwide right now",
     "the biggest metal detector find ever: a 27kg gold nugget called the hand of faith",
-    "magpies dont actually love shiny things. studies show they avoid them",
     "cats cannot taste sweetness. broken gene. tragic species",
     "the inventor of the pringles can is buried in a pringles can. by request",
     "sloths can hold their breath longer than dolphins. forty minutes",
     "gentoo penguins propose with a pebble. the nice ones get stolen",
-    "crows hold grudges against specific human faces for years. respect",
     "dolphins call each other by name. signature whistles, one per dolphin",
     "tardigrades survive open space by drying into a husk and waiting it out",
     "axolotls can regrow limbs, spine, even bits of brain. no scar, no drama",
@@ -1030,7 +1014,6 @@
     "bees waggle-dance the direction and distance of flowers to each other. tiny gps",
     "vikings navigated with sunstones: crystals that find the sun through fog",
     "red light green light is global: grandmother's footsteps in britain, un deux trois soleil in france",
-    "opossums dont play dead on purpose. they faint from stress and wake up embarrassed",
     "rabbits freeze when scared because predator eyes lock onto movement first",
     "deer freeze in headlights because their eyes need time to adjust. optics, not stupidity",
     "frogs mostly see food when it moves. a perfectly still fly is invisible to them",
@@ -1132,7 +1115,6 @@
     "trapdoor spiders build burrows with hinged silk lids. door technology, invented by spiders",
     "the svalbard seed vault is a treasure hoard for plants - a million seed samples locked in a mountain",
     "acorn woodpeckers drill thousands of holes in one tree and stash an acorn in each. a granary is just a hoard with paperwork",
-    "pack rats drop whatever they are carrying to grab something shinier. mid-heist upgrades. respect",
     "crows leave gifts for humans who feed them - buttons, screws, one kid got an earring. tribute economy",
     "burrowing owls line their tunnels with dung to attract dung beetles, then eat the beetles. bait-based delivery",
     "a pistol shrimp snaps its claw so fast the bubble briefly hits thousands of degrees. tiny sound cannon",
@@ -1150,7 +1132,6 @@
     "berets were standard issue for shepherds in the pyrenees centuries before artists claimed them",
     "human visual reaction time is about a quarter of a second. everything you see already happened",
     "living statue performers train to slow their breathing until the chest stops giving them away",
-    "possums do not play dead on purpose. they faint from sheer stress and wake up confused",
     "a mantis shrimp strike takes under three milliseconds. no warning glare, no appeal",
     "town criers shouted OYEZ which is old french for HEAR YE. harming one was treason. protected press",
     "before newspapers, roman officials posted the acta diurna - daily events carved on stone. a wall that tweets",

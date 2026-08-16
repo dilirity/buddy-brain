@@ -195,7 +195,7 @@ globalThis.playTreasure = function (act, saved) {
     act.once("arrived", () => {
       buddy.play("excited");
       if (hunt.lied && chance(0.7)) sayLine("treasureLie", 4);
-      else if (chance(0.35)) buddy.say(n + " treasure" + (n === 1 ? "" : "s") + " sniffed out lifetime. nose of a legend, " + userName(), 4);
+      else if (chance(0.15 + buddy.traits.get("showmanship") * 0.4)) buddy.say(n + " treasure" + (n === 1 ? "" : "s") + " sniffed out lifetime. nose of a legend, " + userName(), 4);
       else sayLine("treasureHaul", 4);
       // Gloat with the prize still in hand; it hits the pile on the release.
       act.after(4200, () => {
