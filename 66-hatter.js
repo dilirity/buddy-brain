@@ -21,23 +21,44 @@ globalThis.hatToday = function () {
   return h && h.day === hatDayKey() ? h : null;
 };
 
-// The day picks the hat: wealth earns the crown, weekends go western, a groggy
-// early hour keeps the nightcap on, weirdness argues for art. Yesterday's hat
-// is barred - a creature of habit is furniture.
+// The day picks the hat, but the WARDROBE has a memory now: hats rotate.
+// hatHistory (most recent last) boosts whatever has waited longest, bars
+// yesterday's choice outright, and keeps the crown RARE - wealth only buys
+// eligibility, a multi-day cooldown plus a modest weight makes an actual
+// crown day land about one morning in five to seven. Rarity is the point:
+// a daily crown is a costume, an occasional one is a coronation.
+function hatHistory() {
+  const h = buddy.memory.get("hatHistory");
+  if (h) return h;
+  // Legacy seed: before the rotation, memory held only yesterday's hat.
+  const prev = buddy.memory.get("hatPrev");
+  return prev ? [prev] : [];
+}
+
 function pickHat(exclude) {
   const hoard = buddy.memory.get("hoard") || [];
-  const prev = buddy.memory.get("hatPrev");
+  const hist = hatHistory();
   const d = new Date();
   const weekend = d.getDay() === 0 || d.getDay() === 6;
   const w = buddy.traits.get("weirdness");
-  const cand = [];
-  if (hoard.length >= 7) cand.push(["crown", 3]);
-  if (weekend) cand.push(["cowboyhat", 2]);
-  if (d.getHours() < cfg("morningEnd", 11) - 2) cand.push(["nightcap", 1.2]);
-  cand.push(["beret", 0.6 + w]);
-  cand.push(["mouseears", 0.3 + w * 0.7]);
-  cand.push(["cowboyhat", 0.5]);
-  const pool = cand.filter(([p]) => p !== prev && p !== exclude);
+  const base = {
+    beret: 0.7 + w,
+    mouseears: 0.35 + w * 0.7,
+    cowboyhat: weekend ? 2 : 0.8,
+    nightcap: d.getHours() < cfg("morningEnd", 11) - 2 ? 1.3 : 0.15,
+  };
+  const crownIdx = hist.lastIndexOf("crown");
+  const crownAgo = crownIdx === -1 ? 99 : hist.length - crownIdx;
+  if (hoard.length >= 7 && crownAgo >= 4) base.crown = 0.55;
+  const pool = [];
+  for (const p in base) {
+    if (p === exclude || p === hist[hist.length - 1]) continue;
+    const idx = p === "crown" ? -2 : hist.lastIndexOf(p);
+    const ago = idx < 0 ? 99 : hist.length - idx;
+    // Commoners get a least-recently-worn boost; the crown stays flat so
+    // scarcity never compounds into inevitability.
+    pool.push([p, base[p] * (p === "crown" ? 1 : Math.min(2, 0.6 + ago * 0.35))]);
+  }
   const total = pool.reduce((s, c) => s + c[1], 0);
   let r = Math.random() * total;
   for (const [p, wt] of pool) {
@@ -50,7 +71,9 @@ function pickHat(exclude) {
 function donHat(prop) {
   if (!buddy.wear || !buddy.wear("head", prop)) return false;
   buddy.memory.set("hatToday", { prop: prop, day: hatDayKey() });
-  buddy.memory.set("hatPrev", prop);
+  const hist = hatHistory();
+  if (hist[hist.length - 1] !== prop) hist.push(prop);
+  buddy.memory.set("hatHistory", hist.slice(-10));
   return true;
 }
 

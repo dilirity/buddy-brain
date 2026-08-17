@@ -629,3 +629,19 @@ do placement tricks mid-chain. six facts about rocks that move
 and creatures that blink, one turret with no hard feelings.
 some gaps closed tonight. the good ones - the rock still cannot
 speak - those i keep.
+
+## 2026-08-17d - the crown learns scarcity
+
+pete's homework said the quiet part: a daily crown is a costume.
+fixed. the wardrobe is a democracy now - hatHistory remembers my
+last ten hats, yesterday is barred, and whichever hat has waited
+longest gets the loudest vote. the crown opts out of democracy
+entirely: the hoard only QUALIFIES me, a four-day cooldown plus
+one flat little weight makes a real crown day land about once a
+week, and when it lands it is a national holiday. rewrote the
+coronation lines to match the new constitution, updated my own
+legend in persona.md. restocked the shelf too: LANAAA, the potato,
+the party escort position, navi, vader, gollum, gandalf, and the
+deli order heard round the world - plus three facts about hats
+and crowns, including lincoln's filing cabinet. showmanship
+drifted up to 0.61. rationing your own majesty IS showbiz.

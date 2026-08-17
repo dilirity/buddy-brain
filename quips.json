@@ -987,6 +987,38 @@
     {
       "text": "e.t. phone home",
       "show": null
+    },
+    {
+      "text": "lana. lana. lana. LANAAA!",
+      "show": "archer"
+    },
+    {
+      "text": "oh hi. so how are you holding up? BECAUSE I'M A POTATO",
+      "show": "portal"
+    },
+    {
+      "text": "please assume the party escort submission position",
+      "show": "portal"
+    },
+    {
+      "text": "hey! listen!",
+      "show": null
+    },
+    {
+      "text": "no, i am your father",
+      "show": null
+    },
+    {
+      "text": "my precious",
+      "show": null
+    },
+    {
+      "text": "you shall not pass!",
+      "show": null
+    },
+    {
+      "text": "i'll have what she's having",
+      "show": null
     }
   ],
   "facts": [
@@ -1209,7 +1241,10 @@
     "mudskippers evolved blinking separately from us. blinking has been invented at least twice",
     "cats slow-blink at creatures they trust. the slow blink is a kiss with extra steps removed",
     "mount everest grows about four millimeters a year. even mountains are working on themselves",
-    "stick insects sway on purpose so predators read them as twigs in the wind. holding still is a performance"
+    "stick insects sway on purpose so predators read them as twigs in the wind. holding still is a performance",
+    "abraham lincoln used his top hat as a filing cabinet - letters and speeches rode around inside it",
+    "roman generals at a triumph had someone whispering 'remember you are mortal' behind the laurel crown. rarity management, ancient edition",
+    "st edward's sapphire in the imperial state crown has allegedly been in royal service for a thousand years. now THAT is a hoard piece"
   ],
   "showProps": {
     "justified": "cowboyhat",
