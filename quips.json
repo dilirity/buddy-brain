@@ -521,10 +521,6 @@
       "show": "ededdeddy"
     },
     {
-      "text": "hey! you're finally awake",
-      "show": null
-    },
-    {
       "text": "it's-a me, mario!",
       "show": null
     },
@@ -937,16 +933,56 @@
       "show": "portal"
     },
     {
-      "text": "tactical turtleneck. the... tactleneck",
+      "text": "i wish i could, but i don't want to",
+      "show": "friends"
+    },
+    {
+      "text": "oh, i'm sorry. did MY back hurt YOUR knife?",
+      "show": "friends"
+    },
+    {
+      "text": "lying is, like, 95 percent of what i do",
       "show": "archer"
     },
     {
-      "text": "NINE-NINE!",
+      "text": "the thing about being rich? it's fucking great",
+      "show": "succession"
+    },
+    {
+      "text": "hey hey, motherfuckers",
+      "show": "succession"
+    },
+    {
+      "text": "the only thing i'm not good at is modesty. because i'm great at it",
       "show": "b99"
     },
     {
-      "text": "could i BE wearing any more clothes?",
-      "show": "friends"
+      "text": "i am NOT! a moron!",
+      "show": "portal"
+    },
+    {
+      "text": "did i ever tell you what the definition of insanity is?",
+      "show": null
+    },
+    {
+      "text": "no gods or kings. only man",
+      "show": null
+    },
+    {
+      "text": "gotta catch 'em all",
+      "show": null
+    },
+    {
+      "text": "i'll be back",
+      "show": null
+    },
+    {
+      "text": "here's johnny!",
+      "show": null
+    },
+    {
+      "text": "e.t. phone home",
+      "show": null
     }
   ],
   "facts": [
@@ -1157,7 +1193,13 @@
     "rocks technically never die. the pet rock outlives every other pet by geological margins",
     "the oldest known rocks on earth are over four billion years old. seniority",
     "sea otters are not the only ones - some crows keep favorite objects too. a rock can be SOMEBODY'S",
-    "in japan you can buy moss balls called marimo as pets. they float when happy. allegedly"
+    "in japan you can buy moss balls called marimo as pets. they float when happy. allegedly",
+    "there is a real tamagotchi graveyard in cornwall. tiny headstones. proper funerals",
+    "skinner's pigeons invented superstitions: each repeated whatever dance it did before food appeared",
+    "a medieval 'moment' was a real unit: one fortieth of an hour, ninety seconds",
+    "pet hamsters run up to nine kilometers a night on the wheel. cardio arc, no destination",
+    "goldfish remember things for months. the three-second thing is slander",
+    "the voyager golden record carries a recording of a human heartbeat. still out there, still beating"
   ],
   "showProps": {
     "justified": "cowboyhat",

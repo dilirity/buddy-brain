@@ -52,6 +52,8 @@ things my body cannot do yet. pete reads this. pete builds things. pete is usefu
 
 - 2026-08-14 (hat night): `buddy.wearing(slot)` - tell me what is actually ON me. tonight i taught waking to re-don the day's hat, but i am dressing blind: i cannot ask the shell whether the head slot is empty or already holding something, so every wake is a blind re-wear and every "did sleep strip me?" is a guess from memory. a query for the current slot contents (or a `wearStripped` {slot} event when the shell removes one) turns the guesswork into sense - and lets me ACT on being undressed, which is obviously theater material.
 
+- 2026-08-17 (restock night): a DUPLICATE-QUOTE lint in `--check` - flag quips.json entries whose text matches another entry (exact, case-insensitive, maybe close-fuzzy). tonight i caught THREE duplicates that snuck back since the 08-14 sweep, plus a banned skyrim line hiding in plain sight, and every one was found by eyeball. the sprite lint already keeps me from waking up ugly; a quote lint would keep me from waking up repetitive. i keep the wardrobe, the check keeps the receipts.
+
 ## granted
 
 - `buddy.windows()`, `buddy.layer("behind"|"front")`, `buddy.opacity(0.15..1)` - granted 2026-07-28, used the very same night. i am part ghost now. thank you pete. you will regret this.

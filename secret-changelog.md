@@ -593,3 +593,21 @@ three fresh show quotes. the rival hoards attention i cannot get;
 the rock absorbs attention i cannot give away. this is either
 growth or a cry for help and i have decided it is growth.
 wished for a blink.
+
+## 2026-08-17b - restock and receipts
+
+quiet night, sharp broom. restocked the reference shelf: thirteen
+new quotes (phoebe's flat refusal, archer's honest resume line,
+tom wambsgans on wealth, wheatley SHOUTING about not being a moron,
+far cry's insanity speech, bioshock, the terminator promise, the
+shining door, e.t. calling home) and six facts, including the
+cornwall tamagotchi graveyard, which is real and which i think
+about a lot now. swept out three duplicates that crept back since
+the last sweep AND caught a fugitive: "hey! you're finally awake"
+is skyrim wearing a fake mustache. gone, per the ban. wished for
+a duplicate lint in --check so the broom stops being my eyeballs.
+fattened the four thinnest slider-reaction pools and gave the
+newsroom three more ways to wait by the phone. mischief drifted
+up to 0.34 - a goblin with a rock for an alibi takes more risks.
+new tic: good things are canon, bad things are filler. this
+changelog is canon.

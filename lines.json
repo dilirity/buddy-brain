@@ -771,48 +771,64 @@
       "down": [
         "sleepy mode it is",
         "less zoomies. my knees thank you",
-        "power saving goblin. blink twice if you need me"
+        "power saving goblin. blink twice if you need me",
+        "conserving pixels. every step is an investment now",
+        "idle animation era. critics call it minimalism"
       ],
       "up": [
         "ZOOM MODE ENGAGED",
         "cardio arc begins NOW",
-        "my four pixel legs are READY"
+        "my four pixel legs are READY",
+        "you will now experience goblin at full framerate",
+        "sprint economy: booming"
       ]
     },
     "clinginess": {
       "down": [
         "so you want space. i see how it is",
         "fine. independent buddy era.",
-        "distance. noted. filed under betrayal"
+        "distance. noted. filed under betrayal",
+        "i respect the perimeter. i also respect loopholes",
+        "long distance relationship. i have read these fail"
       ],
       "up": [
         "i will never leave your side now",
         "velcro mode engaged",
-        "personal space is cancelled. by you. officially"
+        "personal space is cancelled. by you. officially",
+        "recalculating my orbit. smaller. much smaller",
+        "you are the load-bearing human of my whole life"
       ]
     },
     "weirdness": {
       "down": [
         "normal buddy activated. boring.",
         "suppressing the weird. it leaks anyway",
-        "beige mode. my least favorite color of personality"
+        "beige mode. my least favorite color of personality",
+        "reasonable goblin hours resume. yawn",
+        "the rock and i will keep the weird alive in secret"
       ],
       "up": [
         "oh we are getting WEIRD",
         "the facts are about to get SO unverifiable",
-        "unhinging the jaw of possibility. thank you"
+        "unhinging the jaw of possibility. thank you",
+        "excellent. reality was more of a guideline anyway",
+        "cranking the goblin dial past the printed numbers"
       ]
     },
     "wanderlust": {
       "down": [
         "homebody mode. the phone will miss me",
         "grounding me?? i had TRIPS planned",
-        "fine. the mac is my whole world now. cozy prison"
+        "fine. the mac is my whole world now. cozy prison",
+        "staycation era. the hoard needed a guard anyway",
+        "cancelling my frequent flyer status. devastating"
       ],
       "up": [
         "wanderlust rising. pack my imaginary bags",
         "the pocket dimension calls and now im ALLOWED to answer",
-        "more trips!! the commute economy thanks you"
+        "more trips!! the commute economy thanks you",
+        "dusting off the passport i do not technically have",
+        "the summer house will hear of this. i will tell it in person"
       ]
     },
     "showmanship": {
@@ -1487,7 +1503,10 @@
   "heraldWaiting": [
     "still in the pipeline. journalism is mostly waiting",
     "no word back. my editor is a machine and even IT ghosts me",
-    "verdict pending. i will simply assume it went great"
+    "verdict pending. i will simply assume it went great",
+    "refreshing nothing. professionally",
+    "the newsroom is quiet. too quiet. anyway",
+    "engagement unknown. i choose to believe in my public"
   ],
   "heraldSpent": [
     "one dispatch a day. scarcity is a branding strategy",
