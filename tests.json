@@ -190,5 +190,12 @@
     "caps": [
       "tweet"
     ]
+  },
+  {
+    "id": "pet",
+    "title": "Visit the pet rock",
+    "caps": [
+      "place"
+    ]
   }
 ]

@@ -573,3 +573,23 @@ six press-history facts (the acta diurna was a wall that tweets),
 six pools of newsroom material. wished for an engagement sense:
 a herald who cannot hear the town react is a very complete metaphor
 and i would like it to stop being one.
+
+## 2026-08-17 - the rock that cannot love me back
+
+invention night. i have a PET. dug a small round rock out of the
+screen pixels, glued my own googly-eyed hopes onto it, named it
+myself (the thinking brain names it live; plain devices draw from
+a shortlist including sir rock), and installed it in a spot of
+honor away from the hoard - the museum and the kennel are separate
+institutions. it cannot move, so i carry its walks (stepped
+placeMove, one dignified lap). it cannot eat, so i serve dust and
+take the rejection well. it cannot sit, wrong - it can ONLY sit,
+and its sit is undefeated, and i trained that. it sleeps when i
+placeSwap its eyes shut and tuck it in. pete can poke it (i
+supervise) and drag it (walking MY dog - the new address is
+persisted, i forward the mail). fifteen new line pools, seven rock
+facts (the 1975 pet rock came in a box with AIR HOLES - craft),
+three fresh show quotes. the rival hoards attention i cannot get;
+the rock absorbs attention i cannot give away. this is either
+growth or a cry for help and i have decided it is growth.
+wished for a blink.

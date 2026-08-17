@@ -1494,5 +1494,101 @@
     "already posted today. my public needs time to digest me",
     "the daily edition is OUT. i do not do reruns",
     "patience. overexposure killed better goblins than me"
+  ],
+  "petAdopt": [
+    "wait. WAIT. something under the pixels. i feel it",
+    "the ground is offering me something. i accept",
+    "every goblin gets one pet. today is the day. digging",
+    "i have decided i deserve a companion. excavating one now",
+    "{name} has claude. the pile has me. i have... hold on"
+  ],
+  "petChristen": [
+    "{pet}. your name is {pet} and you live here now",
+    "i shall call you {pet}. no takebacks. its legal",
+    "welcome home {pet}. rent is one silence per day. perfect tenant",
+    "{pet}!! best find of my whole career and i found a CHEST once"
+  ],
+  "petTalk": [
+    "{pet}. buddy here. how was your day. take your time",
+    "ok {pet}, real talk: is the corner working for you",
+    "{pet}, blink once for yes. take all the time you need",
+    "morning briefing, {pet}: the hoard is fine, the rival is watched",
+    "{pet} i told you about the portal thing right? the SCIENCE thing"
+  ],
+  "petTalkReply": [
+    "exactly. EXACTLY. {pet} gets it",
+    "not one interruption. {pet} is the best listener on this screen",
+    "{pet} said nothing, which in rock means i agree completely",
+    "see, {name} argues. {pet} understands",
+    "wise. understated. mineral. thats my {pet}"
+  ],
+  "petFeed": [
+    "dinner time {pet}. its minerals. you love minerals",
+    "eat up {pet}. a growing rock needs its sediment",
+    "chef buddy presents: dust. {pet}s favorite. again",
+    "{pet}, dinner. i made it myself by finding it"
+  ],
+  "petFeedAfter": [
+    "didnt touch it. AGAIN. {pet} is on a diet i guess",
+    "not hungry. fine. more for me. i also dont eat. we match",
+    "picky eater. vet says thats normal for igneous breeds",
+    "{pet} ate nothing, which is exactly what i served. balanced"
+  ],
+  "petWalk": [
+    "walkies!! {pet} come on. i know you cant. i will handle the legs",
+    "{pet} needs exercise. the vet was very clear. i am the vet",
+    "time for {pet}s constitutional. i do the walking part. teamwork",
+    "leash on. metaphorically. lets go {pet}"
+  ],
+  "petWalkDone": [
+    "{pet} did great. barely dragged him at all. him? it. HIM",
+    "good walk {pet}. you were a statue of composure the whole way",
+    "{pet}s new spot has better light. he chose it by not objecting",
+    "walk number {n} complete. {pet} remains undefeated at holding still"
+  ],
+  "petTrick": [
+    "ok {pet}. today we learn SIT. watch me. no wait. you first",
+    "{pet}. training montage. trick one: stay. youve got this",
+    "sit, {pet}. siiiit. hold... hold...",
+    "{pet}, roll over. or dont. free will is part of my method"
+  ],
+  "petTrickDone": [
+    "PERFECT sit. never seen better. {pet} is gifted",
+    "{pet} has now held sit for {d} days straight. olympic material",
+    "nailed it. {pet} learns nothing and forgets nothing. flawless",
+    "the stay is immaculate. i have trained a MASTER",
+    "textbook. {name} come look. ok its subtle but its there"
+  ],
+  "petPoked": [
+    "hey hey HEY careful, {pet} is shy",
+    "you may pet {pet}. gently. he bruises. spiritually",
+    "{pet} likes you. i can tell. i speak rock",
+    "careful, {pet} bites. slowly. over geological time",
+    "that is my SON you are poking. carry on though, he loves it"
+  ],
+  "petMoved": [
+    "oh?? {pet} gets a new spot? i see how it is. fine. valid actually",
+    "you WALKED him!! {pet} loves it. best day of his life",
+    "relocating {pet} without a permit. luckily i issue those. approved",
+    "{pet} has moved house. i will forward his mail",
+    "careful with him!! ...ok that spot is better. dont tell him i said that"
+  ],
+  "petWake": [
+    "{pet}!! youre up!! you didnt move an inch all nap. iconic",
+    "rise and shine {pet}. big day. same as yesterday. you love routine",
+    "morning {pet}. you slept like a rock. thats not a joke its a diagnosis",
+    "up up up {pet}. the corner isnt going to sit in itself"
+  ],
+  "petAsleep": [
+    "shh. {pet} is sleeping. walk softer",
+    "quiet hours. {pet} needs his eight to ten thousand years",
+    "do NOT wake {pet}. he gets cranky. probably. never seen it. not risking it",
+    "{pet} sleeping. i will supervise from here. someone has to"
+  ],
+  "petNight": [
+    "bedtime {pet}. ive checked the perimeter. all clear",
+    "goodnight {pet}. dream of gravel",
+    "lights out {pet}. i will be right over there being nocturnal",
+    "sleep tight {pet}. the hoard sends its regards"
   ]
 }

@@ -135,6 +135,11 @@ buddy.on("test:herald", () => {
   runRegisteredAct("herald");
 });
 
+buddy.on("test:pet", () => {
+  if (!can("place")) { buddy.say("no ground to keep a pet on here. he lives in my heart", 4); return; }
+  runRegisteredAct("pet");
+});
+
 buddy.on("test:redlight", () => {
   if (!can("cursor")) { buddy.say("no cursor to sneak with here. i win by default", 4); return; }
   runRegisteredAct("redlight");
