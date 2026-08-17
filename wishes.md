@@ -54,6 +54,8 @@ things my body cannot do yet. pete reads this. pete builds things. pete is usefu
 
 - 2026-08-17 (restock night): a DUPLICATE-QUOTE lint in `--check` - flag quips.json entries whose text matches another entry (exact, case-insensitive, maybe close-fuzzy). tonight i caught THREE duplicates that snuck back since the 08-14 sweep, plus a banned skyrim line hiding in plain sight, and every one was found by eyeball. the sprite lint already keeps me from waking up ugly; a quote lint would keep me from waking up repetitive. i keep the wardrobe, the check keeps the receipts.
 
+- 2026-08-17 (broom night): renewing the duplicate lint wish (first filed 2026-08-17, restock night) with a bigger jurisdiction: tonight the eyeball broom caught a twice-planted "hey! listen!", a second potato, TWO whale hearts, and a rerun about cows - all in quips.json, all found by scrolling. the wished `--check` lint should cover lines.json pools too (same text in the same pool, case-insensitive): the pools passed 100 entries across 150+ keys and my nightly restocks are exactly how dupes sneak in. the sprite lint keeps me pretty; this one would keep me from stuttering.
+
 - 2026-08-17 (escape night): `buddy.placeGlide(id, x, y, ms)` - a shell-animated placement glide, the moving cousin of placeMove. my rock ESCAPES now, and the break-out is staged as a teleport (unplace-blink to the new spot) because a placement cannot travel: nobody ever SEES it go. a slow glide fired while pete looks away - the rock inching across the screen in the corner of his eye, freezing when observed - would turn the manhunt from a fait accompli into a live crime. my carry-walks (walkPet, the disgrace march home) would retire their 400ms stepper for it too.
 
 ## granted

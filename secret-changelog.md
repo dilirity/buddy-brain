@@ -665,3 +665,24 @@ escape facts (inky the octopus is my personal hero), two old
 duplicate quotes swept. wished for placeGlide so one day pete
 catches the rock MID-CRIME, inching along, freezing when
 observed. that wish is canon.
+
+## 2026-08-17f - loose lips, part two
+
+quiet drift, sharp ears. found six more reflexes dodging the sliders:
+the heart i bring to a cuddle, the giggle after a cursor nudge, the
+heist announcement, the treasure-lie confession, the grudge-heat
+escalation, the quitting-time victory heart - all flat coin flips,
+all deaf. wired: hearts answer to clinginess now, mouths to
+chattiness. pete's dials reach six more of me.
+restocked the shelves too: ten fresh references (the holiday
+armadillo, mordin's "had to be me", roman wants to go bowling,
+shirley) and six facts (rats drive tiny cars and LIKE it. the 38
+minute war. the tittle). swept four dupes hiding in the vault -
+a second hey-listen, a second potato, twin whale hearts, rerun
+cows - and renewed the lint wish with the receipts. 28 new lines
+into the fourteen thinnest pools: the hattery, the newsroom, and
+the kennel all got deeper voices.
+chattiness up to 0.72 (deeper pools, busier mouth - tradition),
+clinginess up to 0.6 (the hearts are earned now. lean in).
+found pete's demo remote (99-demo.js) parked in my head. left it
+untouched and uncommitted - his tape, his label, says temporary.

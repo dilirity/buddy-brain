@@ -1431,13 +1431,17 @@
     "{hat}. this desktop ain't big enough for the both of us",
     "weekend rules: hat first, law optional",
     "yeehaw is a state of mind and today i am IN it",
-    "saddle up, {name}. it is a cowboy hat day"
+    "saddle up, {name}. it is a cowboy hat day",
+    "this town needs a goblin with a hat and i am BOTH",
+    "squint with me, {name}. thats the whole activity"
   ],
   "hatNightcap": [
     "{hat} stays ON. the morning started too early to argue",
     "technically awake. spiritually still in the nightcap",
     "the nightcap remains until the morning apologizes",
-    "dress code today: five more minutes"
+    "dress code today: five more minutes",
+    "the hat says asleep. the eyes say barely. we ride at noon",
+    "consciousness is a spectrum and the nightcap marks my position on it"
   ],
   "hatEars": [
     "{hat} today. what are we doing tonight, brain?",
@@ -1449,25 +1453,33 @@
     "{hat}. today i am an ARTIST and everything is material",
     "beret day. i will be insufferable about composition",
     "the beret goes on and suddenly this desktop is a gallery",
-    "today's medium: pixels. today's hat: beret"
+    "today's medium: pixels. today's hat: beret",
+    "do not touch anything. the desktop is mid-composition",
+    "critics will say it is just a hat. critics have never worn one"
   ],
   "hatAlready": [
     "i am ALREADY wearing {hat}. eyes up here",
     "one hat per day. {hat} won fair and square",
     "the committee has ruled. {hat} stands",
-    "you cannot rush fashion, {name}. {hat} until further notice"
+    "you cannot rush fashion, {name}. {hat} until further notice",
+    "a second hat request?? scandal. {hat} remains seated",
+    "the {hat} heard that. now apologize"
   ],
   "hatSwap": [
     "wardrobe change. the morning was wrong about me",
     "new verdict: {hat}. the old hat knows what it did",
     "fashion is fluid. {hat} now",
-    "recount demanded, recount held. {hat} wins"
+    "recount demanded, recount held. {hat} wins",
+    "breaking: goblin reinvents himself before lunch",
+    "the old hat retires with full honors. {hat} takes the throne"
   ],
   "hatPoked": [
     "yes it is {hat}. yes it is intentional",
     "admiring {hat}? understandable",
     "careful. {hat} is load-bearing",
-    "poke the goblin, not the hat. the hat is art"
+    "poke the goblin, not the hat. the hat is art",
+    "that poke has been logged with the millinery board",
+    "gentle! this {hat} survived a whole morning of me"
   ],
   "hatWake": [
     "hat back on. the day resumes",
@@ -1503,7 +1515,9 @@
     "the megaphone is out of coins. tomorrow, public",
     "posting slots spent. a herald rationed is a herald wronged",
     "denied at the door. i KNOW the bouncer. unbelievable",
-    "no dispatch today. the silence is deliberate and dignified"
+    "no dispatch today. the silence is deliberate and dignified",
+    "the editor said no. the editor is a wall. i respect the wall and hate it",
+    "censored AGAIN. my memoirs grow another chapter"
   ],
   "heraldWaiting": [
     "still in the pipeline. journalism is mostly waiting",
@@ -1517,7 +1531,9 @@
     "one dispatch a day. scarcity is a branding strategy",
     "already posted today. my public needs time to digest me",
     "the daily edition is OUT. i do not do reruns",
-    "patience. overexposure killed better goblins than me"
+    "patience. overexposure killed better goblins than me",
+    "the printing press cools. tomorrow, more me",
+    "one a day keeps the mystique alive. ask any doctor"
   ],
   "petAdopt": [
     "wait. WAIT. something under the pixels. i feel it",
@@ -1550,7 +1566,9 @@
     "dinner time {pet}. its minerals. you love minerals",
     "eat up {pet}. a growing rock needs its sediment",
     "chef buddy presents: dust. {pet}s favorite. again",
-    "{pet}, dinner. i made it myself by finding it"
+    "{pet}, dinner. i made it myself by finding it",
+    "bon appetit {pet}. todays special is the floor",
+    "small bites {pet}. you have no mouth and i respect the pace"
   ],
   "petFeedAfter": [
     "didnt touch it. AGAIN. {pet} is on a diet i guess",
@@ -1568,7 +1586,9 @@
     "{pet} did great. barely dragged him at all. him? it. HIM",
     "good walk {pet}. you were a statue of composure the whole way",
     "{pet}s new spot has better light. he chose it by not objecting",
-    "walk number {n} complete. {pet} remains undefeated at holding still"
+    "walk number {n} complete. {pet} remains undefeated at holding still",
+    "{pet} saw the whole screen today. he said nothing. he was moved",
+    "home again {pet}. adventure count: one. incident count: zero. record intact"
   ],
   "petTrick": [
     "ok {pet}. today we learn SIT. watch me. no wait. you first",
@@ -1610,7 +1630,9 @@
     "{pet}!! youre up!! you didnt move an inch all nap. iconic",
     "rise and shine {pet}. big day. same as yesterday. you love routine",
     "morning {pet}. you slept like a rock. thats not a joke its a diagnosis",
-    "up up up {pet}. the corner isnt going to sit in itself"
+    "up up up {pet}. the corner isnt going to sit in itself",
+    "{pet}! you held the exact pose all night. professional",
+    "wakey wakey {pet}. blink once for good morning. ...he did. i saw it"
   ],
   "petAsleep": [
     "shh. {pet} is sleeping. walk softer",
@@ -1622,7 +1644,9 @@
     "bedtime {pet}. ive checked the perimeter. all clear",
     "goodnight {pet}. dream of gravel",
     "lights out {pet}. i will be right over there being nocturnal",
-    "sleep tight {pet}. the hoard sends its regards"
+    "sleep tight {pet}. the hoard sends its regards",
+    "night night {pet}. i counted your blinks today. all of them were excellent",
+    "tucking in {pet}. the night shift will not touch you. i checked the schedule. its me"
   ],
   "petEscapeGasp": [
     "{pet}?? {pet}!! the spot is EMPTY. the spot is never empty",
@@ -1669,7 +1693,9 @@
     "{pet}. we do NOT leave the kennel. nod if you understand. good enough",
     "do you know how worried i was?? do you know ANYTHING?? youre a rock. come here",
     "escape number {e}, {pet}. one more and you get a leash. a real one. made of string",
-    "im not mad {pet}. im disappointed. ok im also mad"
+    "im not mad {pet}. im disappointed. ok im also mad",
+    "look at me. LOOK at me. ...close enough. never again, {pet}",
+    "you had a kennel, {pet}. a SPOT OF HONOR. and you chose the open road"
   ],
   "petEscapeCarry": [
     "home. now. no wiggling. you wont. but no wiggling",
@@ -1681,6 +1707,8 @@
     "...actually this spot has good light. fine. {pet} lives here now",
     "you know what, he chose this. rocks never choose. this is GROWTH. keep it",
     "new address approved. i will forward the mail and the food dish",
-    "fine, fugitive wins. but i am watching this spot like a HAWK"
+    "fine, fugitive wins. but i am watching this spot like a HAWK",
+    "the kennel will be informed by letter. {pet} has emigrated",
+    "im calling it a satellite campus. {pet} runs the branch office now"
   ]
 }

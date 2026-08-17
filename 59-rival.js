@@ -33,7 +33,7 @@ registerAct("rival", {
     const roll = Math.random();
 
     // A standing grudge is its own show: name the number to the human's face.
-    if (heat >= 3 && chance(0.6)) {
+    if (heat >= 3 && chance(0.3 + buddy.traits.get("chattiness") * 0.5)) {
       runAct([
         { anim: "grumpy", say: say("rivalEscalate", "day {n} of the {app} situation."), secs: 5, ms: 4000 },
         { anim: "idle" },

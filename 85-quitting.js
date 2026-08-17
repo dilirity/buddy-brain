@@ -103,5 +103,5 @@ buddy.on("idle", () => {
   if (h < cfg("workdayEnd", 17) || h > cfg("nightEnd", 22)) return;
   rec.cheered = true;
   buddy.memory.set("quitNag", rec);
-  buddy.after(4000, () => sayLine("quitDone", 6, chance(0.5) ? "heart" : null));
+  buddy.after(4000, () => sayLine("quitDone", 6, chance(0.2 + buddy.traits.get("clinginess") * 0.6) ? "heart" : null));
 });

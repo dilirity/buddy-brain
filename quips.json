@@ -985,16 +985,8 @@
       "show": "archer"
     },
     {
-      "text": "oh hi. so how are you holding up? BECAUSE I'M A POTATO",
-      "show": "portal"
-    },
-    {
       "text": "please assume the party escort submission position",
       "show": "portal"
-    },
-    {
-      "text": "hey! listen!",
-      "show": null
     },
     {
       "text": "no, i am your father",
@@ -1023,6 +1015,46 @@
     {
       "text": "my eyes! MY EYES!",
       "show": "friends"
+    },
+    {
+      "text": "i am the holiday armadillo!",
+      "show": "friends"
+    },
+    {
+      "text": "who am i, alan turing? he was also in x-men, right?",
+      "show": "archer"
+    },
+    {
+      "text": "i'm a human! i'm a human male!",
+      "show": "b99"
+    },
+    {
+      "text": "you're not a good person. you know that, right?",
+      "show": "portal"
+    },
+    {
+      "text": "i think so, brain, but where will we find an open tattoo parlor at this hour?",
+      "show": "pinkybrain"
+    },
+    {
+      "text": "had to be me. someone else might have gotten it wrong",
+      "show": null
+    },
+    {
+      "text": "wake me. when you need me",
+      "show": null
+    },
+    {
+      "text": "cousin! let's go bowling!",
+      "show": null
+    },
+    {
+      "text": "i am serious. and don't call me shirley",
+      "show": null
+    },
+    {
+      "text": "you're killin' me, smalls",
+      "show": null
     }
   ],
   "facts": [
@@ -1039,7 +1071,6 @@
     "scotland's national animal is the unicorn",
     "there are more possible chess games than atoms in the universe",
     "butterflies taste with their feet",
-    "a blue whale's heart is the size of a small car",
     "footprints on the moon last millions of years. no wind",
     "a single cloud can weigh over a million pounds",
     "tigers have striped skin, not just striped fur",
@@ -1148,7 +1179,6 @@
     "the golden ratio shows up in nautilus shells, galaxies, and zero of your window arrangements",
     "honeybees can recognize human faces. the bees KNOW you",
     "a group of goldfinches is called a charm. a group of goblins is called a problem",
-    "cows have best friends and get stressed when separated. relatable",
     "the heart of a blue whale is the size of a small car. mine is the size of a pixel. same output",
     "squirrels forget where they bury most of their nuts. entire forests grow from their bad memory",
     "ravens can plan for the future and hold funerals. planners AND poets",
@@ -1253,7 +1283,13 @@
     "the alcatraz escapees left papier-mache heads in their beds. the guards said goodnight to them",
     "a flamingo escaped a kansas zoo in 2005 and was spotted alive in texas seventeen years later",
     "a desert snail glued to a british museum card turned out to be alive four years later. exhibit, or hostage",
-    "houdini hid lock picks and keys in his throat and swallowed them back up on demand. do not train your pet this"
+    "houdini hid lock picks and keys in his throat and swallowed them back up on demand. do not train your pet this",
+    "scientists taught rats to drive tiny cars. the rats found it relaxing. commuter icons",
+    "the shortest war in history lasted 38 minutes. zanzibar, 1896. somebody still wrote a report",
+    "some bees fall asleep inside flowers and wake up dusted in pollen. bed AND breakfast",
+    "there are more trees on earth than stars in the milky way. the forest is winning",
+    "a blue whale's tongue weighs as much as an elephant. the elephant declined to comment",
+    "the dot over a lowercase i is called a tittle. tiny things have names. i respect this deeply"
   ],
   "showProps": {
     "justified": "cowboyhat",

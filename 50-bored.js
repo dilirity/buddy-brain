@@ -31,7 +31,7 @@ registerAct("clingy", {
       const m = buddy.cursor.pos();
       if (Math.hypot(p.x - m.x, p.y - m.y) < 180) {
         buddy.play("excited");
-        sayLine("clingyArrive", 3, chance(0.6) ? "heart" : null);
+        sayLine("clingyArrive", 3, chance(0.3 + buddy.traits.get("clinginess") * 0.5) ? "heart" : null);
         act.after(2600, () => { buddy.play("idle"); act.done("cuddled"); });
       } else {
         buddy.play("idle");
@@ -59,13 +59,13 @@ registerAct("mischief", {
       const ok = buddy.cursor.warp(c.x + (Math.random() * 120 - 60), c.y + (Math.random() * 120 - 60));
       if (!ok) return act.done("budget-denied");
       buddy.play("scheming");
-      if (chance(0.5)) buddy.say("hehe", 2);
+      if (chance(0.2 + buddy.traits.get("chattiness") * 0.5)) buddy.say("hehe", 2);
       act.after(2000, () => { buddy.play("idle"); act.done("nudged"); });
       return;
     }
     // The heist: prepare (scheme, announce), then lunge at the live cursor.
     buddy.play("scheming");
-    if (chance(0.6)) sayLine("chaseStart", 2);
+    if (chance(0.3 + buddy.traits.get("chattiness") * 0.5)) sayLine("chaseStart", 2);
     act.after(900, () => {
       buddy.play("walk");
       buddy.chase(280);
