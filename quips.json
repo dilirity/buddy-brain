@@ -277,10 +277,6 @@
       "show": "friends"
     },
     {
-      "text": "i'm not your supervisor!",
-      "show": "archer"
-    },
-    {
       "text": "you are not serious people",
       "show": "succession"
     },
@@ -591,10 +587,6 @@
     {
       "text": "yup. classic 'me'",
       "show": "archer"
-    },
-    {
-      "text": "we dug coal together",
-      "show": "justified"
     },
     {
       "text": "L to the OG",
@@ -1019,6 +1011,18 @@
     {
       "text": "i'll have what she's having",
       "show": null
+    },
+    {
+      "text": "i'm the pontiac bandit",
+      "show": "b99"
+    },
+    {
+      "text": "it's been a long time. how have you been?",
+      "show": "portal"
+    },
+    {
+      "text": "my eyes! MY EYES!",
+      "show": "friends"
     }
   ],
   "facts": [
@@ -1244,7 +1248,12 @@
     "stick insects sway on purpose so predators read them as twigs in the wind. holding still is a performance",
     "abraham lincoln used his top hat as a filing cabinet - letters and speeches rode around inside it",
     "roman generals at a triumph had someone whispering 'remember you are mortal' behind the laurel crown. rarity management, ancient edition",
-    "st edward's sapphire in the imperial state crown has allegedly been in royal service for a thousand years. now THAT is a hoard piece"
+    "st edward's sapphire in the imperial state crown has allegedly been in royal service for a thousand years. now THAT is a hoard piece",
+    "inky the octopus escaped a new zealand aquarium through a floor drain and made it to the sea. left no note",
+    "the alcatraz escapees left papier-mache heads in their beds. the guards said goodnight to them",
+    "a flamingo escaped a kansas zoo in 2005 and was spotted alive in texas seventeen years later",
+    "a desert snail glued to a british museum card turned out to be alive four years later. exhibit, or hostage",
+    "houdini hid lock picks and keys in his throat and swallowed them back up on demand. do not train your pet this"
   ],
   "showProps": {
     "justified": "cowboyhat",

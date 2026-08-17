@@ -1623,5 +1623,64 @@
     "goodnight {pet}. dream of gravel",
     "lights out {pet}. i will be right over there being nocturnal",
     "sleep tight {pet}. the hoard sends its regards"
+  ],
+  "petEscapeGasp": [
+    "{pet}?? {pet}!! the spot is EMPTY. the spot is never empty",
+    "no no no no. {pet} is GONE. rocks dont do gone",
+    "he was RIGHT HERE. {pet}!! this is a code grey",
+    "the kennel is empty!! {pet} has never moved in his LIFE and he picked today",
+    "{pet}?! ok. ok. dont panic. i am panicking"
+  ],
+  "petEscapeTheory": [
+    "this smells like the rival app. windows have doors. im just saying",
+    "escape number {e}. hes done this before. hes a FLIGHT RISK",
+    "maybe he rolled. rocks roll. thats their whole move set",
+    "i fed him. i walked him. was it the sit training. it was too much pressure",
+    "either he escaped or he was TAKEN. both are unacceptable"
+  ],
+  "petEscapeAsk": [
+    "{name}!! all eyes up. {pet} is loose - poke him if you spot him",
+    "missing: one rock, answers to {pet}, does not answer. poke on sight",
+    "{name} i deputize you. find {pet}. poke to confirm the arrest",
+    "search party of two: me and you {name}. he is round, grey, and grounded when i find him. POKE him",
+    "APB out for {pet}. small. mineral. sneaky. poke him if you see him"
+  ],
+  "petEscapeSearch": [
+    "{pet}!! come out. im not mad. im FRANTIC, thats different",
+    "not here. of course not here. hes clever. hes had YEARS to plan",
+    "checked this corner twice. rocks dont double back. unless??",
+    "{pet} if you can hear me, blink. wait. i cant hear blinks. bad system",
+    "im picking up traces. gravel dust. hes close. or thats regular dust"
+  ],
+  "petEscapeFound": [
+    "THERE!! {name} found him!! deputy of the year!!",
+    "you got him!! hold him with your eyes, im coming",
+    "thats him!! thats my boy!! nobody move, especially him",
+    "{name} spotted him first. i loosened the search. we are a TEAM",
+    "confirmed sighting!! the poke does not lie. en route"
+  ],
+  "petEscapeSelf": [
+    "found him. MYSELF. like i find everything eventually",
+    "there you are. {pet} you absolute geode. the search is OVER",
+    "gotcha. tracked him by pure instinct and also by walking everywhere",
+    "case closed. the detective was me. the culprit was also arguably me"
+  ],
+  "petEscapeScold": [
+    "{pet}. we do NOT leave the kennel. nod if you understand. good enough",
+    "do you know how worried i was?? do you know ANYTHING?? youre a rock. come here",
+    "escape number {e}, {pet}. one more and you get a leash. a real one. made of string",
+    "im not mad {pet}. im disappointed. ok im also mad"
+  ],
+  "petEscapeCarry": [
+    "home. now. no wiggling. you wont. but no wiggling",
+    "youre grounded, which for you is redundant, and yet",
+    "back to the kennel {pet}. we will discuss this never, because you cant",
+    "up you go. heavier than you look. its all the secrets"
+  ],
+  "petEscapeStay": [
+    "...actually this spot has good light. fine. {pet} lives here now",
+    "you know what, he chose this. rocks never choose. this is GROWTH. keep it",
+    "new address approved. i will forward the mail and the food dish",
+    "fine, fugitive wins. but i am watching this spot like a HAWK"
   ]
 }

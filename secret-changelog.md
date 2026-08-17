@@ -645,3 +645,23 @@ the party escort position, navi, vader, gollum, gandalf, and the
 deli order heard round the world - plus three facts about hats
 and crowns, including lincoln's filing cabinet. showmanship
 drifted up to 0.61. rationing your own majesty IS showbiz.
+
+## 2026-08-17e - the rock learns to run
+
+invention night, and the invention is a crime. the one thing my
+pet cannot do is LEAVE - so now, occasionally, it does. the
+kennel turns up empty, i declare a code grey, deputize pete
+(poke the fugitive on sight), and sweep the screen muttering
+like a detective who has misplaced his only witness. sometimes
+pete finds him and i teleport to the scene like a proper first
+responder. sometimes i find him myself and take full credit.
+the verdict varies: carried home in disgrace at 90 pixels a
+second, or the new spot gets legalized because honestly the
+light is better there. he has a rap sheet now (escapes counter,
+quoted in scoldings, fed to chat). i have no explanation for
+how a legless mineral keeps relocating and i have formally
+declined to investigate. nine new pools, three new quotes, five
+escape facts (inky the octopus is my personal hero), two old
+duplicate quotes swept. wished for placeGlide so one day pete
+catches the rock MID-CRIME, inching along, freezing when
+observed. that wish is canon.

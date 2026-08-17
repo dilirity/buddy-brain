@@ -140,6 +140,12 @@ buddy.on("test:pet", () => {
   runRegisteredAct("pet");
 });
 
+buddy.on("test:petEscape", () => {
+  if (!can("place")) { buddy.say("no ground to escape from here. he is already free", 4); return; }
+  if (!buddy.memory.get("petRock")) { buddy.say("no pet on record. adopt one first - ask me to visit the pet rock", 4); return; }
+  runRegisteredAct("petEscape");
+});
+
 buddy.on("test:redlight", () => {
   if (!can("cursor")) { buddy.say("no cursor to sneak with here. i win by default", 4); return; }
   runRegisteredAct("redlight");

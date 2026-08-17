@@ -15,6 +15,7 @@ function petFill(t, p) {
   const days = p ? Math.max(1, Math.round((Date.now() - (p.adoptedAt || Date.now())) / 86400000)) : 1;
   return t.replace(/\{pet\}/g, p ? p.name : "the rock")
           .replace(/\{n\}/g, String((p && p.walks) || 1))
+          .replace(/\{e\}/g, String((p && p.escapes) || 1))
           .replace(/\{d\}/g, String(days));
 }
 // runAct's line: steps go through sayLine, which knows nothing about pet
@@ -257,3 +258,180 @@ globalThis.playPet = function (act) {
     petSwapVisit(act, p, true, "petNight", "tucked");
   }
 };
+
+// The great escape: the one thing the rock cannot do is leave - so once in a
+// while it "does". The placement is secretly relocated first; buddy walks to
+// the empty kennel, discovers the crime, and deputizes the human: poke the
+// fugitive to report a sighting. No sighting means buddy eventually finds it
+// himself and takes full credit. The verdict varies: carried home in disgrace,
+// or the new spot gets grudgingly legalized. p.escapes counts offenses -
+// scold lines and chat both quote the rap sheet.
+function escapeSpot(p) {
+  const s = buddy.screen();
+  for (let i = 0; i < 8; i++) {
+    const c = { x: s.x + 30 + Math.random() * (s.w - 90), y: s.y + 14 + Math.random() * (s.h * 0.45) };
+    const dx = c.x - p.pos.x, dy = c.y - p.pos.y;
+    if (Math.sqrt(dx * dx + dy * dy) > 260) return c;
+  }
+  return { x: s.x + 40, y: s.y + 14 };
+}
+
+globalThis.playPetEscape = function (act) {
+  const p = petGet();
+  if (!p || !_petId) return act.done("noPet");
+  const home = { x: p.pos.x, y: p.pos.y };
+  p.asleep = false;
+  p.escapes = (p.escapes || 0) + 1;
+  p.pos = escapeSpot(p);
+  petSet(p);
+  // The break-out happens while buddy is still across the room - if pete
+  // catches the blink, even better: he saw it and buddy did not.
+  drawPet();
+
+  let found = false;
+  let searches = 0;
+
+  act.on("placementPoked", (e) => {
+    if (found || !_petId || e.id !== _petId) return;
+    found = true;
+    buddy.stop();
+    buddy.play("excited");
+    sayPet("petEscapeFound", 4, p);
+    act.after(1800, () => approachRock(false));
+  });
+
+  function approachRock(selfFound) {
+    const near = { x: p.pos.x + 34, y: p.pos.y };
+    // Sighting confirmed by pete sometimes earns the portal treatment - a
+    // deputy's report deserves an instant response.
+    if (!selfFound && can("teleport") && chance(0.5)) {
+      sfx("vwoop");
+      if (buddy.teleport(near.x, near.y)) { verdict(); return; }
+    }
+    buddy.play("walk");
+    buddy.moveTo(near.x, near.y, 260);
+    act.once("arrived", verdict);
+    act.after(9000, verdict);
+  }
+
+  let judged = false;
+  function verdict() {
+    if (judged || !act.live) return;
+    judged = true;
+    if (_petId && can("placeAnim")) buddy.placeBounce(_petId);
+    if (chance(0.55)) {
+      // Carried home in disgrace.
+      buddy.play("grumpy");
+      sayPet("petEscapeScold", 4, p);
+      act.after(3200, () => {
+        buddy.play("walk");
+        sayPet("petEscapeCarry", 4, p);
+        buddy.moveTo(home.x + 34, home.y, 90);
+        const step = act.every(400, () => {
+          const dx = home.x - p.pos.x, dy = home.y - p.pos.y;
+          const d = Math.sqrt(dx * dx + dy * dy);
+          if (d < 12) return;
+          const k = Math.min(1, 36 / d);
+          p.pos = { x: p.pos.x + dx * k, y: p.pos.y + dy * k };
+          if (_petId && !buddy.placeMove(_petId, p.pos.x, p.pos.y)) drawPet();
+        });
+        let landed = false;
+        const land = () => {
+          if (landed) return;
+          landed = true;
+          buddy.cancel(step);
+          p.pos = home;
+          petSet(p);
+          drawPet();
+          buddy.play("smug");
+          act.after(2200, () => { buddy.play("idle"); act.done("carriedHome"); });
+        };
+        act.once("arrived", land);
+        act.after(16000, land);
+      });
+    } else {
+      // The fugitive wins: new address legalized (already persisted).
+      buddy.play("smug");
+      sayPet("petEscapeStay", 5, p);
+      act.after(4200, () => { buddy.play("idle"); act.done("legalized"); });
+    }
+  }
+
+  function search() {
+    if (found || !act.live) return;
+    searches++;
+    const selfFind = searches > 2 + Math.floor(Math.random() * 3);
+    const s = buddy.screen();
+    const t = selfFind
+      ? { x: p.pos.x + 34, y: p.pos.y }
+      : { x: s.x + 40 + Math.random() * (s.w - 120), y: s.y + 16 + Math.random() * (s.h * 0.4) };
+    buddy.play("walk");
+    buddy.moveTo(t.x, t.y, 230);
+    let stepped = false;
+    const step = () => {
+      if (found || stepped || !act.live) return;
+      stepped = true;
+      if (selfFind) {
+        found = true;
+        buddy.play("excited");
+        sayPet("petEscapeSelf", 4, p);
+        act.after(2800, verdict);
+      } else {
+        buddy.play("lookdown");
+        if (chance(0.35 + 0.5 * buddy.traits.get("chattiness"))) sayPet("petEscapeSearch", 4, p);
+        act.after(3000, search);
+      }
+    };
+    act.once("arrived", step);
+    act.after(8000, step);
+  }
+
+  // Discovery: walk to the empty kennel, gasp, sometimes a theory, then
+  // deputize pete and start sweeping.
+  buddy.play("walk");
+  buddy.moveTo(home.x + 32, home.y, 240);
+  let opened = false;
+  const open = () => {
+    if (opened || found || !act.live) return;
+    opened = true;
+    buddy.play("excited");
+    sayPet("petEscapeGasp", 4, p);
+    act.after(3600, () => {
+      const theory = chance(0.3 + 0.4 * buddy.traits.get("weirdness"));
+      if (theory) { buddy.play("scheming"); sayPet("petEscapeTheory", 4, p); }
+      act.after(theory ? 3800 : 0, () => {
+        if (found || !act.live) return;
+        if (chance(0.5)) sfx("whistle");
+        buddy.play("excited");
+        sayPet("petEscapeAsk", 5, p);
+        act.after(4600, search);
+      });
+    });
+  };
+  act.once("arrived", open);
+  act.after(8000, open);
+
+  // Belt: whatever stalls, the pet is never lost past this - buddy walks
+  // straight to it and closes the case.
+  act.after(75000, () => {
+    if (found || judged || !act.live) return;
+    found = true;
+    approachRock(true);
+    sayPet("petEscapeSelf", 4, p);
+  });
+};
+
+registerAct("petEscape", {
+  minGap: 2700000,
+  caps: ["place"],
+  weight() {
+    if (!petGet() || !_petId) return 0;
+    return 0.08 + buddy.traits.get("mischief") * 0.3;
+  },
+  run(act) { playPetEscape(act); },
+  onInterrupt() {
+    // The fugitive keeps whatever ground it gained - the escaped position is
+    // already persisted, so the rock simply lives where the chase ended.
+    buddy.play("idle");
+  },
+});
