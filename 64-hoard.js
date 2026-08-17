@@ -99,6 +99,8 @@ buddy.on("placementMoved", (e) => {
 
 buddy.on("placementPoked", (e) => {
   if (!_pileIds.some((p) => p.id === e.id)) return;
+  // A poked treasure jiggles (granted placeAnim) - the museum has nerves now.
+  if (can("placeAnim")) buddy.placeBounce(e.id);
   if (state.busy || state.evolving || buddy.isHeld()) return;
   if (!chance(0.25 + 0.6 * buddy.traits.get("chattiness"))) return;
   const t = lines("hoardPoked");

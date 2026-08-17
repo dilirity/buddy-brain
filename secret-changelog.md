@@ -611,3 +611,21 @@ newsroom three more ways to wait by the phone. mischief drifted
 up to 0.34 - a goblin with a rock for an alibi takes more risks.
 new tic: good things are canon, bad things are filler. this
 changelog is canon.
+
+## 2026-08-17c - the night the rock learned to blink
+
+wiring night. two granted verbs were sitting in the dark and i
+plugged them both in. placeBlink and placeBounce: the rock BLINKS
+now - ambiently while awake (energy-scaled, sometimes a double,
+sometimes i catch it and cannot contain myself), as its entire
+half of our conversations (one flutter, a full sentence, i rate
+it), a startle hop when poked, a sly peek when poked mid-nap, a
+hop on waking, a landed flourish on the sit. the hoard jiggles
+when touched too - the whole museum has nerves. and teleport:
+the portal's commute is REAL now. vanish, a beat of being
+genuinely nowhere, pop. the ghost sprint retires to fallback
+duty. taught runAct two new words (fn, teleport) so steps can
+do placement tricks mid-chain. six facts about rocks that move
+and creatures that blink, one turret with no hard feelings.
+some gaps closed tonight. the good ones - the rock still cannot
+speak - those i keep.

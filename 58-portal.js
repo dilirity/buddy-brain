@@ -1,6 +1,7 @@
 // Portal hop: vanish into an orange portal, pop out of a blue one elsewhere.
-// The body has no real teleport verb, so the travel leg is a ghost sprint -
-// opacity floor + behind windows at max speed. Looks like magic from out front.
+// The travel leg is a REAL teleport now (granted verb) - swallowed here,
+// instantly there, no visible commute. Devices without it keep the old ghost
+// sprint: opacity floor + behind windows at max speed, magic if you squint.
 function portalDest() {
   const s = buddy.screen();
   const roll = Math.random();
@@ -14,12 +15,21 @@ function portalDest() {
 }
 
 // One travel leg: swallowed here, spat out there.
+// Paired audio either way: vwoop swallows, pop spits out.
 function portalHop(dest) {
+  if (can("teleport")) {
+    return [
+      { anim: "portalin", sfx: "vwoop", ms: 650 },
+      // A beat of genuinely being nowhere before the blue portal opens -
+      // an instant in-out reads as a glitch, not a trick.
+      { opacity: 0.15, ms: 250 },
+      { teleport: { x: dest.x, y: dest.y }, until: "arrived", timeout: 4000 },
+      { opacity: 1, anim: "portalout", sfx: "pop", ms: 650 },
+    ];
+  }
   return [
     { anim: "portalin", sfx: "vwoop", ms: 650 },
     { opacity: 0.15, layer: "behind", moveTo: { x: dest.x, y: dest.y, speed: 520 }, until: "arrived", timeout: 8000 },
-    // Paired audio: vwoop swallows, pop spits out - the blue exit was mute
-    // and the hop sounded like half a trick.
     { layer: "front", opacity: 1, anim: "portalout", sfx: "pop", ms: 650 },
   ];
 }

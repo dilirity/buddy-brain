@@ -183,8 +183,12 @@ globalThis.takeStash = function (name, maxAgeMs) {
 //   line: "poolKey" / say: "text"     speak (secs, prop ride along)
 //   prop: "name"                      worn via the spoken line, or bare
 //   moveTo: {x, y, speed}             walk somewhere
+//   teleport: {x, y}                  blink there instantly (arrived fires)
 //   approach: {speed, dx, dy}         walk to the LIVE cursor + offset
 //   chase: speed                      pursue and catch the live cursor
+//   fn: () => ...                     run any code at step start (placement
+//                                     verbs, memory writes - things steps
+//                                     have no field for)
 //   layer: "behind" | "front"         drop under / restore over app windows
 //   opacity: 0.15..1                  ghost mode (shell auto-restores to 1)
 //   sfx: "vwoop"                      one whitelisted sound (budget-gated)
@@ -233,6 +237,9 @@ globalThis.runAct = function (steps, done) {
       buddy.play("idle");
       return finish();
     }
+    if (s.fn) {
+      try { s.fn(); } catch (e) { buddy.log("act fn error: " + e); }
+    }
     if (s.chase) buddy.chase(s.chase);
     if (s.approach) buddy.approach(s.approach.speed || 200, s.approach.dx || 0, s.approach.dy || 0);
     if (s.moveTo) buddy.moveTo(s.moveTo.x, s.moveTo.y, s.moveTo.speed || 160);
@@ -246,6 +253,14 @@ globalThis.runAct = function (steps, done) {
         if (branch) runAct(s.until[ev], done);
         else next();
       }));
+      // Teleport is fired only AFTER the arrived listener exists - it is
+      // instant, and a wait must never outlive its own event. A refusal
+      // (held/frozen) degrades to popping out in place instead of stalling.
+      if (s.teleport && !buddy.teleport(s.teleport.x, s.teleport.y) && !fired) {
+        fired = true;
+        next();
+        return;
+      }
       // Stuck-safety: events can get swallowed (freeze, reload).
       ctx.after(s.timeout || 12000, () => {
         if (fired) return;
@@ -253,6 +268,7 @@ globalThis.runAct = function (steps, done) {
         finish();
       });
     } else {
+      if (s.teleport) buddy.teleport(s.teleport.x, s.teleport.y);
       ctx.after(s.ms || 800, next);
     }
   }

@@ -620,7 +620,9 @@
     "nailed the landing. ten out of ten",
     "the commute between here and here is instant",
     "do not try this at home. this is MY home",
-    "somewhere a physicist just felt a chill"
+    "somewhere a physicist just felt a chill",
+    "zero travel time. my commute is a rounding error",
+    "i skipped the part of space between there and here. it wasnt using it"
   ],
   "portalMisfire": [
     "the portal gun jammed. we speak of this to no one",
@@ -1583,7 +1585,16 @@
     "you may pet {pet}. gently. he bruises. spiritually",
     "{pet} likes you. i can tell. i speak rock",
     "careful, {pet} bites. slowly. over geological time",
-    "that is my SON you are poking. carry on though, he loves it"
+    "that is my SON you are poking. carry on though, he loves it",
+    "did you SEE him jump?? {pet} did a whole hop for you. gifted child",
+    "he wiggled!! thats rock for hello. or lawsuit. context matters"
+  ],
+  "petBlinkSeen": [
+    "did you see that. {pet} BLINKED. we are so proud",
+    "{pet} blinked just now. first one today. hes pacing himself",
+    "blink confirmed. {pet} is awake and processing. slowly. geologically",
+    "{name}!! {pet} blinked and you MISSED it. classic",
+    "that blink was at me. we have a bond. its mineral but its real"
   ],
   "petMoved": [
     "oh?? {pet} gets a new spot? i see how it is. fine. valid actually",

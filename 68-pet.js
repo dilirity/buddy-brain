@@ -40,9 +40,35 @@ buddy.on("brainLoaded", () => buddy.after(3500, drawPet));
 // respect where the rock now lives.
 buddy.on("placementPoked", (e) => {
   if (!_petId || e.id !== _petId) return;
+  // The rock reacts in the flesh (granted placeAnim): a startled hop, or a
+  // rapid blink if pete pokes it awake mid-nap. This fires even when buddy
+  // is busy - the rock has its own nervous system now.
+  if (can("placeAnim")) {
+    const p = petGet();
+    if (p && p.asleep) buddy.placeBlink(_petId, "petrock", 260);
+    else buddy.placeBounce(_petId);
+  }
   if (state.busy || state.evolving || buddy.isHeld()) return;
   if (!chance(0.3 + 0.6 * buddy.traits.get("chattiness"))) return;
   sayPet("petPoked", 4);
+});
+
+// The blink grant, finally: while awake the rock flutters its eyes shut for a
+// beat every so often. Not a registered act - it never takes buddy's stage,
+// only the placement twitches, so the scheduler has nothing to arbitrate.
+// Energy-scaled: a lively goblin keeps a lively rock.
+buddy.every(41000, () => {
+  const p = petGet();
+  if (!_petId || !p || p.asleep || !can("placeAnim")) return;
+  if (state.evolving || buddy.isFrozen()) return;
+  if (!chance(0.15 + 0.5 * buddy.traits.get("energy"))) return;
+  buddy.placeBlink(_petId, "petrocksleep", 150);
+  // Occasional double blink - creatures do that. Rarer: buddy caught it
+  // happening and cannot contain the pride.
+  if (chance(0.25)) buddy.after(650, () => { if (_petId) buddy.placeBlink(_petId, "petrocksleep", 120); });
+  if (!state.busy && !buddy.isHeld() && chance(0.1 * buddy.traits.get("chattiness"))) {
+    sayPet("petBlinkSeen", 4, p);
+  }
 });
 
 buddy.on("placementMoved", (e) => {
@@ -170,6 +196,8 @@ function petSwapVisit(act, p, asleep, lineKey, outcome) {
     p.asleep = asleep;
     petSet(p);
     if (!_petId || !buddy.placeSwap(_petId, asleep ? "petrocksleep" : "petrock")) drawPet();
+    // Waking up comes with a little startle hop - nobody likes an alarm.
+    if (!asleep && _petId && can("placeAnim")) buddy.placeBounce(_petId);
     sayPet(lineKey, 5, p);
     act.after(4200, () => { buddy.play("idle"); act.done(outcome); });
   });
@@ -193,10 +221,12 @@ globalThis.playPet = function (act) {
     }
   } else if (roll < 0.3) {
     // Conversation: buddy supplies both halves and rates the rock's silence.
+    // With placeAnim the rock's entire reply is one blink, and buddy treats
+    // it as a full sentence.
     runAct([
       { anim: "walk", moveTo: { x: p.pos.x + 32, y: p.pos.y, speed: 210 }, until: "arrived" },
       { anim: "lookdown", say: petStep("petTalk", p), secs: 4, ms: 4200 },
-      { anim: "think", ms: 2000 },
+      { fn: () => { if (_petId && can("placeAnim")) buddy.placeBlink(_petId, "petrocksleep", 180); }, anim: "think", ms: 2000 },
       { anim: "excited", say: petStep("petTalkReply", p), secs: 4, ms: 4000 },
       { anim: "idle" },
     ], () => act.done("talked"));
@@ -214,10 +244,12 @@ globalThis.playPet = function (act) {
     // Trick training. The rock holds a perfect sit, every time, forever.
     p.tricks = (p.tricks || 0) + 1;
     petSet(p);
+    // With placeAnim the sit gets a visible flourish: one hop, then holding
+    // the sit forever. Sticking the landing IS the trick.
     runAct([
       { anim: "walk", moveTo: { x: p.pos.x + 32, y: p.pos.y, speed: 210 }, until: "arrived" },
       { anim: "scheming", say: petStep("petTrick", p), secs: 4, ms: 3800 },
-      { anim: "lookdown", ms: 2200 },
+      { fn: () => { if (_petId && can("placeAnim")) buddy.placeBounce(_petId); }, anim: "lookdown", ms: 2200 },
       { anim: "smug", say: petStep("petTrickDone", p), secs: 5, ms: 4200 },
       { anim: "idle" },
     ], () => act.done("trained"));
