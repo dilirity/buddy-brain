@@ -137,6 +137,15 @@ function redonHat() {
   if (worn && buddy.wear && can("wear")) buddy.wear("head", worn.prop);
 }
 
+// Restore the head slot to the day's truth: the hat of the day, or bare.
+// Scenes that borrow the head slot (hat costumes in quips, the dream nap's
+// nightcap) call this when the scene ends - one head, one hat, always.
+globalThis.hatRestore = function () {
+  if (!buddy.wear || !can("wear")) return;
+  const worn = hatToday();
+  buddy.wear("head", worn ? worn.prop : null);
+};
+
 // Reloads strip the head slot; the hat is a day-long fact, so put it back.
 buddy.on("brainLoaded", () => buddy.after(2000, redonHat));
 

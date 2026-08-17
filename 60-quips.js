@@ -8,6 +8,24 @@ function showProps() {
   return (q && q.showProps) || {};
 }
 
+// Props that are themselves hats must not ride the hand slot - under a
+// hat of the day that renders as two hats at once. sayWithCostume borrows
+// the HEAD slot for the line instead, and the day's hat comes back after.
+const HAT_COSTUMES = { cowboyhat: 1, mouseears: 1, nightcap: 1, crown: 1, beret: 1 };
+globalThis.isHatProp = (p) => !!HAT_COSTUMES[p];
+
+globalThis.sayWithCostume = function (text, secs, prop) {
+  const s = secs || 5;
+  if (prop && HAT_COSTUMES[prop] && buddy.wear && can("wear")) {
+    buddy.wear("head", prop);
+    buddy.say(text, s);
+    buddy.after(s * 1000 + 400, () => { if (typeof hatRestore === "function") hatRestore(); });
+  } else {
+    // Prop rides along with the line - the shell strips it when the bubble goes.
+    buddy.say(text, s, prop);
+  }
+};
+
 globalThis.sayRef = function (secs) {
   const q = buddy.data("quips.json");
   if (!q || !q.references || !q.references.length) return false;
@@ -15,8 +33,7 @@ globalThis.sayRef = function (secs) {
   const t = pickFresh(texts);
   const entry = q.references.find((r) => (typeof r === "string" ? r : r.text) === t);
   const show = entry && typeof entry === "object" ? entry.show : null;
-  // Prop rides along with the line - the shell strips it when the bubble goes.
-  buddy.say(t, secs || 5, show ? showProps()[show] : null);
+  sayWithCostume(t, secs || 5, show ? showProps()[show] : null);
   return true;
 };
 

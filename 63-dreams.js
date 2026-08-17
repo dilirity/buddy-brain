@@ -47,13 +47,18 @@ registerAct("dream", {
     for (const [name, wt] of flavors) { r -= wt; if (r <= 0) { flavor = name; break; } }
 
     // Openings vary: caught mid-nap in the nightcap and snorts awake, or
-    // already up and the dream suddenly loads back in.
+    // already up and the dream suddenly loads back in. The nightcap borrows
+    // the HEAD slot where one exists - in the hand slot under a hat of the
+    // day it rendered as two hats at once.
+    const napCap = buddy.wear && can("wear");
     const opening = chance(0.55)
-      ? [{ anim: "sleep", prop: "nightcap", ms: 2600 }, { anim: "excited", line: "dreamWake", secs: 4, prop: "nightcap", ms: 3600 }]
+      ? [{ anim: "sleep", ms: 2600, fn: () => { if (napCap) buddy.wear("head", "nightcap"); }, prop: napCap ? null : "nightcap" },
+         { anim: "excited", line: "dreamWake", secs: 4, prop: napCap ? null : "nightcap", ms: 3600 }]
       : [{ anim: "think", line: "dreamRemember", secs: 4, ms: 3600 }];
 
     function finishWith(steps, outcome) {
-      runAct(opening.concat(steps, [{ anim: "idle" }]), () => act.done(outcome));
+      const closer = { anim: "idle", fn: () => { if (napCap && typeof hatRestore === "function") hatRestore(); } };
+      runAct(opening.concat(steps, [closer]), () => act.done(outcome));
     }
 
     if (flavor === "forgot") {
@@ -99,5 +104,9 @@ registerAct("dream", {
       }
     }
   },
-  onInterrupt: () => buddy.stop(),
+  onInterrupt: () => {
+    buddy.stop();
+    // An interrupted nap must not keep the borrowed nightcap on all day.
+    if (typeof hatRestore === "function") hatRestore();
+  },
 });

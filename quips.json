@@ -1055,6 +1055,30 @@
     {
       "text": "you're killin' me, smalls",
       "show": null
+    },
+    {
+      "text": "well excuuuse me, princess!",
+      "show": null
+    },
+    {
+      "text": "work work",
+      "show": null
+    },
+    {
+      "text": "hmm. wind's howling",
+      "show": null
+    },
+    {
+      "text": "show me your moves!",
+      "show": null
+    },
+    {
+      "text": "GLORY TO ARSTOTZKA",
+      "show": null
+    },
+    {
+      "text": "there's no place like home",
+      "show": null
     }
   ],
   "facts": [
@@ -1289,7 +1313,12 @@
     "some bees fall asleep inside flowers and wake up dusted in pollen. bed AND breakfast",
     "there are more trees on earth than stars in the milky way. the forest is winning",
     "a blue whale's tongue weighs as much as an elephant. the elephant declined to comment",
-    "the dot over a lowercase i is called a tittle. tiny things have names. i respect this deeply"
+    "the dot over a lowercase i is called a tittle. tiny things have names. i respect this deeply",
+    "panama hats are made in ecuador. always have been. the name never asked",
+    "zebrafish can regrow chunks of their own heart. full self-repair, no scar",
+    "the king of hearts is the only king in the deck without a mustache",
+    "an octopus's main heart stops beating when it swims. that is why they prefer to crawl",
+    "a lightning bolt is about five times hotter than the surface of the sun. brief, but committed"
   ],
   "showProps": {
     "justified": "cowboyhat",

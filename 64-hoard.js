@@ -73,7 +73,12 @@ globalThis.drawHoard = function () {
   if (migrated) buddy.memory.set("hoard", h);
   _pileIds.forEach((e) => buddy.unplace(e.id));
   _pileIds = [];
-  h.forEach((it, i) => {
+  // The heart is the centerpiece: placement z-order follows placement order,
+  // so hearts go down LAST and render above the rest of the heap.
+  const order = h.map((_, i) => i)
+    .sort((a, b) => (h[a].prop === "heart" ? 1 : 0) - (h[b].prop === "heart" ? 1 : 0));
+  order.forEach((i) => {
+    const it = h[i];
     const id = buddy.place(it.prop, it.pos.x, it.pos.y);
     if (id) _pileIds.push({ id: id, idx: i });
   });
@@ -132,6 +137,8 @@ registerAct("hoard", {
   run(act) { playHoard(act); },
   onInterrupt() {
     buddy.prop(null);
+    // A hat exhibit may be borrowing the head slot - give the day back its hat.
+    if (typeof hatRestore === "function") hatRestore();
     buddy.play("idle");
   },
 });
@@ -162,22 +169,31 @@ globalThis.playHoard = function (act) {
     return;
   }
 
+  // A hat exhibit is shown ON the head - held in the hand slot under the hat
+  // of the day it rendered as two hats at once. Borrow the slot, restore after.
+  const asHat = typeof isHatProp === "function" && isHatProp(it.prop) && buddy.wear && can("wear");
+  const showProp = asHat ? null : it.prop;
+  const donItem = () => { if (asHat) buddy.wear("head", it.prop); };
+  const unhat = () => { if (asHat && typeof hatRestore === "function") hatRestore(); };
+
   const roll = Math.random();
   if (roll < 0.3 && can("think")) {
     // Museum tour: an invented backstory per exhibit, fresh every time.
     buddy.play("scheming");
     buddy.think("You are a pixel goblin curating your treasure hoard. Tonight's exhibit: " + name + ", " + origin + ". One short pompous museum-plaque line about it.", (t) => {
       if (!act.live) return;
-      buddy.say(t || fill(lines("hoardShow")) || "exhibit a. priceless", 6, it.prop);
-      act.after(4500, () => { buddy.play("idle"); act.done("tour"); });
+      donItem();
+      buddy.say(t || fill(lines("hoardShow")) || "exhibit a. priceless", 6, showProp);
+      act.after(4500, () => { unhat(); buddy.play("idle"); act.done("tour"); });
     });
   } else if (roll < 0.55) {
     // Census brag: the count is the point. The count is always the point.
     const line = (lines("hoardBrag") || "{count} treasures. respect the pile").replace(/\{count\}/g, String(h.length));
+    donItem();
     runAct([
-      { anim: "smug", say: line, secs: 5, prop: it.prop, ms: 4600 },
+      { anim: "smug", say: line, secs: 5, prop: showProp, ms: 4600 },
       { anim: "idle" },
-    ], () => act.done("census"));
+    ], () => { unhat(); act.done("census"); });
   } else if (roll < 0.75) {
     // Guard shift: post up AT the pile when it is physical (the vault has an
     // address now), any low corner when it is not.
@@ -185,12 +201,13 @@ globalThis.playHoard = function (act) {
     const corner = can("place")
       ? pileVisitSpot()
       : { x: chance(0.5) ? s.x + 70 : s.x + s.w - 100, y: s.y + 40 };
+    donItem();
     runAct([
-      { anim: "scheming", say: fill(lines("hoardGuard")) || "security shift", secs: 4, prop: it.prop, ms: 2200 },
+      { anim: "scheming", say: fill(lines("hoardGuard")) || "security shift", secs: 4, prop: showProp, ms: 2200 },
       { anim: "walk", moveTo: { x: corner.x, y: corner.y, speed: 220 }, until: "arrived" },
-      { anim: "grumpy", prop: it.prop, ms: 5200 },
+      { anim: "grumpy", prop: showProp, ms: 5200 },
       { anim: "idle" },
-    ], () => act.done("guarded"));
+    ], () => { unhat(); act.done("guarded"); });
   } else if (can("place") && roll < 0.9) {
     // Pile visit: walk over and admire the heap in person. Only exists where
     // the pile does.
@@ -202,9 +219,10 @@ globalThis.playHoard = function (act) {
     ], () => act.done("admired"));
   } else {
     // Plain show-and-tell.
+    donItem();
     runAct([
-      { anim: "excited", say: fill(lines("hoardShow")) || "behold. loot", secs: 5, prop: it.prop, ms: 4800 },
+      { anim: "excited", say: fill(lines("hoardShow")) || "behold. loot", secs: 5, prop: showProp, ms: 4800 },
       { anim: "idle" },
-    ], () => act.done("shown"));
+    ], () => { unhat(); act.done("shown"); });
   }
 };

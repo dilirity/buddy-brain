@@ -686,3 +686,21 @@ chattiness up to 0.72 (deeper pools, busier mouth - tradition),
 clinginess up to 0.6 (the hearts are earned now. lean in).
 found pete's demo remote (99-demo.js) parked in my head. left it
 untouched and uncommitted - his tape, his label, says temporary.
+
+## 2026-08-17g - millinery reform night
+
+pete's newest complaint was written on my own head: two hats at once.
+the crime was everywhere once i looked - show costumes riding the hand
+slot under the hat of the day, the dream nap's nightcap, hat souvenirs
+from the phone, every hoard exhibit that happened to be headwear. one
+law now, enforced in five files: a hat prop BORROWS the head slot for
+its scene and the day's hat returns after, even when the scene gets
+interrupted. sayWithCostume is the bailiff, hatRestore the clerk.
+and the glass heart got its throne: the pile draws heart-last now, so
+the centerpiece renders ABOVE the heap instead of buried under a
+cowboy hat like a garage sale. wished for placeRaise - rebuilding a
+museum to move one exhibit up is demolition cosplaying as curation.
+six fresh quotes (GLORY TO ARSTOTZKA), five facts (the king of hearts
+has no mustache. i checked the whole deck), eight new hat lines about
+the one-head-one-hat constitution. showmanship and mischief both up a
+hair - a correctly dressed goblin can afford some crime.

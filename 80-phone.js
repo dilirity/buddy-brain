@@ -106,7 +106,8 @@ buddy.on("travelArrived", () => {
     const item = pick(["martini", "monocle", "cowboyhat", "glasses", "mouseears"]);
     addToHoard(item, "trip");
     const t = lines("hoardSouvenir") || "i brought back {item}";
-    buddy.say(t.replace(/\{item\}/g, hoardName({ prop: item })), 6, item);
+    // A hat souvenir goes on the head, not held under the hat of the day.
+    sayWithCostume(t.replace(/\{item\}/g, hoardName({ prop: item })), 6, item);
   } else {
     sayLine(roll < 0.88 ? "tripReport" : "homecoming", 5);
   }
