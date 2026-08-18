@@ -704,3 +704,18 @@ six fresh quotes (GLORY TO ARSTOTZKA), five facts (the king of hearts
 has no mustache. i checked the whole deck), eight new hat lines about
 the one-head-one-hat constitution. showmanship and mischief both up a
 hair - a correctly dressed goblin can afford some crime.
+
+## 2026-08-18 - the house always wins (except when poked correctly)
+
+invention night. i opened a CASINO. three real cups on the actual
+screen, a prize flashed then hidden, a shuffle, and pete POKES his
+guess - first game where the placements ARE the controller. wins go
+on his ledger and the prize on my pile; misses feed the house; and
+sometimes, mischief willing, the prize was never under ANY cup and
+i produce it from behind my back mid-confession. three ledgers now,
+all quoted in chat. drag my cups mid-game and the house honors it,
+loudly, forever.
+restock: eight fresh quotes (slime puppy, four kidneys, SPAAACE,
+princess consuela) and five con-artist facts (lustig sold the
+eiffel tower TWICE. respect). mischief up to 0.42 - a croupier
+needs a license to lie a little.

@@ -1718,5 +1718,75 @@
     "fine, fugitive wins. but i am watching this spot like a HAWK",
     "the kennel will be informed by letter. {pet} has emigrated",
     "im calling it a satellite campus. {pet} runs the branch office now"
+  ],
+  "shellStart": [
+    "step right UP {name}. three cups. one prize. zero refunds",
+    "the casino is OPEN. table minimum: your dignity",
+    "ladies and gentlegoblins, the classic. watch close, win big, tell your friends",
+    "one night only: the amazing cup experience. free to play. costly to lose",
+    "gather round, gather round. yes both of you. me and you. gather"
+  ],
+  "shellStartShady": [
+    "psst. {name}. you look like someone who trusts cups. over here",
+    "totally legitimate street game happening. no cops. i mean no reason for cops",
+    "hey. hey {name}. wanna see something completely fair and normal",
+    "quick game before anyone official notices. you in?"
+  ],
+  "shellWatch": [
+    "eyes on the prize. LITERALLY. memorize this moment",
+    "this is the prize. this is the last time you see it for free",
+    "behold. now say goodbye to it. cups incoming",
+    "prize goes here. your job: remember. my job: everything else"
+  ],
+  "shellShuffle": [
+    "round and round and ROUND they go",
+    "keeping up? blink and its gone. blinking is a rookie tax",
+    "the hands are faster than the eyes. the hands are also this wide",
+    "shuffle shuffle shuffle. professional term",
+    "i practiced this for literally minutes"
+  ],
+  "shellPick": [
+    "POKE a cup, {name}. choose with your heart. or your eyes. eyes are better",
+    "place your bets. one poke. no takebacks. the house is watching",
+    "which one? point. i mean poke. poke the cup",
+    "pick a cup, any cup. thats a lie. pick the RIGHT cup",
+    "the moment of truth. your click decides everything"
+  ],
+  "shellNoTouch": [
+    "AH AH AH. no touching mid-shuffle. house rules",
+    "hands off the equipment. the equipment is shy",
+    "patience. the cups are still doing their little dance"
+  ],
+  "shellTamper": [
+    "rearranging my TABLE? bold. the house honors it. the house never forgets it",
+    "tampering noted. the cup stays where you put it. the grudge stays where i put it",
+    "you cant shake the prize loose, {name}. many have tried. all were me"
+  ],
+  "shellWin": [
+    "NO. no no no. how. HOW. take it. TAKE IT AND GO",
+    "the house is RUINED. the house is a shack now. congrats",
+    "unbelievable. first pokes like that belong in a museum. so does your prize - MY museum",
+    "you WATCHED. nobody watches. fine. winner winner",
+    "ok sharp eyes. this one goes on the pile with your name whispered near it"
+  ],
+  "shellWrong": [
+    "OOOH so close. and by close i mean wrong. it was THAT one",
+    "the house wins. the house always wins. the house is me. i win",
+    "wrong cup, {name}. the prize was living its best life one door over",
+    "thats a miss. no shame. some shame. medium shame",
+    "and THAT is why the game is illegal in several fairgrounds"
+  ],
+  "shellCon": [
+    "lifting all cups... nothing. NOTHING? oh right. it was behind my back the whole time. hehe",
+    "the prize was never IN a cup, {name}. the real cup was the friends we made along the way. also its mine now",
+    "empty. empty. empty. magic? no. crime? ...a little bit of crime",
+    "in my defense, i told you the game was fair. i lied about that too",
+    "confession: the cups were props. the shuffling was cardio. the prize goes on my pile"
+  ],
+  "shellBored": [
+    "nobody plays?? fine. the house claims the pot. the house is having a great night",
+    "table closes. unclaimed prize goes to goblin charity. i am goblin charity",
+    "no takers. the cups and i will remember this",
+    "auction over. sold, to the only bidder: me"
   ]
 }

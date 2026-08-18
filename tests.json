@@ -204,5 +204,12 @@
     "caps": [
       "place"
     ]
+  },
+  {
+    "id": "shellGame",
+    "title": "Shell game (poke the winning cup)",
+    "caps": [
+      "place"
+    ]
   }
 ]

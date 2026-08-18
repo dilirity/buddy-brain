@@ -336,6 +336,22 @@
    "..KEKKEEKKEK....",
    "..KEEEEEEEEK....",
    "...KKKKKKKK....."
+  ],
+  "cup": [
+   "................",
+   "................",
+   "................",
+   "................",
+   "................",
+   ".....KKKKKK.....",
+   "....KTTTTTTK....",
+   "...KTWTTTTTTK...",
+   "...KTWTTTTTTK...",
+   "...KTTTTTTTTK...",
+   "...KTTTTTTTTK...",
+   "..KTTTTTTTTTTK..",
+   "..KNNNNNNNNNNK..",
+   "..KKKKKKKKKKKK.."
   ]
  },
  "anims": {

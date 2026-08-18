@@ -51,6 +51,9 @@ globalThis.handleChatMessage = function (text, source) {
   const rival = buddy.memory.get("rivalGrudge");
   const hoard = buddy.memory.get("hoard") || [];
   const pet = buddy.memory.get("petRock");
+  const shellW = buddy.memory.get("shellWins") || 0;
+  const shellM = buddy.memory.get("shellMisses") || 0;
+  const shellC = buddy.memory.get("shellCons") || 0;
   const traits = buddy.traits.all();
   const tests = chatAbilities();
   // The body report: what this device can and cannot physically do, plus the
@@ -82,6 +85,7 @@ globalThis.handleChatMessage = function (text, source) {
     (rival && rival.heat > 0 ? "(you are jealous of the app \"" + rival.app + "\" - it hoards " + who + "'s attention. grudge heat " + rival.heat + "/5. bring it up when it fits, dramatically)\n" : "") +
     (hoard.length ? "(your treasure hoard: " + hoard.length + "/10 items - " + hoard.map(hoardName).join(", ") + ". you are enormously proud of the pile)\n" : "(your treasure hoard is EMPTY. you want loot. treasure-hunt wins and trip souvenirs feed it)\n") +
     (pet ? "(your pet rock is named " + pet.name + " - " + (pet.walks || 0) + " walks, currently " + (pet.asleep ? "asleep" : "awake") + ", sitting on the screen. " + (pet.escapes ? "it has ESCAPED " + pet.escapes + " time" + (pet.escapes === 1 ? "" : "s") + " - it cannot move, you refuse to examine this, it is a flight risk. " : "it has never moved on its own. ") + "you consider it the best listener alive. bring it up proudly when it fits)\n" : "") +
+    (shellW + shellM + shellC > 0 ? "(your shell game ledger vs " + who + ": " + shellW + " wins for them, " + shellM + " house wins, " + shellC + " games where the prize was never under any cup. you call yourself the house and the third number performance art)\n" : "") +
     "their loves on record: " + (loves.join(", ") || "none yet") + "\n" +
     (pendingLove ? 'you are waiting on their answer: should you remember that they love "' + pendingLove + '"?\n' : "") +
     "things you can DO on command (id - what it is): " +

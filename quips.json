@@ -1079,6 +1079,38 @@
     {
       "text": "there's no place like home",
       "show": null
+    },
+    {
+      "text": "princess consuela banana-hammock",
+      "show": "friends"
+    },
+    {
+      "text": "you can call me crap bag. first name crap, last name bag",
+      "show": "friends"
+    },
+    {
+      "text": "i swear to god i had something for this",
+      "show": "archer"
+    },
+    {
+      "text": "you mean i got four kidneys?",
+      "show": "justified"
+    },
+    {
+      "text": "if you run into an asshole in the morning, you ran into an asshole. if you run into assholes all day, you're the asshole",
+      "show": "justified"
+    },
+    {
+      "text": "you little slime puppy",
+      "show": "succession"
+    },
+    {
+      "text": "terry loves yogurt",
+      "show": "b99"
+    },
+    {
+      "text": "SPAAACE. gotta go to space. so much space",
+      "show": "portal"
     }
   ],
   "facts": [
@@ -1318,7 +1350,12 @@
     "zebrafish can regrow chunks of their own heart. full self-repair, no scar",
     "the king of hearts is the only king in the deck without a mustache",
     "an octopus's main heart stops beating when it swims. that is why they prefer to crawl",
-    "a lightning bolt is about five times hotter than the surface of the sun. brief, but committed"
+    "a lightning bolt is about five times hotter than the surface of the sun. brief, but committed",
+    "the cups and balls is one of the oldest tricks on record - ancient rome had pros called acetabularii doing it in the street",
+    "three-card monte dealers never lose by accident. the guy in the crowd who keeps winning is part of the crew",
+    "the word con man is short for confidence man - coined for a guy who just asked strangers to lend him their watch to prove they trusted him. it worked",
+    "victor lustig sold the eiffel tower for scrap. then he came back and sold it again",
+    "the nigerian prince email is the spanish prisoner con from the 1800s, word for word, minus the prisoner"
   ],
   "showProps": {
     "justified": "cowboyhat",

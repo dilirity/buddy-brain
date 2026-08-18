@@ -146,6 +146,11 @@ buddy.on("test:petEscape", () => {
   runRegisteredAct("petEscape");
 });
 
+buddy.on("test:shellGame", () => {
+  if (!can("place")) { buddy.say("no table to run a casino on here. gambling is cancelled", 4); return; }
+  runRegisteredAct("shellGame");
+});
+
 buddy.on("test:redlight", () => {
   if (!can("cursor")) { buddy.say("no cursor to sneak with here. i win by default", 4); return; }
   runRegisteredAct("redlight");
