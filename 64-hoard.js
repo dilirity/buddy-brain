@@ -84,6 +84,19 @@ globalThis.drawHoard = function () {
   });
 };
 
+// The casino borrows floor from the museum: unplace up to n pile pieces so
+// another act can fit under the 12-placement cap. Memory is untouched - the
+// next drawHoard() reopens the museum exactly as it was. Pieces leave from
+// the FRONT of the draw order, so the heart (placed last) stays on display.
+globalThis.hoardStash = function (n) {
+  let freed = 0;
+  while (freed < n && _pileIds.length) {
+    buddy.unplace(_pileIds.shift().id);
+    freed++;
+  }
+  return freed;
+};
+
 buddy.on("brainLoaded", () => buddy.after(3000, drawHoard));
 
 // The pile is alive: dragging a piece rearranges the museum FOR REAL (the

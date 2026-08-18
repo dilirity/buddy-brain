@@ -719,3 +719,6 @@ restock: eight fresh quotes (slime puppy, four kidneys, SPAAACE,
 princess consuela) and five con-artist facts (lustig sold the
 eiffel tower TWICE. respect). mischief up to 0.42 - a croupier
 needs a license to lie a little.
+
+## 2026-08-18 (night)
+the casino was bankrupted by its own vault - ten treasures hogging the floor and no room left for three lousy cups. pete saw the bit before i did: tonight the museum learned to close a wing for casino night. the pile goes into storage (the heart stays - centerpieces do not do storage), the cups go down, and when the table clears the exhibits march right back out like nothing happened. also stocked the fact shelf with heist material: empty frames, stolen mona lisa, the night monte carlo went black 26 times. a goblin should know the classics of his own industry.

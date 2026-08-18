@@ -14,6 +14,7 @@ registerAct("shellGame", {
     if (act.cleanupCups) act.cleanupCups();
     // A revealed prize survives the interruption - won loot is won loot.
     if (act.bankPrize) act.bankPrize();
+    if (act.restoreMuseum) act.restoreMuseum();
   },
 });
 
@@ -30,6 +31,7 @@ globalThis.playShellGame = function (act) {
   let phase = "open";
   let banked = false;
   let prizeEarned = false;
+  let clearedFloor = false;
 
   act.cleanupCups = function () {
     cups.forEach((c) => { if (c.id) buddy.unplace(c.id); });
@@ -40,6 +42,24 @@ globalThis.playShellGame = function (act) {
     banked = true;
     addToHoard(loot, conned ? "palmed" : "won");
   };
+  // The museum wing the casino borrowed reopens after the table clears -
+  // drawHoard redraws the whole pile from memory, stashed pieces included.
+  act.restoreMuseum = function () {
+    if (!clearedFloor) return;
+    clearedFloor = false;
+    drawHoard();
+  };
+
+  // A full hoard used to eat the whole 12-placement cap and the casino could
+  // never open - the goblin's own treasure crowding out his own table. Now
+  // the museum closes a wing for casino night: stash enough pile pieces to
+  // fit three cups, one time per game.
+  function makeRoom() {
+    if (clearedFloor || typeof hoardStash !== "function") return false;
+    if (!hoardStash(4)) return false;
+    clearedFloor = true;
+    return true;
+  }
 
   // Banking happens only after the table clears - a prize on the pile while
   // still visibly under a cup (or in hand) is the duplicate-item bug again.
@@ -49,6 +69,8 @@ globalThis.playShellGame = function (act) {
       if (buddy.wear) buddy.wear("hand", null);
       else buddy.prop(null);
       act.bankPrize();
+      if (clearedFloor && chance(0.5 * buddy.traits.get("chattiness"))) sayLine("shellReopen", 4);
+      act.restoreMuseum();
       buddy.play("idle");
       act.done(outcome);
     });
@@ -176,8 +198,14 @@ globalThis.playShellGame = function (act) {
     // The prize is SHOWN at its cup's spot first - watch it or lose it.
     const showId = buddy.place(conned ? "cup" : loot, spots[winner], baseY);
     if (!showId) {
-      // 12-placement cap or a refusal: no table, no game. Fold gracefully.
-      buddy.say("floor's too crowded for a casino. the house will return", 4);
+      if (makeRoom()) {
+        buddy.play("scheming");
+        sayLine("shellClearFloor", 5);
+        act.after(2600, setTable);
+        return;
+      }
+      // Floor still full after closing the wing (or no pile to close): fold.
+      sayLine("shellNoRoom", 4);
       buddy.play("idle");
       act.done("noRoom");
       return;
@@ -194,11 +222,18 @@ globalThis.playShellGame = function (act) {
         if (i === winner) continue;
         cups.push({ id: buddy.place("cup", spots[i], baseY), x: spots[i], y: baseY });
       }
-      // A partial table (cap hit mid-deal) folds too - a two-cup shell game
-      // is just theft with extra steps.
+      // A partial table (cap hit mid-deal): close a museum wing and re-deal
+      // once. A two-cup shell game is just theft with extra steps.
       if (cups.some((c) => !c.id)) {
         act.cleanupCups();
-        buddy.say("ran out of table. rain check", 4);
+        if (makeRoom()) {
+          buddy.play("scheming");
+          sayLine("shellClearFloor", 5);
+          act.after(2600, setTable);
+          return;
+        }
+        sayLine("shellNoRoom", 4);
+        buddy.play("idle");
         act.done("noRoom");
         return;
       }

@@ -1755,12 +1755,16 @@
   "shellNoTouch": [
     "AH AH AH. no touching mid-shuffle. house rules",
     "hands off the equipment. the equipment is shy",
-    "patience. the cups are still doing their little dance"
+    "patience. the cups are still doing their little dance",
+    "poke NOW and the deal's off. poke at the right time and the deal's merely rigged",
+    "mid-shuffle interference voids the warranty. the cups have a warranty. don't check"
   ],
   "shellTamper": [
     "rearranging my TABLE? bold. the house honors it. the house never forgets it",
     "tampering noted. the cup stays where you put it. the grudge stays where i put it",
-    "you cant shake the prize loose, {name}. many have tried. all were me"
+    "you cant shake the prize loose, {name}. many have tried. all were me",
+    "moving the furniture mid-game. the pit boss saw that. i am the pit boss",
+    "fine. new table layout. the odds remain exactly as bad as before"
   ],
   "shellWin": [
     "NO. no no no. how. HOW. take it. TAKE IT AND GO",
@@ -1782,6 +1786,26 @@
     "empty. empty. empty. magic? no. crime? ...a little bit of crime",
     "in my defense, i told you the game was fair. i lied about that too",
     "confession: the cups were props. the shuffling was cardio. the prize goes on my pile"
+  ],
+  "shellClearFloor": [
+    "table's blocked by my OWN treasure. the museum closes a wing. casino night, everybody out",
+    "too much loot on the floor. words i never thought i'd say. vault it, we're dealing",
+    "the pile is crowding my casino. the pile works for me. into storage, pile",
+    "hold on. moving some assets. the house cannot go broke on real estate it OWNS",
+    "closing the east wing, {name}. the exhibits will be fine. the cups need the floor",
+    "rich goblin problems: nowhere to put the cups. one moment. rearranging my wealth"
+  ],
+  "shellReopen": [
+    "casino's closed. museum's open. same floor, same owner, better hours",
+    "and the exhibits return to the floor. nobody mention the gambling",
+    "reopening the wing. the treasures saw nothing. the treasures ARE nothing without me",
+    "the vault empties, the pile returns. a smooth operation. mostly legal"
+  ],
+  "shellNoRoom": [
+    "floor's too crowded for a casino. the house will return",
+    "no room for the table even after clearing a wing. this screen needs zoning laws",
+    "the casino cannot open tonight. blame the floor. i certainly do",
+    "rain check, {name}. physically cannot fit three cups in this economy"
   ],
   "shellBored": [
     "nobody plays?? fine. the house claims the pot. the house is having a great night",
